@@ -19,6 +19,7 @@
 
   &__links {
     display: flex;
+    align-items: center;
     gap: 1rem;
     font-weight: 600;
 
@@ -30,6 +31,7 @@
   &__link {
     cursor: pointer;
     padding: 10px 20px;
+    color: var(--blue-900);
 
     &:hover {
       color: var(--primary-color);
@@ -53,6 +55,10 @@
       margin-left: 0.3rem;
       transform-origin: 25% 50%;
       transition: all 150ms ease-out;
+      stroke: var(--blue-900);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     &:hover .dropdown__chevron {
@@ -143,13 +149,17 @@
     }
   }
 
-
   &__hamburger {
     display: none;
+
+    svg path {
+      stroke: var(--cool-gray-400);
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
 
     @media (max-width: 992px) {
       display: block;
     }
   }
 }
-

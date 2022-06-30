@@ -12,7 +12,6 @@
 
   &:hover {
     .btn__chevron {
-
       path {
         transition: all 150ms ease-out;
       }
@@ -29,6 +28,9 @@
 
   &__chevron {
     margin-left: 0.3rem;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
   &__navbar {
@@ -39,15 +41,36 @@
 
   &--primary {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--blue-100);
+
+    .btn__chevron path {
+      stroke: var(--blue-100);
+    }
   }
 
   &--secondary {
     border: 1px solid var(--primary-color);
+
+    .btn__chevron path {
+      stroke: var(--primary-color);
+    }
   }
 
   &--tertiary {
     color: var(--blue-900);
+
+    .btn__chevron path {
+      stroke: var(--blue-900);
+    }
+  }
+
+  &--white {
+    background-color: var(--blue-100);
+    color: var(--primary-color);
+
+    .btn__chevron path {
+      stroke: var(--primary-color);
+    }
   }
 
   &--as-c {

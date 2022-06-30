@@ -21,3 +21,21 @@
     margin-top: 4rem;
   }
 }
+
+.mbot {
+  &--sm {
+    margin-bottom: 0.5rem;
+  }
+  &--md {
+    margin-bottom: 1rem;
+  }
+  &--lg {
+    margin-bottom: 2rem;
+  }
+  &--xl {
+    margin-bottom: 3rem;
+  }
+  &--xxl {
+    margin-bottom: 4rem;
+  }
+}
