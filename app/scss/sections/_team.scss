@@ -1,0 +1,68 @@
+.team {
+  h5 {
+    position: relative;
+    padding-left: 3rem;
+
+    // large dot next to each department
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      background-color: var(--blue-900);
+      border-radius: 100vh;
+    }
+  }
+
+  &__list {
+  }
+
+  &__list-member {
+    padding-left: 3rem;
+    position: relative;
+
+    &:hover {
+      .fadeIn {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    // small dot next to each team member
+    &::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 7px;
+      background-color: var(--blue-900);
+      border-radius: 100vh;
+    }
+
+    // straight line connecting the dot to the dot above it
+    &::after {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 0;
+      transform: translateY(-61%);
+      width: 1px;
+      height: 70px;
+      background-color: var(--blue-900);
+    }
+
+    img {
+      border-radius: 100vh;
+      border: 1px solid var(--cool-gray-300);
+    }
+
+    h6 {
+      font-size: 0.9rem;
+    }
+  }
+}

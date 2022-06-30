@@ -283,6 +283,12 @@ small {
   margin-bottom: 4rem;
 }
 
+.fadeIn {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 150ms ease-in;
+}
+
 .btn-group {
   display: flex;
   gap: 1rem;
@@ -963,7 +969,6 @@ i:nth-child(6) {
   }
 }
 .hero {
-  display: flex;
   margin-top: 10vh;
 }
 @media (max-width: 768px) {
@@ -1038,8 +1043,13 @@ i:nth-child(6) {
   color: var(--primary-color);
 }
 .hero__body {
-  max-width: 30ch;
   color: var(--cool-gray-500);
+}
+.hero__body--home {
+  max-width: 30ch;
+}
+.hero__body--team {
+  max-width: 45ch;
 }
 .hero .cta__btn {
   background-color: var(--primary-color);
@@ -1482,10 +1492,6 @@ table img {
   background-size: 22px 22px;
 }
 
-.main {
-  margin-top: 15vh;
-}
-
 .btc {
   background-color: var(--blue-100);
   background-image: url("../../../images/backgrounds/btc-bg.jpg");
@@ -1757,4 +1763,60 @@ table img {
     max-width: -moz-fit-content;
     max-width: fit-content;
   }
+}
+
+.team h5 {
+  position: relative;
+  padding-left: 3rem;
+}
+.team h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: var(--blue-900);
+  border-radius: 100vh;
+}
+.team__list-member {
+  padding-left: 3rem;
+  position: relative;
+}
+.team__list-member:hover .fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.team__list-member::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  background-color: var(--blue-900);
+  border-radius: 100vh;
+}
+.team__list-member::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  transform: translateY(-61%);
+  width: 1px;
+  height: 70px;
+  background-color: var(--blue-900);
+}
+.team__list-member img {
+  border-radius: 100vh;
+  border: 1px solid var(--cool-gray-300);
+}
+.team__list-member h6 {
+  font-size: 0.9rem;
+}
+
+.main__home, .main__minipod {
+  margin-top: 10rem;
 }/*# sourceMappingURL=style.css.map */

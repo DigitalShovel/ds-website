@@ -1,5 +1,4 @@
 .hero {
-  display: flex;
   margin-top: 10vh;
 
   @media (max-width: 768px) {
@@ -79,8 +78,17 @@
   }
 
   &__body {
-    max-width: 30ch;
     color: var(--cool-gray-500);
+  }
+
+  &__body {
+    &--home {
+      max-width: 30ch;
+    }
+
+    &--team {
+      max-width: 45ch;
+    }
   }
 
   .cta {
