@@ -1,0 +1,68 @@
+.footer {
+  background-color: var(--blue-900);
+
+  &__container {
+    padding: 4rem 2rem 1rem;
+  }
+
+  &__body {
+    max-width: 30ch;
+    font-size: 0.9rem;
+    color: var(--cool-gray-400);
+  }
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__heading {
+    color: var(--cool-gray-400);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  &__list-item {
+    color: var(--blue-100);
+    font-size: 0.9rem;
+    
+    &:hover {
+      color: var(--blue-200);
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    background-color: var(--cool-gray-600);
+    margin: 2rem 0 1rem;
+  }
+
+  &__copyright {
+    color: var(--cool-gray-400);
+  }
+
+  &__social {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    width: 24px;
+    height: 24px;
+    padding: 0.3rem;
+    border-radius: 3px;
+    transition: background-color 100ms ease-in;
+
+    &:hover {
+      background-color: var(--blue-600);
+    }
+  }
+}

@@ -1,0 +1,83 @@
+h1 {
+  font-size: 3.052rem;
+  font-weight: 900;
+  letter-spacing: -1.8px;
+
+  @media (max-width: 450px) {
+    font-size: 2.8rem;
+  }
+}
+
+h2 {
+  font-size: 2.441rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 1.953rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h4 {
+  font-size: 1.563rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+
+small {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+
+.title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text {
+  &--emphasis {
+    font-weight: 600;
+  }
+
+  &--light-blue {
+    color: var(--blue-100);
+  }
+
+  &--blue {
+    color: var(--primary-color);
+  }
+
+  &--dark-blue {
+    color: var(--blue-900);
+  }
+
+  &--white {
+    color: white;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

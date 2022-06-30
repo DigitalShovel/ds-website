@@ -1,0 +1,23 @@
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 7rem 2rem;
+}
+
+.mtop {
+  &--sm {
+    margin-top: 0.5rem;
+  }
+  &--md {
+    margin-top: 1rem;
+  }
+  &--lg {
+    margin-top: 2rem;
+  }
+  &--xl {
+    margin-top: 3rem;
+  }
+  &--xxl {
+    margin-top: 4rem;
+  }
+}
