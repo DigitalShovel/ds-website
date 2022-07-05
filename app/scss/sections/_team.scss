@@ -1,5 +1,5 @@
 .team {
-  h5 {
+  &__title {
     position: relative;
     padding-left: 3rem;
 
@@ -15,26 +15,28 @@
       background-color: var(--blue-900);
       border-radius: 100vh;
     }
-  }
 
-  &__list {
-  }
-
-  &__list-member {
-    padding-left: 3rem;
-    position: relative;
-
-    &:hover {
-      .fadeIn {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    // straight line connecting the dot to the dot above it only
+    &--add-line::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 7px;
+      top: 0;
+      transform: translateY(-75%);
+      width: 1px;
+      height: 75px;
+      background-color: var(--blue-900);
     }
+  }
 
+  &__list-member,
+  &__list-member--open-position {
     // small dot next to each team member
     &::before {
       content: "";
       position: absolute;
+      z-index: 2;
       left: 4px;
       top: 50%;
       transform: translateY(-50%);
@@ -48,11 +50,32 @@
     &::after {
       content: "";
       position: absolute;
+      z-index: 1;
       left: 7px;
       top: 0;
       transform: translateY(-61%);
       width: 1px;
       height: 70px;
+      background-color: var(--blue-900);
+    }
+  }
+
+  &__list-member {
+    padding-left: 3rem;
+    position: relative;
+
+    &:hover {
+      .fadeIn {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .team__list-member-details {
+        transform: translateY(-5px);
+      }
+    }
+
+    &::before {
       background-color: var(--blue-900);
     }
 
@@ -64,5 +87,55 @@
     h6 {
       font-size: 0.9rem;
     }
+
+    &--open-position {
+      color: var(--cool-gray-600);
+    }
+
+    &--open-position::before {
+      background-color: white;
+      border: 1px solid var(--blue-900);
+    }
+  }
+
+  &__list-member-details {
+    transform: translateY(5px);
+    transition: transform 200ms ease-in;
+  }
+}
+
+.join-us {
+  &__content {
+    background-image: url(../../../images/icons/icon_logo-symbol-transparent.svg);
+    background-repeat: no-repeat;
+    background-position: 87% 35%;
+    background-size: 25%;
+    background-color: var(--primary-color);
+    border-right: 8px solid var(--blue-300);
+    border-left: 8px solid var(--blue-300);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0px 12px 24px 0px hsla(213, 95%, 19%, 0.2), 0px 16px 64px 0px hsla(213, 38%, 36%, 0.35);
+  }
+
+  p {
+    max-width: 45ch;
+    color: var(--blue-200);
+  }
+}
+
+.gallery {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 18px -6px hsla(213, 78%, 16%, 0.35);
   }
 }

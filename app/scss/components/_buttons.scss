@@ -81,4 +81,25 @@
     max-width: 100%;
     border-radius: 7px;
   }
+
+  &--apply {
+    font-size: 0.7rem;
+    padding: 5px 6px 5px 9px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      transform: scale(0.8);
+    }
+  }
+
+  &--paypal {
+    background-image: url(../../../images/icons/icon_paypal.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #FFC43A;
+    border-radius: 5px;
+    max-width: none;
+    padding: 1rem 0;
+  }
 }

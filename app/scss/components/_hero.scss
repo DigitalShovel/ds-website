@@ -69,8 +69,9 @@
   &__heading {
     display: flex;
     flex-direction: column;
-    line-height: 1.1;
+    line-height: 1;
     max-width: 13ch;
+    z-index: 9;
 
     emphasis {
       color: var(--primary-color);
@@ -79,9 +80,7 @@
 
   &__body {
     color: var(--cool-gray-500);
-  }
 
-  &__body {
     &--home {
       max-width: 30ch;
     }
@@ -89,6 +88,10 @@
     &--team {
       max-width: 45ch;
     }
+  }
+
+  &__img {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
   }
 
   .cta {
