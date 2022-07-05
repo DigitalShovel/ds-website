@@ -35,6 +35,16 @@
     &--product h1 {
       font-size: 4rem;
     }
+
+    h1 {
+      position: relative;
+
+      img {
+        position: absolute;
+        right: -14%;
+        bottom: -19px;
+      }
+    }
   }
 
   &__event {
