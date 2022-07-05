@@ -1993,7 +1993,7 @@ table img {
   transition: all 300ms ease-in;
 }
 .faq .collapse-icon {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 .faq__answer {
   position: absolute;
@@ -2004,7 +2004,7 @@ table img {
 }
 
 .toggle .collapse-icon {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 .toggle .faq__answer {
   position: relative;
