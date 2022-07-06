@@ -105,8 +105,8 @@
 
       <a class="navbar__hamburger" href="">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 9H4"/>
-          <path d="M18 13H4"/>
+          <path d="M18 9H4" />
+          <path d="M18 13H4" />
         </svg>
       </a>
     </nav>
@@ -144,8 +144,9 @@
 
       <div class="hero__minipod">
 
-        <button class="rotateBtn" id="turnLeft"></button>
-        <button class="rotateBtn" id="turnRight"></button>
+        <!-- Create two rotation buttons -->
+        <!-- <button class="rotateBtn" id="turnLeft"></button>
+        <button class="rotateBtn" id="turnRight"></button> -->
 
         <div class="cameraRotate_left">
           <div class="cameraRotate_right">
@@ -310,7 +311,8 @@
 
             </div>
 
-            <div class="background">
+            <!-- Create vertical lines in the bg -->
+            <!-- <div class="background">
               <div></div>
               <div></div>
               <div></div>
@@ -335,13 +337,22 @@
               <div></div>
               <div></div>
               <div></div>
-            </div>
+            </div> -->
+
             <div class="floor">
               <div class="shadows">
               </div>
             </div>
           </div>
         </div>
+
+        <button class="btn__pause">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="9" fill="var(--blue-200)"/>
+            <path class="" fill-rule="evenodd" clip-rule="evenodd" d="M10 7H7V15H10V7ZM15 7H12V15H15V7Z" fill="var(--primary-color)"/>
+            </svg>
+        </button>
+
       </div>
     </section>
 
@@ -431,8 +442,8 @@
                 Unit (SPDU)
               </span> that comes along with it. The SPDU and its user interface give you the power to control numerous
               configurations to customize your Minipod and miners.</p>
-            <a href="products-minipod.html" class="btn btn--primary btn--white">Products <svg class="btn__chevron" width="13" height="12"
-                viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="products-minipod.html" class="btn btn--primary btn--white">Products <svg class="btn__chevron"
+                width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.49 6L7.5 6" />
                 <path d="M2.5 1L7.95455 6L2.5 11" />
               </svg></a>
@@ -454,8 +465,8 @@
                 data</span> for you to monitor every event that
               occurs. Determine the time period you want to analyze and never miss anything.
             </p>
-            <a href="products-minipod.html" class="btn btn--primary">Products <svg class="btn__chevron" width="13" height="12"
-                viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="products-minipod.html" class="btn btn--primary">Products <svg class="btn__chevron" width="13"
+                height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.49 6L7.5 6" />
                 <path d="M2.5 1L7.95455 6L2.5 11" />
               </svg>
@@ -478,8 +489,8 @@
               that occurs with your Minipod and your miners. <span class="text--emphasis text--light-blue">Receive
                 simple and clear emails</span> when such events happen.
             </p>
-            <a href="products-minipod.html" class="btn btn--primary btn--white">Products <svg class="btn__chevron" width="13" height="12"
-                viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="products-minipod.html" class="btn btn--primary btn--white">Products <svg class="btn__chevron"
+                width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.49 6L7.5 6" />
                 <path d="M2.5 1L7.95455 6L2.5 11" />
               </svg>
@@ -720,11 +731,12 @@
           </h6>
           <h1 class="income__heading">PLUG & PLAY<br><span class="income__passive">PASSIVE INCOME</span></h1>
         </div>
-        <a href="products-minipod.html" onmouseenter="plugIn()" onmouseleave="plugOut()" class="income__btn btn btn--primary">Get Started
+        <a href="products-minipod.html" onmouseenter="plugIn()" onmouseleave="plugOut()"
+          class="income__btn btn btn--primary">Get Started
           <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.49 6L7.5 6"/>
-            <path d="M2.5 1L7.95455 6L2.5 11"/>
+            <path d="M7.49 6L7.5 6" />
+            <path d="M2.5 1L7.95455 6L2.5 11" />
           </svg>
         </a>
       </div>

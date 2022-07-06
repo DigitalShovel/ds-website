@@ -34,3 +34,12 @@ const questionList = document.querySelectorAll(".faq__question");
 questionList.forEach(question => question.addEventListener("click", () => {
   question.classList.toggle("toggle");
 }))
+
+let pauseBtn = document.querySelector(".btn__pause")
+let pausedPath = document.querySelector(".btn__pause > svg > path")
+let minipodRotation = document.querySelector(".cameraRotate_right")
+
+pauseBtn.addEventListener("click", () => {
+  minipodRotation.classList.toggle("paused");
+  pausedPath.classList.toggle("playing");
+})

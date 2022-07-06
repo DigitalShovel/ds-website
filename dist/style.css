@@ -800,6 +800,35 @@ i:nth-child(6) {
   transform: scale(-1, 1) translate(30%, -9em);
 }
 
+.btn__pause,
+.btn__play {
+  position: absolute;
+  left: 0;
+  top: 36vh;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transform: scale(2.2);
+  cursor: pointer;
+}
+
+.btn__pause svg {
+  transition: all 150ms ease-in;
+}
+
+.paused {
+  animation: sceneRotateX 30s infinite linear reverse paused;
+}
+
+.playing {
+  d: path("M12 9L8 7V15L12 13L13 12.5L16 11L13 9.5L12 9Z");
+}
+
+.reversed {
+  -webkit-animation: sceneRotateX 30s -7.5s infinite linear;
+          animation: sceneRotateX 30s -7.5s infinite linear;
+}
+
 /* Adds a line pattern to the background */
 .floor {
   position: absolute;
