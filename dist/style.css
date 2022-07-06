@@ -807,7 +807,7 @@ i:nth-child(6) {
 .btn__play {
   position: absolute;
   left: -19px;
-  top: 36vh;
+  top: 40vh;
   background-color: transparent;
   border: none;
   padding: 0;
