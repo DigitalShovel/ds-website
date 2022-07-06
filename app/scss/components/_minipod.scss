@@ -80,59 +80,63 @@
   }
 }
 
-.rotateBtn {
-  position: absolute;
-  z-index: 999;
-  left: 0;
-  top: -1em;
-  width: 3em;
-  height: 3em;
-  background: none;
-  border: solid #000a;
-  border-width: 0 0 8px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  animation: btnSwing 0.2s infinite ease-in-out alternate paused;
+/* Create two rotation buttons */
 
-  @keyframes btnSwing {
-    from {
-      transform: translateX(-5%) rotateZ(var(--rz));
-    }
+// .rotateBtn {
+//   position: absolute;
+//   z-index: 999;
+//   left: 0;
+//   top: -1em;
+//   width: 3em;
+//   height: 3em;
+//   background: none;
+//   border: solid #000a;
+//   border-width: 0 0 8px 8px;
+//   border-radius: 4px;
+//   cursor: pointer;
+//   transition: border-color 0.25s;
+//   animation: btnSwing 0.2s infinite ease-in-out alternate paused;
 
-    to {
-      transform: translateX(5%) rotateZ(var(--rz));
-    }
-  }
+//   @keyframes btnSwing {
+//     from {
+//       transform: translateX(-5%) rotateZ(var(--rz));
+//     }
 
-  &:hover {
-    animation-play-state: running;
-  }
+//     to {
+//       transform: translateX(5%) rotateZ(var(--rz));
+//     }
+//   }
 
-  &:active {
-    border-color: #000;
-  }
+//   &:hover {
+//     animation-play-state: running;
+//   }
 
-  &#turnLeft {
-    transform: rotate(45deg);
-    --rz: 45deg;
-    left: -26em;
-  }
+//   &:active {
+//     border-color: #000;
+//   }
 
-  &#turnRight {
-    transform: rotate(-135deg);
-    --rz: -135deg;
-    left: 24em;
-  }
-}
+//   &#turnLeft {
+//     transform: rotate(45deg);
+//     --rz: 45deg;
+//     left: -26em;
+//   }
+
+//   &#turnRight {
+//     transform: rotate(-135deg);
+//     --rz: -135deg;
+//     left: 24em;
+//   }
+// }
+
+/* Enables the buttons to add a rotation */
 
 .cameraRotate {
-  &_left {
-    animation: sceneRotateX 8s -7.5s infinite linear paused;
-  }
+  // &_left {
+  //   animation: sceneRotateX 8s -7.5s infinite linear paused;
+  // }
 
   &_right {
-    animation: sceneRotateX 8s infinite linear paused reverse;
+    animation: sceneRotateX 30s infinite linear reverse;
   }
 
   @keyframes sceneRotateX {
@@ -504,28 +508,29 @@ i {
   }
 }
 
-.background {
-  position: absolute;
+/* Adds a line pattern to the background */
+// .background {
+//   position: absolute;
 
-  & > div {
-    position: absolute;
-    left: -1px;
-    top: -25em;
-    width: 2px;
-    height: 50em;
-    background-image: linear-gradient(#0000, #ddd, #0000);
-    transform: rotateY(var(--ry)) translateZ(-24em);
-    backface-visibility: hidden;
+//   & > div {
+//     position: absolute;
+//     left: -1px;
+//     top: -25em;
+//     width: 2px;
+//     height: 50em;
+//     background-image: linear-gradient(#0000, #ddd, #0000);
+//     transform: rotateY(var(--ry)) translateZ(-24em);
+//     backface-visibility: hidden;
 
-    $count: 24;
+//     $count: 24;
 
-    @for $i from 0 to $count {
-      &:nth-child(#{$i + 1}) {
-        --ry: #{calc(360deg / $count) * $i};
-      }
-    }
-  }
-}
+//     @for $i from 0 to $count {
+//       &:nth-child(#{$i + 1}) {
+//         --ry: #{calc(360deg / $count) * $i};
+//       }
+//     }
+//   }
+// }
 
 .floor {
   position: absolute;
