@@ -18,6 +18,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+  <!-- Javascript -->
+  <script defer src="/app/js/contact.js"></script>
+
   <title>Digital Shovel - Contact Us</title>
 </head>
 
@@ -132,33 +135,60 @@
   <main class="main container">
 
     <form action="">
+
       <div class="fieldset flex flex-col">
-        <label for="text-input">First Name</label>
-        <input type="text" id="text-input" name="text-input" placeholder="John">
+        <label class="fieldset__label" for="text-input">First Name</label>
+        <input class="fieldset__text" type="text" id="text-input" name="contact" placeholder="John">
       </div>
       <div class="fieldset flex flex-col">
-        <label for="text-input">Last Name</label>
-        <input type="text" id="text-input" name="text-input" placeholder="Doe">
+        <label class="fieldset__label" for="text-input">Last Name</label>
+        <input class="fieldset__text" type="text" id="text-input" name="contact" placeholder="Doe">
+      </div>
+
+      <div class="fieldset flex flex-col">
+        <label class="fieldset__label" for="text-input">Email</label>
+        <input class="fieldset__text" type="text" id="text-input" name="contact" placeholder="johndoe@example.com">
       </div>
       <div class="fieldset flex flex-col">
-        <label for="text-input">Email</label>
-        <input type="text" id="text-input" name="text-input" placeholder="johndoe@example.com">
+        <label class="fieldset__label" for="number-input">Phone</label>
+        <input class="fieldset__text" type="number" id="number-input" name="contact" placeholder="+5 (555) 555 5555">
+      </div>
+
+      <div class="fieldset flex flex-col">
+        <label class="fieldset__label" for="text-input">Company</label>
+        <input class="fieldset__text" type="text" id="text-input" name="contact" placeholder="Digital Shovel">
       </div>
       <div class="fieldset flex flex-col">
-        <label for="text-input">Phone</label>
-        <input type="text" id="text-input" name="text-input" placeholder="+5 (555) 555 5555">
-      </div>
-      <div class="fieldset flex flex-col">
-        <label for="text-input">Company</label>
-        <input type="text" id="text-input" name="text-input" placeholder="Digital Shovel">
-      </div>
-      <div class="fieldset flex flex-col">
-        <label for="number-input">Country</label>
-        <select id="dropdown-input" name="dropdown-input">
+        <label class="fieldset__label" for="dropdown-input">Country</label>
+        <select class="fieldset__select" id="dropdown-input" name="dropdown-input">
           <option value="">Canada</option>
           <option value="">USA</option>
         </select>
       </div>
+
+      <div class="fieldset fieldset__full-width flex flex-col">
+        <label class="fieldset__label">Purpose of Contact</label>
+        <div class="flex">
+          <input type="radio" name="contact" id="message" value="message">
+          <label class="fieldset__radio fieldset__radio--add-bl-radius" for="message">Message</label>
+          <input type="radio" name="contact" id="order" value="order">
+          <label class="fieldset__radio fieldset__radio--add-border" for="order">Order</label>
+          <input type="radio" name="contact" id="both" value="both">
+          <label class="fieldset__radio fieldset__radio--add-br-radius" for="both">Both</label>
+        </div>
+      </div>
+
+      <div class="fieldset fieldset__full-width fieldset__order flex flex-col">
+        <label class="fieldset__label" for="text-input">Minipod Order Quantity</label>
+        <input class="fieldset__text" type="number" id="number-input" name="contact" placeholder="2">
+      </div>
+
+      <div class="fieldset fieldset__full-width fieldset__message flex flex-col">
+        <label class="fieldset__label" for="text-input">Message</label>
+        <textarea class="fieldset__text" type="text" id="text-input" name="contact"
+          placeholder="Tell us more about your project, business needs, and budget."></textarea>
+      </div>
+
       <button class="btn btn--primary btn--form" type="submit">Send
         <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -168,6 +198,7 @@
             stroke-linejoin="round" />
         </svg>
       </button>
+
     </form>
 
   </main>
