@@ -389,7 +389,6 @@ small {
 .hero__minipod {
   height: 0;
   position: relative;
-  left: 4vw;
   top: 20vh;
   perspective: 1000px;
   transform: scale(0.8);
@@ -807,7 +806,7 @@ i:nth-child(6) {
 .btn__pause,
 .btn__play {
   position: absolute;
-  left: 0;
+  left: -19px;
   top: 36vh;
   background-color: transparent;
   border: none;
@@ -902,10 +901,10 @@ i:nth-child(6) {
   content: "";
   position: absolute;
   top: -20px;
-  width: 200px;
+  width: 400px;
   height: 200px;
   background-color: var(--blue-200);
-  filter: blur(70px);
+  filter: blur(90px);
   z-index: -1;
 }
 .hero__text--product {
@@ -976,6 +975,9 @@ i:nth-child(6) {
 }
 .hero__img {
   filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+}
+.hero__img img {
+  width: 250px;
 }
 .hero .cta__btn {
   background-color: var(--primary-color);
@@ -1925,6 +1927,20 @@ label {
 .faq__sidebar-list-item--active {
   color: var(--primary-color);
   border-left: 3px solid var(--primary-color);
+}
+.faq__content-cta {
+  position: relative;
+  margin: 5rem 0 3rem;
+}
+.faq__content-cta::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  width: 300px;
+  height: 100px;
+  background-color: var(--blue-200);
+  filter: blur(70px);
+  z-index: -1;
 }
 .faq__title {
   color: var(--primary-color);

@@ -16,10 +16,10 @@
       content: "";
       position: absolute;
       top: -20px;
-      width: 200px;
+      width: 400px;
       height: 200px;
       background-color: var(--blue-200);
-      filter: blur(70px);
+      filter: blur(90px);
       z-index: -1;
     }
 
@@ -102,6 +102,10 @@
 
   &__img {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+
+    img {
+      width: 250px;
+    }
   }
 
   .cta {

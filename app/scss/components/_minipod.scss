@@ -8,7 +8,6 @@
 .hero__minipod {
   height: 0;
   position: relative;
-  left: 4vw;
   top: 20vh;
   perspective: 1000px;
   transform: scale(0.8);
@@ -511,7 +510,7 @@ i {
 .btn__pause,
 .btn__play {
   position: absolute;
-  left: 0;
+  left: -19px;
   top: 36vh;
   background-color: transparent;
   border: none;

@@ -21,6 +21,21 @@
   }
 
   &__content {
+    &-cta {
+      position: relative;
+      margin: 5rem 0 3rem;
+    }
+
+    &-cta::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      width: 300px;
+      height: 100px;
+      background-color: var(--blue-200);
+      filter: blur(70px);
+      z-index: -1;
+    }
   }
 
   &__article {
