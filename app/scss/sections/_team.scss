@@ -1,4 +1,10 @@
 .team {
+  .fadeIn {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 200ms ease-in;
+  }
+  
   &__title {
     position: relative;
     padding-left: 3rem;

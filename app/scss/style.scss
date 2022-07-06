@@ -3,7 +3,6 @@
 @use "base/typography";
 @use "utils/flex";
 @use "utils/spacing";
-@use "utils/animations";
 @use "components/buttons";
 @use "components/minipod";
 @use "components/hero";
@@ -11,6 +10,7 @@
 @use "components/footer";
 @use "components/cards";
 @use "components/tables";
+@use "components/form";
 @use "sections/home";
 @use "sections/competitors";
 @use "sections/team";

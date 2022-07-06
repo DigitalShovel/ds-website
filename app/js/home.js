@@ -22,19 +22,6 @@ function hideChatBubble() {
   document.querySelector(".testimonials__chat-bubble").style.opacity = "0";
 }
 
-const questionList = document.querySelectorAll(".faq__question");
-
-// questionList.forEach((question) => {
-//   question.addEventListener("click", function () {
-//     console.log("test")
-//     question.currentTarget.classList.toggle("test");
-//   });
-// });
-
-questionList.forEach(question => question.addEventListener("click", () => {
-  question.classList.toggle("toggle");
-}))
-
 let pauseBtn = document.querySelector(".btn__pause")
 let pausedPath = document.querySelector(".btn__pause > svg > path")
 let minipodRotation = document.querySelector(".cameraRotate_right")

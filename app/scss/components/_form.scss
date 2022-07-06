@@ -1,0 +1,50 @@
+form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: var(--blue-600);
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.fieldset {
+  position: relative;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-top: 1px solid #CCD8E5;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+select {
+ height: 36px;
+ padding-left: 7px;
+}
+
+input:focus,
+select:focus {
+  outline: 1px solid var(--blue-900);
+  outline-offset: -1px;
+}
+
+input::placeholder {
+  color: #9CB2CA;
+}
+
+label {
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  left: 0;
+  background-color: #F0F7FF;
+  color: #4D6E90;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
