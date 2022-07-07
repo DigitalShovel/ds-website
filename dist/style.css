@@ -193,7 +193,7 @@ small {
   color: var(--blue-100);
 }
 .text--blue {
-  color: var(--blue-600);
+  color: var(--primary-color);
 }
 .text--dark-blue {
   color: var(--blue-900);
@@ -1621,6 +1621,8 @@ textarea {
 .minipod__set img {
   justify-self: flex-end;
   align-self: end;
+  width: auto;
+  height: auto;
 }
 .minipod__set-6 {
   margin-top: -3rem;
