@@ -1576,7 +1576,7 @@ textarea {
   -moz-column-count: 2;
        column-count: 2;
   padding: 1rem 0 1.5rem;
-  color: var(--cool-gray-500);
+  color: var(--cool-gray-600);
 }
 
 .minipod__heading {
