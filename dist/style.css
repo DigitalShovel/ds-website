@@ -104,6 +104,10 @@ img {
   width: 100%;
 }
 
+button {
+  font-family: Inter, Roboto, sans-serif;
+}
+
 .icon--sm {
   max-width: 22px;
 }
@@ -184,8 +188,8 @@ p {
 }
 
 small {
-  font-size: 0.7rem;
-  font-weight: 400;
+  font-size: 0.75rem;
+  font-weight: 500;
   letter-spacing: -0.1px;
 }
 
@@ -196,7 +200,7 @@ small {
 }
 
 .text--emphasis {
-  font-weight: 600;
+  font-weight: 700;
 }
 .text--italic {
   font-style: italic;
@@ -334,6 +338,19 @@ small {
     display: none;
   }
 }
+.btn__pause, .btn__play {
+  position: absolute;
+  left: -19px;
+  top: 35vh;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transform: scale(3);
+  cursor: pointer;
+}
+.btn__pause svg {
+  transition: all 150ms ease-in;
+}
 .btn--primary {
   background-color: var(--primary-color);
   color: var(--blue-100);
@@ -389,7 +406,7 @@ small {
   background-image: url(../../../images/icons/icon_paypal.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #FFC43A;
+  background-color: #ffc43a;
   border-radius: 5px;
   max-width: none;
   padding: 1rem 0;
@@ -819,22 +836,6 @@ i:nth-child(6) {
   transform: scale(-1, 1) translate(30%, -9em);
 }
 
-.btn__pause,
-.btn__play {
-  position: absolute;
-  left: -19px;
-  top: 40vh;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  transform: scale(2.2);
-  cursor: pointer;
-}
-
-.btn__pause svg {
-  transition: all 150ms ease-in;
-}
-
 .paused {
   animation: sceneRotateX 30s infinite linear reverse paused;
 }
@@ -941,16 +942,17 @@ i:nth-child(6) {
   gap: 0.5rem;
   text-align: center;
   color: var(--blue-900);
-  background-color: var(--blue-200);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px 15px;
+  background-color: var(--blue-100);
+  border: 1px solid var(--blue-200);
   border-radius: 100vh;
   transition: all 150ms ease-out;
 }
 .hero__event:hover {
-  background-color: var(--blue-300);
+  background-color: var(--blue-200);
 }
 @media (max-width: 425px) {
   .hero__event {
@@ -975,9 +977,10 @@ i:nth-child(6) {
   color: var(--primary-color);
 }
 .hero__body {
-  color: var(--cool-gray-500);
+  color: var(--cool-gray-600);
 }
 .hero__body--home {
+  font-weight: 500;
   max-width: 30ch;
 }
 .hero__body--team {
@@ -1149,7 +1152,7 @@ i:nth-child(6) {
 .footer__body {
   max-width: 30ch;
   font-size: 0.9rem;
-  color: var(--cool-gray-400);
+  color: var(--blue-100);
 }
 .footer__logo {
   width: 150px;
@@ -1581,7 +1584,8 @@ textarea {
 }
 .minipod__body {
   max-width: 45ch;
-  color: var(--cool-gray-500);
+  color: var(--cool-gray-600);
+  font-weight: 500;
 }
 .minipod__illustrations {
   display: flex;
@@ -1723,6 +1727,7 @@ textarea {
   box-shadow: 0 4px 12px hsla(213deg, 95%, 19%, 0.1), 0 3px 32px hsla(213deg, 38%, 36%, 0.5);
 }
 .testimonials .list-item__body {
+  font-weight: 500;
   font-style: italic;
   color: var(--blue-100);
 }
@@ -1734,10 +1739,10 @@ textarea {
   line-height: 1.1;
 }
 .testimonials .list-item__subheading {
-  font-size: 0.9rem;
-  font-weight: 200;
+  font-size: 12px;
+  font-weight: 400;
   letter-spacing: 0.3px;
-  color: var(--blue-300);
+  color: var(--blue-100);
 }
 
 .stats__container {
@@ -1793,7 +1798,7 @@ textarea {
 }
 .income__subheading {
   color: var(--cool-gray-600);
-  font-weight: 400;
+  font-weight: 500;
 }
 .income__heading {
   font-size: 3rem;

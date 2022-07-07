@@ -45,14 +45,15 @@
     gap: 0.5rem;
     text-align: center;
     color: var(--blue-900);
-    background-color: var(--blue-200);
     width: fit-content;
     padding: 5px 15px;
+    background-color: var(--blue-100);
+    border: 1px solid var(--blue-200);
     border-radius: 100vh;
     transition: all 150ms ease-out;
 
     &:hover {
-      background-color: var(--blue-300);
+      background-color: var(--blue-200);
     }
 
     @media (max-width: 425px) {
@@ -81,9 +82,10 @@
   }
 
   &__body {
-    color: var(--cool-gray-500);
+    color: var(--cool-gray-600);
 
     &--home {
+      font-weight: 500;
       max-width: 30ch;
     }
 

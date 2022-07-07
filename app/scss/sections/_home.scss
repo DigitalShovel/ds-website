@@ -40,7 +40,8 @@
 
   &__body {
     max-width: 45ch;
-    color: var(--cool-gray-500);
+    color: var(--cool-gray-600);
+    font-weight: 500;
   }
 
   &__illustrations {
@@ -213,6 +214,7 @@
 
   .list-item {
     &__body {
+      font-weight: 500;
       font-style: italic;
       color: var(--blue-100);
     }
@@ -227,10 +229,10 @@
     }
 
     &__subheading {
-      font-size: 0.9rem;
-      font-weight: 200;
+      font-size: 12px;
+      font-weight: 400;
       letter-spacing: 0.3px;
-      color: var(--blue-300);
+      color: var(--blue-100);
     }
   }
 }
@@ -302,7 +304,7 @@
 
   &__subheading {
     color: var(--cool-gray-600);
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &__heading {

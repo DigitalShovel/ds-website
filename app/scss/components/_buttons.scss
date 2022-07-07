@@ -40,6 +40,22 @@
     }
   }
 
+  &__pause,
+  &__play {
+    position: absolute;
+    left: -19px;
+    top: 35vh;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transform: scale(3);
+    cursor: pointer;
+  }
+
+  &__pause svg {
+    transition: all 150ms ease-in;
+  }
+
   &--primary {
     background-color: var(--primary-color);
     color: var(--blue-100);
@@ -108,7 +124,7 @@
     background-image: url(../../../images/icons/icon_paypal.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: #FFC43A;
+    background-color: #ffc43a;
     border-radius: 5px;
     max-width: none;
     padding: 1rem 0;
