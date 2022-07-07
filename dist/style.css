@@ -108,16 +108,6 @@ button {
   font-family: Inter, Roboto, sans-serif;
 }
 
-.icon--sm {
-  max-width: 22px;
-}
-.icon--md {
-  max-width: 36px;
-}
-.icon--lg {
-  max-width: 50px;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -219,6 +209,16 @@ small {
 }
 .text--center {
   text-align: center;
+}
+
+.icon--sm {
+  max-width: 22px;
+}
+.icon--md {
+  max-width: 36px;
+}
+.icon--lg {
+  max-width: 52px;
 }
 
 .flex {
@@ -922,19 +922,32 @@ i:nth-child(6) {
   height: 200px;
   background-color: var(--blue-200);
   filter: blur(90px);
-  z-index: -1;
+  z-index: -2;
 }
 .hero__text--product {
   line-height: 1.2;
   margin-bottom: 5vh;
 }
-.hero__text h1 {
+.hero__img {
+  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+}
+.hero__img img {
+  width: 250px;
+}
+.hero__img-anchor {
   position: relative;
 }
-.hero__text h1 img {
+.hero__img-anchor::after {
+  content: "";
   position: absolute;
-  right: -14%;
-  bottom: -19px;
+  background-image: url(../../../images/illustrations/question-marks.svg);
+  background-repeat: no-repeat;
+  right: -90px;
+  bottom: -10px;
+  width: 120px;
+  z-index: -1;
+  height: 120px;
+  background-position: center;
 }
 .hero__event {
   display: flex;
@@ -980,17 +993,10 @@ i:nth-child(6) {
   color: var(--cool-gray-600);
 }
 .hero__body--home {
-  font-weight: 500;
   max-width: 30ch;
 }
 .hero__body--team {
   max-width: 45ch;
-}
-.hero__img {
-  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
-}
-.hero__img img {
-  width: 250px;
 }
 .hero .cta__btn {
   background-color: var(--primary-color);
@@ -1934,7 +1940,7 @@ textarea {
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 1rem;
 }
 .gallery img {

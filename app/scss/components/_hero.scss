@@ -20,21 +20,36 @@
       height: 200px;
       background-color: var(--blue-200);
       filter: blur(90px);
-      z-index: -1;
+      z-index: -2;
     }
 
     &--product {
       line-height: 1.2;
       margin-bottom: 5vh;
     }
+  }
 
-    h1 {
+  &__img {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+
+    img {
+      width: 250px;
+    }
+
+    &-anchor {
       position: relative;
 
-      img {
+      &::after {
+        content: "";
         position: absolute;
-        right: -14%;
-        bottom: -19px;
+        background-image: url(../../../images/illustrations/question-marks.svg);
+        background-repeat: no-repeat;
+        right: -90px;
+        bottom: -10px;
+        width: 120px;
+        z-index: -1;
+        height: 120px;
+        background-position: center;
       }
     }
   }
@@ -85,20 +100,11 @@
     color: var(--cool-gray-600);
 
     &--home {
-      font-weight: 500;
       max-width: 30ch;
     }
 
     &--team {
       max-width: 45ch;
-    }
-  }
-
-  &__img {
-    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
-
-    img {
-      width: 250px;
     }
   }
 
