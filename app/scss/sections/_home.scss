@@ -48,6 +48,10 @@
     position: relative;
     margin-top: 4rem;
 
+    img {
+      object-fit: contain;
+    }
+
     &--shadow {
       position: absolute;
       left: 50%;

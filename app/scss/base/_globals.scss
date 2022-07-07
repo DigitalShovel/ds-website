@@ -39,20 +39,39 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--primary-color);  
+  color: var(--primary-color);
 
   &:focus-visible {
     outline: 0 none;
-    box-shadow: 0 0 0 3px var(--blend-color-light),
-      0 0 0 3px var(--primary-color);
+    box-shadow: 0 0 0 3px var(--blend-color-light), 0 0 0 3px var(--primary-color);
     border-color: var(--primary-color);
-  }   
+  }
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  &--sm {
+    max-width: 22px;
+  }
+
+  &--md {
+    max-width: 36px;
+  }
+
+  &--lg {
+    max-width: 50px;
+  }
 }
 
 // Scrollbar Adjustments
@@ -67,14 +86,14 @@ ul, li {
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--blue-200); 
+  background: var(--blue-200);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue-400); 
+  background: var(--blue-400);
 }
