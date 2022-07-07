@@ -389,7 +389,7 @@ small {
 .btn--as-c {
   align-self: center;
 }
-.btn--feature {
+.btn--card {
   max-width: 100%;
   border-radius: 7px;
 }
@@ -1200,7 +1200,7 @@ i:nth-child(6) {
   background-color: var(--blue-600);
 }
 
-.features {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -1211,12 +1211,12 @@ i:nth-child(6) {
   padding: 7rem 2rem;
 }
 
-.feature-1,
-.feature-2,
-.feature-3,
-.feature-4,
-.feature-5,
-.feature-6 {
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
   background-color: white;
   border-radius: 10px;
   border: 1px solid var(--blue-200);
@@ -1224,18 +1224,18 @@ i:nth-child(6) {
   padding: 20px;
   transition: all 100ms ease-in;
 }
-.feature-1:hover,
-.feature-2:hover,
-.feature-3:hover,
-.feature-4:hover,
-.feature-5:hover,
-.feature-6:hover {
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover,
+.card-5:hover,
+.card-6:hover {
   border: 1px solid var(--primary-color);
   box-shadow: 0px 12px 32px 0px hsla(213deg, 78%, 16%, 0.13);
 }
 
-.feature-7,
-.feature-9 {
+.card-7,
+.card-9 {
   padding: 10px 20px;
   background-color: var(--cool-gray-100);
   border-radius: 7px;
@@ -1243,55 +1243,56 @@ i:nth-child(6) {
   box-shadow: 0px 2px 12px 0px hsla(213deg, 78%, 16%, 0.09);
   transition: all 100ms ease-in;
 }
-.feature-7:hover,
-.feature-9:hover {
+.card-7:hover,
+.card-9:hover {
   border: 1px solid var(--primary-color);
   box-shadow: 0px 12px 32px 0px hsla(213deg, 78%, 16%, 0.13);
 }
-.feature-7 img,
-.feature-9 img {
+.card-7 img,
+.card-9 img {
   min-width: 22px;
   min-height: 22px;
 }
-.feature-7 h6,
-.feature-9 h6 {
+.card-7 h6,
+.card-9 h6 {
   font-size: 0.8rem;
 }
 
-.feature-1 {
+.card-1 {
   grid-area: 1/1/2/2;
 }
-.feature-2 {
+.card-2 {
   grid-area: 1/2/2/3;
 }
-.feature-3 {
+.card-3 {
   grid-area: 1/3/2/4;
 }
-.feature-4 {
+.card-4 {
   grid-area: 2/1/3/2;
 }
-.feature-5 {
+.card-5 {
   grid-area: 2/2/3/3;
 }
-.feature-6 {
+.card-6 {
   grid-area: 2/3/3/4;
 }
-.feature-7 {
+.card-7 {
   grid-area: 3/1/4/2;
 }
-.feature-8 {
+.card-8 {
   grid-area: 3/2/4/3;
 }
-.feature-9 {
+.card-9 {
   grid-area: 3/3/4/4;
 }
-.feature__list-item {
+.card__list-item {
   position: relative;
-  color: var(--cool-gray-500);
+  color: var(--cool-gray-600);
   font-size: 0.8rem;
   padding-left: 2.5rem;
+  letter-spacing: -0.1px;
 }
-.feature__list-item::before {
+.card__list-item::before {
   content: "";
   position: absolute;
   left: 0;

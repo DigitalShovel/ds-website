@@ -1,4 +1,4 @@
-.features {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -9,12 +9,12 @@
   padding: 7rem 2rem;
 }
 
-.feature-1,
-.feature-2,
-.feature-3,
-.feature-4,
-.feature-5,
-.feature-6 {
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
   background-color: white;
   border-radius: 10px;
   border: 1px solid var(--blue-200);
@@ -28,8 +28,8 @@
   }
 }
 
-.feature-7,
-.feature-9 {
+.card-7,
+.card-9 {
   padding: 10px 20px;
   background-color: var(--cool-gray-100);
   border-radius: 7px;
@@ -52,7 +52,7 @@
   }
 }
 
-.feature {
+.card {
   &-1 {
     grid-area: 1 / 1 / 2 / 2;
   }
@@ -86,9 +86,10 @@
 
   &__list-item {
     position: relative;
-    color: var(--cool-gray-500);
+    color: var(--cool-gray-600);
     font-size: 0.8rem;
     padding-left: 2.5rem;
+    letter-spacing: -0.1px;
 
   }
 
