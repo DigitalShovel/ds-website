@@ -142,14 +142,14 @@ h1 {
 }
 
 h2 {
-  font-size: 2.441rem;
-  font-weight: 700;
-  letter-spacing: -1px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.1px;
 }
 
 h3 {
-  font-size: 1.953rem;
-  font-weight: 700;
+  font-size: 1.563rem;
+  font-weight: 600;
   letter-spacing: -1px;
 }
 
@@ -181,12 +181,6 @@ small {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: -0.1px;
-}
-
-.title-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .text--emphasis {
@@ -1286,6 +1280,7 @@ i:nth-child(6) {
   grid-area: 3/1/4/2;
 }
 .card-8 {
+  font-size: 1.3rem;
   grid-area: 3/2/4/3;
 }
 .card-9 {
@@ -1572,6 +1567,8 @@ textarea {
 }
 .btc__heading {
   max-width: 17ch;
+  font-size: 1.563rem;
+  font-weight: 600;
   line-height: 1.2;
 }
 .btc__subheading {
@@ -1587,7 +1584,9 @@ textarea {
 }
 
 .minipod__heading {
+  font-size: 2.441rem;
   line-height: 1.1;
+  letter-spacing: -1px;
 }
 .minipod__body {
   max-width: 45ch;
@@ -1668,6 +1667,7 @@ textarea {
   box-shadow: 0px 4px 96px rgba(9, 38, 73, 0.25);
 }
 .app__subheading {
+  font-weight: 600;
   color: var(--blue-200);
 }
 .app__subheading--blue {
@@ -1692,6 +1692,9 @@ textarea {
   max-width: 1080px;
   margin: 0 auto;
   padding: 7rem 2rem;
+}
+.testimonials__heading {
+  font-size: 2.441rem;
 }
 .testimonials__subheading {
   color: var(--primary-color);
@@ -1735,7 +1738,6 @@ textarea {
 }
 .testimonials .list-item__body {
   font-weight: 500;
-  font-style: italic;
   color: var(--blue-100);
 }
 .testimonials .list-item__divider {
@@ -1743,6 +1745,8 @@ textarea {
   background-color: var(--blue-400);
 }
 .testimonials .list-item__heading {
+  font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.1;
 }
 .testimonials .list-item__subheading {
@@ -1809,8 +1813,10 @@ textarea {
 }
 .income__heading {
   font-size: 3rem;
+  font-weight: 900;
   line-height: 1;
-  margin-top: 15px;
+  letter-spacing: -1.5px;
+  margin-top: 17px;
 }
 .income__passive {
   transition: all 150ms ease-in;

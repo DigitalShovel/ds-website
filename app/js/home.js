@@ -1,10 +1,10 @@
 function plugIn() {
-  document.querySelector(".income__plug").style.transform = "translate(-13px)";
+  document.querySelector(".income__plug").style.transform = "translate(-12px)";
   document.querySelector(".income__passive").style.color = "var(--primary-color)";
 }
 
 function plugOut() {
-  document.querySelector(".income__plug").style.transform = "translate(0)";
+  document.querySelector(".income__plug").style.transform = "translate(2px)";
   document.querySelector(".income__passive").style.color = "var(--blue-900)";
 }
 
