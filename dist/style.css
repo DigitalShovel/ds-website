@@ -927,12 +927,6 @@ i:nth-child(6) {
   line-height: 1.2;
   margin-bottom: 5vh;
 }
-.hero__text--product h4 {
-  font-weight: 400;
-}
-.hero__text--product h1 {
-  font-size: 4rem;
-}
 .hero__text h1 {
   position: relative;
 }
