@@ -2,6 +2,10 @@
   max-width: 1080px;
   margin: 0 auto;
   padding: 6rem 2rem;
+
+  @media (max-width: 992px) {
+    padding: 3rem 2rem;
+  }
 }
 
 .mtop {
