@@ -1,15 +1,15 @@
 .hero {
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-
-  @media (max-width: 425px) {
-    gap: 2rem;
-  }
-
   &__main {
     padding: 9rem 2rem 12rem;
+
+    @media (max-width: 768px) {
+      padding: 4rem 2rem 22rem;
+      flex-direction: column;
+    }
+
+    @media (max-width: 425px) {
+      gap: 2rem;
+    }
   }
 
   &__feature {
