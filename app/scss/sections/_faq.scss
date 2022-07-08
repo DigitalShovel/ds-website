@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
 
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   &__sidebar {
     position: sticky;
     top: 100px;
