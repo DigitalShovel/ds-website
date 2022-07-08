@@ -23,6 +23,9 @@
       rel="stylesheet">
   </noscript>
 
+    <!-- Javascript -->
+    <script defer src="/app/js/nav-toggle.js"></script>
+
   <title>Digital Shovel - Team</title>
 </head>
 
@@ -44,7 +47,8 @@
         </svg>
       </a>
 
-      <ul class="navbar__links">
+      <ul class="navbar__links" data-visible="false">
+        <li class="navbar__overlay"></li>
         <li class="dropdown">
           <span class="dropdown__title">Products
             <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
@@ -105,12 +109,11 @@
         </svg>
       </a>
 
-      <a href="home.html" class="navbar__hamburger">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 9H4" />
-          <path d="M18 13H4" />
-        </svg>
-      </a>
+      <button class="navbar__hamburger" aria-controls="navbar__links" aria-expanded="false" href="home.html">
+        <span class="sr-only">Menu</span>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+      </button>
     </nav>
 
   </header>

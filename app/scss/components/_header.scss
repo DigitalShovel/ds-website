@@ -29,6 +29,10 @@
     opacity: 0;
     background-color: hsla(213, 78%, 8%, 0.9);
     transition: opacity 300ms ease-in;
+
+    @media (min-width: 992px) {
+      background-color: transparent;
+    }
   }
 
   &__logo {
@@ -51,7 +55,7 @@
       z-index: 1000;
       flex-direction: column;
       gap: 3rem;
-      width: 45vw;
+      width: 50vw;
       height: 100vh;
       padding: min(30vh, 10rem) 2rem;
       transform: translateX(100%);
@@ -80,6 +84,7 @@
   }
 
   &__hamburger {
+    cursor: pointer;
     display: none;
     z-index: 9999;
     aspect-ratio: 1;
