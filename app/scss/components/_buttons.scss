@@ -57,7 +57,7 @@
   }
 
   &--primary {
-    background-color: var(--blue-600);
+    background-color: var(--primary-color);
     color: var(--blue-100);
 
     .btn__chevron path {
@@ -66,10 +66,10 @@
   }
 
   &--secondary {
-    border: 1px solid var(--blue-600);
+    border: 1px solid var(--primary-color);
 
     .btn__chevron path {
-      stroke: var(--blue-600);
+      stroke: var(--primary-color);
     }
   }
 
@@ -83,10 +83,10 @@
 
   &--white {
     background-color: var(--blue-100);
-    color: var(--blue-600);
+    color: var(--primary-color);
 
     .btn__chevron path {
-      stroke: var(--blue-600);
+      stroke: var(--primary-color);
     }
   }
 

@@ -5,7 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
+  <meta name="description"
+    content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="dist/style.min.css">
@@ -43,7 +44,8 @@
         </svg>
       </a>
 
-      <ul class="navbar__links">
+      <ul class="navbar__links" data-visible="false">
+        <li class="navbar__overlay"></li>
         <li class="dropdown">
           <span class="dropdown__title">Products
             <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
@@ -104,15 +106,20 @@
         </svg>
       </a>
 
-      <a href="home.html" class="navbar__hamburger">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 9H4" />
-          <path d="M18 13H4" />
-        </svg>
-      </a>
+      <button class="navbar__hamburger" aria-controls="navbar__links" aria-expanded="false" href="home.html">
+        <span class="sr-only">Menu</span>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+      </button>
     </nav>
 
-    <section class="hero flex jc-sb">
+  </header>
+
+  <main class="main">
+
+
+
+    <section class="hero container flex jc-sb">
       <div class="hero__text flex flex-col gap--lg">
         <h1>
           Digital Shovel <emphasis class="text--blue">Merch</emphasis>
@@ -125,15 +132,10 @@
           </p>
         </div>
       </div>
-
       <div class="hero__img">
         <img src="images/illustrations/merch.svg" alt="Merch Screen Illustration">
       </div>
     </section>
-
-  </header>
-
-  <main class="main">
 
     <section class="merch container">
 
@@ -229,7 +231,7 @@
           </div>
         </li>
 
-        <ul/>
+        <ul />
 
     </section>
 
@@ -239,7 +241,8 @@
     <div class="container footer__container">
       <div class="flex jc-sb">
         <div class="footer__column">
-          <a href="home.html"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
+          <a href="home.html"><img class="footer__logo" src="images/icons/icon_logo-white.svg"
+              alt="Digital Shovel Logo" /></a>
           <p class="footer__body">
             Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy
             cost, and high security, we help businesses with managed and unmanaged miner hosting.

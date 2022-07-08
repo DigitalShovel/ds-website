@@ -46,7 +46,8 @@
         </svg>
       </a>
 
-      <ul class="navbar__links">
+      <ul class="navbar__links" data-visible="false">
+        <li class="navbar__overlay"></li>
         <li class="dropdown">
           <span class="dropdown__title">Products
             <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
@@ -107,18 +108,21 @@
         </svg>
       </a>
 
-      <a href="home.html" class="navbar__hamburger">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 9H4" />
-          <path d="M18 13H4" />
-        </svg>
-      </a>
+      <button class="navbar__hamburger" aria-controls="navbar__links" aria-expanded="false" href="home.html">
+        <span class="sr-only">Menu</span>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+      </button>
     </nav>
 
-    <section class="hero flex flex-col ai-c">
+  </header>
+
+  <main class="main">
+
+    <section class="hero container hero__feature flex flex-col ai-c">
 
       <div class="hero__text hero__text--product flex flex-col ai-c">
-        <h4>cardd Product</h4>
+        <h4>Featured Product</h4>
         <h1>M300 <emphasis class="text--blue">Minipod</emphasis>
         </h1>
       </div>
@@ -309,10 +313,6 @@
       </div>
 
     </section>
-
-  </header>
-
-  <main class="main main__minipod">
 
     <section class="card-grid">
       <div class="card-1 flex flex-col gap--md">

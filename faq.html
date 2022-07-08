@@ -5,7 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
+  <meta name="description"
+    content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="dist/style.min.css">
@@ -46,7 +47,8 @@
         </svg>
       </a>
 
-      <ul class="navbar__links">
+      <ul class="navbar__links" data-visible="false">
+        <li class="navbar__overlay"></li>
         <li class="dropdown">
           <span class="dropdown__title">Products
             <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
@@ -107,15 +109,18 @@
         </svg>
       </a>
 
-      <a href="home.html" class="navbar__hamburger">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 9H4" />
-          <path d="M18 13H4" />
-        </svg>
-      </a>
+      <button class="navbar__hamburger" aria-controls="navbar__links" aria-expanded="false" href="home.html">
+        <span class="sr-only">Menu</span>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+      </button>
     </nav>
 
-    <section class="hero flex jc-sb">
+  </header>
+
+  <main>
+
+    <section class="hero container flex jc-sb">
       <div class="hero__text flex flex-col gap--lg">
         <h1>
           Frequently Asked <emphasis class="hero__img-anchor text--blue">Questions</emphasis>
@@ -130,124 +135,118 @@
       </div>
     </section>
 
-  </header>
-
-  <main class="faq container">
-
-    <section class="faq__sidebar flex flex-col gap--md">
-      <h6 class="faq__sidebar-title">Table of Content</h6>
-      <ul class="faq__sidebar-list flex flex-col gap--sm">
-        <li class="faq__sidebar-list-item faq__sidebar-list-item--active">General</li>
-        <li class="faq__sidebar-list-item">Services</li>
-        <li class="faq__sidebar-list-item">Billing</li>
-      </ul>
-    </section>
-
-    <section class="faq__content flex flex-col gap--xlg">
-      
-      <article class="faq__article flex flex-col gap--md">
-        <p class="faq__title">General</p>       
-        
-        <ul class="faq__question">
-          <li class="faq__question-title">
-            <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-              <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-            </svg>
-            How long has Digital Shovel been around?
-          </li>
-          <li class="faq__answer">
-            We have been involved in mining for 2 years. We started developing our own hosting facility in containers
-            for our own rigs at the end of 2017, and began offering hosting in May of 2018.
-          </li>
-        </ul>
-        
-        <ul class="faq__question">
-          <li class="faq__question-title">
-            <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-              <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-            </svg>
-            How long has Digital Shovel been around?
-          </li>
-          <li class="faq__answer">
-            We have been involved in mining for 2 years. We started developing our own hosting facility in containers
-            for our own rigs at the end of 2017, and began offering hosting in May of 2018.
-          </li>
-        </ul>
-        <ul class="faq__question">
-          <li class="faq__question-title">
-            <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-              <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-            </svg>
-            How long has Digital Shovel been around?
-          </li>
-          <li class="faq__answer">
-            We have been involved in mining for 2 years. We started developing our own hosting facility in containers
-            for our own rigs at the end of 2017, and began offering hosting in May of 2018.
-          </li>
+    <section class="faq container">
+      <article class="faq__sidebar flex flex-col gap--md">
+        <h6 class="faq__sidebar-title">Table of Content</h6>
+        <ul class="faq__sidebar-list flex flex-col gap--sm">
+          <li class="faq__sidebar-list-item faq__sidebar-list-item--active">General</li>
+          <li class="faq__sidebar-list-item">Services</li>
+          <li class="faq__sidebar-list-item">Billing</li>
         </ul>
       </article>
+      <article class="faq__content flex flex-col gap--xlg">
 
-      <article class="faq__article flex flex-col gap--md">
-        <p class="faq__title">Services</p>       
-        
-        <ul class="faq__question">
-          <li class="faq__question-title">
-            <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-              <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
+        <article class="faq__article flex flex-col gap--md">
+          <p class="faq__title">General</p>
+
+          <ul class="faq__question">
+            <li class="faq__question-title">
+              <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+                <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+              </svg>
+              How long has Digital Shovel been around?
+            </li>
+            <li class="faq__answer">
+              We have been involved in mining for 2 years. We started developing our own hosting facility in containers
+              for our own rigs at the end of 2017, and began offering hosting in May of 2018.
+            </li>
+          </ul>
+
+          <ul class="faq__question">
+            <li class="faq__question-title">
+              <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+                <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+              </svg>
+              How long has Digital Shovel been around?
+            </li>
+            <li class="faq__answer">
+              We have been involved in mining for 2 years. We started developing our own hosting facility in containers
+              for our own rigs at the end of 2017, and began offering hosting in May of 2018.
+            </li>
+          </ul>
+          <ul class="faq__question">
+            <li class="faq__question-title">
+              <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+                <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+              </svg>
+              How long has Digital Shovel been around?
+            </li>
+            <li class="faq__answer">
+              We have been involved in mining for 2 years. We started developing our own hosting facility in containers
+              for our own rigs at the end of 2017, and began offering hosting in May of 2018.
+            </li>
+          </ul>
+        </article>
+        <article class="faq__article flex flex-col gap--md">
+          <p class="faq__title">Services</p>
+
+          <ul class="faq__question">
+            <li class="faq__question-title">
+              <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+                <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+              </svg>
+              How long has Digital Shovel been around?
+            </li>
+            <li class="faq__answer">
+              We have been involved in mining for 2 years. We started developing our own hosting facility in containers
+              for our own rigs at the end of 2017, and began offering hosting in May of 2018.
+            </li>
+          </ul>
+
+          <ul class="faq__question">
+            <li class="faq__question-title">
+              <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+                <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+              </svg>
+              How long has Digital Shovel been around?
+            </li>
+            <li class="faq__answer">
+              We have been involved in mining for 2 years. We started developing our own hosting facility in containers
+              for our own rigs at the end of 2017, and began offering hosting in May of 2018.
+            </li>
+          </ul>
+          <ul class="faq__question">
+            <li class="faq__question-title">
+              <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+                <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)" />
+              </svg>
+              How long has Digital Shovel been around?
+            </li>
+            <li class="faq__answer">
+              We have been involved in mining for 2 years. We started developing our own hosting facility in containers
+              for our own rigs at the end of 2017, and began offering hosting in May of 2018.
+            </li>
+          </ul>
+        </article>
+        <div class="faq__content-cta flex flex-col gap--md">
+          <h3>Have more questions?</h3>
+          <a href="contact.html" class="btn btn--primary">Contact Us
+            <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.49 6L7.5 6" stroke="var(--blue-100)" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-100)" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
-            How long has Digital Shovel been around?
-          </li>
-          <li class="faq__answer">
-            We have been involved in mining for 2 years. We started developing our own hosting facility in containers
-            for our own rigs at the end of 2017, and began offering hosting in May of 2018.
-          </li>
-        </ul>
-        
-        <ul class="faq__question">
-          <li class="faq__question-title">
-            <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-              <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-            </svg>
-            How long has Digital Shovel been around?
-          </li>
-          <li class="faq__answer">
-            We have been involved in mining for 2 years. We started developing our own hosting facility in containers
-            for our own rigs at the end of 2017, and began offering hosting in May of 2018.
-          </li>
-        </ul>
-        <ul class="faq__question">
-          <li class="faq__question-title">
-            <svg width="12" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.787.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-              <path class="collapse-icon" d="M11.788.595v3.81H0V.595h11.787Z" fill="var(--primary-color)"/>
-            </svg>
-            How long has Digital Shovel been around?
-          </li>
-          <li class="faq__answer">
-            We have been involved in mining for 2 years. We started developing our own hosting facility in containers
-            for our own rigs at the end of 2017, and began offering hosting in May of 2018.
-          </li>
-        </ul>
+          </a>
+        </div>
       </article>
-
-      <div class="faq__content-cta flex flex-col gap--md">
-        <h3>Have more questions?</h3>
-        <a href="contact.html" class="btn btn--primary">Contact Us
-          <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.49 6L7.5 6" stroke="var(--blue-100)" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-100)" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </a>
-      </div>
-
     </section>
 
   </main>
@@ -256,7 +255,8 @@
     <div class="container footer__container">
       <div class="flex jc-sb">
         <div class="footer__column">
-          <a href="home.html"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
+          <a href="home.html"><img class="footer__logo" src="images/icons/icon_logo-white.svg"
+              alt="Digital Shovel Logo" /></a>
           <p class="footer__body">
             Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy
             cost, and high security, we help businesses with managed and unmanaged miner hosting.
