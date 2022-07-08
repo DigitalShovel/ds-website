@@ -1,10 +1,15 @@
 .team {
+  @media (max-width: 992px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
   .fadeIn {
     opacity: 0;
     transform: translateY(5px);
     transition: all 200ms ease-in;
   }
-  
+
   &__title {
     position: relative;
     padding-left: 3rem;
@@ -136,6 +141,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 1rem;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 568px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   img {
