@@ -6,6 +6,12 @@
   flex-direction: column;
 }
 
+.flex-col-mobile {
+  @media (max-width: 568px) {
+    flex-direction: column;
+  }
+}
+
 .ai-c {
   align-items: center;
 }

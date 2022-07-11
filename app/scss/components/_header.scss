@@ -17,6 +17,10 @@
   justify-content: space-between;
   transition: padding 150ms ease-in;
 
+  @media (max-width: 568px) {
+    padding: 1rem;
+  }
+
   &__overlay {
     content: "";
     pointer-events: none;
@@ -51,6 +55,7 @@
     font-weight: 600;
 
     @media (max-width: 992px) {
+      display: none;
       position: fixed;
       z-index: 1;
       top: 0;
@@ -60,16 +65,18 @@
       gap: 3rem;
       width: 50vw;
       height: 100vh;
-      padding: min(30vh, 10rem) 2rem;
+      padding: min(30vh, 5rem) 2rem;
       transform: translateX(100%);
-      visibility: hidden;
-      background-color: hsla(0, 0, 100%, 0.95);
+      background-color: hsla(0, 0, 100%, 0.98);
       backdrop-filter: blur(5px);
       transition: transform 300ms ease-in;
     }
 
+    @media (max-width: 568px) {
+      width: 100vw;
+    }
+
     &[data-visible="true"] {
-      visibility: visible;
       transform: translateX(0);
 
       .navbar__overlay {

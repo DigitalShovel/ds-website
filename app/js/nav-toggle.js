@@ -15,8 +15,10 @@ navToggle.addEventListener("click", () => {
   }
 
   if (expanded === "true") {
+    html.classList.remove("no-scroll")
     navToggle.setAttribute("aria-expanded", false);
   } else {
+    html.classList.add("no-scroll")
     navToggle.setAttribute("aria-expanded", true);
   }
 });

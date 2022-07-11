@@ -32,6 +32,11 @@
     column-count: 2;
     padding: 1rem 0 1.5rem;
     color: var(--cool-gray-600);
+
+    @media (max-width: 568px) {
+      column-count: 1;
+      max-width: 45ch;
+    }
   }
 }
 
@@ -45,13 +50,20 @@
   &__body {
     max-width: 45ch;
     color: var(--cool-gray-600);
-    font-weight: 500;
   }
 
   &__illustrations {
     display: flex;
     position: relative;
     margin-top: 4rem;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 568px) {
+      flex-direction: column;
+    }
 
     img {
       object-fit: contain;
@@ -63,11 +75,16 @@
       top: 20%;
       transform: translateX(-50%);
       background-color: var(--blue-200);
-      width: 800px;
-      height: 300px;
+      width: 200px;
+      height: 100px;
       border-radius: 100vh;
       filter: blur(80px);
       z-index: -1;
+
+      @media (max-width: 568px) {
+        width: 300px;
+        height: 600px;
+      }
     }
   }
 
@@ -101,25 +118,64 @@
 }
 
 .app {
-  &--blue {
+  &--blue,
+  &--white {
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+
+    @media (max-width: 992px) {
+      clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    }
+
+    @media (max-width: 568px) {
+      clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+    }
+  }
+
+  &--blue {
     background-color: var(--blue-600);
     margin-bottom: -7.6rem;
   }
 
   &--white {
-    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
     background-color: var(--blue-100);
     margin-bottom: -7.6rem;
   }
 
   &__container {
-    height: 800px;
+    height: 650px;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: center;
+    margin: auto;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      height: 1000px;
+    }
+
+    @media (max-width: 568px) {
+      height: 1000px;
+    }
   }
 
   &__text {
     max-width: 45ch;
+    min-width: 45ch;
     padding: 0 2rem;
+    margin: 0 auto;
+    transform: translateY(110px);
+    justify-self: flex-end;
+
+    @media (max-width: 992px) {
+      transform: translateY(90px);
+      max-width: fit-content;
+      min-width: 35ch;
+    }
+
+    @media (max-width: 568px) {
+      min-width: auto;
+    }
   }
 
   &__body {
@@ -133,10 +189,28 @@
   }
 
   &__mockup {
-    border-radius: 10px;
-    max-height: 600px;
-    transform: translateY(125px);
+    max-height: 772px;
+    min-width: 772px;
+    max-width: 1152px;
+    transform: translateY(80px);
     box-shadow: 0px 4px 96px rgba(9, 38, 73, 0.25);
+
+    @media (max-width: 992px) {
+      transform: translateY(175px);
+      margin: 0 2rem;
+    }
+
+    @media (max-width: 568px) {
+      transform: translateY(135px);
+      width: 320px;
+      min-width: auto;
+      margin: auto;
+      box-shadow: 0px 4px 58px rgba(9, 38, 73, 0.25);
+    }
+
+    img {
+      border-radius: 7px;
+    }
   }
 
   &__subheading {
@@ -209,6 +283,16 @@
     gap: 30px;
     overflow-x: scroll;
     padding: 2rem;
+
+    @media (max-width: 568px) {
+      margin: 0 -2rem;
+      padding: 2rem;
+    }
+
+    @media (max-width: 375px) {
+      margin: 0 -1rem;
+      padding: 2rem 1rem;
+    }
   }
 
   &__list-item {
@@ -221,6 +305,10 @@
     border-radius: 10px;
     color: white;
     box-shadow: 0 4px 12px hsla(213, 95%, 19%, 0.1), 0 3px 32px hsla(213, 38%, 36%, 0.5);
+
+    @media (max-width: 568px) {
+      box-shadow: none;
+    }
   }
 
   .list-item {
@@ -260,6 +348,12 @@
     border-radius: 20px;
     background-color: var(--blue-900);
     padding: 3rem 6rem;
+
+    @media (max-width: 568px) {
+      flex-direction: column;
+      padding: 2rem 3rem;
+      gap: 2rem;
+    }
 
     &:hover {
       .list-item__heading {
@@ -312,11 +406,15 @@
   &__img {
     position: relative;
     margin-bottom: -161.1px;
+
+    @media (max-width: 568px) {
+      transform: translate(40px, -8px);
+    }
   }
 
-  &__subheading {
+  &__body {
     color: var(--cool-gray-600);
-    font-weight: 500;
+    max-width: 35ch;
   }
 
   &__heading {
@@ -325,6 +423,10 @@
     line-height: 1;
     letter-spacing: -1.5px;
     margin-top: 17px;
+
+    @media (max-width: 568px) {
+      font-size: 2rem;
+    }
   }
 
   &__passive {

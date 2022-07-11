@@ -44,12 +44,17 @@
   &__play {
     position: absolute;
     left: -19px;
-    top: 35vh;
+    top: 330px;
     background-color: transparent;
     border: none;
     padding: 0;
     transform: scale(3);
     cursor: pointer;
+
+    @media (max-width: 568px) {
+      top: 370px;
+      transform: scale(5);
+    }
   }
 
   &__pause svg {
