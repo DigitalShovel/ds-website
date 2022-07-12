@@ -158,6 +158,10 @@
       height: 900px;
     }
 
+    @media (max-width: 568px) {
+      height: 800px;
+    }
+
     @media (max-width: 425px) {
       height: 1100px;
     }
@@ -348,6 +352,10 @@
   &__container {
     margin: -13.5rem auto 0;
     padding: 7rem 2rem;
+
+    @media (max-width: 992px) {
+      margin: -12rem auto 0;
+    }
   }
 
   &__list {
@@ -418,10 +426,9 @@
 }
 
 .income {
-  @media (max-width: 568px) {
+  @media (max-width: 992px) {
     position: relative;
-    z-index: -1;
-    margin-top: -10rem;
+    margin-top: -11rem;
     margin-bottom: 6rem;
   }
 
@@ -431,10 +438,13 @@
 
   &__img {
     position: relative;
+    transform: translateX(3rem);
+    z-index: -1;
     margin-bottom: -161.1px;
 
     @media (max-width: 568px) {
-      transform: translate(40px, -8px);
+      left: 0;
+      transform: translateX(40px);
     }
   }
 
@@ -450,8 +460,9 @@
     letter-spacing: -1.5px;
     margin-top: 17px;
 
-    @media (max-width: 568px) {
-      font-size: 2rem;
+    @media (max-width: 992px) {
+    margin-top: 25px;
+    font-size: 2rem;
     }
   }
 

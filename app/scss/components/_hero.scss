@@ -25,6 +25,11 @@
   &__text {
     position: relative;
 
+    @media (max-width: 768px) {
+      align-items: center;
+      text-align: center;
+    }
+
     &::after {
       content: "";
       position: absolute;
