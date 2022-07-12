@@ -426,6 +426,8 @@
 }
 
 .income {
+  overflow: hidden;
+  
   @media (max-width: 992px) {
     position: relative;
     margin-top: -11rem;
