@@ -114,6 +114,10 @@
 
     &--home {
       max-width: 30ch;
+
+      @media (max-width: 992px) {
+        max-width: 45ch;
+      }
     }
 
     &--team {

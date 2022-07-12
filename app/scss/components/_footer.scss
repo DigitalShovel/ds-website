@@ -9,6 +9,10 @@
     max-width: 30ch;
     font-size: 0.9rem;
     color: var(--blue-100);
+
+    @media (max-width: 568px) {
+      max-width: fit-content;
+    }
   }
 
   &__logo {

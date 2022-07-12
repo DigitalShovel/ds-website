@@ -255,6 +255,10 @@
 
   &__heading {
     font-size: 2.441rem;
+    position: relative;
+    bottom: 8px;
+    line-height: 1;
+    letter-spacing: -1.5px;
   }
 
   &__subheading {
@@ -281,18 +285,13 @@
     transform: translateX(-10px);
   }
 
-  &__heading {
-    position: relative;
-    bottom: 8px;
-  }
-
   &__list {
     display: flex;
     gap: 30px;
     overflow-x: scroll;
     padding: 2rem;
 
-    @media (max-width: 568px) {
+    @media (max-width: 768px) {
       margin: 0 -2rem;
       padding: 2rem;
     }
@@ -407,6 +406,13 @@
 }
 
 .income {
+  @media (max-width: 568px) {
+    position: relative;
+    z-index: -1;
+    margin-top: -10rem;
+    margin-bottom: 6rem;
+  }
+  
   &__plug {
     transition: all 150ms ease-in;
   }
