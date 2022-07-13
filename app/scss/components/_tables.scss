@@ -50,6 +50,16 @@ table {
     }
   }
 
+  &__row:last-child {
+    .table__tooltip {
+      top: -40%;
+    }
+
+    .table__tooltip::after {
+      top: 85%;
+    }
+  }
+
   &__heading {
     padding: 1rem 2rem;
     font-size: 0.9rem;
@@ -70,6 +80,7 @@ table {
   }
 
   &__subheading {
+    user-select: none;
     position: relative;
     line-height: 1.2;
     font-size: 0.8rem;
@@ -93,7 +104,8 @@ table {
     }
 
     &:hover {
-      background-color: var(--blue-100);
+      color: var(--primary-color);
+      background-color: var(--blue-50);
 
       .table__tooltip {
         opacity: 1;
@@ -130,6 +142,11 @@ table {
       border-left: 12px solid hsl(0deg, 0%, 100%);
       transform: rotate(180deg) translateY(50%);
       z-index: 999;
+    }
+
+    @media (max-width: 568px) {
+      left: 90%;
+      width: 22ch;
     }
   }
 
