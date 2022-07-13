@@ -30,12 +30,20 @@ h3 {
   font-size: 1.563rem;
   font-weight: 600;
   letter-spacing: -1px;
+
+  @media (max-width: 450px) {
+    line-height: 1;
+  }
 }
 
 h4 {
   font-size: 1.563rem;
   font-weight: 600;
   letter-spacing: -0.5px;
+
+  @media (max-width: 450px) {
+    line-height: 1;
+  }
 }
 
 h5 {
@@ -63,6 +71,29 @@ small {
 }
 
 .text {
+  &__heading {
+    font-size: 2.441rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+
+    @media (max-width: 568px) {
+      text-align: center;
+
+      &--col {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__body {
+    max-width: 45ch;
+    color: var(--cool-gray-600);
+
+    @media (max-width: 568px) {
+      max-width: 30ch;
+    }
+  }
+
   &--emphasis {
     font-weight: 700;
   }

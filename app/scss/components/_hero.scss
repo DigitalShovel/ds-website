@@ -14,12 +14,20 @@
 
     @media (max-width: 425px) {
       gap: 2rem;
-      padding: 2rem 1rem 25rem;
+      padding: 4rem 1rem 25rem;
     }
   }
 
   &__feature {
     padding: 6rem 2rem 12rem;
+
+    @media (max-width: 992px) {
+      padding: 6rem 2rem 6rem;
+    }
+
+    @media (max-width: 568px) {
+      padding: 4rem 2rem 2rem;
+    }
   }
 
   &__text {
@@ -52,6 +60,12 @@
 
     img {
       width: 250px;
+
+      @media (max-width: 768px) {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
     &-anchor {
