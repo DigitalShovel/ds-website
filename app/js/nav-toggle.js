@@ -22,15 +22,3 @@ navToggle.addEventListener("click", () => {
     navToggle.setAttribute("aria-expanded", true);
   }
 });
-
-// let last_known_scroll_position = 0;
-
-// window.addEventListener("scroll", () => {
-//   last_known_scroll_position = window.scrollY;
-
-//   if (last_known_scroll_position > 0) {
-//     navBar.classList.add("no-padding");
-//   } else {
-//     navBar.classList.remove("no-padding");
-//   }
-// });

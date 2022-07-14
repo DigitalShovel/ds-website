@@ -1,13 +1,3 @@
-function plugIn() {
-  document.querySelector(".income__plug").style.transform = "translate(-12px)";
-  document.querySelector(".income__passive").style.color = "var(--primary-color)";
-}
-
-function plugOut() {
-  document.querySelector(".income__plug").style.transform = "translate(2px)";
-  document.querySelector(".income__passive").style.color = "var(--blue-900)";
-}
-
 function showChatBubble() {
   document.querySelector(".testimonials__left-person").style.transform = "translateX(0px)";
   document.querySelector(".testimonials__right-person").style.transform = "translateX(0px)";
@@ -22,11 +12,12 @@ function hideChatBubble() {
   document.querySelector(".testimonials__chat-bubble").style.opacity = "0";
 }
 
-let pauseBtn = document.querySelector(".btn__pause")
-let pausedPath = document.querySelector(".btn__pause > svg > path")
-let minipodRotation = document.querySelector(".cameraRotate_right")
+let pauseBtn = document.querySelector(".btn__pause");
+let pausedPath = document.querySelector(".btn__pause > svg > path");
+let minipodRotation = document.querySelector(".cameraRotate_right");
 
 pauseBtn.addEventListener("click", () => {
   minipodRotation.classList.toggle("paused");
   pausedPath.classList.toggle("playing");
-})
+});
+
