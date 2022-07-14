@@ -33,7 +33,7 @@
   &__text {
     position: relative;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       align-items: center;
       text-align: center;
     }
@@ -61,7 +61,7 @@
     img {
       width: 250px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         position: relative;
         left: 50%;
         transform: translateX(-50%);

@@ -172,7 +172,7 @@
 }
 
 .testimonials {
-  padding: 9rem 0 12rem;
+  padding: 20rem 0;
   background-color: var(--blue-100);
 
   &__container {
@@ -187,12 +187,21 @@
   &__heading {
     font-size: 2.441rem;
     position: relative;
-    bottom: 8px;
+    bottom: 3px;
     line-height: 1;
     letter-spacing: -1.5px;
+
+    @media (max-width: 568px) {
+      font-size: 1.953rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 1.953rem;
+    }
   }
 
   &__subheading {
+    margin-bottom: 0.5rem;
     color: var(--primary-color);
   }
 
@@ -221,11 +230,6 @@
     gap: 30px;
     overflow-x: scroll;
     padding: 2rem;
-
-    @media (max-width: 768px) {
-      margin: 0 -2rem;
-      padding: 2rem;
-    }
 
     @media (max-width: 375px) {
       margin: 0 -1rem;

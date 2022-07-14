@@ -1,7 +1,20 @@
 .team {
-  @media (max-width: 992px) {
+  white-space: nowrap;
+
+  @media (max-width: 1080px) {
     flex-direction: column;
-    gap: 3rem;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 300px;
+  }
+
+  @media (max-width: 425px) {
+    .icon--lg {
+      width: 42px;
+      height: 42px;
+    }
   }
 
   .fadeIn {
@@ -13,6 +26,10 @@
   &__title {
     position: relative;
     padding-left: 3rem;
+
+    @media (max-width: 1080px) {
+      padding-left: 2rem;
+    }
 
     // large dot next to each department
     &::before {
@@ -72,8 +89,13 @@
   }
 
   &__list-member {
+    align-items: center;
     padding-left: 3rem;
     position: relative;
+
+    @media (max-width: 1080px) {
+      padding-left: 2rem;
+    }
 
     &:hover {
       .fadeIn {

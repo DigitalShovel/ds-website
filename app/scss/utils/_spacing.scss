@@ -14,6 +14,12 @@
   @media (max-width: 375px) {
     padding: 3rem 1rem;
   }
+
+  &--sm {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 }
 
 .mtop {
