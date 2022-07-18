@@ -163,30 +163,30 @@
 
     <section class="form container">
 
-      <form action="contact.php" method="post" autocomplete="on" enctype="multipart/form-data">
+      <form action="https://formsubmit.co/n.panayotakos@digitalshovel.com" method="POST" autocomplete="on" enctype="multipart/form-data">
         <div class="fieldset flex flex-col">
           <label class="fieldset__label" for="name-input">First Name</label>
-          <input class="fieldset__text" type="text" id="name-input" name="contact" placeholder="John">
+          <input class="fieldset__text" type="text" id="name-input" name="name-input" placeholder="John" required>
         </div>
         <div class="fieldset flex flex-col">
           <label class="fieldset__label" for="surname-input">Last Name</label>
-          <input class="fieldset__text" type="text" id="surname-input" name="contact" placeholder="Doe">
+          <input class="fieldset__text" type="text" id="surname-input" name="surname-input" placeholder="Doe" required>
         </div>
         <div class="fieldset flex flex-col">
           <label class="fieldset__label" for="email-input">Email</label>
-          <input class="fieldset__text" type="email" id="email-input" name="contact" placeholder="johndoe@example.com">
+          <input class="fieldset__text" type="email" id="email-input" name="email-input" placeholder="johndoe@example.com" required>
         </div>
         <div class="fieldset flex flex-col">
           <label class="fieldset__label" for="phone-input">Phone</label>
-          <input class="fieldset__text" type="tel" id="phone-input" name="contact" placeholder="+5 (555) 555 5555">
+          <input class="fieldset__text" type="tel" id="phone-input" name="phone-input" placeholder="+5 (555) 555 5555" required>
         </div>
         <div class="fieldset flex flex-col">
-          <label class="fieldset__label" for="text-input">Company</label>
-          <input class="fieldset__text" type="text" id="text-input" name="contact" placeholder="Digital Shovel">
+          <label class="fieldset__label" for="company-input">Company</label>
+          <input class="fieldset__text" type="text" id="company-input" name="company-input" placeholder="Digital Shovel" required>
         </div>
         <div class="fieldset flex flex-col">
           <label class="fieldset__label" for="country-input">Country</label>
-          <select class="fieldset__select" id="country-input" name="contact">
+          <select class="fieldset__select" id="country-input" name="country-input" required>
             <option value="">Canada</option>
             <option value="">USA</option>
           </select>
@@ -194,22 +194,22 @@
         <div class="fieldset fieldset__full-width flex flex-col">
           <label class="fieldset__label">Purpose of Contact</label>
           <div class="flex">
-            <input type="radio" name="contact" id="message" value="message">
+            <input type="radio" name="message" id="message" value="message">
             <label class="fieldset__radio fieldset__radio--add-bl-radius" for="message">Message</label>
-            <input type="radio" name="contact" id="order" value="order">
+            <input type="radio" name="order" id="order" value="order">
             <label class="fieldset__radio fieldset__radio--add-border" for="order">Order</label>
-            <input type="radio" name="contact" id="both" value="both">
+            <input type="radio" name="both" id="both" value="both">
             <label class="fieldset__radio fieldset__radio--add-br-radius" for="both">Both</label>
           </div>
         </div>
         <div class="fieldset fieldset__full-width fieldset__order flex flex-col">
           <label class="fieldset__label" for="order-input">Minipod Order Quantity</label>
-          <input class="fieldset__text" type="number" id="order-input" name="contact" placeholder="2">
+          <input class="fieldset__text" type="number" id="order-input" name="order-input" placeholder="2" required>
         </div>
         <div class="fieldset fieldset__full-width fieldset__message flex flex-col">
           <label class="fieldset__label" for="message-input">Message</label>
           <textarea class="fieldset__text" type="text" id="message-input" name="contact"
-            placeholder="Tell us more about your project, business needs, and budget."></textarea>
+            placeholder="Tell us more about your project, business needs, and budget." required></textarea>
         </div>
         <input class="btn btn--primary btn--form" type="submit">
       </form>
