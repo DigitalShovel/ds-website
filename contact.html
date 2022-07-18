@@ -186,10 +186,7 @@
         </div>
         <div class="fieldset flex flex-col">
           <label class="fieldset__label" for="country-input">Country</label>
-          <select class="fieldset__select" id="country-input" name="country-input" required>
-            <option value="">Canada</option>
-            <option value="">USA</option>
-          </select>
+          <input class="fieldset__select" type="text" id="country-input" name="country-input" placeholder="Canada" required>
         </div>
         <div class="fieldset fieldset__full-width flex flex-col">
           <label class="fieldset__label">Purpose of Contact</label>
@@ -211,7 +208,7 @@
           <textarea class="fieldset__text" type="text" id="message-input" name="contact"
             placeholder="Tell us more about your project, business needs, and budget." required></textarea>
         </div>
-        <input type="hidden" name="_next" value="thanks.html">
+        <input type="hidden" name="_next" value="https://digitalshovel.netlify.app/thanks.html">
         <input class="btn btn--primary btn--form" type="submit">
       </form>
 
