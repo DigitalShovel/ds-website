@@ -365,13 +365,14 @@
   }
 
   &__plug {
+    transform: translate(2px, -1px);
     transition: all 150ms ease-in;
   }
 
   &__img {
     position: relative;
     transform: translateX(0.5rem);
-    margin-bottom: -182.7px;
+    margin-bottom: -183px;
     overflow: visible;
 
     @media (max-width: 992px) {
