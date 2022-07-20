@@ -123,6 +123,18 @@
 
     &--open-position {
       color: var(--cool-gray-600);
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      .team__list-member-details {
+        transform: translateY(0);
+      }
+    }
+
+    &--open-position:hover {
+      .team__list-member-details {
+        transform: translateY(0);
+      }
     }
 
     &--open-position::before {
