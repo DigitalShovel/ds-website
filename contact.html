@@ -88,7 +88,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a class="dropdown__link" href="#">
                 <img class="icon--md" src="images/icons/icon_power-supply.svg" alt="Minipod Icon">
                 <div class="dropdown__text">
@@ -104,12 +104,12 @@
                   <small>Highest efficiency and savings on the market</small>
                 </div>
               </a>
-            </li>
+            </li> -->
           </ul>
         </li>
-        <li><a class="navbar__link" href="team.html">Team</a></li>
-        <li><a class="navbar__link" href="merch.html">Merch</a></li>
-        <li><a class="navbar__link" href="faq.html">Faq</a></li>
+        <!-- <li><a class="navbar__link" href="team.html">Team</a></li> -->
+        <!-- <li><a class="navbar__link" href="merch.html">Merch</a></li> -->
+        <!-- <li><a class="navbar__link" href="faq.html">Faq</a></li> -->
         <li><a class="navbar__link" href="contact.html">Contact Us</a></li>
         <li><a href="http://demo.shovel.digital/" target="_blank" class="btn btn--primary mobile">Login
             <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
@@ -123,7 +123,7 @@
         </li>
       </ul>
 
-      <a href="http://demo.shovel.digital/" target="_blank" class="btn btn__navbar btn--primary">Login
+      <!-- <a href="http://demo.shovel.digital/" target="_blank" class="btn btn__navbar btn--primary">Login
         <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M7.49 6L7.5 6" stroke="var(--blue-100)" stroke-width="2" stroke-linecap="round"
@@ -131,7 +131,7 @@
           <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-100)" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
-      </a>
+      </a> -->
 
       <button class="navbar__hamburger" aria-controls="navbar__links" aria-expanded="false" href="home.html">
         <span class="sr-only">Menu</span>
@@ -164,49 +164,49 @@
 
     <section class="form container">
 
-      <form action="https://formsubmit.co/4d1bd24a91670270171d23029f37290f" method="POST" autocomplete="on" enctype="multipart/form-data">
+      <form action="https://formsubmit.co/4d1bd24a91670270171d23029f37290f" method="POST" enctype="multipart/form-data">
         <div class="fieldset flex flex-col">
-          <label class="fieldset__label" for="name-input">First Name</label>
-          <input class="fieldset__text" type="text" id="name-input" name="name-input" placeholder="John" required>
+          <label class="fieldset__label" for="Name">First Name</label>
+          <input class="fieldset__text" type="text" id="name" name="Name" placeholder="John" autocomplete="on" required>
         </div>
         <div class="fieldset flex flex-col">
-          <label class="fieldset__label" for="surname-input">Last Name</label>
-          <input class="fieldset__text" type="text" id="surname-input" name="surname-input" placeholder="Doe" required>
+          <label class="fieldset__label" for="Surname">Last Name</label>
+          <input class="fieldset__text" type="text" id="surname" name="Surname" placeholder="Doe" autocomplete="on" required>
         </div>
         <div class="fieldset flex flex-col">
-          <label class="fieldset__label" for="email-input">Email</label>
-          <input class="fieldset__text" type="email" id="email-input" name="email-input" placeholder="johndoe@example.com" required>
+          <label class="fieldset__label" for="Email">Email</label>
+          <input class="fieldset__text" type="email" id="email" name="Email" placeholder="johndoe@example.com" autocomplete="on" required>
         </div>
         <div class="fieldset flex flex-col">
-          <label class="fieldset__label" for="phone-input">Phone</label>
-          <input class="fieldset__text" type="tel" id="phone-input" name="phone-input" placeholder="+5 (555) 555 5555" required>
+          <label class="fieldset__label" for="Phone">Phone</label>
+          <input class="fieldset__text" type="tel" id="phone" name="Phone" placeholder="+5 (555) 555 5555" autocomplete="on" required>
         </div>
         <div class="fieldset flex flex-col">
-          <label class="fieldset__label" for="company-input">Company</label>
-          <input class="fieldset__text" type="text" id="company-input" name="company-input" placeholder="Digital Shovel" required>
+          <label class="fieldset__label" for="Company">Company</label>
+          <input class="fieldset__text" type="text" id="company" name="Company" placeholder="Digital Shovel" autocomplete="on" required>
         </div>
         <div class="fieldset flex flex-col">
-          <label class="fieldset__label" for="country-input">Country</label>
-          <input class="fieldset__select" type="text" id="country-input" name="country-input" placeholder="Canada" required>
+          <label class="fieldset__label" for="Country">Country</label>
+          <input class="fieldset__select" type="text" id="country" name="Country" placeholder="Canada" autocomplete="on" required>
         </div>
         <div class="fieldset fieldset__full-width flex flex-col">
           <label class="fieldset__label">Purpose of Contact</label>
           <div class="flex">
-            <input type="radio" name="radio-option" id="message" value="message">
+            <input type="radio" name="Purpose of Contact" id="message" value="message">
             <label class="fieldset__radio fieldset__radio--add-bl-radius" for="message">Message</label>
-            <input type="radio" name="radio-option" id="order" value="order">
+            <input type="radio" name="Purpose of Contact" id="order" value="order">
             <label class="fieldset__radio fieldset__radio--add-border" for="order">Order</label>
-            <input type="radio" name="radio-option" id="both" value="both">
+            <input type="radio" name="Purpose of Contact" id="both" value="both">
             <label class="fieldset__radio fieldset__radio--add-br-radius" for="both">Both</label>
           </div>
         </div>
         <div class="fieldset fieldset__full-width fieldset__order flex flex-col">
-          <label class="fieldset__label" for="order-input">Minipod Order Quantity</label>
-          <input class="fieldset__text" type="number" id="order-input" name="order-input" placeholder="2" required>
+          <label class="fieldset__label" for="order">Minipod Order Quantity</label>
+          <input class="fieldset__text" type="number" id="order" name="order" placeholder="2" required>
         </div>
         <div class="fieldset fieldset__full-width fieldset__message flex flex-col">
-          <label class="fieldset__label" for="message-input">Message</label>
-          <textarea class="fieldset__text" type="text" id="message-input" name="contact"
+          <label class="fieldset__label" for="message">Message</label>
+          <textarea class="fieldset__text" type="text" id="message" name="contact"
             placeholder="Tell us more about your project, business needs, and budget." required></textarea>
         </div>
         <input type="hidden" name="_next" value="https://digitalshovel.netlify.app/thanks.html">

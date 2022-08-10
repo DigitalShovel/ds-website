@@ -13,6 +13,22 @@ form {
   }
 }
 
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+
+  &:checked + label {
+    color: var(--primary-color);
+    background-color: var(--blue-200);
+  }
+
+  &:focus + label {
+    outline: 1px solid var(--blue-900);
+    outline-offset: -1px;
+  }
+}
+
 label {
   position: relative;
 }
@@ -71,22 +87,6 @@ textarea {
     width: 100%;
     border-bottom: 1px solid var(--cool-gray-300);
     border-radius: 5px 5px 0 0;
-
-    input[type="radio"] {
-      position: absolute;
-      opacity: 0;
-      width: 0;
-
-      &:checked + label {
-        color: var(--primary-color);
-        background-color: var(--blue-200);
-      }
-
-      &:focus + label {
-        outline: 1px solid var(--blue-900);
-        outline-offset: -1px;
-      }
-    }
   }
 
   &__text,
