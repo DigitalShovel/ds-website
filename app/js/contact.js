@@ -1,4 +1,4 @@
-const orderBtn = document.querySelector("#Amount-of-Minipods");
+const orderBtn = document.querySelector("#Minipod-Order-Quantity");
 const order = document.querySelector(".fieldset__order");
 const messageBtn = document.querySelector("#Message");
 const message = document.querySelector(".fieldset__message");
