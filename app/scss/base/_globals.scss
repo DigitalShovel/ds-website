@@ -4,9 +4,11 @@
   box-sizing: border-box;
 }
 
-_:default:not(:root:root),
-.fan-swing-base {
-  animation: none;
+// minipod fan animation fix (disables it)
+@supports (-webkit-hyphens: none) {
+  .fan-swing-base {
+    animation: none;
+  }
 }
 
 html {
