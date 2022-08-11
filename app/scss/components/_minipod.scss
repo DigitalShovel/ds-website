@@ -121,14 +121,24 @@
     transform-style: preserve-3d;
   }
 
+  &--featured {
+    @media (max-width: 992px) {
+      top: 10vh;
+    }
+  
+    @media (max-width: 568px) {
+      top: 5vh;
+      right: 0;
+    }
+  
+  }
+
   @media (max-width: 992px) {
     transform: scale(0.6);
-    top: 10vh;
   }
 
   @media (max-width: 568px) {
     transform: scale(0.5);
-    top: 5vh;
     right: 0;
   }
 
