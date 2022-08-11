@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+// Safari v6+ minipod fan animation fix (disables it)
+@media screen {
+  @media (min-width: 0px) {
+    .fan-swing-base {
+      animation: none;
+    }
+  }
+}
+
 // Safari v9+ minipod fan animation fix (disables it)
 @supports (-webkit-hyphens: none) {
   .fan-swing-base {
