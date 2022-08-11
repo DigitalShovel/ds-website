@@ -6,7 +6,8 @@ function fnBrowserDetect() {
   } else if (userAgent.match(/firefox|fxios/i)) {
     browserName = "firefox";
   } else if (userAgent.match(/safari/i)) {
-    document.querySelector(".only-safari").style.animation = "none";
+    let fan = document.querySelector(".fan-swing-base");
+    fan.classList.add("only-safari");
   } else if (userAgent.match(/opr\//i)) {
     browserName = "opera";
   } else if (userAgent.match(/edg/i)) {
@@ -14,5 +15,4 @@ function fnBrowserDetect() {
   } else {
     browserName = "No browser detection";
   }
-
 }

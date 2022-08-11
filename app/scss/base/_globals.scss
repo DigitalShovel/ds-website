@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.only-safari {
+  animation: none;
+}
+
 // All Chrome and Safari versions
 .selector:not(*:root) {
   .fan-swing-base {
