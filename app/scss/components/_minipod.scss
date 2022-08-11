@@ -510,18 +510,9 @@ i {
     transform: rotateY(90deg) rotateX(90deg) translateY(3em) translateX(1.5em) translateZ(-3.5em);
   }
 
-  @media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) {
-      @keyframes fan-rotation {
-        from {
-          transform: rotate(0deg);
-        }
-    
-        to {
-          transform: rotate(0deg);
-        }
-      }
-    }
+  _:default:not(:root:root),
+  .fan-swing-base {
+    animation: none;
   }
 
   @keyframes fan-rotation {
