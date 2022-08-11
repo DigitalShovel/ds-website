@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+// All Chrome and Safari versions
+.selector:not(*:root) {
+  .fan-swing-base {
+    animation: none;
+  }
+}
+
 // Safari v6+ minipod fan animation fix (disables it)
 @media screen {
   @media (min-width: 0px) {
