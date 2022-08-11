@@ -712,6 +712,7 @@ i {
   }
 
   &__arrow {
+    stroke: var(--blue-900);
     transform: rotate(90deg);
     animation: scrollArrow 750ms linear alternate infinite;
   }
