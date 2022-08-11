@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+_:default:not(:root:root),
+.fan-swing-base {
+  animation: none;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;

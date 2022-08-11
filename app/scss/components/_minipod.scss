@@ -510,11 +510,6 @@ i {
     transform: rotateY(90deg) rotateX(90deg) translateY(3em) translateX(1.5em) translateZ(-3.5em);
   }
 
-  _:default:not(:root:root),
-  .fan-swing-base {
-    animation: none;
-  }
-
   @keyframes fan-rotation {
     from {
       transform: rotate(0deg);
