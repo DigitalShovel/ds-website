@@ -676,6 +676,56 @@ i {
   background-image: radial-gradient(#0005, #0000 50%);
 }
 
+.scroll {
+  position: absolute;
+  left: -61px;
+  top: 420px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  gap: 0.2rem;
+
+  &__mouse {
+    position: relative;
+    width: 18px;
+    height: 30px;
+    border: 2px solid var(--blue-900);
+    border-radius: 100vh;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 7px;
+      width: 2px;
+      background-color: var(--blue-900);
+      left: 50%;
+      top: 2px;
+      border-radius: 100vh;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__text {
+    width: max-content;
+  }
+
+  &__arrow {
+    transform: rotate(90deg);
+    animation: scrollArrow 750ms linear alternate infinite;
+  }
+}
+
+@keyframes scrollArrow {
+  from {
+    transform: rotate(90deg) translateX(0px);
+  }
+  to {
+    transform: rotate(90deg) translateX(3px);
+  }
+}
+
 @keyframes pulse {
   from {
     box-shadow: 0 0 0 2px var(--warning-500);
