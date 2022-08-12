@@ -2,7 +2,7 @@ const ua = detect.parse(navigator.userAgent);
 let fan = document.querySelectorAll(".fan-swing-base");
 console.log(ua.os);
 
-if (ua.os.family.includes("iOS")) {
+if (ua.os.family.includes("Mac")) {
   for (let i = 0; i < fan.length; i++) {
     fan[i].classList.add("only-safari");
     console.log("it worked!");
