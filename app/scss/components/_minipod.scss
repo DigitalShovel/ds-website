@@ -147,6 +147,10 @@
     right: 0;
   }
 
+  @media (max-width: 450px) {
+    top: 7rem;
+  }
+
   @media (max-width: 375px) {
     transform: scale(0.4);
   }
@@ -710,15 +714,11 @@ i {
     }
 
     @media (max-width: 450px) {
-      top: 800px;
-    }
-
-    @media (max-width: 425px) {
-      top: 830px;
+      top: 750px;
     }
 
     @media (max-width: 375px) {
-      top: 800px;
+      top: 710px;
     }
   }
 
