@@ -690,7 +690,7 @@ i {
 .scroll {
   position: absolute;
   left: 50%;
-  top: 800px;
+  top: 750px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -699,32 +699,52 @@ i {
   gap: 0.3rem;
   transform: translateX(-50%);
 
-  @media (max-width: 992px) {
-    top: 700px;
+  &__home {
+    @media (max-width: 768px) {
+      top: 870px;
+    }
+
+    @media (max-width: 450px) {
+      top: 800px;
+    }
+
+    @media (max-width: 425px) {
+      top: 830px;
+    }
+
+    @media (max-width: 375px) {
+      top: 800px;
+    }
   }
 
-  @media (max-width: 568px) {
-    top: 600px;
-  }
-
-  @media (max-width: 567px) {
-    top: 610px;
-  }
-
-  @media (max-width: 519px) {
-    top: 680px;
-  }
-
-  @media (max-width: 450px) {
-    top: 580px;
-  }
-
-  @media (max-width: 375px) {
-    top: 560px;
-  }
-
-  @media (max-width: 371px) {
-    top: 600px;
+  &__product {
+    @media (max-width: 992px) {
+      top: 700px;
+    }
+  
+    @media (max-width: 568px) {
+      top: 600px;
+    }
+  
+    @media (max-width: 567px) {
+      top: 610px;
+    }
+  
+    @media (max-width: 519px) {
+      top: 680px;
+    }
+  
+    @media (max-width: 450px) {
+      top: 580px;
+    }
+  
+    @media (max-width: 375px) {
+      top: 560px;
+    }
+  
+    @media (max-width: 371px) {
+      top: 600px;
+    }
   }
 
   &__mouse {
@@ -754,7 +774,7 @@ i {
   &__arrow {
     stroke: var(--blue-900);
     transform: rotate(90deg);
-    animation: scrollArrow 750ms linear alternate infinite;
+    animation: scrollArrow 500ms linear alternate infinite;
   }
 }
 
@@ -763,7 +783,7 @@ i {
     transform: rotate(90deg) translateX(0px);
   }
   to {
-    transform: rotate(90deg) translateX(3px);
+    transform: rotate(90deg) translateX(5px);
   }
 }
 
