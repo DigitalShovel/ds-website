@@ -8,8 +8,10 @@ let specsLink = document.querySelector(".subnav__link--specs");
 let bundleLink = document.querySelector(".subnav__link--bundle");
 let configsLink = document.querySelector(".subnav__link--configs");
 
+let check = false;
+
 window.mobileCheck = function () {
-  let check = false;
+  check = false;
   (function (a) {
     if (
       /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) ||
@@ -19,11 +21,10 @@ window.mobileCheck = function () {
     )
       check = true;
   })(navigator.userAgent || navigator.vendor || window.opera);
-  return check;
 };
 
 window.addEventListener("scroll", () => {
-  if (window.matchMedia("(max-width: 768px)")) {
+  if (!check) {
     if (scrollY <= 600) {
       specsLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
@@ -56,19 +57,19 @@ window.addEventListener("scroll", () => {
       configsLink.classList.remove("subnav__link--active");
 
       productLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 1600) {
+    } else if (scrollY <= 1500) {
       productLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
       configsLink.classList.remove("subnav__link--active");
 
       specsLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 2300) {
+    } else if (scrollY <= 2200) {
       productLink.classList.remove("subnav__link--active");
       specsLink.classList.remove("subnav__link--active");
       configsLink.classList.remove("subnav__link--active");
 
       bundleLink.classList.add("subnav__link--active");
-    } else if (scrollY >= 2301) {
+    } else if (scrollY >= 2201) {
       productLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
       specsLink.classList.remove("subnav__link--active");
