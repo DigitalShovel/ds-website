@@ -28,3 +28,12 @@
 .no-scroll {
   overflow: hidden;
 }
+
+.no-x-scroll {
+  overflow-x: hidden;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
