@@ -32,10 +32,8 @@ window.matchMedia("(max-width: 450px)").onchange = (e) => {
   if (e.matches) {
     specsClass.innerHTML = "Specs";
     configsClass.innerHTML = "Configs";
-    console.log("This is a narrow screen — less than 450px wide.");
   } else {
     specsClass.innerHTML = "Specifications";
     configsClass.innerHTML = "Configurations";
-    console.log("This is a wide screen — more than 450px wide.");
   }
 };
