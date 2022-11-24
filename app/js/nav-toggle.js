@@ -4,7 +4,7 @@ const navToggle = document.querySelector(".navbar__hamburger");
 const body = document.querySelector("body");
 const html = document.querySelector("html");
 
-let configsClass = document.querySelector(".subnav__link--configs");
+let pricingClass = document.querySelector(".subnav__link--pricing");
 let specsClass = document.querySelector(".subnav__link--specs");
 
 navToggle.addEventListener("click", () => {
@@ -31,9 +31,7 @@ navToggle.addEventListener("click", () => {
 window.matchMedia("(max-width: 450px)").onchange = (e) => {
   if (e.matches) {
     specsClass.innerHTML = "Specs";
-    configsClass.innerHTML = "Configs";
   } else {
     specsClass.innerHTML = "Specifications";
-    configsClass.innerHTML = "Configurations";
   }
 };
