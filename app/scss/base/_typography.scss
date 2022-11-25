@@ -106,6 +106,10 @@ small {
     color: var(--blue-100);
   }
 
+  &--red {
+    color: var(--danger-600);
+  }
+
   &--blue {
     color: var(--primary-color);
   }
@@ -120,5 +124,9 @@ small {
 
   &--center {
     text-align: center;
+  }
+
+  &--discount {
+    text-decoration: line-through;
   }
 }
