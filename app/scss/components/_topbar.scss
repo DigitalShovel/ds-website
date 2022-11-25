@@ -1,0 +1,13 @@
+.topbar {
+  background: var(--primary-color);
+  padding: 0.5rem;
+  text-align: center;
+
+  &__text {
+    font-family: "Right Grotesk Wide Black", Inter, Roboto, sans-serif;
+    color: var(--blue-50);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
