@@ -19,8 +19,8 @@ input[type="radio"] {
   width: 0;
 
   &:checked + label {
-    color: var(--primary-color);
-    background-color: var(--blue-200);
+    color: var(--blue-900);
+    background-color: var(--blue-100);
   }
 
   &:focus + label {
@@ -81,11 +81,10 @@ textarea {
     font-size: 12px;
     font-weight: 600;
     left: 0;
-    background-color: #f0f7ff;
-    color: #4d6e90;
+    background-color: var(--blue-gray-50);
+    color: var(--blue-gray-600);
     padding: 10px;
     width: 100%;
-    border-bottom: 1px solid var(--cool-gray-300);
     border-radius: 5px 5px 0 0;
   }
 
@@ -107,15 +106,15 @@ textarea {
     font-size: 0.9rem;
     text-align: center;
     background-color: white;
-    color: var(--cool-gray-400);
+    color: var(--blue-gray-400);
 
     @media (max-width: 568px) {
       font-size: 0.8rem;
     }
 
     &--add-border {
-      border-right: 1px solid var(--cool-gray-300);
-      border-left: 1px solid var(--cool-gray-300);
+      border-right: 1px solid var(--blue-gray-50);
+      border-left: 1px solid var(--blue-gray-50);
     }
 
     &--add-br-radius {

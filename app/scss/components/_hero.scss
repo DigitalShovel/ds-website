@@ -58,10 +58,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: -20px;
+      top: 150px;
       width: 400px;
       height: 200px;
-      background-color: var(--blue-200);
+      background-color: var(--blue-100);
       filter: blur(90px);
       z-index: -2;
     }
@@ -111,7 +111,7 @@
     color: var(--blue-900);
     width: fit-content;
     padding: 5px 15px;
-    background-color: var(--blue-100);
+    background-color: var(--blue-50);
     border: 1px solid var(--blue-200);
     border-radius: 100vh;
     transition: all 150ms ease-out;
@@ -121,8 +121,8 @@
     }
 
     &--disclaimer {
-      background-color: var(--warning-100);
-      border: 1px solid var(--warning-500);
+      background-color: var(--yellow-100);
+      border: 1px solid var(--yellow-500);
     }
   }
 
@@ -143,12 +143,12 @@
     z-index: 9;
 
     emphasis {
-      color: var(--primary-color);
+      color: var(--blue-500);
     }
   }
 
   &__body {
-    color: var(--cool-gray-600);
+    color: var(--blue-gray-600);
 
     &--home {
       max-width: 30ch;
@@ -169,7 +169,7 @@
 
   .cta {
     &__btn {
-      background-color: var(--primary-color);
+      background-color: var(--blue-500);
       padding: 5px 15px;
       color: white;
     }

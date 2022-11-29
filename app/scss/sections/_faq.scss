@@ -18,10 +18,10 @@
     &-list-item {
       padding-left: 1.5rem;
 
-      &--active {    
+      &--active {
         padding-left: calc(1.5rem - 3px);
-        color: var(--primary-color);
-        border-left: 3px solid var(--primary-color);
+        color: var(--blue-500);
+        border-left: 3px solid var(--blue-500);
       }
     }
   }
@@ -44,17 +44,16 @@
     }
   }
 
-  &__article {
-  }
+  &__article {}
 
   &__title {
-    color: var(--primary-color);
+    color: var(--blue-500);
   }
 
   &__question {
     padding-bottom: 2rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--cool-gray-200);
+    border-bottom: 1px solid var(--blue-gray-200);
     transition: all 300ms ease-in;
   }
 
@@ -86,7 +85,7 @@
     opacity: 0;
     padding-top: 0.5rem;
     font-size: 0.9rem;
-    color: var(--cool-gray-600);
+    color: var(--blue-gray-600);
   }
 }
 
@@ -94,6 +93,7 @@
   .collapse-icon {
     transform: rotate(0deg);
   }
+
   .faq__answer {
     position: relative;
     opacity: 1;

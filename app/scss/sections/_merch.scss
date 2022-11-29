@@ -17,9 +17,9 @@
     overflow: hidden;
     background-color: #fff;
     border-radius: 10px;
-    border: 1px solid var(--cool-gray-300);
+    border: 1px solid var(--blue-gray-300);
     box-shadow: 0px 4px 8px -2px hsla(213, 78%, 16%, 0.2);
-    
+
     &-content {
       padding: 1.5rem;
     }
@@ -40,7 +40,7 @@
     p {
       letter-spacing: 0px;
       font-size: 0.8rem;
-      color: var(--cool-gray-500);
+      color: var(--blue-gray-500);
     }
   }
 }

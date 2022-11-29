@@ -54,12 +54,12 @@ p {
 a,
 button {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--blue-500);
 
   &:focus-visible {
     outline: 0 none;
-    box-shadow: 0 0 0 3px var(--blend-color-light), 0 0 0 3px var(--primary-color);
-    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--blend-color-light), 0 0 0 3px var(--blue-500);
+    border-color: var(--blue-500);
   }
 }
 
