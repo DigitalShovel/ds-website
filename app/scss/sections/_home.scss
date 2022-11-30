@@ -1,3 +1,10 @@
+/**
+ *
+ * The .btc class below adds styling to the currently hidden section
+ * on the homepage about bitcoin and our relationship to it.
+ *
+ */
+
 .btc {
   background-color: var(--blue-50);
   background-image: url("../../../images/backgrounds/btc-bg.jpg");
@@ -39,6 +46,11 @@
     }
   }
 }
+
+
+/* ==============================================
+   MINER MANAGEMENT SOFTWARE APPLICATION SECTION
+   ============================================== */
 
 .app {
 
@@ -173,7 +185,7 @@
 }
 
 /* ==============================================
-   TESTIMONIALS
+   TESTIMONIALS SECTION
    ============================================== */
 
 .testimonials {
@@ -286,6 +298,11 @@
   }
 }
 
+
+/* ==============================================
+   COMPANY STATISTICS SECTION
+   ============================================== */
+
 .stats {
   position: relative;
   z-index: 10;
@@ -366,6 +383,11 @@
     }
   }
 }
+
+
+/* ==============================================
+   PASSIVE INCOME ILLUSTRATION SECTION
+   ============================================== */
 
 .income {
   overflow: hidden;

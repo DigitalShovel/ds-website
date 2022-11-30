@@ -107,7 +107,15 @@ small {
   }
 
   &--red {
-    color: var(--red-600);
+    color: var(--red-400);
+  }
+
+  &--yellow {
+    color: var(--yellow-600);
+  }
+
+  &--teal {
+    color: var(--teal-500);
   }
 
   &--blue {
