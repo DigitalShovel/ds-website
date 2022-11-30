@@ -70,9 +70,27 @@
       box-shadow: 0 12px 32px 0 hsla(44, 78%, 16%, 0.13);
     }
   }
+
+  &--disabled {
+    border: 1px solid var(--warm-gray-200);
+    background-color: var(--warm-gray-50);
+    box-shadow: none;
+    cursor: default;
+
+    &:hover {
+      border: 1px solid var(--warm-gray-200);
+      box-shadow: none;
+    }
+
+    h6 {
+      color: var(--warm-gray-300);
+      text-decoration: line-through;
+    }
+  }
 }
 
 .sparkle-container {
+  pointer-events: none;
   position: absolute;
   left: 0;
   width: 100%;
