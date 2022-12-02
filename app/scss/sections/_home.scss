@@ -128,13 +128,32 @@
     }
   }
 
+  &__subheading {
+    font-weight: 600;
+    color: var(--blue-100);
+  }
+
+  &__subheading--blue {
+    color: var(--blue-500);
+  }
+
+  &__heading {
+    line-height: 1.1;
+    color: #fff;
+  }
+
+  &__heading--dark-blue {
+    color: var(--blue-800);
+    font-weight: 700;
+  }
+
   &__body {
     &--dark {
       color: var(--blue-gray-600);
     }
 
     &--light {
-      color: var(--blue-200);
+      color: var(--blue-100);
     }
   }
 
@@ -163,24 +182,6 @@
     img {
       border-radius: 7px;
     }
-  }
-
-  &__subheading {
-    font-weight: 600;
-    color: var(--blue-100);
-  }
-
-  &__subheading--blue {
-    color: var(--blue-500);
-  }
-
-  &__heading {
-    line-height: 1.1;
-    color: var(--blue-50);
-  }
-
-  &__heading--dark-blue {
-    color: var(--blue-800);
   }
 }
 
