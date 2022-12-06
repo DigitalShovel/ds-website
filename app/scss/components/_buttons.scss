@@ -45,16 +45,20 @@
   &__play {
     position: absolute;
     top: 330px;
-    left: 50%;
+    left: 0;
     padding: 0;
     cursor: pointer;
     transform: translateX(-50%) scale(3);
     border: none;
     background-color: transparent;
 
+    @media (max-width: 992px) {
+      transform: translateX(-50%) scale(4);
+    }
+
     @media (max-width: 568px) {
       top: 360px;
-      transform: translateX(-50%) scale(5);
+      transform: translateX(-50%) scale(4);
     }
   }
 

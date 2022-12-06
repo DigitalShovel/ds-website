@@ -104,22 +104,6 @@
   }
 }
 
-.tooltip-flipped {
-  transform: scale(-1, 1) translate(-50%, -10em);
-}
-
-.tooltip-normal {
-  transform: translate(25%, -10em);
-}
-
-.tooltip-busway {
-  transform: translate(-30%, -10em);
-}
-
-.tooltip-busway-flipped {
-  transform: scale(-1, 1) translate(30%, -10em);
-}
-
 .tooltip {
   opacity: 0;
   visibility: hidden;
@@ -146,18 +130,29 @@
     position: relative;
     text-align: center;
   }
+
+  &-flipped {
+    transform: scale(-1, 1) translate(-50%, -10em);
+  }
+
+  &-normal {
+    transform: translate(25%, -10em);
+  }
+
+  &-busway {
+    transform: translate(-30%, -10em);
+  }
+
+  &-busway-flipped {
+    transform: scale(-1, 1) translate(30%, -10em);
+  }
 }
 
 /* Enables the buttons to add a rotation */
 
 .cameraRotate {
-  // &_left {
-  //   animation: sceneRotateX 8s -7.5s infinite linear paused;
-  // }
-
-  &_right {
-    animation: sceneRotateX 30s infinite linear reverse;
-  }
+  transform-origin: left;
+  animation: sceneRotateX 30s infinite linear reverse;
 
   @keyframes sceneRotateX {
     from {
@@ -573,98 +568,6 @@ i {
   background-image: radial-gradient(#0005, #0000 50%);
 }
 
-.scroll {
-  --scroll-position: 600px;
-
-  position: absolute;
-  left: 50%;
-  top: var(--scroll-position);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  gap: 0.3rem;
-  transform: translateX(-50%);
-
-  &__home {
-    @media (max-width: 992px) {
-      top: calc(var(--scroll-position) - 60px);
-    }
-
-    @media (max-width: 768px) {
-      top: calc(var(--scroll-position) + 220px);
-    }
-
-    @media (max-width: 450px) {
-      top: calc(var(--scroll-position) + 120px);
-    }
-
-    @media (max-width: 375px) {
-      top: calc(var(--scroll-position) + 80px);
-    }
-  }
-
-  &__product {
-    --scroll-position: 800px;
-
-    @media (max-width: 992px) {
-      top: calc(var(--scroll-position) - 160px);
-    }
-
-    @media (max-width: 568px) {
-      top: calc(var(--scroll-position) - 200px);
-    }
-
-    @media (max-width: 450px) {
-      top: calc(var(--scroll-position) - 160px);
-    }
-
-    @media (max-width: 375px) {
-      top: calc(var(--scroll-position) - 200px);
-    }
-  }
-
-  &__mouse {
-    position: relative;
-    width: 18px;
-    height: 30px;
-    border: 2px solid var(--blue-900);
-    border-radius: 100vh;
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 7px;
-      width: 2px;
-      background-color: var(--blue-900);
-      left: 50%;
-      top: 2px;
-      border-radius: 100vh;
-      transform: translateX(-50%);
-    }
-  }
-
-  &__text {
-    width: max-content;
-  }
-
-  &__arrow {
-    stroke: var(--blue-900);
-    transform: rotate(90deg);
-    animation: scrollArrow 500ms linear alternate infinite;
-  }
-}
-
-@keyframes scrollArrow {
-  from {
-    transform: rotate(90deg) translateX(0px);
-  }
-
-  to {
-    transform: rotate(90deg) translateX(5px);
-  }
-}
 
 @keyframes pulse {
   from {
