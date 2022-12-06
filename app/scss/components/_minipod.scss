@@ -613,11 +613,15 @@ i {
     }
 
     @media (max-width: 568px) {
-      top: calc(var(--scroll-position) - 220px);
+      top: calc(var(--scroll-position) - 200px);
+    }
+
+    @media (max-width: 450px) {
+      top: calc(var(--scroll-position) - 180px);
     }
 
     @media (max-width: 375px) {
-      top: calc(var(--scroll-position) - 260px);
+      top: calc(var(--scroll-position) - 200px);
     }
   }
 
