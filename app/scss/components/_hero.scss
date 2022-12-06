@@ -5,16 +5,16 @@
   }
 
   &__main {
-    padding: 7rem 2rem 12rem;
+    padding: 5rem 2rem 9rem;
 
     @media (max-width: 768px) {
-      padding: 12rem 2rem 30rem;
+      padding: 4rem 2rem 28rem;
       flex-direction: column;
     }
 
     @media (max-width: 450px) {
       gap: 2rem;
-      padding: 8rem 1rem 25rem;
+      padding: 4rem 1rem 25rem;
     }
   }
 
@@ -50,7 +50,7 @@
   &__text {
     position: relative;
 
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       align-items: center;
       text-align: center;
     }

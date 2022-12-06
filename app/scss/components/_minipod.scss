@@ -626,7 +626,7 @@ i {
 }
 
 .scroll {
-  --scroll-position: 800px;
+  --scroll-position: 600px;
 
   position: absolute;
   left: 50%;
@@ -640,16 +640,16 @@ i {
   transform: translateX(-50%);
 
   &__home {
+    @media (max-width: 992px) {
+      top: calc(var(--scroll-position) - 60px);
+    }
+
     @media (max-width: 768px) {
       top: calc(var(--scroll-position) + 220px);
     }
 
     @media (max-width: 450px) {
-      top: calc(var(--scroll-position) + 80px);
-    }
-
-    @media (max-width: 375px) {
-      top: calc(var(--scroll-position) + 40px);
+      top: calc(var(--scroll-position) + 180px);
     }
   }
 
