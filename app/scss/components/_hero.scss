@@ -7,19 +7,6 @@
     flex-direction: column;
   }
 
-  &::after {
-    position: absolute;
-    z-index: -2;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: 200px;
-
-    content: "";
-    background-color: var(--blue-100);
-    filter: blur(90px);
-  }
-
   &__main {
     padding: 3rem 2rem 4rem;
 
@@ -161,10 +148,7 @@
 
   &__heading {
     font-family: "Right Grotesk Wide Black", Inter, Roboto, sans-serif;
-    line-height: 1;
-    z-index: 9;
-    display: flex;
-    flex-direction: column;
+    line-height: 0.9;
     max-width: 13ch;
 
     emphasis {
@@ -189,6 +173,23 @@
 
     &--team {
       max-width: 45ch;
+    }
+  }
+
+  &__text {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 200px;
+
+      content: "";
+      background-color: var(--blue-100);
+      filter: blur(90px);
     }
   }
 
@@ -275,7 +276,6 @@
       background-color: var(--yellow-100);
     }
   }
-
 }
 
 .scroll {
