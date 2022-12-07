@@ -8,7 +8,7 @@
 .card-grid {
   display: grid;
   max-width: 1080px;
-  margin: -15vh auto 0;
+  margin: 9rem auto 0;
   padding: 1rem 2rem 7rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -16,10 +16,12 @@
   grid-row-gap: 30px;
 
   @media (max-width: 992px) {
+    margin: 3rem auto 0;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 768px) {
+    margin: 0 auto 0;
     grid-template-columns: repeat(1, 1fr);
   }
 }

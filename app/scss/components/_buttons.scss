@@ -71,7 +71,7 @@
     background-color: var(--blue-500);
 
     .btn__chevron path {
-      stroke: var(--blue-50);
+      stroke: #fff;
     }
   }
 
@@ -93,7 +93,7 @@
 
   &--white {
     color: var(--blue-500);
-    background-color: var(--blue-50);
+    background-color: #fff;
 
     .btn__chevron path {
       stroke: var(--blue-500);
