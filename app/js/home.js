@@ -14,7 +14,7 @@ function hideChatBubble() {
 
 let pauseBtn = document.querySelector(".btn__pause");
 let pausedPath = document.querySelector(".btn__pause > svg > path");
-let minipodRotation = document.querySelector(".cameraRotate");
+let minipodRotation = document.querySelector(".camera-rotate");
 
 pauseBtn.addEventListener("click", () => {
   minipodRotation.classList.toggle("paused");

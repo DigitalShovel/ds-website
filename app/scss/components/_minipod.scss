@@ -150,7 +150,7 @@
 
 /* Enables the buttons to add a rotation */
 
-.cameraRotate {
+.camera-rotate {
   transform-origin: left;
   animation: sceneRotateX 30s infinite linear reverse;
 
@@ -165,8 +165,8 @@
   }
 }
 
-#turnLeft:active ~ .cameraRotate_left,
-#turnRight:active ~ .cameraRotate_left .cameraRotate_right {
+#turnLeft:active ~ .camera-rotate_left,
+#turnRight:active ~ .camera-rotate_left .camera-rotate_right {
   animation-play-state: running;
 }
 
