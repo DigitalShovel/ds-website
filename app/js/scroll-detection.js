@@ -18,7 +18,8 @@ window.addEventListener("scroll", () => {
       pricingLink.classList.remove("subnav__link--active");
 
       productLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 1700) {
+    } else if (scrollY <= 1550) {
+      console.log("Scroll position: " + scrollY);
       productLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
       pricingLink.classList.remove("subnav__link--active");
@@ -50,13 +51,13 @@ window.addEventListener("scroll", () => {
       pricingLink.classList.remove("subnav__link--active");
 
       specsLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 3600) {
+    } else if (scrollY <= 3400) {
       productLink.classList.remove("subnav__link--active");
       specsLink.classList.remove("subnav__link--active");
       pricingLink.classList.remove("subnav__link--active");
 
       bundleLink.classList.add("subnav__link--active");
-    } else if (scrollY >= 3601) {
+    } else if (scrollY >= 3401) {
       productLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
       specsLink.classList.remove("subnav__link--active");
