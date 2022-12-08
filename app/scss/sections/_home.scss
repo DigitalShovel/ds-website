@@ -95,10 +95,6 @@
     }
 
     @media (max-width: 568px) {
-      height: 800px;
-    }
-
-    @media (max-width: 425px) {
       height: 1100px;
     }
   }
@@ -108,23 +104,23 @@
     max-width: 45ch;
     margin: 0 auto;
     padding: 0 2rem;
-    transform: translateY(110px);
+    transform: translateY(230px);
     justify-self: flex-end;
 
     @media (max-width: 992px) {
       min-width: 35ch;
       max-width: fit-content;
-      transform: translateY(90px);
+      transform: translateY(170px);
     }
 
     @media (max-width: 768px) {
       min-width: auto;
-      transform: translateY(70px);
+      transform: translateY(150px);
     }
 
     @media (max-width: 568px) {
       min-width: auto;
-      transform: translateY(60px);
+      transform: translateY(120px);
     }
   }
 
@@ -158,30 +154,60 @@
   }
 
   &__mockup {
-    min-width: 772px;
-    max-width: 1152px;
-    max-height: 772px;
-    transform: translateY(80px);
-    border-radius: 7px;
+    transform: translateY(200px);
     box-shadow: 0 4px 96px rgba(9, 38, 73, .25);
 
     @media (max-width: 992px) {
-      min-width: auto;
+      border-radius: 10px;
+      overflow: hidden;
       margin: 0 2rem;
-      transform: translateY(175px);
+      transform: translateY(225px);
     }
 
     @media (max-width: 768px) {
-      transform: translateY(135px);
+      transform: translateY(195px);
     }
 
     @media (max-width: 568px) {
-      min-width: auto;
-      transform: translateY(115px);
+      transform: translateY(165px);
     }
 
-    img {
-      border-radius: 7px;
+    &-img {
+      margin: 0;
+      width: 1152px;
+      height: 772px;
+      border-radius: 10px;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (max-width: 568px) {
+        width: auto;
+        height: 1586px;
+      }
+    }
+
+    &-img-control {
+      background-image: url("../../../images/illustrations/app-control.png");
+
+      @media (max-width: 568px) {
+        background-image: url("../../../images/illustrations/app-control-mobile.png");
+      }
+    }
+
+    &-img-monitor {
+      background-image: url("../../../images/illustrations/app-monitor.png");
+
+      @media (max-width: 568px) {
+        background-image: url("../../../images/illustrations/app-monitor-mobile.png");
+      }
+    }
+
+    &-img-alerts {
+      background-image: url("../../../images/illustrations/app-alerts.png");
+
+      @media (max-width: 568px) {
+        background-image: url("../../../images/illustrations/app-alerts-mobile.png");
+      }
     }
   }
 }
