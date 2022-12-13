@@ -121,37 +121,42 @@
     </section>
     <section class="form container">
       <form action="https://formspree.io/f/xbjbjwdz" method="POST" autocomplete="on" enctype="multipart/form-data">
-        <div class="fieldset flex flex-col">
+        <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Name">First Name</label>
           <input class="fieldset__text" type="text" id="input-name" name="Name" placeholder="John" autocomplete="on"
             required>
         </div>
-        <div class="fieldset flex flex-col">
+        <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Surname">Last Name</label>
           <input class="fieldset__text" type="text" id="input-surname" name="Surname" placeholder="Doe"
             autocomplete="on" required>
         </div>
-        <div class="fieldset flex flex-col">
+        <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Email">Email</label>
           <input class="fieldset__text" type="email" id="input-email" name="Email" placeholder="johndoe@example.com"
             autocomplete="on" required>
         </div>
-        <div class="fieldset flex flex-col">
+        <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Phone">Phone</label>
           <input class="fieldset__text" type="tel" id="input-phone" name="Phone" placeholder="+5 (555) 555 5555"
             autocomplete="on" required>
         </div>
-        <div class="fieldset flex flex-col">
+        <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Company">Company</label>
           <input class="fieldset__text" type="text" id="input-company" name="Company" placeholder="Digital Shovel"
             autocomplete="on" required>
         </div>
-        <div class="fieldset flex flex-col">
+        <div class="fieldset fieldset__1-col flex flex-col">
+          <label class="fieldset__label" for="Province">Province</label>
+          <input class="fieldset__select" type="text" id="input-province" name="Province" placeholder="ON"
+            autocomplete="on" required>
+        </div>
+        <div class="fieldset fieldset__2-col flex flex-col">
           <label class="fieldset__label" for="Country">Country</label>
           <input class="fieldset__select" type="text" id="input-country" name="Country" placeholder="Canada"
             autocomplete="on" required>
         </div>
-        <div class="fieldset fieldset__full-width flex flex-col">
+        <div class="fieldset fieldset__6-col flex flex-col">
           <label class="fieldset__label">Purpose of Contact</label>
           <div class="flex">
             <input type="radio" name="Purpose-of-Contact" id="Support" value="Support">
@@ -162,7 +167,7 @@
             <label class="fieldset__radio fieldset__radio--add-br-radius" for="Other">Other</label>
           </div>
         </div>
-        <div class="fieldset fieldset__full-width fieldset__order flex flex-col">
+        <div class="fieldset fieldset__6-col fieldset__order flex flex-col">
           <label class="fieldset__label" for="Project-Size">Project Size</label>
           <select class="fieldset__text" id="input-project-size" name="Project-Size" required>
             <option value="300-900kW">300 - 900 kW</option>
@@ -172,7 +177,7 @@
             <option value="50MW+">50 MW+</option>
           </select>
         </div>
-        <div class="fieldset fieldset__full-width fieldset__message flex flex-col">
+        <div class="fieldset fieldset__6-col fieldset__message flex flex-col">
           <label class="fieldset__label" for="Message">Message</label>
           <textarea class="fieldset__text" type="text" id="input-message" name="Message"
             placeholder="Tell us more about your project, business needs, and budget." required></textarea>

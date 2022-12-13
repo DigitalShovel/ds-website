@@ -1,7 +1,7 @@
 form {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   background-color: var(--blue-600);
   max-width: 600px;
@@ -100,6 +100,26 @@ textarea {
 .fieldset {
   position: relative;
 
+  &__1-col {
+    grid-column: span 1;
+  }
+
+  &__2-col {
+    grid-column: span 2;
+  }
+
+  &__3-col {
+    grid-column: span 3;
+  }
+
+  &__6-col {
+    grid-column: span 6;
+
+    @media (max-width: 568px) {
+      grid-column: 1;
+    }
+  }
+
   &__label {
     position: relative;
     font-size: 12px;
@@ -179,14 +199,6 @@ textarea {
   &__message {
     @media (max-width: 568px) {
       height: 150px;
-    }
-  }
-
-  &__full-width {
-    grid-column: 1/3;
-
-    @media (max-width: 568px) {
-      grid-column: 1;
     }
   }
 }
