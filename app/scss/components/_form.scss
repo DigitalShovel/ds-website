@@ -25,6 +25,14 @@ input[type="radio"] {
   &:checked + label {
     color: var(--blue-900);
     background-color: var(--blue-100);
+
+    &::after {
+      background-color: var(--blue-500);
+    }
+
+    &::before {
+      border: 1px solid var(--blue-gray-600);
+    }
   }
 
   &:focus + label {
@@ -58,6 +66,18 @@ label {
 select {
   height: 36px;
   padding-left: 7px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px var(--blue-100) inset !important;
 }
 
 input:focus,
@@ -100,6 +120,7 @@ textarea {
     border: 0;
     background-color: white;
     border-radius: 0 0 5px 5px;
+    font-family: Inter, sans-serif;
   }
 
   &__radio {
@@ -107,7 +128,7 @@ textarea {
     position: relative;
     width: 100%;
     padding: 0.5rem 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
     background-color: white;
     color: var(--blue-gray-400);
@@ -115,6 +136,31 @@ textarea {
     @media (max-width: 568px) {
       font-size: 0.8rem;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0);
+      border-radius: 50%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      border: 1px solid var(--blue-gray-200);
+      border-radius: 50%;
+    }
+
 
     &--add-border {
       border-right: 1px solid var(--blue-gray-50);

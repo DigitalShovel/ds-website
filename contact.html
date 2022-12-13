@@ -154,18 +154,23 @@
         <div class="fieldset fieldset__full-width flex flex-col">
           <label class="fieldset__label">Purpose of Contact</label>
           <div class="flex">
-            <input type="radio" name="Purpose-of-Contact" id="Message" value="Message">
-            <label class="fieldset__radio fieldset__radio--add-bl-radius" for="Message">Message</label>
-            <input type="radio" name="Purpose-of-Contact" id="Minipod-Order-Quantity" value="Minipod-Order-Quantity">
-            <label class="fieldset__radio fieldset__radio--add-border" for="Minipod-Order-Quantity">Order</label>
-            <input type="radio" name="Purpose-of-Contact" id="Message-and-Order" value="Message-and-Order">
-            <label class="fieldset__radio fieldset__radio--add-br-radius" for="Message-and-Order">Both</label>
+            <input type="radio" name="Purpose-of-Contact" id="Support" value="Support">
+            <label class="fieldset__radio fieldset__radio--add-bl-radius" for="Support">Support</label>
+            <input type="radio" name="Purpose-of-Contact" id="Sales" value="Sales">
+            <label class="fieldset__radio fieldset__radio--add-border" for="Sales">Sales</label>
+            <input type="radio" name="Purpose-of-Contact" id="Other" value="Other">
+            <label class="fieldset__radio fieldset__radio--add-br-radius" for="Other">Other</label>
           </div>
         </div>
         <div class="fieldset fieldset__full-width fieldset__order flex flex-col">
-          <label class="fieldset__label" for="Minipod-Order-Quantity">Minipod Order Quantity</label>
-          <input class="fieldset__text" type="number" id="input-order" name="Minipod-Order-Quantity" placeholder="2"
-            required>
+          <label class="fieldset__label" for="Project-Size">Project Size</label>
+          <select class="fieldset__text" id="input-project-size" name="Project-Size" required>
+            <option value="300-900kW">300 - 900 kW</option>
+            <option value="1-5MW">1 - 5 MW</option>
+            <option value="5-10MW">5 - 10 MW</option>
+            <option value="10-50MW">10 - 50 MW</option>
+            <option value="50MW+">50 MW+</option>
+          </select>
         </div>
         <div class="fieldset fieldset__full-width fieldset__message flex flex-col">
           <label class="fieldset__label" for="Message">Message</label>
