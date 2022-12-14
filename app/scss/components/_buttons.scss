@@ -113,10 +113,6 @@
     &:hover {
       background-color: var(--blue-300);
     }
-
-    @media (max-width: 568px) {
-      grid-column: 1;
-    }
   }
 
   &--as-c {

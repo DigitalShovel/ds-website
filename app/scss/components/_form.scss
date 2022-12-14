@@ -106,17 +106,25 @@ textarea {
 
   &__2-col {
     grid-column: span 2;
+
+    @media (max-width: 568px) {
+      grid-column: span 6;
+    }
   }
 
   &__3-col {
     grid-column: span 3;
+
+    @media (max-width: 568px) {
+      grid-column: span 6;
+    }
   }
 
   &__6-col {
     grid-column: span 6;
 
     @media (max-width: 568px) {
-      grid-column: 1;
+      grid-column: span 6;
     }
   }
 
@@ -157,28 +165,47 @@ textarea {
       font-size: 0.8rem;
     }
 
+    @media (max-width: 450px) {
+      font-size: 0.7rem;
+      padding-left: 0.5rem;
+    }
+
     &::after {
       content: "";
       position: absolute;
-      left: 10%;
+      left: 14px;
       top: 50%;
       transform: translateY(-50%);
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       background-color: rgba(255, 255, 255, 0);
-      border-radius: 50%;
+      border-radius: 2px;
+
+      @media (max-width: 450px) {
+        left: 9px;
+        width: 4px;
+        height: 4px;
+        border-radius: 1px;
+      }
     }
 
     &::before {
       content: "";
       position: absolute;
-      left: 8%;
+      left: 10px;
       top: 50%;
       transform: translateY(-50%);
       width: 16px;
       height: 16px;
       border: 1px solid var(--blue-gray-200);
-      border-radius: 50%;
+      border-radius: 4px;
+
+      @media (max-width: 450px) {
+        left: 6px;
+        width: 10px;
+        height: 10px;
+        border-radius: 3px;
+      }
     }
 
 
