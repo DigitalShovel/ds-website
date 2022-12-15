@@ -1,3 +1,5 @@
+@use "../base/breakpoints" as *;
+
 table {
   border-collapse: collapse;
 
@@ -32,7 +34,7 @@ table {
   box-shadow: 0px 48px 96px 0px hsla(213, 78%, 16%, 0.25);
 
   &__container {
-    @media (max-width: 1200px) {
+    @include breakpoint(sm-desktop) {
       position: relative;
       overflow-x: auto;
       overflow-y: hidden;
