@@ -13,7 +13,7 @@
     padding: 3rem 2rem;
   }
 
-  @media (max-width: 375px) {
+  @include breakpoint(sm-mobile) {
     padding: 3rem 1rem;
   }
 

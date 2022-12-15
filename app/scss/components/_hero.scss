@@ -123,7 +123,7 @@
       transform: scale(0.5) translateX(-50%);
     }
 
-    @media (max-width: 375px) {
+    @include breakpoint(sm-mobile) {
       transform: scale(0.4) translateX(-50%);
     }
 
@@ -311,7 +311,7 @@
       top: calc(var(--scroll-position) + 290px);
     }
 
-    @media (max-width: 375px) {
+    @include breakpoint(sm-mobile) {
       top: calc(var(--scroll-position) + 260px);
     }
   }
