@@ -18,7 +18,7 @@
       padding: 2rem 2rem 28rem;
     }
 
-    @media (max-width: 450px) {
+    @include breakpoint(md-mobile) {
       gap: 2rem;
       padding: 2rem 1rem 25rem;
     }
@@ -207,7 +207,7 @@
       transform: scale(0.8) translate(-65%, -325px);
     }
 
-    @media (max-width: 450px) {
+    @include breakpoint(md-mobile) {
       transform: scale(0.9) translate(-60%, -235px);
     }
   }
@@ -307,7 +307,7 @@
       top: calc(var(--scroll-position) + 330px);
     }
 
-    @media (max-width: 450px) {
+    @include breakpoint(md-mobile) {
       top: calc(var(--scroll-position) + 290px);
     }
 
@@ -327,7 +327,7 @@
       top: calc(var(--scroll-position) - 130px);
     }
 
-    @media (max-width: 450px) {
+    @include breakpoint(md-mobile) {
       top: calc(var(--scroll-position) - 150px);
     }
   }
