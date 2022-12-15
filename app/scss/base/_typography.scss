@@ -76,7 +76,7 @@ small {
     line-height: 1.1;
     letter-spacing: -1px;
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       text-align: center;
 
       &--col {
@@ -89,7 +89,7 @@ small {
     max-width: 45ch;
     color: var(--blue-gray-600);
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       max-width: 30ch;
     }
   }

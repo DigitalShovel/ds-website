@@ -14,7 +14,7 @@ form {
     margin: 0 auto;
   }
 
-  @media (max-width: 568px) {
+  @include breakpoint(sm-tablet) {
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
   }
@@ -110,7 +110,7 @@ textarea {
   &__2-col {
     grid-column: span 2;
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       grid-column: span 6;
     }
   }
@@ -118,7 +118,7 @@ textarea {
   &__3-col {
     grid-column: span 3;
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       grid-column: span 6;
     }
   }
@@ -126,7 +126,7 @@ textarea {
   &__6-col {
     grid-column: span 6;
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       grid-column: span 6;
     }
   }
@@ -163,7 +163,7 @@ textarea {
     background-color: white;
     color: var(--blue-gray-400);
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       font-size: 0.8rem;
     }
 
@@ -225,7 +225,7 @@ textarea {
   }
 
   &__message {
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       height: 150px;
     }
   }

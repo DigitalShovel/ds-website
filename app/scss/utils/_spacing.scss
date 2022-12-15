@@ -9,7 +9,7 @@
     padding: 4rem 2rem;
   }
 
-  @media (max-width: 568px) {
+  @include breakpoint(sm-tablet) {
     padding: 3rem 2rem;
   }
 

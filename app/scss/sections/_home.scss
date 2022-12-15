@@ -42,7 +42,7 @@
     color: var(--blue-gray-600);
     column-count: 2;
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       max-width: 45ch;
       column-count: 1;
     }
@@ -62,7 +62,7 @@
       clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
     }
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
     }
   }
@@ -94,7 +94,7 @@
       height: 900px;
     }
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       height: 1050px;
     }
   }
@@ -118,7 +118,7 @@
       transform: translateY(150px);
     }
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       min-width: auto;
       transform: translateY(120px);
     }
@@ -168,7 +168,7 @@
       transform: translateY(195px);
     }
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       transform: translateY(165px);
     }
 
@@ -180,7 +180,7 @@
       background-size: contain;
       background-repeat: no-repeat;
 
-      @media (max-width: 568px) {
+      @include breakpoint(sm-tablet) {
         width: auto;
         height: 1586px;
       }
@@ -189,7 +189,7 @@
     &-img-control {
       background-image: url("../../../images/illustrations/app-control.png");
 
-      @media (max-width: 568px) {
+      @include breakpoint(sm-tablet) {
         background-image: url("../../../images/illustrations/app-control-mobile.png");
       }
     }
@@ -197,7 +197,7 @@
     &-img-monitor {
       background-image: url("../../../images/illustrations/app-monitor.png");
 
-      @media (max-width: 568px) {
+      @include breakpoint(sm-tablet) {
         background-image: url("../../../images/illustrations/app-monitor-mobile.png");
       }
     }
@@ -205,7 +205,7 @@
     &-img-alerts {
       background-image: url("../../../images/illustrations/app-alerts.png");
 
-      @media (max-width: 568px) {
+      @include breakpoint(sm-tablet) {
         background-image: url("../../../images/illustrations/app-alerts-mobile.png");
       }
     }
@@ -236,7 +236,7 @@
     bottom: 3px;
     letter-spacing: -1.5px;
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       font-size: 1.953rem;
     }
 

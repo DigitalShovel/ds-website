@@ -58,7 +58,7 @@
       transform: translateX(-50%) scale(4);
     }
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       top: 360px;
       transform: translateX(-50%) scale(4);
     }

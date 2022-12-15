@@ -21,7 +21,7 @@
       flex-direction: column;
     }
 
-    @media (max-width: 568px) {
+    @include breakpoint(sm-tablet) {
       flex-direction: column;
     }
 
@@ -41,7 +41,7 @@
       filter: blur(80px);
       z-index: -1;
 
-      @media (max-width: 568px) {
+      @include breakpoint(sm-tablet) {
         width: 300px;
         height: 600px;
       }
