@@ -1,8 +1,10 @@
+@use "../base/breakpoints" as *;
+
 .faq {
   display: grid;
   grid-template-columns: 1fr 3fr;
 
-  @media (max-width: 992px) {
+  @include breakpoint(lg-tablet) {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
@@ -44,7 +46,8 @@
     }
   }
 
-  &__article {}
+  &__article {
+  }
 
   &__title {
     color: var(--blue-500);

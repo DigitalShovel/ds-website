@@ -58,7 +58,7 @@
   &--white {
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
     }
 
@@ -85,7 +85,7 @@
     margin: auto;
     grid-template-columns: 1fr auto;
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       height: 1000px;
       grid-template-columns: 1fr;
     }
@@ -107,7 +107,7 @@
     transform: translateY(230px);
     justify-self: flex-end;
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       min-width: 35ch;
       max-width: fit-content;
       transform: translateY(170px);
@@ -157,7 +157,7 @@
     transform: translateY(200px);
     box-shadow: 0 4px 96px rgba(9, 38, 73, 0.25);
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       border-radius: 10px;
       overflow: hidden;
       margin: 0 2rem;
@@ -338,7 +338,7 @@
     margin: -13.5rem auto 0;
     padding: 7rem 2rem;
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       margin: -12rem auto 0;
     }
   }
@@ -349,7 +349,7 @@
     border-radius: 20px;
     background-color: var(--blue-900);
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       padding: 2rem;
     }
 
@@ -385,7 +385,7 @@
       transition: transform 1s ease-out;
       color: var(--blue-500);
 
-      @media (max-width: 992px) {
+      @include breakpoint(lg-tablet) {
         font-size: 4.5rem;
       }
     }
@@ -404,7 +404,7 @@
       color: var(--blue-50);
       text-shadow: 0 0 6px hsla(213, 78%, 16%, 1), 0 4px 12px hsla(213, 78%, 16%, 1);
 
-      @media (max-width: 992px) {
+      @include breakpoint(lg-tablet) {
         font-size: 0.8rem;
       }
     }
@@ -418,7 +418,7 @@
 .income {
   overflow: hidden;
 
-  @media (max-width: 992px) {
+  @include breakpoint(lg-tablet) {
     position: relative;
     margin-top: -11rem;
     margin-bottom: 6rem;
@@ -435,7 +435,7 @@
     margin-bottom: -183px;
     transform: translateX(0.5rem);
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       left: 0;
       margin-bottom: -161px;
       transform: translateX(45px);
@@ -535,7 +535,7 @@
     margin-top: 17px;
     letter-spacing: -1.5px;
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       font-size: 2rem;
       margin-top: 25px;
     }

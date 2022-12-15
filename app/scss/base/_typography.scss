@@ -1,14 +1,17 @@
+@use "../base/breakpoints" as *;
+
 :root {
-  --primary-font: "Right Grotesk Wide Black", Inter, Roboto, sans-serif;
+  --heading-font: "Right Grotesk Wide Black", Inter, Roboto, sans-serif;
+  --body-font: Inter, Roboto, sans-serif;
 }
 
 h1 {
   font-size: 4.052rem;
   font-weight: 900;
   letter-spacing: -0.5px;
-  font-family: var(--primary-font);
+  font-family: var(--heading-font);
 
-  @media (max-width: 992px) {
+  @include breakpoint(lg-tablet) {
     font-size: 3.25rem;
   }
 

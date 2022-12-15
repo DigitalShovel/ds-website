@@ -1,3 +1,5 @@
+@use "../base/breakpoints" as *;
+
 .team {
   white-space: nowrap;
 
@@ -60,7 +62,6 @@
 
   &__list-member,
   &__list-member--open-position {
-
     // small dot next to each team member
     &::before {
       content: "";
@@ -207,7 +208,7 @@
     grid-template-rows: repeat(2, auto);
     gap: 1rem;
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       grid-template-columns: repeat(2, 1fr);
     }
 

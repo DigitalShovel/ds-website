@@ -1,3 +1,5 @@
+@use "../base/breakpoints" as *;
+
 form {
   position: relative;
   display: grid;
@@ -8,7 +10,7 @@ form {
   padding: 2rem;
   border-radius: 10px;
 
-  @media (max-width: 992px) {
+  @include breakpoint(lg-tablet) {
     margin: 0 auto;
   }
 
@@ -207,7 +209,6 @@ textarea {
         border-radius: 3px;
       }
     }
-
 
     &--add-border {
       border-right: 1px solid var(--blue-gray-50);

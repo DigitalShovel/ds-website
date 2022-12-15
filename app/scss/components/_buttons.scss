@@ -1,3 +1,5 @@
+@use "../base/breakpoints" as *;
+
 .btn-group {
   display: flex;
   gap: 1rem;
@@ -9,7 +11,7 @@
   padding: 7px 15px;
 
   cursor: pointer;
-  letter-spacing: -.1px;
+  letter-spacing: -0.1px;
   border-radius: 100vh;
 
   &:hover {
@@ -29,14 +31,14 @@
   }
 
   &__chevron {
-    margin-left: .3rem;
+    margin-left: 0.3rem;
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
   }
 
   &__navbar {
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       display: none;
     }
   }
@@ -52,7 +54,7 @@
     border: none;
     background-color: transparent;
 
-    @media (max-width: 992px) {
+    @include breakpoint(lg-tablet) {
       transform: translateX(-50%) scale(4);
     }
 
@@ -125,13 +127,13 @@
   }
 
   &--apply {
-    font-size: .7rem;
+    font-size: 0.7rem;
     display: flex;
     align-items: center;
     padding: 5px 6px 5px 9px;
 
     svg {
-      transform: scale(.8);
+      transform: scale(0.8);
     }
   }
 

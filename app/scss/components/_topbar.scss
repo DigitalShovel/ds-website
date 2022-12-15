@@ -1,10 +1,12 @@
+@use "../base/breakpoints" as *;
+
 .topbar {
   background: var(--blue-500);
   padding: 0.5rem;
   text-align: center;
 
   &__text {
-    font-family: "Right Grotesk Wide Black", Inter, Roboto, sans-serif;
+    font-family: var(--heading-font);
     color: var(--blue-50);
     font-size: 0.8rem;
     text-transform: uppercase;
