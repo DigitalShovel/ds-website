@@ -1,3 +1,5 @@
+@use "../base/breakpoints" as *;
+
 /**
  *
  * The .btc class below adds styling to the currently hidden section
@@ -47,13 +49,11 @@
   }
 }
 
-
 /* ==============================================
    MINER MANAGEMENT SOFTWARE APPLICATION SECTION
    ============================================== */
 
 .app {
-
   &--blue,
   &--white {
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
@@ -90,7 +90,7 @@
       grid-template-columns: 1fr;
     }
 
-    @media (max-width: 768px) {
+    @include breakpoint(md-tablet) {
       height: 900px;
     }
 
@@ -113,7 +113,7 @@
       transform: translateY(170px);
     }
 
-    @media (max-width: 768px) {
+    @include breakpoint(md-tablet) {
       min-width: auto;
       transform: translateY(150px);
     }
@@ -155,7 +155,7 @@
 
   &__mockup {
     transform: translateY(200px);
-    box-shadow: 0 4px 96px rgba(9, 38, 73, .25);
+    box-shadow: 0 4px 96px rgba(9, 38, 73, 0.25);
 
     @media (max-width: 992px) {
       border-radius: 10px;
@@ -164,7 +164,7 @@
       transform: translateY(225px);
     }
 
-    @media (max-width: 768px) {
+    @include breakpoint(md-tablet) {
       transform: translateY(195px);
     }
 
@@ -246,7 +246,7 @@
   }
 
   &__subheading {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     color: var(--blue-500);
   }
 
@@ -255,18 +255,18 @@
   }
 
   &__chat-bubble {
-    transition: all 600ms cubic-bezier(.17, .67, .75, 1.19);
+    transition: all 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
     transform: scale(0) rotate(-90deg);
     transform-origin: 50% 50%;
   }
 
   &__right-person {
-    transition: all 600ms cubic-bezier(.17, .67, .75, 1.19);
+    transition: all 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
     transform: translateX(10px);
   }
 
   &__left-person {
-    transition: all 600ms cubic-bezier(.17, .67, .75, 1.19);
+    transition: all 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
     transform: translateX(-10px);
   }
 
@@ -320,12 +320,11 @@
     &__subheading {
       font-size: 12px;
       font-weight: 400;
-      letter-spacing: .3px;
+      letter-spacing: 0.3px;
       color: var(--blue-200);
     }
   }
 }
-
 
 /* ==============================================
    COMPANY STATISTICS SECTION
@@ -354,7 +353,7 @@
       padding: 2rem;
     }
 
-    @media (max-width: 768px) {
+    @include breakpoint(md-tablet) {
       flex-direction: column;
       gap: 2rem;
       padding: 2rem 3rem;
@@ -362,12 +361,12 @@
 
     &:hover {
       .list-item__heading {
-        transition: transform 500ms cubic-bezier(.17, .67, .75, 1.19);
+        transition: transform 500ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
         transform: translateY(-10px);
       }
 
       .list-item__subheading {
-        transition: transform 500ms cubic-bezier(.17, .67, .75, 1.19);
+        transition: transform 500ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
         transform: translate(-50%, 25px);
       }
     }
@@ -392,7 +391,7 @@
     }
 
     &__subheading {
-      font-size: .9rem;
+      font-size: 0.9rem;
       font-weight: 500;
       position: absolute;
       top: 55%;
@@ -406,12 +405,11 @@
       text-shadow: 0 0 6px hsla(213, 78%, 16%, 1), 0 4px 12px hsla(213, 78%, 16%, 1);
 
       @media (max-width: 992px) {
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
     }
   }
 }
-
 
 /* ==============================================
    PASSIVE INCOME ILLUSTRATION SECTION
@@ -435,7 +433,7 @@
     position: relative;
     overflow: visible;
     margin-bottom: -183px;
-    transform: translateX(.5rem);
+    transform: translateX(0.5rem);
 
     @media (max-width: 992px) {
       left: 0;
@@ -472,7 +470,7 @@
     }
 
     &-text {
-      transition: transform 500ms cubic-bezier(.68, -.6, .32, 1.6);
+      transition: transform 500ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
   }
 
@@ -489,7 +487,7 @@
     }
 
     &-text {
-      transition: transform 500ms cubic-bezier(.68, -.6, .32, 1.6);
+      transition: transform 500ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
   }
 
@@ -521,7 +519,7 @@
 
     &-text,
     &-coin {
-      transition: transform 500ms cubic-bezier(.68, -.6, .32, 1.6);
+      transition: transform 500ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
   }
 

@@ -1,3 +1,5 @@
+@use "../base/breakpoints" as *;
+
 .flex {
   display: flex;
 }
@@ -7,7 +9,7 @@
 }
 
 .flex-col-mobile {
-  @media (max-width: 768px) {
+  @include breakpoint(md-tablet) {
     flex-direction: column;
   }
 }

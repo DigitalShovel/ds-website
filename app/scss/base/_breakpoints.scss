@@ -5,11 +5,17 @@ Current media query breakpoints in pixels:
 
 $breakpoints-down: (
   "sm-mobile": 23.438em,
+  //375px
   "md-mobile": 28.125em,
+  //450px
   "sm-tablet": 35.5em,
+  //568px
   "md-tablet": 48em,
+  //768px
   "lg-tablet": 62em,
+  //992px
   "sm-desktop": 75em,
+  //1200px
 );
 
 @mixin breakpoint($size) {
