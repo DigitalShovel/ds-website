@@ -317,7 +317,7 @@
   }
 
   &__product {
-    --scroll-position: 760px;
+    --scroll-position: 780px;
 
     @include breakpoint(lg-tablet) {
       top: calc(var(--scroll-position) - 160px);
