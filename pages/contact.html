@@ -26,12 +26,12 @@
   <!-- Javascript -->
   <script defer src="/app/js/contact.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
+  <script defer src="/app/js/detect-location.js"></script>
 
   <title>Digital Shovel - Contact Us</title>
 </head>
 
 <body>
-
   <header class="header">
 
     <div class="topbar">
@@ -72,7 +72,7 @@
                 </g>
               </svg>
             </a></li>
-          <li class="dropdown" onclick="">
+          <li class="dropdown">
             <span class="dropdown__title">Products
               <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +119,7 @@
         <h1>Contact <emphasis class="text--blue">Sales</emphasis>
         </h1>
         <div class="flex flex-col gap--sm">
-          <h3>Have a chat with our experts</h3>
+          <h2>Have a chat with our experts</h2>
           <p class="hero__body hero__body--team">
             Our sales team will guide you through your options based on your current and future investment goals.
           </p>
@@ -129,6 +129,7 @@
         <img src="../images/illustrations/contact-chat-bubbles.svg" alt="Chat Bubble Icons">
       </div>
     </section>
+
     <section class="form container">
       <form action="https://formspree.io/f/xbjbjwdz" method="POST" autocomplete="on" enctype="multipart/form-data">
         <div class="fieldset fieldset__3-col flex flex-col">
@@ -411,7 +412,8 @@
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Timezone">Timezone</label>
-          <select class="fieldset__select" id="timezone" name="Timezone" required>
+          <input class="fieldset__text" name="Timezone" type="text" id="Timezone">
+          <!-- <select class="fieldset__select" id="timezone" name="Timezone" required>
             <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
             <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
             <option value="-10:00">(GMT -10:00) Hawaii</option>
@@ -452,7 +454,7 @@
             <option value="+12:75">(GMT +12:45) Chatham Islands</option>
             <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
             <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
-          </select>
+          </select> -->
         </div>
         <div class="fieldset fieldset__6-col flex flex-col">
           <label class="fieldset__label">Purpose of Contact</label>
