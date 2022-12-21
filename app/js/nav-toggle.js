@@ -7,6 +7,7 @@ const html = document.querySelector("html");
 let pricingClass = document.querySelector(".subnav__link--pricing");
 let specsClass = document.querySelector(".subnav__link--specs");
 
+// toggles the navbar on tablet/mobile
 navToggle.addEventListener("click", () => {
   const visibility = navLinks.getAttribute("data-visible");
   const expanded = navToggle.getAttribute("aria-expanded");
@@ -28,6 +29,7 @@ navToggle.addEventListener("click", () => {
   }
 });
 
+// changes the name of the subnav links on mobile
 window.matchMedia("(max-width: 450px)").onchange = (e) => {
   if (e.matches) {
     specsClass.innerHTML = "Specs";

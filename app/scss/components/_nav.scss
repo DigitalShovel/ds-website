@@ -63,7 +63,6 @@
 
     @include breakpoint(lg-tablet) {
       position: absolute;
-      z-index: 1;
       z-index: 1000;
       top: 0;
       right: 0;
@@ -139,11 +138,37 @@
 
   .dropdown {
     position: relative;
-    padding: 10px 20px;
     cursor: pointer;
 
-    &:hover {
+    &[data-open="true"] {
+      .dropdown__title {
+        color: var(--blue-500);
+      }
+
+      .dropdown__chevron {
+        transform: rotate(90deg);
+        stroke: var(--blue-500);
+      }
+    }
+
+    &:hover .dropdown__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: max-content;
+    }
+
+    &:hover .dropdown__title {
       color: var(--blue-500);
+    }
+
+    &__button {
+      background: none;
+      border: none;
+      padding: .5rem 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--blue-900);
     }
 
     &__title {
@@ -152,7 +177,7 @@
 
     &__chevron {
       margin-left: 0.3rem;
-      transition: all 150ms ease-out;
+      transition: transform 200ms ease-out;
       transform-origin: 25% 50%;
       stroke: var(--blue-900);
       stroke-width: 2;
@@ -162,17 +187,7 @@
 
     &:hover .dropdown__chevron {
       transform: rotate(90deg);
-    }
-
-    &:hover .dropdown__chevron path {
       stroke: var(--blue-500);
-    }
-
-    &:hover .dropdown__menu {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      width: max-content;
     }
 
     &__menu {
@@ -186,6 +201,13 @@
       border-radius: 10px;
       background-color: white;
       box-shadow: 0 0 24px 0 hsla(213, 78%, 16%, 0.15);
+
+      &[aria-hidden="false"] {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: max-content;
+      }
 
       &::before {
         position: absolute;
@@ -201,7 +223,7 @@
       }
     }
 
-    &__link {
+    &__menu-item {
       display: flex;
       align-items: center;
       gap: 1rem;
