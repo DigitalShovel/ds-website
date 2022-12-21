@@ -134,27 +134,28 @@
       <form action="https://formspree.io/f/xbjbjwdz" method="POST" autocomplete="on" enctype="multipart/form-data">
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Full-Name">Full Name</label>
-          <input class="fieldset__text" type="text" id="input-full-name" name="Full-Name" placeholder="John Doe"
-            autocomplete="on" required="required">
+          <input class="fieldset__text" aria-label="Enter your full name" type="text" id="input-full-name"
+            name="Full-Name" placeholder="John Doe" autocomplete="on" required="required">
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Email">Email</label>
-          <input class="fieldset__text" type="email" id="input-email" name="Email" placeholder="johndoe@example.com"
-            autocomplete="on" required="required">
+          <input class="fieldset__text" aria-label="Enter your email" type="email" id="input-email" name="Email"
+            placeholder="johndoe@example.com" autocomplete="on" required="required">
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Phone">Phone</label>
-          <input class="fieldset__text" type="tel" id="input-phone" name="Phone" placeholder="+5 (555) 555 5555"
-            autocomplete="on" required="required">
+          <input class="fieldset__text" aria-label="Enter your phone number" type="tel" id="input-phone" name="Phone"
+            placeholder="+5 (555) 555 5555" autocomplete="on" required="required">
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Company">Company</label>
-          <input class="fieldset__text" type="text" id="input-company" name="Company" placeholder="Digital Shovel"
-            autocomplete="on" required="required">
+          <input class="fieldset__text" aria-label="Enter your company name" type="text" id="input-company"
+            name="Company" placeholder="Digital Shovel" autocomplete="on" required="required">
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Country">Country</label>
-          <select id="country" name="Country" class="fieldset__select" required="required">
+          <select id="country" name="Country" aria-label="Select your country" class="fieldset__select"
+            required="required">
             <option value="">Select One</option>
             <optgroup label="Most Commonly Selected">
               <option value="Canada">Canada</option>
@@ -412,7 +413,7 @@
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Timezone">Timezone</label>
-          <input class="fieldset__text" name="Timezone" type="text" id="Timezone">
+          <input class="fieldset__text" aria-label="Enter your timezone" name="Timezone" type="text" id="Timezone">
           <!-- <select class="fieldset__select" id="timezone" name="Timezone" required="required">
             <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
             <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
@@ -459,17 +460,19 @@
         <div class="fieldset fieldset__6-col flex flex-col">
           <label class="fieldset__label">Purpose of Contact</label>
           <div class="flex">
-            <input type="radio" name="Purpose-of-Contact" id="Support" value="Support" required="required">
+            <input type="radio" aria-label="Contact Support" name="Purpose-of-Contact" id="Support" value="Support"
+              required="required">
             <label class="fieldset__radio fieldset__radio--add-bl-radius" for="Support">Support</label>
-            <input type="radio" name="Purpose-of-Contact" id="Sales" value="Sales">
+            <input type="radio" aria-label="Contact Sales" name="Purpose-of-Contact" id="Sales" value="Sales">
             <label class="fieldset__radio fieldset__radio--add-border" for="Sales">Sales</label>
-            <input type="radio" name="Purpose-of-Contact" id="Other" value="Other">
+            <input type="radio" aria-label="Other Reason of Contact" name="Purpose-of-Contact" id="Other" value="Other">
             <label class="fieldset__radio fieldset__radio--add-br-radius" for="Other">Other</label>
           </div>
         </div>
         <div class="fieldset fieldset__6-col fieldset__order flex flex-col">
           <label class="fieldset__label" for="Project-Size">Project Size</label>
-          <select class="fieldset__select" id="input-project-size" name="Project-Size" required="required">
+          <select class="fieldset__select" aria-label="Select your project size" id="input-project-size"
+            name="Project-Size" required="required">
             <option value="">Select One</option>
             <option value="300-900kW">300 - 900 kW</option>
             <option value="1-5MW">1 - 5 MW</option>
@@ -480,11 +483,11 @@
         </div>
         <div class="fieldset fieldset__6-col fieldset__message flex flex-col">
           <label class="fieldset__label" for="Message">Message</label>
-          <textarea class="fieldset__text" type="text" id="input-message" name="Message"
+          <textarea class="fieldset__text" aria-label="Enter a message" type="text" id="input-message" name="Message"
             placeholder="Tell us more about your project, business needs, and budget." required="required"></textarea>
         </div>
         <input type="hidden" name="_next" value="https://digitalshovel.com/thanks.html">
-        <input class="btn btn--primary btn--form" type="submit">
+        <input aria-label="Submit Button" class="btn btn--primary btn--form" type="submit">
       </form>
     </section>
   </main>
