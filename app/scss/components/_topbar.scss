@@ -2,12 +2,7 @@
 
 .topbar {
   padding: 0.5rem;
-
   background: var(--red-500);
-  svg {
-    width: 12px;
-    height: 12px;
-  }
 
   &__text {
     display: flex;
@@ -20,5 +15,19 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: var(--red-50);
+  }
+
+  &__checkmark {
+    width: 12px;
+    height: 12px;
+
+    circle {
+      fill: var(--red-50);
+    }
+
+    path {
+      stroke: var(--red-500);
+      stroke-width: 4px;
+    }
   }
 }

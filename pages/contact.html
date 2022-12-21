@@ -36,10 +36,10 @@
 
     <div class="topbar">
       <span class="topbar__text">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="16" cy="16" r="16" fill="var(--red-100)" />
-          <path d="M22.2225 10.6665L12.4447 22.2221L8.88916 18.6665" stroke="var(--red-500)" stroke-width="3.55556"
-            stroke-linecap="round" stroke-linejoin="round" />
+        <svg class="topbar__checkmark" width="32" height="32" viewBox="0 0 32 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="16" />
+          <path d="M22.2225 10.6665L12.4447 22.2221L8.88916 18.6665" />
         </svg>
         units available in Canada ready to be shipped</span>
     </div>
@@ -135,26 +135,26 @@
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Full-Name">Full Name</label>
           <input class="fieldset__text" type="text" id="input-full-name" name="Full-Name" placeholder="John Doe"
-            autocomplete="on" required>
+            autocomplete="on" required="required">
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Email">Email</label>
           <input class="fieldset__text" type="email" id="input-email" name="Email" placeholder="johndoe@example.com"
-            autocomplete="on" required>
+            autocomplete="on" required="required">
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Phone">Phone</label>
           <input class="fieldset__text" type="tel" id="input-phone" name="Phone" placeholder="+5 (555) 555 5555"
-            autocomplete="on" required>
+            autocomplete="on" required="required">
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Company">Company</label>
           <input class="fieldset__text" type="text" id="input-company" name="Company" placeholder="Digital Shovel"
-            autocomplete="on" required>
+            autocomplete="on" required="required">
         </div>
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Country">Country</label>
-          <select id="country" name="Country" class="fieldset__select" required>
+          <select id="country" name="Country" class="fieldset__select" required="required">
             <option value="">Select One</option>
             <optgroup label="Most Commonly Selected">
               <option value="Canada">Canada</option>
@@ -413,7 +413,7 @@
         <div class="fieldset fieldset__3-col flex flex-col">
           <label class="fieldset__label" for="Timezone">Timezone</label>
           <input class="fieldset__text" name="Timezone" type="text" id="Timezone">
-          <!-- <select class="fieldset__select" id="timezone" name="Timezone" required>
+          <!-- <select class="fieldset__select" id="timezone" name="Timezone" required="required">
             <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
             <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
             <option value="-10:00">(GMT -10:00) Hawaii</option>
@@ -459,7 +459,7 @@
         <div class="fieldset fieldset__6-col flex flex-col">
           <label class="fieldset__label">Purpose of Contact</label>
           <div class="flex">
-            <input type="radio" name="Purpose-of-Contact" id="Support" value="Support" required>
+            <input type="radio" name="Purpose-of-Contact" id="Support" value="Support" required="required">
             <label class="fieldset__radio fieldset__radio--add-bl-radius" for="Support">Support</label>
             <input type="radio" name="Purpose-of-Contact" id="Sales" value="Sales">
             <label class="fieldset__radio fieldset__radio--add-border" for="Sales">Sales</label>
@@ -469,7 +469,7 @@
         </div>
         <div class="fieldset fieldset__6-col fieldset__order flex flex-col">
           <label class="fieldset__label" for="Project-Size">Project Size</label>
-          <select class="fieldset__select" id="input-project-size" name="Project-Size" required>
+          <select class="fieldset__select" id="input-project-size" name="Project-Size" required="required">
             <option value="">Select One</option>
             <option value="300-900kW">300 - 900 kW</option>
             <option value="1-5MW">1 - 5 MW</option>
@@ -481,7 +481,7 @@
         <div class="fieldset fieldset__6-col fieldset__message flex flex-col">
           <label class="fieldset__label" for="Message">Message</label>
           <textarea class="fieldset__text" type="text" id="input-message" name="Message"
-            placeholder="Tell us more about your project, business needs, and budget." required></textarea>
+            placeholder="Tell us more about your project, business needs, and budget." required="required"></textarea>
         </div>
         <input type="hidden" name="_next" value="https://digitalshovel.com/thanks.html">
         <input class="btn btn--primary btn--form" type="submit">
@@ -493,7 +493,7 @@
     <div class="container footer__container">
       <div class="flex flex-col-mobile jc-sb gap--xlg">
         <div class="footer__column">
-          <a href="index.html"><img class="footer__logo" src="../images/icons/icon_logo-white.svg"
+          <a href="../index.html"><img class="footer__logo" src="../images/icons/icon_logo-white.svg"
               alt="Digital Shovel Logo" /></a>
           <p class="footer__body">
             Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy
