@@ -10,17 +10,14 @@
   }
 
   &__main {
-    padding: 3rem 2rem 4rem;
-
     @include breakpoint(md-tablet) {
       flex-direction: column;
-
-      padding: 2rem 2rem 28rem;
+      padding: 4rem 2rem 28rem;
     }
 
     @include breakpoint(md-mobile) {
       gap: 2rem;
-      padding: 2rem 1rem 25rem;
+      padding: 4rem 1rem 25rem;
     }
   }
 
@@ -291,6 +288,8 @@
   flex-direction: column;
   align-items: center;
   width: fit-content;
+  font-size: 0.8rem;
+  color: var(--blue-gray-500);
   gap: 0.3rem;
   transform: translateX(-50%);
 
@@ -304,15 +303,15 @@
     }
 
     @include breakpoint(sm-tablet) {
-      top: calc(var(--scroll-position) + 330px);
+      top: calc(var(--scroll-position) + 350px);
     }
 
     @include breakpoint(md-mobile) {
-      top: calc(var(--scroll-position) + 290px);
+      top: calc(var(--scroll-position) + 310px);
     }
 
     @include breakpoint(sm-mobile) {
-      top: calc(var(--scroll-position) + 260px);
+      top: calc(var(--scroll-position) + 290px);
     }
   }
 
