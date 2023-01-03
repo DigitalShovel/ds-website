@@ -98,7 +98,7 @@ textarea:focus {
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--blue-gray-600);
+  color: var(--blue-gray-400);
   font-size: 0.8rem;
 }
 
@@ -188,13 +188,13 @@ textarea {
       width: 8px;
       height: 8px;
       background-color: rgba(255, 255, 255, 0);
-      border-radius: 2px;
+      border-radius: 100vh;
 
       @include breakpoint(md-mobile) {
         left: 12px;
         width: 4px;
         height: 4px;
-        border-radius: 1px;
+        border-radius: 100vh;
       }
     }
 
@@ -207,13 +207,13 @@ textarea {
       width: 16px;
       height: 16px;
       border: 1px solid var(--blue-gray-200);
-      border-radius: 4px;
+      border-radius: 100vh;
 
       @include breakpoint(md-mobile) {
         left: 9px;
         width: 10px;
         height: 10px;
-        border-radius: 3px;
+        border-radius: 100vh;
       }
     }
 
