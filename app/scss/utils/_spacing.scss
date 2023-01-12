@@ -17,9 +17,11 @@
     padding: 3rem 1rem;
   }
 
+  &--md {
+    padding: 2rem;
+  }
+
   &--sm {
-    max-width: 1080px;
-    margin: 0 auto;
     padding: 0 2rem;
   }
 }
@@ -28,15 +30,19 @@
   &--sm {
     margin-top: 0.5rem;
   }
+
   &--md {
     margin-top: 1rem;
   }
+
   &--lg {
     margin-top: 2rem;
   }
+
   &--xl {
     margin-top: 3rem;
   }
+
   &--xxl {
     margin-top: 4rem;
   }
@@ -46,15 +52,19 @@
   &--sm {
     margin-bottom: 0.5rem;
   }
+
   &--md {
     margin-bottom: 1rem;
   }
+
   &--lg {
     margin-bottom: 2rem;
   }
+
   &--xl {
     margin-bottom: 3rem;
   }
+
   &--xxl {
     margin-bottom: 4rem;
   }

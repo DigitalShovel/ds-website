@@ -275,6 +275,30 @@
       background-color: var(--yellow-100);
     }
   }
+
+  &__partnership {
+    background-image: url("../../../images/illustrations/bg-vosk.svg");
+    background-position: 55.5% 20%;
+    background-repeat: no-repeat;
+
+    @include breakpoint(lg-tablet) {
+      background-position: 52.5% 23%;
+    }
+
+    @include breakpoint(sm-tablet) {
+      background-position: 50.5% 26%;
+    }
+
+
+    h1 {
+      font-family: "Right Grotesk Spatial Fine", Inter, Roboto, sans-serif;
+      font-size: 1.25rem;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+  }
 }
 
 .scroll {

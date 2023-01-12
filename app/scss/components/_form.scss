@@ -56,6 +56,10 @@ label {
   &__container {
     max-width: 590px;
   }
+
+  &__vosk {
+    padding: 0;
+  }
 }
 
 .fieldset__order,
@@ -228,6 +232,10 @@ textarea {
 
     &--add-bl-radius {
       border-radius: 0 0 0 5px;
+    }
+
+    &--add-bottom-radius {
+      border-radius: 0 0 5px 5px;
     }
   }
 

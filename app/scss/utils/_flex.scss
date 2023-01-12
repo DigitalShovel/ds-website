@@ -9,6 +9,12 @@
 }
 
 .flex-col-mobile {
+  @include breakpoint(lg-tablet) {
+    flex-direction: column;
+  }
+}
+
+.flex-col-tablet {
   @include breakpoint(md-tablet) {
     flex-direction: column;
   }
