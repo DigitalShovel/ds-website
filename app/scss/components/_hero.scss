@@ -285,7 +285,7 @@
       background-position: 52.5% 23%;
     }
 
-    @include breakpoint(sm-tablet) {
+    @include breakpoint(md-mobile) {
       background-position: 50.5% 26%;
     }
 

@@ -235,7 +235,7 @@
       flex-direction: column;
     }
 
-    &--image {
+    &--logo {
       line-height: 0;
 
       width: 44px;
@@ -269,6 +269,10 @@
         content: "";
         background-image: url("../../../images/icons/icon_redirect.svg");
         background-repeat: no-repeat;
+
+        @include breakpoint(md-mobile) {
+          bottom: 1px;
+        }
       }
     }
 
