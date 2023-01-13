@@ -230,8 +230,7 @@
     border-radius: 10px;
     background-color: var(--warm-gray-900);
 
-    @include breakpoint(lg-tablet) {
-      align-self: center;
+    @include breakpoint(md-mobile) {
       flex-direction: column;
     }
 
@@ -251,8 +250,13 @@
     h2 {
       font-size: 1rem;
       font-weight: 600;
+      line-height: 1;
       margin-bottom: -.1rem;
       color: white;
+
+      @include breakpoint(lg-tablet) {
+        margin-bottom: 0.1rem;
+      }
     }
 
     h3 {

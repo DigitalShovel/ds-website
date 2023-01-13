@@ -8,6 +8,12 @@
   flex-direction: column;
 }
 
+.flex-row-desktop {
+  @include breakpoint(lg-tablet) {
+    flex-direction: row;
+  }
+}
+
 .flex-col-mobile {
   @include breakpoint(lg-tablet) {
     flex-direction: column;

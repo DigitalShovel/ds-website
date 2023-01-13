@@ -1,3 +1,5 @@
+@use "../base/breakpoints" as *;
+
 .promotion {
   &__text {
     font-size: 0.8rem;
