@@ -303,6 +303,14 @@
       text-align: center;
     }
   }
+
+  &__turnkey {
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: var(--blue-gray-500);
+    }
+  }
 }
 
 .scroll {

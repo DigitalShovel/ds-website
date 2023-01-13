@@ -41,3 +41,25 @@
   /* Safari, Android, iOS */
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Right Grotesk Medium";
+  src: url("../../../fonts/PPRightGrotesk-Medium.woff2") format("woff2"),
+    /* Super Modern Browsers */
+    url("../../../fonts/PPRightGrotesk-Medium.woff") format("woff"),
+    /* Pretty Modern Browsers */
+    url("../../../fonts/PPRightGrotesk-Medium.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Right Grotesk Compact Black";
+  src: url("../../../fonts/PPRightGrotesk-CompactBlack.woff2") format("woff2"),
+    /* Super Modern Browsers */
+    url("../../../fonts/PPRightGrotesk-CompactBlack.woff") format("woff"),
+    /* Pretty Modern Browsers */
+    url("../../../fonts/PPRightGrotesk-CompactBlack.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-display: swap;
+}
