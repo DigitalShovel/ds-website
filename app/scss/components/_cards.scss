@@ -235,6 +235,12 @@
       flex-direction: column;
     }
 
+    &--link:hover {
+      h3 {
+        color: #fff;
+      }
+    }
+
     &--logo {
       line-height: 0;
 
@@ -252,6 +258,8 @@
     h3 {
       font-size: .7rem;
       font-weight: 300;
+      transition: color 150ms ease-in;
+
 
       position: relative;
       letter-spacing: .1px;
