@@ -3,16 +3,54 @@
 .turnkey {
   background-image: url("../../../images/backgrounds/bg-turnkey.svg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+  background-position: center 20%;
+  background-size: 1000px;
+
+  @include breakpoint(lg-tablet) {
+    background-position: center 15%;
+    background-size: 900px;
+  }
+
+  &__header {
+    @include breakpoint(lg-tablet) {
+      text-align: center;
+    }
+
+    h1 {
+      line-height: 0.9;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: var(--blue-gray-500);
+
+      @include breakpoint(lg-tablet) {
+        font-size: 1rem;
+      }
+
+      @include breakpoint(sm-tablet) {
+        font-size: .8rem;
+      }
+    }
+  }
 
   &__mining {
     line-height: .9;
+
+    @include breakpoint(lg-tablet) {
+      text-align: center;
+    }
 
     h2 {
       font-family: var(--medium-font);
       font-size: 2rem;
       letter-spacing: -.5px;
+
+      @include breakpoint(sm-tablet) {
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+      }
     }
 
     h3 {
@@ -21,6 +59,15 @@
       letter-spacing: -4px;
       text-transform: uppercase;
       color: var(--blue-500);
+
+      @include breakpoint(md-tablet) {
+        font-size: 7rem;
+      }
+
+      @include breakpoint(sm-tablet) {
+        font-size: 5rem;
+        letter-spacing: -3px;
+      }
     }
   }
 
@@ -37,6 +84,14 @@
 
     img {
       width: 60px;
+
+      @include breakpoint(sm-tablet) {
+        width: 50px;
+      }
+
+      @include breakpoint(sm-mobile) {
+        width: 40px;
+      }
     }
 
     h4 {
@@ -44,10 +99,26 @@
       font-size: 3rem;
       line-height: 1;
       letter-spacing: 1px;
+
+      @include breakpoint(sm-tablet) {
+        font-size: 2rem;
+      }
+
+      @include breakpoint(sm-mobile) {
+        font-size: 1.5rem;
+      }
     }
 
     small {
       font-size: 1rem;
+
+      @include breakpoint(sm-tablet) {
+        font-size: 0.8rem;
+      }
+
+      @include breakpoint(sm-mobile) {
+        font-size: 0.7rem;
+      }
     }
 
     span {
@@ -55,6 +126,16 @@
       margin-left: .2rem;
       letter-spacing: 1px;
       text-transform: uppercase;
+
+      @include breakpoint(sm-tablet) {
+        font-size: 0.8rem;
+      }
+
+      @include breakpoint(sm-mobile) {
+        letter-spacing: .5px;
+        font-family: var(--medium-wide-font);
+        font-size: 0.6rem;
+      }
     }
   }
 
@@ -97,6 +178,12 @@
     border-radius: 10px;
     background-color: var(--blue-gray-50);
 
+    h5 {
+      @include breakpoint(lg-tablet) {
+        text-align: center;
+      }
+    }
+
     h2 {
       font-size: 5rem;
       font-weight: 900;
@@ -105,11 +192,16 @@
       letter-spacing: -.5px;
 
       color: var(--blue-500);
+
+      @include breakpoint(sm-tablet) {
+        font-size: 3rem;
+      }
     }
   }
 
   &__cta {
     margin-top: 2rem;
+    text-align: center;
 
     h3 {
       margin-top: 2rem;
@@ -119,18 +211,6 @@
       text-transform: uppercase;
 
       color: var(--blue-500);
-
-      &::after {
-        position: absolute;
-        z-index: -1;
-        bottom: 3px;
-        display: block;
-        width: 100%;
-        height: 12px;
-
-        content: "";
-        background-color: var(--blue-50);
-      }
     }
 
     h4 {
