@@ -146,7 +146,11 @@
     grid-gap: 1rem;
 
     @include breakpoint(lg-tablet) {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(sm-tablet) {
+      grid-template-columns: repeat(1, 1fr);
     }
 
     &-item {
