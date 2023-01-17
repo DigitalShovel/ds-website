@@ -31,5 +31,6 @@
     "tortor",
     "Vosk",
     "voskcoin"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
