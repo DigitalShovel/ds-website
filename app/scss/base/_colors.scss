@@ -83,6 +83,17 @@
 
   --shadow-color: 214deg 37% 59%;
 
+  --shadow-elevation-low:
+    0px 0.5px 0.6px hsl(var(--shadow-color) / 0.34),
+    0px 0.7px 0.8px -1.2px hsl(var(--shadow-color) / 0.34),
+    0px 1.8px 2px -2.5px hsl(var(--shadow-color) / 0.34);
+
+  --shadow-elevation-medium:
+    0px 0.5px 0.6px hsl(var(--shadow-color) / 0.36),
+    0px 1.5px 1.7px -0.8px hsl(var(--shadow-color) / 0.36),
+    0px 3.7px 4.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    0.1px 9px 10.1px -2.5px hsl(var(--shadow-color) / 0.36);
+
   --shadow-elevation-high:
     0px 0.3px 0.2px hsl(var(--shadow-color) / 0.64),
     0px 0.4px 0.3px -0.7px hsl(var(--shadow-color) / 0.56),

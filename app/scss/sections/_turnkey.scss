@@ -162,11 +162,12 @@
     align-self: center;
     gap: 1rem;
     padding: 1rem;
-    border: 1px solid var(--blue-gray-300);
+    border: 1px solid var(--blue-gray-200);
     border-radius: 10px;
     background-color: var(--blue-gray-50);
-    box-shadow: var(--shadow-elevation-high);
+    box-shadow: var(--shadow-elevation-medium);
     animation: float 5s infinite forwards;
+    cursor: default;
 
     @keyframes float {
       0% {
