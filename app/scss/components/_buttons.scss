@@ -71,6 +71,11 @@
   &--primary {
     color: #fff;
     background-color: var(--blue-500);
+    transition: background-color 150ms ease-out;
+
+    &:hover {
+      background-color: var(--blue-600);
+    }
 
     .btn__chevron path {
       stroke: #fff;
@@ -96,6 +101,10 @@
   &--white {
     color: var(--blue-500);
     background-color: #fff;
+
+    &:hover {
+      background-color: var(--blue-gray-50);
+    }
 
     .btn__chevron path {
       stroke: var(--blue-500);

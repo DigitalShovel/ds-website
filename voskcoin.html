@@ -143,6 +143,45 @@
 
   <main class="main container container--sm">
 
+    <div class="animation">
+      <div class="animation__container">
+        <div class="ripple-1"></div>
+        <div class="ripple-2"></div>
+        <div class="ripple-3"></div>
+        <div class="ripple-4"></div>
+        <div class="ripple-5"></div>
+        <div class="ripple-6"></div>
+
+        <svg version="1.1" width="800px" height="800px" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+          viewBox="0 0 800 800">
+          <defs>
+            <filter id="mask-filter" filterUnits="userSpaceOnUse" x="0" y="-.5" width="801" height="801">
+              <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+            </filter>
+          </defs>
+          <mask maskUnits="userSpaceOnUse" x="0" y="-.5" width="801" height="801" id="radial-gradient-mask">
+            <g style="filter:url(#mask-filter)">
+              <radialGradient id="radial-gradient" cx="400" cy="400" r="400" gradientUnits="userSpaceOnUse">
+                <stop offset="0" style="stop-color:#fff" />
+                <stop offset=".9" style="stop-color:#000" />
+              </radialGradient>
+              <path style="fill:url(#radial-gradient)" d="M0 0h800v800H0z" />
+            </g>
+          </mask>
+          <g style="mask:url(#radial-gradient-mask)">
+            <g id="vertical">
+              <path class="grid-lines"
+                d="M.5 0v800M40.5 0v800M80.5 0v800M120.5 0v800M160.5 0v800M200.5 0v800M240.5 0v800M280.5 0v800M320.5 0v800M360.5 0v800M400.5 0v800M440.5 0v800M480.5 0v800M520.5 0v800M560.5 0v800M600.5 0v800M640.5 0v800M680.5 0v800M720.5 0v800M760.5 0v800M800.5 0v800" />
+            </g>
+            <g id="horizontal">
+              <path class="grid-lines"
+                d="M800.5 0H.5M800.5 40H.5M800.5 80H.5M800.5 120H.5M800.5 160H.5M800.5 200H.5M800.5 240H.5M800.5 280H.5M800.5 320H.5M800.5 360H.5M800.5 400H.5M800.5 440H.5M800.5 480H.5M800.5 520H.5M800.5 560H.5M800.5 600H.5M800.5 640H.5M800.5 680H.5M800.5 720H.5M800.5 760H.5M800.5 800H.5" />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
     <section class="hero hero__partnership container flex flex-col jc-sb">
       <h1>Partnership</h1>
       <img src="images/illustrations/ds-X-vosk.svg" alt="Partnership Digital Shovel X VoskCoin" />
