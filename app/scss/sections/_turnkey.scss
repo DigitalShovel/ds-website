@@ -16,6 +16,14 @@
       top: -70px;
       left: 50%;
       transform: translateX(-50%);
+
+      @include breakpoint(md-tablet) {
+        transform: translateX(-60%);
+      }
+
+      @include breakpoint(sm-tablet) {
+        transform: translateX(-100%);
+      }
     }
 
     .grid-lines {
