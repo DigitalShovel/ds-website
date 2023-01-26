@@ -96,6 +96,24 @@
       }
     }
 
+    &-10 {
+      margin-top: -8rem;
+      pointer-events: none;
+
+      @include breakpoint(lg-tablet) {
+        margin-top: 0;
+      }
+
+      .minipod__set-img {
+        transform: scaleX(-1);
+        width: 120%;
+
+        @include breakpoint(lg-tablet) {
+          width: auto;
+        }
+      }
+    }
+
     &-detail {
       width: 330px;
     }
@@ -200,6 +218,7 @@ i {
 }
 
 .spine {
+
   .side-1,
   .side-2,
   .side-3,
