@@ -339,7 +339,7 @@
     }
 
     @include breakpoint(sm-mobile) {
-      top: calc(var(--scroll-position) + 290px);
+      top: calc(var(--scroll-position) + 260px);
     }
   }
 

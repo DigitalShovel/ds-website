@@ -15,6 +15,14 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: var(--red-50);
+
+    @include breakpoint(md-mobile) {
+      font-size: 0.7rem;
+    }
+
+    @include breakpoint(sm-mobile) {
+      font-size: 0.6rem;
+    }
   }
 
   &__checkmark {
