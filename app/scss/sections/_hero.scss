@@ -4,6 +4,7 @@
   display: flex;
   gap: 2rem;
   position: relative;
+  overflow: hidden;
 
   @include breakpoint(md-tablet) {
     flex-direction: column;
