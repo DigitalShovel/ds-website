@@ -1,13 +1,13 @@
 @use "../base/breakpoints" as *;
 
 .hero {
+  position: relative;
   display: flex;
   gap: 2rem;
-  position: relative;
-  overflow: hidden;
 
   @include breakpoint(md-tablet) {
     flex-direction: column;
+    overflow: hidden;
   }
 
   &__main {
@@ -45,8 +45,8 @@
     align-items: flex-end;
 
     @include breakpoint(md-tablet) {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       text-align: center;
     }
   }
@@ -80,9 +80,9 @@
 
   &__minipod-container {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 300px;
   }
 
@@ -90,50 +90,48 @@
     position: absolute;
     top: 9rem;
     left: 50%;
-
     height: 0;
     margin: 0 auto;
     padding: 0;
-    transform: scale(0.6) translateX(-50%);
+    transform: scale(.6) translateX(-50%);
     perspective: 1000px;
     --fan-tx: -175%;
+
+    @include breakpoint(lg-tablet) {
+      top: 5rem;
+      transform: scale(.45) translateX(-50%);
+    }
+
+    @include breakpoint(md-tablet) {
+      top: 15rem;
+      transform: scale(.5) translateX(-50%);
+    }
+
+    @include breakpoint(sm-tablet) {
+      transform: scale(.5) translateX(-50%);
+    }
+
+    @include breakpoint(sm-tablet) {
+      top: 17rem;
+      transform: scale(.5) translateX(-50%);
+    }
+
+    @include breakpoint(sm-mobile) {
+      transform: scale(.4) translateX(-50%);
+    }
 
     *:not(:empty) {
       transform-style: preserve-3d;
     }
 
-    @include breakpoint(lg-tablet) {
-      top: 5rem;
-      transform: scale(0.45) translateX(-50%);
-    }
-
-    @include breakpoint(md-tablet) {
-      top: 15rem;
-      transform: scale(0.5) translateX(-50%);
-    }
-
-    @include breakpoint(sm-tablet) {
-      transform: scale(0.5) translateX(-50%);
-    }
-
-    @include breakpoint(sm-tablet) {
-      top: 17rem;
-      transform: scale(0.5) translateX(-50%);
-    }
-
-    @include breakpoint(sm-mobile) {
-      transform: scale(0.4) translateX(-50%);
-    }
-
     &--featured {
       position: relative;
       top: -1rem;
-      transform: scale(0.7);
+      transform: scale(.7);
 
       @include breakpoint(lg-tablet) {
         top: -4rem;
-
-        transform: scale(0.5);
+        transform: scale(.5);
       }
     }
   }
@@ -143,12 +141,12 @@
     z-index: -1;
     top: 0;
     left: -260px;
-    transform: scale(0.6);
+    transform: scale(.6);
   }
 
   &__heading {
     font-family: "Right Grotesk Wide Black", Inter, Roboto, sans-serif;
-    line-height: 0.9;
+    line-height: .9;
     max-width: 13ch;
 
     emphasis {
@@ -183,11 +181,12 @@
       position: absolute;
       z-index: -2;
       top: 0;
-      left: 0;
+      left: 50%;
       width: 400px;
       height: 200px;
 
       content: "";
+      transform: translateX(-50%);
       background-color: var(--blue-100);
       filter: blur(90px);
     }
@@ -202,11 +201,11 @@
     }
 
     @include breakpoint(md-tablet) {
-      transform: scale(0.8) translate(-65%, -325px);
+      transform: scale(.8) translate(-65%, -325px);
     }
 
     @include breakpoint(md-mobile) {
-      transform: scale(0.9) translate(-60%, -235px);
+      transform: scale(.9) translate(-60%, -235px);
     }
   }
 
@@ -223,7 +222,7 @@
   }
 
   &__img {
-    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, .2));
 
     img {
       width: 250px;
@@ -245,7 +244,6 @@
         bottom: -10px;
         width: 120px;
         height: 120px;
-
         content: "";
         background-image: url(../../../images/illustrations/question-marks.svg);
         background-repeat: no-repeat;
@@ -257,7 +255,7 @@
   &__event {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: .5rem;
     width: fit-content;
     padding: 5px 15px;
     transition: all 150ms ease-out;
@@ -268,7 +266,7 @@
     background-color: var(--blue-50);
 
     @media (max-width: 425px) {
-      gap: 0.3rem;
+      gap: .3rem;
     }
 
     &--disclaimer {
@@ -279,8 +277,8 @@
 
   &__partnership {
     background-image: url("../../../images/backgrounds/bg-vosk.svg");
-    background-position: 55% 20%;
     background-repeat: no-repeat;
+    background-position: 55% 20%;
 
     @include breakpoint(lg-tablet) {
       background-position: 52.5% 23%;
@@ -294,33 +292,32 @@
       background-position: 50.5% 26%;
     }
 
-
     h1 {
       font-family: "Right Grotesk Spatial Fine", Inter, Roboto, sans-serif;
       font-size: 1.25rem;
-      color: #000;
-      text-transform: uppercase;
-      letter-spacing: 5px;
       text-align: center;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #000;
     }
   }
 }
 
 .scroll {
-  --scroll-position: 600px;
-
+  font-size: .8rem;
   position: absolute;
-  left: 50%;
   top: var(--scroll-position);
+  left: 50%;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: .3rem;
   width: fit-content;
-  font-size: 0.8rem;
-  color: var(--blue-gray-500);
-  gap: 0.3rem;
   transform: translateX(-50%);
+  color: var(--blue-gray-500);
+
+  --scroll-position: 600px;
 
   &__home {
     @include breakpoint(lg-tablet) {
@@ -368,15 +365,16 @@
     border-radius: 100vh;
 
     &::before {
-      content: "";
       position: absolute;
-      height: 7px;
-      width: 2px;
-      background-color: var(--blue-900);
-      left: 50%;
       top: 2px;
-      border-radius: 100vh;
+      left: 50%;
+      width: 2px;
+      height: 7px;
+
+      content: "";
       transform: translateX(-50%);
+      border-radius: 100vh;
+      background-color: var(--blue-900);
     }
   }
 
@@ -385,9 +383,10 @@
   }
 
   &__arrow {
-    stroke: var(--blue-900);
     transform: rotate(90deg);
     animation: scrollArrow 500ms linear alternate infinite;
+
+    stroke: var(--blue-900);
   }
 }
 
