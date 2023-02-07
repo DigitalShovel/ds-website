@@ -4,6 +4,12 @@
   @include breakpoint(lg-tablet) {
     background-position: center 15%;
     background-size: 900px;
+
+    .hero {
+      @include breakpoint(md-tablet) {
+        overflow: visible;
+      }
+    }
   }
 
   .animation {
