@@ -1,3 +1,5 @@
+// detects the scroll position and adds the active class to the corresponding link
+
 let product = document.querySelector("#product");
 let specs = document.querySelector("#specifications");
 let bundle = document.querySelector("#bundle");
@@ -12,11 +14,12 @@ let check = false;
 
 window.addEventListener("scroll", () => {
   if (window.innerWidth >= 992) {
-    if (scrollY <= 600) {
+    if (scrollY <= 400) {
       specsLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
       pricingLink.classList.remove("subnav__link--active");
 
+      // set the active class to the product link
       productLink.classList.add("subnav__link--active");
     } else if (scrollY <= 1550) {
       console.log("Scroll position: " + scrollY);
@@ -24,18 +27,21 @@ window.addEventListener("scroll", () => {
       bundleLink.classList.remove("subnav__link--active");
       pricingLink.classList.remove("subnav__link--active");
 
+      // set the active class to the specs link
       specsLink.classList.add("subnav__link--active");
     } else if (scrollY <= 2400) {
       productLink.classList.remove("subnav__link--active");
       specsLink.classList.remove("subnav__link--active");
       pricingLink.classList.remove("subnav__link--active");
 
+      // set the active class to the bundle link
       bundleLink.classList.add("subnav__link--active");
     } else if (scrollY >= 2401) {
       productLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
       specsLink.classList.remove("subnav__link--active");
 
+      // set the active class to the pricing link
       pricingLink.classList.add("subnav__link--active");
     }
   } else {
@@ -44,24 +50,28 @@ window.addEventListener("scroll", () => {
       bundleLink.classList.remove("subnav__link--active");
       pricingLink.classList.remove("subnav__link--active");
 
+      // set the active class to the product link
       productLink.classList.add("subnav__link--active");
     } else if (scrollY <= 2500) {
       productLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
       pricingLink.classList.remove("subnav__link--active");
 
+      // set the active class to the specs link
       specsLink.classList.add("subnav__link--active");
     } else if (scrollY <= 3400) {
       productLink.classList.remove("subnav__link--active");
       specsLink.classList.remove("subnav__link--active");
       pricingLink.classList.remove("subnav__link--active");
 
+      // set the active class to the bundle link
       bundleLink.classList.add("subnav__link--active");
     } else if (scrollY >= 3401) {
       productLink.classList.remove("subnav__link--active");
       bundleLink.classList.remove("subnav__link--active");
       specsLink.classList.remove("subnav__link--active");
 
+      // set the active class to the pricing link
       pricingLink.classList.add("subnav__link--active");
     }
   }
