@@ -75,6 +75,7 @@
     }
 
     &--deal {
+      color: var(--blue-gray-900);
       border: 1px solid var(--red-200);
       background-color: var(--red-50);
       box-shadow: 0 2px 12px 0 hsla(44, 78%, 16%, .09);
