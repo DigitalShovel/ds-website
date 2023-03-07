@@ -79,16 +79,8 @@
       pointer-events: all;
     }
 
-    &-6 {
-      margin-top: -3rem;
-
-      @include breakpoint(lg-tablet) {
-        margin-top: 0;
-      }
-    }
-
     &-8 {
-      margin-top: -7rem;
+      margin-top: -4rem;
       pointer-events: none;
 
       @include breakpoint(lg-tablet) {
@@ -97,7 +89,7 @@
     }
 
     &-10 {
-      margin-top: -8rem;
+      margin-top: -9rem;
       pointer-events: none;
 
       @include breakpoint(lg-tablet) {
