@@ -138,6 +138,10 @@ small {
     color: white;
   }
 
+  &--larger {
+    transform: scale(1.2);
+  }
+
   &--center {
     text-align: center;
   }
