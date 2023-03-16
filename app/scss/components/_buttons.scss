@@ -70,11 +70,18 @@
 
   &--primary {
     color: #fff;
-    background-color: var(--blue-500);
-    transition: background-color 150ms ease-out;
+    background-image: linear-gradient(180deg, var(--blue-500), var(--blue-600));
+    background-size: 100% 100%;
+    transition: background 150ms ease-out, box-shadow 150ms ease-out;
+    box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 40%),
+      0px 0px 0px 1px var(--blue-600),
+      0px 2px 8px 1px hsla(0, 0%, 0%, 0.25);
 
     &:hover {
-      background-color: var(--blue-600);
+      background-size: 400% 400%;
+      box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 20%),
+        0px 0px 0px 1px var(--blue-600),
+        0px 2px 4px 0px hsla(0, 0%, 0%, 0.5);
     }
 
     .btn__chevron path {
@@ -99,15 +106,23 @@
   }
 
   &--white {
-    color: var(--blue-500);
-    background-color: #fff;
+    color: var(--blue-900);
+    background-image: linear-gradient(180deg, var(--blue-gray-100), var(--blue-gray-200));
+    background-size: 100% 100%;
+    transition: background 150ms ease-out, box-shadow 150ms ease-out;
+    box-shadow: inset 0px 1px 1px 0px hsla(0, 0%, 100%, 1),
+      0px 0px 0px 1px var(--blue-gray-200),
+      0px 2px 8px 1px hsla(0, 0%, 0%, 0.25);
 
     &:hover {
-      background-color: var(--blue-gray-50);
+      background-size: 400% 400%;
+      box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 80%),
+        0px 0px 1px 1px var(--blue-gray-200),
+        0px 1px 3px 0px hsla(0, 0%, 0%, 0.5);
     }
 
     .btn__chevron path {
-      stroke: var(--blue-500);
+      stroke: var(--blue-900);
     }
   }
 
@@ -117,13 +132,21 @@
     font-weight: 600;
     max-width: none;
     padding: 1rem 0;
-    background-color: var(--teal-400);
     border: none;
     border-radius: 5px;
-    transition: background-color 100ms ease-in-out;
+
+    background-image: linear-gradient(180deg, var(--teal-500), var(--teal-600));
+    background-size: 100% 100%;
+    transition: background 150ms ease-out, box-shadow 150ms ease-out;
+    box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 60%),
+      0px 0px 0px 1px var(--teal-600),
+      0px 2px 8px 1px hsla(0, 0%, 0%, 0.25);
 
     &:hover {
-      background-color: var(--teal-300);
+      background-size: 400% 400%;
+      box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 20%),
+        0px 0px 0px 1px var(--teal-600),
+        0px 2px 4px 0px hsla(0, 0%, 0%, 0.5);
     }
   }
 
