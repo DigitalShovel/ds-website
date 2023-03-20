@@ -383,7 +383,7 @@
   .list-item {
     &__heading {
       font-size: 5rem;
-      font-weight: 300;
+      font-family: var(--heavy-wide-font);
       transition: transform 1s ease-out;
       color: var(--blue-500);
 
