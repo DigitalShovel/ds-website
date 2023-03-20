@@ -76,10 +76,6 @@
     &:hover {
       border: 1px solid var(--blue-500);
       box-shadow: 0 12px 32px 0 hsla(213, 78%, 16%, .13);
-
-      .card-9--popup {
-        transform: translateY(4.5rem);
-      }
     }
 
     img {
@@ -116,6 +112,10 @@
       border-radius: 5px;
       transition: transform 150ms ease-in;
       transform: translateY(1rem);
+
+      &-show {
+        transform: translateY(4.5rem);
+      }
     }
 
     &--disabled {
