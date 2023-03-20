@@ -3,6 +3,7 @@
 .scroll {
   font-size: .8rem;
   position: absolute;
+  z-index: 9;
   top: var(--scroll-position);
   left: 50%;
   display: flex;
