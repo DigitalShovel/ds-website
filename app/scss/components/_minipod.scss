@@ -29,6 +29,12 @@
       object-fit: contain;
     }
 
+    &--i300 {
+      @include breakpoint(sm-desktop) {
+        flex-direction: column;
+      }
+    }
+
     &--shadow {
       position: absolute;
       left: 50%;

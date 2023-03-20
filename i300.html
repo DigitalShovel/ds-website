@@ -12,14 +12,15 @@
     content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
 
   <!-- Social media tags -->
-  <meta property="og:title" content="Digital Shovel • Form Submitted">
+  <meta property="og:title" content="Digital Shovel • i300">
   <meta property="og:description"
     content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
   <meta property="og:image" content="/images/backgrounds/meta-image.jpg">
-  <meta property="og:url" content="/thanks.html">
+  <meta property="og:url" content="/minipod.html">
   <meta property="og:site_name" content="Digital Shovel">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:alt" content="Digital Shovel Logo">
+
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../dist/style.min.css?v=1.5">
@@ -36,12 +37,15 @@
       rel="stylesheet">
   </noscript>
 
+  <!-- GSAP -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
   <!-- Javascript -->
-  <script defer src="/app/js/contact.js"></script>
+  <script defer src="/app/js/detect-scroll-i300.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
 
-  <title>Digital Shovel • Form Submitted</title>
+  <title>Digital Shovel • i300 Minipod</title>
 
   <!-- Hotjar Tracking Code for https://digitalshovel.com/ -->
   <script>
@@ -68,7 +72,7 @@
       units available in Canada ready to be shipped</span>
   </div>
 
-  <nav class="navbar">
+  <nav class="navbar navbar--borderless">
     <div class="navbar__container">
       <a href="/" class="navbar__logo" aria-label="Digital Shovel Logo">
         <svg title="Digital Shovel Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.45 80.96">
@@ -155,23 +159,130 @@
     </div>
   </nav>
 
+  <nav class="subnav">
+    <div class="subnav__container">
+      <ul class="subnav__links">
+        <li>
+          <a class="subnav__link subnav__link--product subnav__link--active" href="#product">Product</a>
+        </li>
+        <li>
+          <a class="subnav__link subnav__link--specs" href="#specifications">Specifications</a>
+        </li>
+        <li>
+          <a class="subnav__link subnav__link--bundle" href="#bundle">Bundle</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <a href="#specifications" class="scroll scroll__product">
+    <span class="scroll__text">scroll for more</span>
+    <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+
   <main class="main">
 
-    <section class="hero container flex jc-sb">
-      <div class="hero__text flex flex-col gap--lg">
+    <section id="product" class="hero container hero__feature flex flex-col ai-c">
+
+      <div class="hero__text hero__text--product flex flex-col ai-c">
+        <h4>Featured Product</h4>
         <h1>
-          Thank <emphasis class="text--blue">you!</emphasis>
+          <emphasis class="text--blue">i300</emphasis> Minipod</emphasis>
         </h1>
-        <div class="flex flex-col gap--sm">
-          <h3>We have received your message!</h3>
-          <p class="hero__body hero__body--team">
-            Our team will go through the details of your message and get back to you as soon as possible.
-          </p>
-        </div>
       </div>
 
-      <div class="hero__img">
-        <img src="images/illustrations/contact-chat-bubbles.svg" alt="Chat Bubble Icons">
+      <div class="hero__minipod-container hero__minipod-container--i300">
+        <img src="images/illustrations/i300.svg" alt="i300 Minipod Illustration">
+      </div>
+
+    </section>
+
+    <section id="specifications" class="card__grid card__grid--i300">
+      <div class="card-1 flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_power.svg" alt="Power Input Icon">
+          <h6>Power Input</h6>
+        </div>
+        <ul class="card__list flex flex-col gap--md">
+          <li class="card__list-item flex">Input voltage provided at 415Y240</li>
+          <li class="card__list-item flex">380-415 Volts 5 Wire
+            (3 Poles, Neutral + Ground)</li>
+          <li class="card__list-item flex">220-240 Volts Primary to Neutral</li>
+          <li class="card__list-item card__list-item--new flex">208 Volt 3-Phase 3 Wire + Ground</li>
+        </ul>
+      </div>
+      <div class="card-2 flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_spdu.svg" alt="Smart Power Distribution Icon">
+          <h6>Smart Power Distribution Unit (SPDU)</h6>
+        </div>
+        <ul class="card__list flex flex-col gap--md">
+          <li class="card__list-item flex">Each MINIPOD is equipped with two SPDUs</li>
+          <li class="card__list-item flex">96 (42 outlets on 208 Volt PDU) - C19 outlets with a 20A dedicated breaker
+            per outlet</li>
+          <li class="card__list-item flex">Allows max wattage while providing max protection</li>
+          <li class="card__list-item flex">Individual port monitoring and switching</li>
+          <li class="card__list-item flex">Fitted with a UL 489 Listed 350A 3 phase main breaker, tied to a common
+            overhead mounted busway</li>
+        </ul>
+      </div>
+      <div class="card-5 flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_mining.svg" alt="Mining Capacity Icon">
+          <h6>Mining Capacity</h6>
+        </div>
+        <ul class="card__list flex flex-col gap--md">
+          <li class="card__list-item flex">8 shelves 85” wide and 11.7” tall</li>
+          <li class="card__list-item flex">Quick change back-sheets on a per-row basis</li>
+          <li class="card__list-item flex">Supports 88 S19 miners and 40 4U GPUs</li>
+        </ul>
+      </div>
+      <div class="card-7 card__secondary flex ai-c gap--md">
+        <img class="icon--md" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
+        <h6>Total Capacity</h6>
+        <h6 class="text--blue">300kW</h6>
+      </div>
+      <a href="contact" class="card-8 card-8--i300 btn btn--primary btn--card flex ai-c jc-c gap--sm">Place Order
+        <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="card-9 card__secondary flex ai-c gap--md">
+        <img class="icon--md" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
+        <h6>Approx. Cost</h6>
+        <h6 class="text--blue">$19,999 - $25,500</h6>
+      </div>
+    </section>
+
+    <section id="bundle" class="minipod">
+      <div class="container container--full-width flex flex-col gap--md ai-c jc-c">
+        <h2 class="text__heading">
+          <span class="text--blue">Bundled</span> with your Minipod
+        </h2>
+        <p class="text__body text--center">
+          Main container, racking, back-sheets, and Smart PDUs
+        </p>
+        <div class="minipod__illustrations minipod__illustrations--i300">
+          <img src="images/illustrations/i300-front_with-text.svg" alt="Minipod Illustration Front Side">
+          <img src="images/illustrations/i300-back_with-text.svg" alt="Minipod Illustration Back Side">
+          <div class="minipod__illustrations--shadow"></div>
+        </div>
+        <a href="contact" class="btn btn--primary mtop--xxl mbot--lg">Contact Sales
+          <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
       </div>
     </section>
 
