@@ -19,7 +19,12 @@ h1 {
     font-size: 3.25rem;
   }
 
+  @include breakpoint(sm-tablet) {
+    font-size: 3rem;
+  }
+
   @include breakpoint(md-mobile) {
+    font-family: var(--medium-wide-font);
     font-size: 2.5rem;
   }
 
@@ -51,6 +56,7 @@ h4 {
 
   @include breakpoint(md-mobile) {
     line-height: 1;
+    font-size: 1rem;
   }
 }
 

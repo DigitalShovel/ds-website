@@ -87,6 +87,10 @@
 
     &--i300 {
       height: 400px;
+
+      @include breakpoint(md-mobile) {
+        height: 300px;
+      }
     }
   }
 
@@ -180,6 +184,11 @@
 
   &__text {
     position: relative;
+    text-align: center;
+
+    h1 {
+      line-height: 1;
+    }
 
     &::after {
       position: absolute;
@@ -221,7 +230,7 @@
     }
 
     @include breakpoint(sm-tablet) {
-      padding: 4rem 2rem 6rem;
+      padding: 2rem 2rem 4rem;
     }
   }
 
@@ -304,93 +313,6 @@
       text-transform: uppercase;
       color: #000;
     }
-  }
-}
-
-.scroll {
-  font-size: .8rem;
-  position: absolute;
-  top: var(--scroll-position);
-  left: 50%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: .3rem;
-  width: fit-content;
-  transform: translateX(-50%);
-  color: var(--blue-gray-500);
-
-  --scroll-position: 600px;
-
-  &__home {
-    @include breakpoint(lg-tablet) {
-      top: calc(var(--scroll-position) - 100px);
-    }
-
-    @include breakpoint(md-tablet) {
-      top: calc(var(--scroll-position) + 300px);
-    }
-
-    @include breakpoint(sm-tablet) {
-      top: calc(var(--scroll-position) + 350px);
-    }
-
-    @include breakpoint(md-mobile) {
-      top: calc(var(--scroll-position) + 310px);
-    }
-
-    @include breakpoint(sm-mobile) {
-      top: calc(var(--scroll-position) + 260px);
-    }
-  }
-
-  &__product {
-    --scroll-position: 780px;
-
-    @include breakpoint(lg-tablet) {
-      top: calc(var(--scroll-position) - 160px);
-    }
-
-    @include breakpoint(sm-tablet) {
-      top: calc(var(--scroll-position) - 130px);
-    }
-
-    @include breakpoint(md-mobile) {
-      top: calc(var(--scroll-position) - 150px);
-    }
-  }
-
-  &__mouse {
-    position: relative;
-    width: 18px;
-    height: 30px;
-    border: 2px solid var(--blue-900);
-    border-radius: 100vh;
-
-    &::before {
-      position: absolute;
-      top: 2px;
-      left: 50%;
-      width: 2px;
-      height: 7px;
-
-      content: "";
-      transform: translateX(-50%);
-      border-radius: 100vh;
-      background-color: var(--blue-900);
-    }
-  }
-
-  &__text {
-    width: max-content;
-  }
-
-  &__arrow {
-    transform: rotate(90deg);
-    animation: scrollArrow 500ms linear alternate infinite;
-
-    stroke: var(--blue-900);
   }
 }
 
