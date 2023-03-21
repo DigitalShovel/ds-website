@@ -13,12 +13,17 @@
   &__main {
     @include breakpoint(md-tablet) {
       flex-direction: column;
-      padding: 4rem 2rem 28rem;
+      padding: 4rem 2rem 23rem;
     }
 
     @include breakpoint(md-mobile) {
       gap: 2rem;
       padding: 4rem 1rem 25rem;
+    }
+
+    @include breakpoint(sm-mobile) {
+      gap: 2rem;
+      padding: 4rem 1rem 22rem;
     }
   }
 
@@ -222,15 +227,15 @@
     }
   }
 
-  &__feature {
-    padding: 3rem 2rem 2rem;
+  &__m300 {
+    padding: 3rem 2rem 8rem;
 
     @include breakpoint(lg-tablet) {
-      padding: 2rem;
+      padding: 2rem 2rem 0;
     }
 
     @include breakpoint(sm-tablet) {
-      padding: 2rem 2rem 4rem;
+      padding: 2rem 2rem 1rem;
     }
   }
 

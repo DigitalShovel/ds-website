@@ -10,7 +10,7 @@
 .card__grid {
   display: grid;
   max-width: 1080px;
-  margin: 9rem auto 0;
+  margin: 2rem auto 0;
   padding: 1rem 2rem 7rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -23,7 +23,6 @@
   }
 
   @include breakpoint(md-tablet) {
-    margin: 0 auto 0;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -40,7 +39,6 @@
     }
   }
 }
-
 
 .card {
 
