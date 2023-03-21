@@ -44,6 +44,7 @@
   <script defer src="/app/js/detect-scroll-i300.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
+  <script defer src="/app/js/gallery.js"></script>
 
   <title>Digital Shovel • i300 Minipod</title>
 
@@ -175,14 +176,6 @@
     </div>
   </nav>
 
-  <a href="#specifications" class="scroll scroll__product scroll__product--i300">
-    <span class="scroll__text">scroll for more</span>
-    <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-  </a>
-
   <main class="main">
 
     <section id="product" class="hero container hero__feature flex flex-col ai-c">
@@ -197,11 +190,40 @@
         </h1>
       </div>
 
-      <div class="hero__minipod-container hero__minipod-container--i300">
-        <img src="images/illustrations/i300.svg" alt="i300 Minipod Illustration">
+      <div class="gallery">
+        <img class="photo photo-1 photo--mobile-small" src="images/photos/minipod/i300-back.jpg"
+          alt="i300 Minipod Back View">
+        <img class="photo photo-2 photo--mobile-small" src="images/photos/minipod/i300-front.jpg"
+          alt="i300 Minipod Front View">
+        <img class="photo photo-3 photo--mobile-small" src="images/photos/minipod/M300-back-1.jpg"
+          alt="M300 Minipod Back View Angle 1">
+        <img class="photo photo-4 photo--mobile-small" src="images/photos/minipod/M300-back-2.jpg"
+          alt="M300 Minipod Back View Angle 2">
+        <img class="photo-main" src="images/illustrations/i300.svg" alt="i300 Minipod Illustration">
+        <img class="photo photo-5 photo--mobile-small" src="images/photos/minipod/M300-filters.jpg"
+          alt="M300 Minipod Filters View">
+        <img class="photo photo-6 photo--mobile-small" src="images/photos/minipod/M300-inside-1.jpg"
+          alt="M300 Minipod Inside View">
+        <img class="photo photo-7 photo--mobile-small" src="images/photos/minipod/M300-side-1.jpg"
+          alt="M300 Minipod Side View Angle 1">
+        <img class="photo photo-8 photo--mobile-small" src="images/photos/minipod/M300-side-2.jpg"
+          alt="M300 Minipod Side View Angle 2">
+
+        <div class="modal">
+          <span class="close">✖</span>
+          <img src="" class="modal__img">
+        </div>
       </div>
 
     </section>
+
+    <a href="#specifications" class="scroll">
+      <span class="scroll__text">scroll for more</span>
+      <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
 
     <section id="specifications" class="card__grid card__grid--i300">
       <div class="card-1 flex flex-col gap--md">

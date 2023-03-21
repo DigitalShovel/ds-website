@@ -2,9 +2,9 @@
 
 .scroll {
   font-size: .8rem;
-  position: absolute;
+  position: relative;
   z-index: 9;
-  top: var(--scroll-position);
+  // top: var(--scroll-position);
   left: 50%;
   display: flex;
   align-items: center;
@@ -16,54 +16,6 @@
   color: var(--blue-gray-500);
 
   --scroll-position: 600px;
-
-  &__home {
-    @include breakpoint(lg-tablet) {
-      top: calc(var(--scroll-position) - 100px);
-    }
-
-    @include breakpoint(md-tablet) {
-      top: calc(var(--scroll-position) + 300px);
-    }
-
-    @include breakpoint(sm-tablet) {
-      top: calc(var(--scroll-position) + 350px);
-    }
-
-    @include breakpoint(md-mobile) {
-      top: calc(var(--scroll-position) + 310px);
-    }
-
-    @include breakpoint(sm-mobile) {
-      top: calc(var(--scroll-position) + 260px);
-    }
-  }
-
-  &__product {
-    --scroll-position: 780px;
-
-    @include breakpoint(lg-tablet) {
-      top: calc(var(--scroll-position) - 130px);
-    }
-
-    @include breakpoint(md-mobile) {
-      top: calc(var(--scroll-position) - 150px);
-    }
-
-    &--i300 {
-      @include breakpoint(lg-tablet) {
-        top: calc(var(--scroll-position) - 10px);
-      }
-
-      @include breakpoint(md-mobile) {
-        top: calc(var(--scroll-position) - 140px);
-      }
-
-      @include breakpoint(sm-mobile) {
-        top: calc(var(--scroll-position) - 150px);
-      }
-    }
-  }
 
   &__mouse {
     position: relative;
