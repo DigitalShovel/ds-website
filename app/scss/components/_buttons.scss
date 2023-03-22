@@ -127,29 +127,27 @@
   }
 
   &--switch {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
     position: relative;
     background-color: white;
     border: 1px solid var(--blue-200);
-    padding: 0.3rem;
+    padding: 0 0.3rem 0 0.4rem;
     font-size: 0.7rem;
-    padding-left: 0.5rem;
-    padding-right: 2rem;
 
-    &::after {
-      content: "";
-      background-image: url("../../../images/icons/icon_switch.svg");
-      background-position: center center;
-      position: absolute;
-      top: 50%;
-      right: 8px;
-      transform: translateY(-50%);
-      width: 22px;
-      height: 22px;
+    .switch-icon {
+      transition: transform 300ms ease-out, border 300ms ease-out;
     }
 
     &:hover {
       border: 1px solid var(--blue-500);
+
+      .switch-icon {
+        transform: rotate(-180deg);
+      }
     }
+
   }
 
   &--form {
