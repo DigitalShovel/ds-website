@@ -2,64 +2,141 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "photo-1 photo-2 photo-main photo-main photo-5 photo-6"
-    "photo-3 photo-4 photo-main photo-main photo-7 photo-8";
 
-  @include breakpoint(lg-tablet) {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:
-      "photo-main photo-main photo-main photo-main photo-main photo-main photo-main photo-main"
-      "photo-1 photo-2 photo-3 photo-4 photo-5 photo-6 photo-7 photo-8";
+  &-container {
+    position: relative;
+    top: -225px;
   }
 
-  @include breakpoint(md-tablet) {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3, auto);
+  &__i300 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    grid-auto-flow: row;
     grid-template-areas:
-      "photo-main photo-main photo-main photo-main photo-main photo-main photo-main photo-main"
-      "photo-1 photo-1 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
-      "photo-5 photo-5 photo-6 photo-6 photo-7 photo-7 photo-8 photo-8";
+      "photo-1 photo-2 photo-main photo-main photo-5 photo-6"
+      "photo-3 photo-4 photo-main photo-main photo-7 photo-8";
+
+    @include breakpoint(lg-tablet) {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        "photo-main photo-main photo-main photo-main photo-main photo-main photo-main photo-main"
+        "photo-1 photo-2 photo-3 photo-4 photo-5 photo-6 photo-7 photo-8";
+    }
+
+    @include breakpoint(md-tablet) {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        "photo-main photo-main photo-main photo-main photo-main photo-main photo-main photo-main"
+        "photo-1 photo-1 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
+        "photo-5 photo-5 photo-6 photo-6 photo-7 photo-7 photo-8 photo-8";
+    }
+  }
+
+  &__m300 {
+    position: absolute;
+    transform: translateY(-70px) translateX(250px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "photo-3 photo-4"
+      "photo-5 photo-6"
+      "photo-7 photo-8";
+
+    @include breakpoint(lg-tablet) {
+      transform: translateY(-90px) translateX(100px);
+    }
+
+    @include breakpoint(sm-tablet) {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas:
+        "photo-3 photo-4 photo-5 photo-6 photo-7 photo-8";
+      transform: translateY(210px) translateX(-50%);
+      gap: 0.5rem;
+    }
+
+    @include breakpoint(md-mobile) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "photo-3 photo-4 photo-5"
+        "photo-6 photo-7 photo-8";
+      // transform: translateY(-200%) translateX(-50%);
+      top: 100%;
+      gap: 0.5rem;
+    }
   }
 }
 
 .modal {
-  display: none;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   z-index: 999;
-  padding-top: 0;
   left: 0;
   top: 0;
   width: 100dvw;
   height: 100dvh;
   overflow: hidden;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .95);
+  transition: opacity 300ms ease-in-out;
 
-  &__img {
+  &__photo {
     object-fit: cover;
-    scale: 0.6;
     border-radius: 20px;
+    box-shadow: var(--shadow-elevation-high);
+    width: fit-content;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
 
     @include breakpoint(lg-tablet) {
-      object-fit: contain;
-      scale: .9;
-      height: auto;
-      transform: translateY(-50%);
+      transform: translate(-50%, -50%);
       top: 50%;
-      position: relative;
       border-radius: 10px;
+    }
+
+    &-container {
+      position: fixed;
+      width: 100dvw;
+      height: 100dvh;
+      transition: all 300ms ease-in;
+    }
+  }
+
+  &__test {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 640px;
+    height: 480px;
+
+    @include breakpoint(md-tablet) {
+      width: 400px;
+      height: 240px;
+    }
+
+    @include breakpoint(sm-tablet) {
+      width: 400px;
+      height: 240px;
     }
   }
 }
 
 .open {
   display: block;
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .close {
@@ -74,22 +151,55 @@
   cursor: pointer;
 }
 
+.arrow {
+
+  &-left,
+  &-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: #f1f1f1;
+    text-shadow: 0 1px 2px #000;
+    font-weight: bold;
+    font-size: 3rem;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &-left {
+    left: -15%;
+  }
+
+  &-right {
+    right: -15%;
+  }
+}
+
 .photo {
   position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   object-fit: cover;
-  box-shadow: var(--shadow-elevation-medium);
+  border: 1px solid var(--blue-200);
   transition: all .2s ease-in-out;
 
   &:hover {
-    box-shadow: var(--shadow-elevation-high);
-    transform: scale(1.05);
+    cursor: pointer;
+    border: 1px solid var(--blue-500);
+    box-shadow: 0 0 10px -2px var(--blue-500);
   }
 
   @include breakpoint(lg-tablet) {
     border-radius: 5px;
+  }
+
+  &__m300 {
+    height: 70px;
+    width: auto;
+
+    @include breakpoint(lg-tablet) {
+      height: 50px;
+    }
   }
 }
 

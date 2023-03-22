@@ -14,13 +14,21 @@
   }
 }
 
-.flex-col-mobile {
-  @include breakpoint(lg-tablet) {
-    flex-direction: column;
+.flex-col {
+  &--lg-tablet {
+    @include breakpoint(lg-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &--sm-mobile {
+    @include breakpoint(sm-mobile) {
+      flex-direction: column;
+    }
   }
 }
 
-.flex-col-tablet {
+.flex-col-mobile {
   @include breakpoint(md-tablet) {
     flex-direction: column;
   }

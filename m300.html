@@ -45,6 +45,7 @@
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
   <script defer src="/app/js/bear-market-promo.js"></script>
+  <script defer src="/app/js/gallery.js"></script>
 
   <title>Digital Shovel • M300 Minipod</title>
 
@@ -184,7 +185,7 @@
     <section id="product" class="hero container hero__m300 flex flex-col ai-c">
 
       <div class="hero__text hero__text--product flex flex-col gap--sm ai-c">
-        <div class="flex flex-col-mobile ai-c gap--sm">
+        <div class="flex flex-col--sm-mobile ai-c gap--sm">
           <h4>Outdoor Solution</h4>
           <a href="i300" class="btn btn--switch">switch to indoor</a>
         </div>
@@ -373,6 +374,34 @@
                 fill="var(--blue-500)" />
             </svg>
           </button>
+        </div>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery gallery__m300">
+          <img class="photo photo__m300 photo-3" src="images/photos/minipod/M300-back-1.jpg"
+            alt="M300 Minipod Back View Angle 1">
+          <img class="photo photo__m300 photo-4" src="images/photos/minipod/M300-back-2.jpg"
+            alt="M300 Minipod Back View Angle 2">
+          <img class="photo photo__m300 photo-5" src="images/photos/minipod/M300-filters.jpg"
+            alt="M300 Minipod Filters View">
+          <img class="photo photo__m300 photo-6" src="images/photos/minipod/M300-inside-1.jpg"
+            alt="M300 Minipod Inside View">
+          <img class="photo photo__m300 photo-7" src="images/photos/minipod/M300-side-1.jpg"
+            alt="M300 Minipod Side View Angle 1">
+          <img class="photo photo__m300 photo-8" src="images/photos/minipod/M300-side-2.jpg"
+            alt="M300 Minipod Side View Angle 2">
+        </div>
+
+        <div class="modal">
+          <div class="modal__photo-container">
+            <span class="close">✖</span>
+            <div class="modal__test">
+              <img src="" class="modal__photo">
+              <span class="arrow-left">←</span>
+              <span class="arrow-right">→</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -711,7 +740,7 @@
 
   <footer class="footer">
     <div class="container footer__container">
-      <div class="flex flex-col-tablet jc-sb gap--xlg">
+      <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
         <div class="footer__column">
           <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
           <p class="footer__body">
@@ -735,8 +764,8 @@
         </div>
       </div>
       <div class="footer__divider"></div>
-      <div class="flex flex-col-tablet jc-sb gap--sm">
-        <div class="flex flex-col-tablet gap--sm">
+      <div class="flex flex-col--lg-tablet jc-sb gap--sm">
+        <div class="flex flex-col--lg-tablet gap--sm">
           <small class="footer__copyright">© 2023 Digital Shovel Holdings Inc.</small>
         </div>
         <div class="flex gap--sm ai-c">

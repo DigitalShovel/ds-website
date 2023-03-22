@@ -7,7 +7,6 @@
 
   @include breakpoint(md-tablet) {
     flex-direction: column;
-    overflow: hidden;
   }
 
   &__main {
@@ -139,12 +138,17 @@
 
     &--featured {
       position: relative;
-      top: -1rem;
+      top: 0;
       transform: scale(.7);
 
       @include breakpoint(lg-tablet) {
-        top: -4rem;
+        top: -3rem;
+        left: -6rem;
         transform: scale(.5);
+      }
+
+      @include breakpoint(sm-tablet) {
+        left: auto;
       }
     }
   }
@@ -228,14 +232,18 @@
   }
 
   &__m300 {
-    padding: 3rem 2rem 8rem;
+    padding: 3rem 2rem 6rem;
 
     @include breakpoint(lg-tablet) {
       padding: 2rem 2rem 0;
     }
 
-    @include breakpoint(sm-tablet) {
+    @include breakpoint(md-tablet) {
       padding: 2rem 2rem 1rem;
+    }
+
+    @include breakpoint(md-mobile) {
+      padding: 2rem 2rem 5rem;
     }
   }
 
