@@ -1,5 +1,9 @@
 @use "../base/breakpoints" as *;
 
+:root {
+  --: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
 .gallery {
   display: grid;
 
@@ -141,38 +145,54 @@
 
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  text-shadow: 0 1px 2px #000;
-  font-size: 40px;
-  font-weight: bold;
+  z-index: 9999;
+  top: 1rem;
+  right: 2rem;
   transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  width: 22px;
+  height: 22px;
+  padding: 0;
   cursor: pointer;
+  border: none;
+  background: none;
+  aspect-ratio: 1;
+
+  .line {
+    width: 100%;
+    height: 2px;
+    transition: transform 500ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    transform-origin: left;
+    background-color: var(--blue-gray-400);
+
+    &-1 {
+      transform: rotate(45deg) translate(0px, -4px);
+    }
+
+    &-2 {
+      transform: rotate(-45deg) translate(-3px, 6px);
+    }
+  }
 }
 
 .arrow {
+  user-select: none;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
 
-  &-left,
-  &-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 16px;
-    color: #f1f1f1;
-    text-shadow: 0 1px 2px #000;
-    font-weight: bold;
-    font-size: 3rem;
-    user-select: none;
-    cursor: pointer;
-  }
+  &:hover {
+    circle {
+      fill: var(--blue-300);
+    }
 
-  &-left {
-    left: -15%;
-  }
-
-  &-right {
-    right: -15%;
+    path {
+      stroke: var(--blue-700);
+    }
   }
 }
 

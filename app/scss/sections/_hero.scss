@@ -328,13 +328,3 @@
     }
   }
 }
-
-@keyframes scrollArrow {
-  from {
-    transform: rotate(90deg) translateX(0px);
-  }
-
-  to {
-    transform: rotate(90deg) translateX(5px);
-  }
-}

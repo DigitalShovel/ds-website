@@ -18,24 +18,9 @@
     transform: translate(-50%, 40px);
   }
 
-  &__mouse {
-    position: relative;
-    width: 18px;
-    height: 30px;
-    border: 2px solid var(--blue-900);
-    border-radius: 100vh;
-
-    &::before {
-      position: absolute;
-      top: 2px;
-      left: 50%;
-      width: 2px;
-      height: 7px;
-
-      content: "";
-      transform: translateX(-50%);
-      border-radius: 100vh;
-      background-color: var(--blue-900);
+  &__home {
+    @include breakpoint(sm-tablet) {
+      transform: translate(-50%, 0px);
     }
   }
 
@@ -48,5 +33,15 @@
     animation: scrollArrow 500ms linear alternate infinite;
 
     stroke: var(--blue-900);
+  }
+
+  @keyframes scrollArrow {
+    from {
+      transform: rotate(90deg) translateX(0px);
+    }
+
+    to {
+      transform: rotate(90deg) translateX(5px);
+    }
   }
 }

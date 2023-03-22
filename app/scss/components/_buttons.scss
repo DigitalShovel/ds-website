@@ -150,6 +150,23 @@
 
   }
 
+  &__gallery {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+
+    &-left {
+      left: -100px;
+      transform: rotate(180deg) translateY(50%);
+    }
+
+    &-right {
+      right: -100px;
+    }
+  }
+
   &--form {
     grid-column: span 6;
     font-size: 1rem;

@@ -32,8 +32,8 @@ photos.forEach((photo) => {
 // 5. the modal window should have a left and right arrow to navigate through the photos
 // 6. when the left arrow is clicked, the previous photo should be displayed
 // 7. when the right arrow is clicked, the next photo should be displayed
-const leftArrow = document.querySelector(".arrow-left");
-const rightArrow = document.querySelector(".arrow-right");
+const leftArrow = document.querySelector(".btn__gallery-left");
+const rightArrow = document.querySelector(".btn__gallery-right");
 
 leftArrow.addEventListener("click", () => {
   const modalImg = document.querySelector(".modal__photo");
