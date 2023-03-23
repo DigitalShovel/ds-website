@@ -46,6 +46,7 @@
   <script defer src="/app/js/dropdown.js"></script>
   <script defer src="/app/js/bear-market-promo.js"></script>
   <script defer src="/app/js/gallery.js"></script>
+  <script defer src="/app/js/home.js"></script>
 
   <title>Digital Shovel • M300 Minipod</title>
 
@@ -404,12 +405,12 @@
         </div>
 
         <div class="modal">
-          <div class="modal__photo-container">
+          <div class="modal-container">
             <span class="close">
               <div class="line line-1"></div>
               <div class="line line-2"></div>
             </span>
-            <div class="modal__test">
+            <div class="modal__photo-container">
               <img src="" class="modal__photo">
               <button class="btn__gallery btn__gallery-left">
                 <svg class="arrow arrow-left" width="23" height="23" viewBox="0 0 23 23" fill="none"
@@ -457,12 +458,12 @@
     </a>
 
     <section id="specifications" class="card__grid">
-      <div class="card-1 flex flex-col gap--md">
+      <div class="card-1 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_power.svg" alt="Power Input Icon">
           <h6>Power Input</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">Input voltage provided at 415Y240</li>
           <li class="card__list-item flex">380-415 Volts 5 Wire
             (3 Poles, Neutral + Ground)</li>
@@ -470,12 +471,12 @@
           <li class="card__list-item card__list-item--new flex">208 Volt 3-Phase 3 Wire + Ground</li>
         </ul>
       </div>
-      <div class="card-2 flex flex-col gap--md">
+      <div class="card-2 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_spdu.svg" alt="Smart Power Distribution Icon">
           <h6>Smart Power Distribution Unit (SPDU)</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">Each MINIPOD is equipped with two SPDUs</li>
           <li class="card__list-item flex">96 (42 outlets on 208 Volt PDU) - C19 outlets with a 20A dedicated breaker
             per outlet</li>
@@ -485,12 +486,12 @@
             overhead mounted busway</li>
         </ul>
       </div>
-      <div class="card-3 flex flex-col gap--md">
+      <div class="card-3 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_fan.svg" alt="Air Intake System Icon">
           <h6>Air Intake System</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">Awning-based intake system</li>
           <li class="card__list-item flex">38% increase over standard louver design</li>
           <li class="card__list-item flex">4" or 2" pleated filters Merv 5 to 15</li>
@@ -498,40 +499,40 @@
           <li class="card__list-item flex">Replacements from Digital Shovel or other vendors</li>
         </ul>
       </div>
-      <div class="card-4 flex flex-col gap--md">
+      <div class="card-4 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_cooling.svg" alt="Cooling System Icon">
           <h6>Cooling System</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">Each shelf is fitted with a CNC cut hot aisle containment barrier,
             improving laminar flow</li>
           <li class="card__list-item flex">4 x 15,000 CFM fans, operating in various stages</li>
         </ul>
       </div>
-      <div class="card-5 flex flex-col gap--md">
+      <div class="card-5 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_mining.svg" alt="Mining Capacity Icon">
           <h6>Mining Capacity</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">8 shelves 85” wide and 11.7” tall</li>
           <li class="card__list-item flex">Quick change back-sheets on a per-row basis</li>
           <li class="card__list-item flex">Supports 88 S19 miners and 40 4U GPUs</li>
         </ul>
       </div>
-      <div class="card-6 flex flex-col gap--md">
+      <div class="card-6 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_security.svg" alt="Enhanced Security Icon">
           <h6>Enhanced Security</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">Standard mechanical door lock</li>
           <li class="card__list-item flex">Upgradeable to a smart door lock</li>
           <li class="card__list-item flex">Exterior and internal IR smart cameras</li>
         </ul>
       </div>
-      <div class="card-7 card__secondary flex ai-c gap--md">
+      <div class="card-7 card__data card__secondary flex ai-c gap--md">
         <img class="icon--md" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
         <h6>Total Capacity</h6>
         <h6 class="text--blue">300kW</h6>
@@ -545,18 +546,18 @@
             stroke-linejoin="round" />
         </svg>
       </a>
-      <a class="card-9 card-9--deal flex ai-c gap--md" href="contact">
+      <a class="card-9 card__data card__data card__data--deal flex ai-c gap--md" href="contact">
         <img class="icon--md" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
-        <h6 class="minipod__set-heading">Bear Market Promo</h6>
+        <h6 class="pricing__set-heading">Bear Market Promo</h6>
         <h6 class="text--red text--emphasis text--larger">$29,997</h6>
         <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-        <div class="card-9--popup">
+        <div class="card__data card__data--popup">
           <h6>Further discounts on high volume pricing</h6>
         </div>
       </a>
     </section>
 
-    <section id="bundle" class="minipod">
+    <section id="bundle" class="bundle">
       <div class="container flex flex-col gap--md ai-c jc-c">
         <h2 class="text__heading">
           <span class="text--blue">Bundled</span> with your Minipod
@@ -565,15 +566,15 @@
           Main container, racking, back-sheets, Smart PDUs,
           4X ventilation fan, ATMS and awning-based intake system.
         </p>
-        <div class="minipod__illustrations">
+        <div class="bundle__illustrations">
           <img src="images/illustrations/minipod-front_with-text.svg" alt="Minipod Illustration Front Side">
           <img src="images/illustrations/minipod-back_with-text.svg" alt="Minipod Illustration Back Side">
-          <div class="minipod__illustrations--shadow"></div>
+          <div class="bundle__illustrations--shadow"></div>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="sets">
+    <section id="pricing" class="pricing">
       <div class="container flex flex-col gap--md ai-c">
         <h2 class="text__heading">
           Configurations & <span class="text--blue">Pricing</span>
@@ -583,192 +584,192 @@
         </p>
 
         <div class="flex flex-col gap--xlg mtop--xxl">
-          <div class="minipod__set gap--lg ai-end jc-c">
-            <img class="minipod__set-img" src="images/illustrations/minipod-1unit.svg"
+          <div class="pricing__set gap--lg ai-end jc-c">
+            <img class="pricing__set-img" src="images/illustrations/minipod-1unit.svg"
               alt="Minipod Single Unit Illustration">
-            <div class="minipod__set-text flex flex-col gap--sm ai-c">
+            <div class="pricing__set-text flex flex-col gap--sm ai-c">
               <h4>Single Unit</h4>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
-                <h6 class="minipod__set-heading">Total Capacity</h6>
+                <h6 class="pricing__set-heading">Total Capacity</h6>
                 <h6 class="text--blue">300kW</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_switch-gear.svg" alt="Switch Gear Icon">
-                <h6 class="minipod__set-heading">Switch Gear</h6>
+                <h6 class="pricing__set-heading">Switch Gear</h6>
                 <h6 class="text--blue">4 Set or higher</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
-                <h6 class="minipod__set-heading">Approx. Cost</h6>
+                <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$39,999 - $45,500</h6>
               </div>
-              <a class="card-9 card-9--deal minipod__set-detail flex ai-c gap--md" href="contact">
+              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
-                <h6 class="minipod__set-heading">Bear Market Promo</h6>
+                <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$29,997</h6>
                 <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card-9--popup">
+                <div class="card__data card__data--popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
               </a>
             </div>
           </div>
 
-          <div class="minipod__set minipod__set-3 gap--lg ai-end jc-c">
-            <img class="minipod__set-img" src="images/illustrations/minipod-3set.svg"
+          <div class="pricing__set pricing__set-3 gap--lg ai-end jc-c">
+            <img class="pricing__set-img" src="images/illustrations/minipod-3set.svg"
               alt="Minipod 3 Unit Set Illustration">
-            <div class="minipod__set-text flex flex-col gap--sm ai-c">
+            <div class="pricing__set-text flex flex-col gap--sm ai-c">
               <h4>3 Unit Set</h4>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
-                <h6 class="minipod__set-heading">Total Capacity</h6>
+                <h6 class="pricing__set-heading">Total Capacity</h6>
                 <h6 class="text--blue">900kW</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_switch-gear.svg" alt="Switch Gear Icon">
-                <h6 class="minipod__set-heading">Switch Gear</h6>
+                <h6 class="pricing__set-heading">Switch Gear</h6>
                 <h6 class="text--blue">4 Set or higher</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
-                <h6 class="minipod__set-heading">Approx. Cost</h6>
+                <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$113,997 - $130,500</h6>
               </div>
-              <a class="card-9 card-9--deal minipod__set-detail flex ai-c gap--md" href="contact">
+              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
-                <h6 class="minipod__set-heading">Bear Market Promo</h6>
+                <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$86,997</h6>
                 <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card-9--popup">
+                <div class="card__data card__data--popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
               </a>
             </div>
           </div>
 
-          <div class="minipod__set minipod__set-4 gap--lg ai-end jc-c">
-            <img class="minipod__set-img" src="images/illustrations/minipod-4set.svg"
+          <div class="pricing__set pricing__set-4 gap--lg ai-end jc-c">
+            <img class="pricing__set-img" src="images/illustrations/minipod-4set.svg"
               alt="Minipod 4 Unit Set Illustration">
-            <div class="minipod__set-text flex flex-col gap--sm ai-c">
+            <div class="pricing__set-text flex flex-col gap--sm ai-c">
               <h4>4 Unit Set</h4>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
-                <h6 class="minipod__set-heading">Total Capacity</h6>
+                <h6 class="pricing__set-heading">Total Capacity</h6>
                 <h6 class="text--blue">1.2MW</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_switch-gear.svg" alt="Switch Gear Icon">
-                <h6 class="minipod__set-heading">Switch Gear</h6>
+                <h6 class="pricing__set-heading">Switch Gear</h6>
                 <h6 class="text--blue">Included</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
-                <h6 class="minipod__set-heading">Approx. Cost</h6>
+                <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$167,500 - 190,899</h6>
               </div>
-              <a class="card-9 card-9--deal minipod__set-detail flex ai-c gap--md" href="contact">
+              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
-                <h6 class="minipod__set-heading">Bear Market Promo</h6>
+                <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$139,997</h6>
                 <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card-9--popup">
+                <div class="card__data card__data--popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
               </a>
             </div>
           </div>
 
-          <div class="minipod__set minipod__set-6 gap--lg ai-end jc-c">
-            <img class="minipod__set-img" src="images/illustrations/minipod-6set.svg"
+          <div class="pricing__set pricing__set-6 gap--lg ai-end jc-c">
+            <img class="pricing__set-img" src="images/illustrations/minipod-6set.svg"
               alt="Minipod 6 Unit Set Illustration">
-            <div class="minipod__set-text flex flex-col gap--sm ai-c">
+            <div class="pricing__set-text flex flex-col gap--sm ai-c">
               <h4>6 Unit Set</h4>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
-                <h6 class="minipod__set-heading">Total Capacity</h6>
+                <h6 class="pricing__set-heading">Total Capacity</h6>
                 <h6 class="text--blue">1.8MW</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_switch-gear.svg" alt="Switch Gear Icon">
-                <h6 class="minipod__set-heading">Switch Gear</h6>
+                <h6 class="pricing__set-heading">Switch Gear</h6>
                 <h6 class="text--blue">Included</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
-                <h6 class="minipod__set-heading">Approx. Cost</h6>
+                <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$250,500 - 291,999</h6>
               </div>
-              <a class="card-9 card-9--deal minipod__set-detail flex ai-c gap--md" href="contact">
+              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon" href="contact">
-                <h6 class="minipod__set-heading">Bear Market Promo</h6>
+                <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$189,997</h6>
                 <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card-9--popup">
+                <div class="card__data card__data--popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
               </a>
             </div>
           </div>
 
-          <div class="minipod__set minipod__set-8 gap--lg ai-end jc-c">
-            <img class="minipod__set-img" src="images/illustrations/minipod-8set.svg"
+          <div class="pricing__set pricing__set-8 gap--lg ai-end jc-c">
+            <img class="pricing__set-img" src="images/illustrations/minipod-8set.svg"
               alt="Minipod 8 Unit Set Illustration">
-            <div class="minipod__set-text flex flex-col gap--sm ai-c">
+            <div class="pricing__set-text flex flex-col gap--sm ai-c">
               <h4>8 Unit Set</h4>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
-                <h6 class="minipod__set-heading">Total Capacity</h6>
+                <h6 class="pricing__set-heading">Total Capacity</h6>
                 <h6 class="text--blue">2.4MW</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_switch-gear.svg" alt="Switch Gear Icon">
-                <h6 class="minipod__set-heading">Switch Gear</h6>
+                <h6 class="pricing__set-heading">Switch Gear</h6>
                 <h6 class="text--blue">Included</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
-                <h6 class="minipod__set-heading">Approx. Cost</h6>
+                <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$310,500 - 356,999</h6>
               </div>
-              <a class="card-9 card-9--deal minipod__set-detail flex ai-c gap--md" href="contact">
+              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
-                <h6 class="minipod__set-heading">Bear Market Promo</h6>
+                <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$233,997</h6>
                 <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card-9--popup">
+                <div class="card__data card__data--popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
               </a>
             </div>
           </div>
 
-          <div class="minipod__set minipod__set-10 gap--lg ai-end jc-c">
-            <img class="minipod__set-img" src="images/illustrations/minipod-10set.svg"
+          <div class="pricing__set pricing__set-10 gap--lg ai-end jc-c">
+            <img class="pricing__set-img" src="images/illustrations/minipod-10set.svg"
               alt="Minipod 10 Unit Set Illustration">
-            <div class="minipod__set-text flex flex-col gap--sm ai-c">
+            <div class="pricing__set-text flex flex-col gap--sm ai-c">
               <h4>10 Unit Set</h4>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
-                <h6 class="minipod__set-heading">Total Capacity</h6>
+                <h6 class="pricing__set-heading">Total Capacity</h6>
                 <h6 class="text--blue">3MW</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_switch-gear.svg" alt="Switch Gear Icon">
-                <h6 class="minipod__set-heading">Switch Gear</h6>
+                <h6 class="pricing__set-heading">Switch Gear</h6>
                 <h6 class="text--blue">Included</h6>
               </div>
-              <div class="card-9 minipod__set-detail flex ai-c gap--md">
+              <div class="card__data card-9 pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
-                <h6 class="minipod__set-heading">Approx. Cost</h6>
+                <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$386,500 - 448,999</h6>
               </div>
-              <a class="card-9 card-9--deal minipod__set-detail flex ai-c gap--md" href="contact">
+              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
-                <h6 class="minipod__set-heading">Bear Market Promo</h6>
+                <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$274,997</h6>
                 <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card-9--popup">
+                <div class="card__data card__data--popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
               </a>

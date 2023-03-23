@@ -93,6 +93,13 @@
   background-color: rgba(255, 255, 255, .95);
   transition: opacity 300ms ease-in-out;
 
+  &-container {
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    transition: all 300ms ease-in;
+  }
+
   &__photo {
     object-fit: cover;
     border-radius: 20px;
@@ -109,29 +116,27 @@
     }
 
     &-container {
-      position: fixed;
-      width: 100dvw;
-      height: 100dvh;
-      transition: all 300ms ease-in;
-    }
-  }
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0 auto;
+      width: 640px;
+      height: 480px;
 
-  &__test {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    width: 640px;
-    height: 480px;
+      @include breakpoint(md-tablet) {
+        width: 480px;
+        height: 360px;
+      }
 
-    @include breakpoint(md-tablet) {
-      width: 400px;
-      height: 240px;
-    }
+      @include breakpoint(sm-tablet) {
+        width: 430px;
+        height: 320px;
+      }
 
-    @include breakpoint(sm-tablet) {
-      width: 400px;
-      height: 240px;
+      @include breakpoint(md-mobile) {
+        width: 270px;
+        height: 200px;
+      }
     }
   }
 }
@@ -180,6 +185,7 @@
 }
 
 .arrow {
+  display: block;
   user-select: none;
   cursor: pointer;
   width: 64px;
@@ -193,6 +199,11 @@
     path {
       stroke: var(--blue-700);
     }
+  }
+
+  @include breakpoint(sm-tablet) {
+    width: 48px;
+    height: 48px;
   }
 }
 

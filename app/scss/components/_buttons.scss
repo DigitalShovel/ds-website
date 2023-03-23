@@ -50,7 +50,7 @@
     left: 0;
     padding: 0;
     cursor: pointer;
-    transform: translateX(-50%) scale(3);
+    transform: translateX(-50%) scale(2.7);
     border: none;
     background-color: transparent;
 
@@ -66,6 +66,39 @@
 
   &__pause svg {
     transition: all 150ms ease-in;
+  }
+
+  &__gallery {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+
+    &-left {
+      left: -100px;
+      transform: rotate(180deg) translateY(50%);
+
+      @include breakpoint(lg-tablet) {
+        left: -40px;
+      }
+
+      @include breakpoint(sm-tablet) {
+        left: -30px;
+      }
+    }
+
+    &-right {
+      right: -100px;
+
+      @include breakpoint(lg-tablet) {
+        right: -40px;
+      }
+
+      @include breakpoint(sm-tablet) {
+        right: -30px;
+      }
+    }
   }
 
   &--primary {
@@ -148,23 +181,6 @@
       }
     }
 
-  }
-
-  &__gallery {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-
-    &-left {
-      left: -100px;
-      transform: rotate(180deg) translateY(50%);
-    }
-
-    &-right {
-      right: -100px;
-    }
   }
 
   &--form {

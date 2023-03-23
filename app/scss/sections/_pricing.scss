@@ -1,0 +1,83 @@
+@use "../base/breakpoints" as *;
+
+.pricing {
+  &__set {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include breakpoint(lg-tablet) {
+      grid-template-columns: 1fr;
+      gap: 0;
+
+      &:first-child .pricing__set-img {
+        margin-top: 0;
+      }
+    }
+
+    &-img {
+      justify-self: flex-end;
+      align-self: end;
+      width: auto;
+      height: auto;
+
+      @include breakpoint(lg-tablet) {
+        margin-top: 4rem;
+        margin-bottom: -1rem;
+        justify-self: center;
+        width: 100%;
+      }
+    }
+
+    &-text {
+      pointer-events: all;
+    }
+
+    &-3 {
+      margin-top: 4rem;
+    }
+
+    &-4 {
+      margin-top: 4rem;
+    }
+
+    &-6 {
+      margin-top: 4rem;
+    }
+
+    &-8 {
+      margin-top: 0rem;
+      pointer-events: none;
+
+      @include breakpoint(lg-tablet) {
+        margin-top: 0;
+      }
+    }
+
+    &-10 {
+      margin-top: -4rem;
+      pointer-events: none;
+
+      @include breakpoint(lg-tablet) {
+        margin-top: 0;
+      }
+
+      .pricing__set-img {
+        transform: scaleX(-1);
+        width: 120%;
+
+        @include breakpoint(lg-tablet) {
+          width: 100%;
+        }
+      }
+    }
+
+    &-detail {
+      width: 330px;
+    }
+  }
+
+  &__set-heading {
+    min-width: 90px;
+    color: var(--blue-gray-900);
+  }
+}

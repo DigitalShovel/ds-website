@@ -1,0 +1,46 @@
+@use "../base/breakpoints" as *;
+
+.bundle {
+
+  &__illustrations {
+    display: flex;
+    position: relative;
+    margin-top: 4rem;
+
+    @include breakpoint(lg-tablet) {
+      flex-direction: column;
+    }
+
+    @include breakpoint(sm-tablet) {
+      flex-direction: column;
+    }
+
+    img {
+      object-fit: contain;
+    }
+
+    &--i300 {
+      @include breakpoint(sm-desktop) {
+        flex-direction: column;
+      }
+    }
+
+    &--shadow {
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translateX(-50%);
+      background-color: var(--blue-50);
+      width: 200px;
+      height: 100px;
+      border-radius: 100vh;
+      filter: blur(80px);
+      z-index: -1;
+
+      @include breakpoint(sm-tablet) {
+        width: 300px;
+        height: 600px;
+      }
+    }
+  }
+}

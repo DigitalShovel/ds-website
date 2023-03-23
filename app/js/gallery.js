@@ -90,7 +90,7 @@ document.addEventListener("keydown", (e) => {
 // 11. the modal window should also close when the user clicks outside of the modal window
 const modal = document.querySelector(".modal");
 modal.addEventListener("click", (e) => {
-  if (e.target.classList.contains("modal__photo-container")) {
+  if (e.target.classList.contains("modal-container")) {
     closeBtn.click();
   }
 });
