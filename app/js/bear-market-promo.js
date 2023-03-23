@@ -1,21 +1,42 @@
 // Description: This file contains the JavaScript for the bear market promo
 // Author: Nicholas Panayotakos
 
-// get all the cardDeal and cardPopup elements
-// cardDeal is the element that the user will hover over to show the popup
-// cardPopup is the element that will be shown when the user hovers over the cardDeal element and add an event listener to the cardDeal element with a mouseover event showing the cardPopup element and when the mouse leaves the cardDeal element hide the cardPopup element after 1 second
+// get all the elements with an attribute of data-specs and data-pricing
+// get all the elements with a class of .card__data-specs-popup and .card__data-pricing-popup
+// when the users hovers over the element with the attribute of data-specs, the popup with the class of .card__data--specs-popup should appear
+// when the user is hovered over the element with the attribute of data-pricing, the popup with the class of .card__data--pricing-popup should appear
+// when the user us hovered out of the element with the attribute of data-specs, the popup with the class of .card__data--specs-popup should disappear after 1.25 seconds
+// when the users hovers out of the element with the attribute of data-pricing, the popup with the class of .card__data--pricing-popup should disappear after 1.25 seconds
 
-const cardDeals = document.querySelectorAll(".card__data--deal");
-const cardPopups = document.querySelectorAll(".card__data--popup");
+const specifications = document.querySelectorAll("[data-specs]");
+const prices = document.querySelectorAll("[data-pricing]");
+const specsPopup = document.querySelectorAll(".card__data--specs-popup");
+const pricingPopup = document.querySelectorAll(".card__data--pricing-popup");
 
-cardDeals.forEach((cardDeal, index) => {
-  cardDeal.addEventListener("mouseover", () => {
-    cardPopups[index].classList.add("card__data--popup-show");
+specifications.forEach((spec, i) => {
+  spec.addEventListener("mouseover", () => {
+    specsPopup[i].classList.add("card__data--specs-popup-show");
   });
+});
 
-  cardDeal.addEventListener("mouseleave", () => {
+specifications.forEach((spec, i) => {
+  spec.addEventListener("mouseleave", () => {
     setTimeout(() => {
-      cardPopups[index].classList.remove("card__data--popup-show");
+      specsPopup[i].classList.remove("card__data--specs-popup-show");
+    }, 1250);
+  });
+});
+
+prices.forEach((price, i) => {
+  price.addEventListener("mouseover", () => {
+    pricingPopup[i].classList.add("card__data--pricing-popup-show");
+  });
+});
+
+prices.forEach((price, i) => {
+  price.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      pricingPopup[i].classList.remove("card__data--pricing-popup-show");
     }, 1250);
   });
 });

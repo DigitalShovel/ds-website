@@ -7,38 +7,6 @@
 .gallery {
   display: grid;
 
-  &-container {
-    position: relative;
-    top: -225px;
-  }
-
-  &__i300 {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "photo-1 photo-2 photo-main photo-main photo-5 photo-6"
-      "photo-3 photo-4 photo-main photo-main photo-7 photo-8";
-
-    @include breakpoint(lg-tablet) {
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(2, auto);
-      grid-template-areas:
-        "photo-main photo-main photo-main photo-main photo-main photo-main photo-main photo-main"
-        "photo-1 photo-2 photo-3 photo-4 photo-5 photo-6 photo-7 photo-8";
-    }
-
-    @include breakpoint(md-tablet) {
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas:
-        "photo-main photo-main photo-main photo-main photo-main photo-main photo-main photo-main"
-        "photo-1 photo-1 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
-        "photo-5 photo-5 photo-6 photo-6 photo-7 photo-7 photo-8 photo-8";
-    }
-  }
-
   &__m300 {
     position: absolute;
     transform: translateY(-70px) translateX(250px);
@@ -73,6 +41,23 @@
       // transform: translateY(-200%) translateX(-50%);
       top: 100%;
       gap: 0.5rem;
+    }
+
+    &-container {
+      position: relative;
+      top: -225px;
+    }
+  }
+
+
+
+  &__i300 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @include breakpoint(sm-tablet) {
+      flex-direction: row;
     }
   }
 }
@@ -230,6 +215,15 @@
 
     @include breakpoint(lg-tablet) {
       height: 50px;
+    }
+  }
+
+  &__i300 {
+    height: 70px;
+    width: auto;
+
+    @include breakpoint(lg-tablet) {
+      // height: 50px;
     }
   }
 }

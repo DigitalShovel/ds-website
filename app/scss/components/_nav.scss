@@ -144,129 +144,121 @@
   &--borderless {
     border: none;
   }
+}
 
-  .dropdown {
-    position: relative;
+
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+
+  &[data-open="true"] {
+    .dropdown__menu {
+      transform: translate(-50%, -8px);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &:hover .dropdown__title {
+    color: var(--blue-500);
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blue-900);
+  }
+
+  &__title {
     cursor: pointer;
+  }
 
-    &[data-open="true"] {
-      .dropdown__menu {
-        transform: translate(-50%, -8px);
-        visibility: visible;
-        opacity: 1;
-      }
-    }
+  &__chevron {
+    margin-left: 0.3rem;
+    transform: translateY(-1px) rotate(90deg);
+    transition: transform 200ms ease-out;
+    transform-origin: 25% 50%;
+    stroke: var(--blue-900);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
 
-    &:hover .dropdown__title {
-      color: var(--blue-500);
-    }
+  &:hover .dropdown__chevron {
+    transform: translateY(2px) rotate(-90deg);
 
-    &__button {
-      background: none;
-      border: none;
-      padding: .5rem 1rem;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--blue-900);
-    }
-
-    &__title {
-      cursor: pointer;
-    }
-
-    &__chevron {
-      margin-left: 0.3rem;
-      transform: translateY(-1px) rotate(90deg);
-      transition: transform 200ms ease-out;
-      transform-origin: 25% 50%;
-      stroke: var(--blue-900);
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    &:hover .dropdown__chevron {
-      transform: translateY(2px) rotate(-90deg);
+    &--blue {
       stroke: var(--blue-500);
     }
+  }
 
-    &__menu {
-      position: absolute;
-      z-index: 999;
-      top: 45px;
-      left: 50%;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      width: max-content;
-      padding: 1rem;
+  &__menu {
+    position: absolute;
+    z-index: 999;
+    top: 45px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: max-content;
+    padding: 1rem;
+    opacity: 0;
+    transform: translate(-50%, 20%);
+    transition: all 150ms ease-out;
+    visibility: hidden;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 24px 0 hsla(213, 78%, 16%, 0.15);
+  }
+
+  &__menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: var(--blue-gray-50);
+    }
+
+    .btn__chevron {
       opacity: 0;
-      transform: translate(-50%, 20%);
-      transition: all 150ms ease-out;
-      visibility: hidden;
-      border-radius: 10px;
-      background-color: white;
-      box-shadow: 0 0 24px 0 hsla(213, 78%, 16%, 0.15);
-
-      // &::before {
-      //   position: absolute;
-      //   top: -28px;
-      //   left: 50%;
-      //   width: 0;
-      //   height: 0;
-      //   content: "";
-      //   transform: rotate(-90deg) translateY(-50%);
-      //   border: 15px solid transparent;
-      //   border-left: 12px solid white;
-      //   filter: drop-shadow(0, 2px, 8px, #000);
-      // }
     }
 
-    &__menu-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      border-radius: 8px;
+    &:hover .btn__chevron {
+      opacity: 1;
 
-      &:hover {
-        background-color: var(--blue-gray-50);
+      path {
+        transition: all 150ms ease-out;
       }
 
-      .btn__chevron {
-        opacity: 0;
+      path:nth-child(1) {
+        d: path("M1.5 6L10.5 6");
       }
 
-      &:hover .btn__chevron {
-        opacity: 1;
-
-        path {
-          transition: all 150ms ease-out;
-        }
-
-        path:nth-child(1) {
-          d: path("M1.5 6L10.5 6");
-        }
-
-        path:nth-child(2) {
-          transform: translateX(4px);
-        }
+      path:nth-child(2) {
+        transform: translateX(4px);
       }
     }
+  }
 
-    &__text {
-      display: flex;
-      flex-direction: column;
-    }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__text h5 {
-      color: var(--blue-900);
-    }
+  &__text h5 {
+    color: var(--blue-900);
+  }
 
-    &__text small {
-      color: var(--blue-gray-600);
-    }
+  &__text small {
+    color: var(--blue-gray-600);
   }
 }
 

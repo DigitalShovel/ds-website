@@ -14,13 +14,15 @@
   transform: translateX(-50%);
   color: var(--blue-gray-500);
 
-  @include breakpoint(sm-tablet) {
-    transform: translate(-50%, 40px);
-  }
-
   &__home {
     @include breakpoint(sm-tablet) {
       transform: translate(-50%, 0px);
+    }
+  }
+
+  &__m300 {
+    @include breakpoint(sm-tablet) {
+      transform: translate(-50%, 40px);
     }
   }
 

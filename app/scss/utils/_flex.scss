@@ -21,6 +21,18 @@
     }
   }
 
+  &--md-tablet {
+    @include breakpoint(md-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &--sm-tablet {
+    @include breakpoint(sm-tablet) {
+      flex-direction: column;
+    }
+  }
+
   &--sm-mobile {
     @include breakpoint(sm-mobile) {
       flex-direction: column;

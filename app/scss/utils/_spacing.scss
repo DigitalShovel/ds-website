@@ -17,6 +17,38 @@
     padding: 3rem 1rem;
   }
 
+  &--m300 {
+    padding: 3rem 2rem 6rem;
+
+    @include breakpoint(lg-tablet) {
+      padding: 2rem 2rem 0;
+    }
+
+    @include breakpoint(md-tablet) {
+      padding: 2rem 2rem 1rem;
+    }
+
+    @include breakpoint(md-mobile) {
+      padding: 2rem 2rem 5rem;
+    }
+  }
+
+  &--i300 {
+    padding: 3rem 2rem 2rem;
+
+    @include breakpoint(lg-tablet) {
+      padding: 2rem 2rem 0;
+    }
+
+    @include breakpoint(md-tablet) {
+      padding: 2rem 2rem 1rem;
+    }
+
+    @include breakpoint(md-mobile) {
+      padding: 2rem;
+    }
+  }
+
   &--full-width {
     max-width: 100%;
   }

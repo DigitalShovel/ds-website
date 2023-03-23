@@ -178,7 +178,7 @@
 
   <main class="main">
 
-    <section id="product" class="hero container hero__feature flex flex-col ai-c">
+    <section id="product" class="hero container container--i300 flex flex-col ai-c">
 
       <div class="hero__text hero__text--product flex flex-col ai-c gap--sm">
         <div class="flex flex-col--lg-tablet ai-c gap--sm">
@@ -200,34 +200,65 @@
         </h1>
       </div>
 
-      <div class="gallery gallery__i300">
-        <img class="photo photo-1 photo--mobile-small" src="images/photos/minipod/i300-back.jpg"
-          alt="i300 Minipod Back View">
-        <img class="photo photo-2 photo--mobile-small" src="images/photos/minipod/i300-front.jpg"
-          alt="i300 Minipod Front View">
-        <img class="photo photo-3 photo--mobile-small" src="images/photos/minipod/M300-back-1.jpg"
-          alt="M300 Minipod Back View Angle 1">
-        <img class="photo photo-4 photo--mobile-small" src="images/photos/minipod/M300-back-2.jpg"
-          alt="M300 Minipod Back View Angle 2">
-        <img class="photo-main" src="images/illustrations/i300.svg" alt="i300 Minipod Illustration">
-        <img class="photo photo-5 photo--mobile-small" src="images/photos/minipod/M300-filters.jpg"
-          alt="M300 Minipod Filters View">
-        <img class="photo photo-6 photo--mobile-small" src="images/photos/minipod/M300-inside-1.jpg"
-          alt="M300 Minipod Inside View">
-        <img class="photo photo-7 photo--mobile-small" src="images/photos/minipod/M300-side-1.jpg"
-          alt="M300 Minipod Side View Angle 1">
-        <img class="photo photo-8 photo--mobile-small" src="images/photos/minipod/M300-side-2.jpg"
-          alt="M300 Minipod Side View Angle 2">
+      <div class="flex flex-col--sm-tablet ai-c gap--lg">
+        <img class="hero__2d-i300" src="images/illustrations/i300.svg" alt="i300 Minipod Illustration">
+        <div class="gallery-container">
 
-        <div class="modal">
-          <span class="close">✖</span>
-          <img src="" class="modal__img">
+          <div class="gallery gallery__i300">
+            <img class="photo photo-1 photo__i300" src="images/photos/minipod/i300-back.jpg"
+              alt="i300 Minipod Back View">
+            <img class="photo photo-2 photo__i300" src="images/photos/minipod/i300-front.jpg"
+              alt="i300 Minipod Front View">
+
+            <div class="modal">
+              <div class="modal-container">
+                <span class="close">
+                  <div class="line line-1"></div>
+                  <div class="line line-2"></div>
+                </span>
+                <div class="modal__photo-container">
+                  <img src="" class="modal__photo">
+                  <button class="btn__gallery btn__gallery-left">
+                    <svg class="arrow arrow-left" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
+                      <g clip-path="url(#a)">
+                        <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button class="btn__gallery btn__gallery-right">
+                    <svg class="arrow arrow-right" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
+                      <g clip-path="url(#a)">
+                        <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
 
     </section>
 
-    <a href="#specifications" class="scroll">
+    <a href="#specifications" class="scroll scroll__i300">
       <span class="scroll__text">scroll for more</span>
       <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -236,12 +267,12 @@
     </a>
 
     <section id="specifications" class="card__grid card__grid--i300">
-      <div class="card-1 flex flex-col gap--md">
+      <div class="card-1 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_power.svg" alt="Power Input Icon">
           <h6>Power Input</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">Input voltage provided at 415Y240</li>
           <li class="card__list-item flex">380-415 Volts 5 Wire
             (3 Poles, Neutral + Ground)</li>
@@ -249,12 +280,12 @@
           <li class="card__list-item card__list-item--new flex">208 Volt 3-Phase 3 Wire + Ground</li>
         </ul>
       </div>
-      <div class="card-2 flex flex-col gap--md">
+      <div class="card-2 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_spdu.svg" alt="Smart Power Distribution Icon">
           <h6>Smart Power Distribution Unit (SPDU)</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">Each MINIPOD is equipped with two SPDUs</li>
           <li class="card__list-item flex">96 (42 outlets on 208 Volt PDU) - C19 outlets with a 20A dedicated breaker
             per outlet</li>
@@ -264,23 +295,23 @@
             overhead mounted busway</li>
         </ul>
       </div>
-      <div class="card-5 flex flex-col gap--md">
+      <div class="card-5 card__list flex flex-col gap--md">
         <div class="flex gap--sm ai-c">
           <img class="icon--md" src="images/icons/icon_mining.svg" alt="Mining Capacity Icon">
           <h6>Mining Capacity</h6>
         </div>
-        <ul class="card__list flex flex-col gap--md">
+        <ul class="flex flex-col gap--md">
           <li class="card__list-item flex">8 shelves 85” wide and 11.7” tall</li>
           <li class="card__list-item flex">Quick change back-sheets on a per-row basis</li>
           <li class="card__list-item flex">Supports 88 S19 miners and 40 4U GPUs</li>
         </ul>
       </div>
-      <div class="card-7 card__secondary flex ai-c gap--md">
+      <div class="card-7 card__data card__secondary flex ai-c gap--md">
         <img class="icon--md" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
         <h6>Total Capacity</h6>
         <h6 class="text--blue">300kW</h6>
       </div>
-      <a href="contact" class="card-8 card-8--i300 btn btn--primary btn--card flex ai-c jc-c gap--sm">Place Order
+      <a href="contact" class="card-8 btn btn--primary btn--card flex ai-c jc-c gap--sm">Place Order
         <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
@@ -289,14 +320,14 @@
             stroke-linejoin="round" />
         </svg>
       </a>
-      <div class="card-9 card__secondary flex ai-c gap--md">
+      <div class="card-9 card__data flex ai-c gap--md">
         <img class="icon--md" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
-        <h6>Approx. Cost</h6>
+        <h6 class="text--dark-blue">Approx. Cost</h6>
         <h6 class="text--blue">$19,999 - $25,500</h6>
       </div>
     </section>
 
-    <section id="bundle" class="minipod">
+    <section id="bundle" class="bundle">
       <div class="container container--full-width flex flex-col gap--md ai-c jc-c">
         <h2 class="text__heading">
           <span class="text--blue">Bundled</span> with your Minipod
@@ -304,7 +335,7 @@
         <p class="text__body text--center">
           Main container, racking, back-sheets, and Smart PDUs
         </p>
-        <div class="minipod__illustrations minipod__illustrations--i300">
+        <div class="bundle__illustrations bundle__illustrations--i300">
           <img src="images/illustrations/i300-front_with-text.svg" alt="Minipod Illustration Front Side">
           <img src="images/illustrations/i300-back_with-text.svg" alt="Minipod Illustration Back Side">
           <div class="minipod__illustrations--shadow"></div>

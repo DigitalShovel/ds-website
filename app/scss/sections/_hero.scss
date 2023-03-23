@@ -82,7 +82,7 @@
     }
   }
 
-  &__minipod-container {
+  &__3d-m300-container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -98,7 +98,7 @@
     }
   }
 
-  &__minipod {
+  &__3d-m300 {
     position: absolute;
     top: 9rem;
     left: 50%;
@@ -136,7 +136,7 @@
       transform-style: preserve-3d;
     }
 
-    &--featured {
+    &--large {
       position: relative;
       top: 0;
       transform: scale(.7);
@@ -153,12 +153,12 @@
     }
   }
 
-  &__background {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: -260px;
-    transform: scale(.6);
+  &__2d-i300 {
+    width: 400px;
+
+    @include breakpoint(md-mobile) {
+      width: 300px;
+    }
   }
 
   &__heading {
@@ -228,22 +228,6 @@
 
     @include breakpoint(md-mobile) {
       transform: scale(.9) translate(-60%, -235px);
-    }
-  }
-
-  &__m300 {
-    padding: 3rem 2rem 6rem;
-
-    @include breakpoint(lg-tablet) {
-      padding: 2rem 2rem 0;
-    }
-
-    @include breakpoint(md-tablet) {
-      padding: 2rem 2rem 1rem;
-    }
-
-    @include breakpoint(md-mobile) {
-      padding: 2rem 2rem 5rem;
     }
   }
 

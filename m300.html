@@ -113,8 +113,8 @@
         <li class="dropdown" aria-haspopup="true" aria-expanded="false">
           <button class="dropdown__button">
             <span class="dropdown__title">Products</span>
-            <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="dropdown__chevron dropdown__chevron--blue" width="13" height="12" viewBox="0 0 13 12"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.5 1L7.95455 6L2.5 11" />
             </svg>
           </button>
@@ -183,7 +183,7 @@
 
   <main class="main">
 
-    <section id="product" class="hero container hero__m300 flex flex-col ai-c">
+    <section id="product" class="hero container container--m300 flex flex-col ai-c">
 
       <div class="hero__text hero__text--product flex flex-col gap--sm ai-c">
         <div class="flex flex-col--sm-mobile ai-c gap--sm">
@@ -205,8 +205,8 @@
         </h1>
       </div>
 
-      <div class="hero__minipod-container">
-        <div class="hero__minipod hero__minipod--featured">
+      <div class="hero__3d-m300-container">
+        <div class="hero__3d-m300 hero__3d-m300--large">
           <div class="camera-rotate">
             <div class="base">
               <div class="spine">
@@ -388,7 +388,7 @@
         </div>
       </div>
 
-      <div class="gallery-container">
+      <div class="gallery__m300-container">
         <div class="gallery gallery__m300">
           <img class="photo photo__m300 photo-3" src="images/photos/minipod/M300-back-1.jpg"
             alt="M300 Minipod Back View Angle 1">
@@ -449,7 +449,7 @@
 
     </section>
 
-    <a href="#specifications" class="scroll scroll__product">
+    <a href="#specifications" class="scroll scroll__m300">
       <span class="scroll__text">scroll for more</span>
       <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -546,15 +546,18 @@
             stroke-linejoin="round" />
         </svg>
       </a>
-      <a class="card-9 card__data card__data card__data--deal flex ai-c gap--md" href="contact">
+      <div data-specs="true" class="card-9 dropdown card__data card__data--deal flex ai-c gap--md">
         <img class="icon--md" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
         <h6 class="pricing__set-heading">Bear Market Promo</h6>
         <h6 class="text--red text--emphasis text--larger">$29,997</h6>
-        <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-        <div class="card__data card__data--popup">
+        <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 1L7.95455 6L2.5 11" />
+        </svg>
+        <div class="card__data card__data--specs-popup">
           <h6>Further discounts on high volume pricing</h6>
         </div>
-      </a>
+      </div>
     </section>
 
     <section id="bundle" class="bundle">
@@ -604,15 +607,19 @@
                 <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$39,999 - $45,500</h6>
               </div>
-              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
+              <div data-pricing="true"
+                class="card-9 card__data card__data--deal dropdown pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
                 <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$29,997</h6>
-                <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card__data card__data--popup">
+                <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 1L7.95455 6L2.5 11" />
+                </svg>
+                <div class="card__data card__data--pricing-popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 
@@ -636,15 +643,19 @@
                 <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$113,997 - $130,500</h6>
               </div>
-              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
+              <div data-pricing="true"
+                class="card-9 card__data card__data--deal dropdown pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
                 <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$86,997</h6>
-                <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card__data card__data--popup">
+                <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 1L7.95455 6L2.5 11" />
+                </svg>
+                <div class="card__data card__data--pricing-popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 
@@ -668,15 +679,19 @@
                 <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$167,500 - 190,899</h6>
               </div>
-              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
+              <div data-pricing="true"
+                class="card-9 card__data card__data--deal dropdown pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
                 <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$139,997</h6>
-                <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card__data card__data--popup">
+                <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 1L7.95455 6L2.5 11" />
+                </svg>
+                <div class="card__data card__data--pricing-popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 
@@ -700,15 +715,19 @@
                 <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$250,500 - 291,999</h6>
               </div>
-              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
+              <div data-pricing="true"
+                class="card-9 card__data card__data--deal dropdown pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon" href="contact">
                 <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$189,997</h6>
-                <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card__data card__data--popup">
+                <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 1L7.95455 6L2.5 11" />
+                </svg>
+                <div class="card__data card__data--pricing-popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 
@@ -732,15 +751,19 @@
                 <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$310,500 - 356,999</h6>
               </div>
-              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
+              <div data-pricing="true"
+                class="card-9 card__data card__data--deal dropdown pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
                 <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$233,997</h6>
-                <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card__data card__data--popup">
+                <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 1L7.95455 6L2.5 11" />
+                </svg>
+                <div class="card__data card__data--pricing-popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 
@@ -764,15 +787,19 @@
                 <h6 class="pricing__set-heading">Approx. Cost</h6>
                 <h6 class="text--blue text--strikethrough">$386,500 - 448,999</h6>
               </div>
-              <a class="card-9 card__data card__data--deal pricing__set-detail flex ai-c gap--md" href="contact">
+              <div data-pricing="true"
+                class="card-9 card__data card__data--deal dropdown pricing__set-detail flex ai-c gap--md">
                 <img class="icon--sm" src="images/icons/icon_bear-market_v2.svg" alt="Bear Market Icon">
                 <h6 class="pricing__set-heading">Bear Market Promo</h6>
                 <h6 class="text--red text--emphasis text--larger">$274,997</h6>
-                <img class="icon--sm" src="images/icons/icon_redirect-red.svg" alt="Redirect Icon">
-                <div class="card__data card__data--popup">
+                <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 1L7.95455 6L2.5 11" />
+                </svg>
+                <div class="card__data card__data--pricing-popup">
                   <h6>Further discounts on high volume pricing</h6>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
