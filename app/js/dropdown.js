@@ -1,3 +1,7 @@
+// Author: Nicholas Panayotakos
+
+// Description: This file is responsible for the dropdown component to enable keyboard navigation and accessibility.
+
 class Dropdown {
   constructor(container) {
     this.isOpen = false;
@@ -10,7 +14,6 @@ class Dropdown {
   }
 
   initEvents() {
-    this.button.addEventListener("click", this.toggle.bind(this));
     document.addEventListener("click", this.onClickOutside.bind(this));
     document.addEventListener("keydown", this.onKeyEvent.bind(this));
   }

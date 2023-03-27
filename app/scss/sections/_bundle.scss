@@ -17,6 +17,10 @@
 
     img {
       object-fit: contain;
+
+      @include breakpoint(sm-desktop) {
+        width: 400px;
+      }
     }
 
     &--i300 {
@@ -28,11 +32,11 @@
     &--shadow {
       position: absolute;
       left: 50%;
-      top: 20%;
+      top: 15%;
       transform: translateX(-50%);
-      background-color: var(--blue-50);
-      width: 200px;
-      height: 100px;
+      background-color: var(--blue-gray-50);
+      width: 400px;
+      height: 300px;
       border-radius: 100vh;
       filter: blur(80px);
       z-index: -1;

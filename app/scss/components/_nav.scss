@@ -152,9 +152,8 @@
   position: relative;
   cursor: pointer;
 
-  &[data-open="true"] {
-    .dropdown__menu {
-      transform: translate(-50%, -8px);
+  &:hover {
+    .dropdown__menu-container {
       visibility: visible;
       opacity: 1;
     }
@@ -196,20 +195,27 @@
     }
   }
 
-  &__menu {
+  &__menu-container {
+    // the padding-top allows the menu to remain open while the user moves the mouse from the dropdown item to the expanded menu
+    padding-top: 2rem;
+
     position: absolute;
     z-index: 999;
-    top: 45px;
+    top: -35px;
     left: 50%;
+
+    opacity: 0;
+    transform: translate(-50%, 20%);
+    transition: all 300ms ease;
+    visibility: hidden;
+  }
+
+  &__menu {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: max-content;
     padding: 1rem;
-    opacity: 0;
-    transform: translate(-50%, 20%);
-    transition: all 150ms ease-out;
-    visibility: hidden;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 0 24px 0 hsla(213, 78%, 16%, 0.15);

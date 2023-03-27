@@ -1,4 +1,6 @@
-// detects the scroll position and adds the active class to the corresponding link
+// Author: Nicholas Panayotakos
+
+// Description: The script below detects the scroll position and adds an active class to the corresponding link in the subnav by highlighting it.
 
 let product = document.querySelector("#product");
 let specs = document.querySelector("#specifications");

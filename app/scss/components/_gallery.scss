@@ -1,9 +1,5 @@
 @use "../base/breakpoints" as *;
 
-:root {
-  --: cubic-bezier(0.68, -0.6, 0.32, 1.6);
-}
-
 .gallery {
   display: grid;
 
@@ -76,7 +72,8 @@
   overflow: hidden;
   background-color: #fff;
   background-color: rgba(255, 255, 255, .95);
-  transition: opacity 300ms ease-in-out;
+  backdrop-filter: saturate(180%) blur(5px);
+  transition: opacity 300ms ease-in;
 
   &-container {
     position: fixed;
@@ -123,6 +120,37 @@
         height: 200px;
       }
     }
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+  }
+
+  &__instructions {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    font-size: 0.8rem;
+    color: var(--blue-gray-500);
+
+    @include breakpoint(md-tablet) {
+      display: none;
+    }
+  }
+
+  .arrow-key {
+    background: var(--cool-gray-100);
+    font-size: 0.9rem;
+    padding: 0rem 0.2rem;
+    border: 1px solid var(--cool-gray-200);
+    border-radius: 5px;
+    margin: 0.2rem;
   }
 }
 

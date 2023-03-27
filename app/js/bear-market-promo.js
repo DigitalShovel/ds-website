@@ -1,5 +1,6 @@
-// Description: This file contains the JavaScript for the bear market promo
 // Author: Nicholas Panayotakos
+
+// Description: This file is responsible for the dropdown animation when the user hovers over the bear market promo pricing. The animation is handled through JS to make the pricing appear longer by adding a 1.25 second delay before the popup disappears.
 
 // get all the elements with an attribute of data-specs and data-pricing
 // get all the elements with a class of .card__data-specs-popup and .card__data-pricing-popup

@@ -1,3 +1,7 @@
+// Author: Nicholas Panayotakos
+
+// Description: This file contains the javascript for the navbar toggle on mobile/tablet.
+
 const navBar = document.querySelector(".navbar");
 const navLinks = document.querySelector(".navbar__links");
 const navToggle = document.querySelector(".navbar__hamburger");
@@ -39,18 +43,3 @@ window.matchMedia("(max-width: 450px)").onchange = (e) => {
     specsClass.innerHTML = "Specifications";
   }
 };
-
-// detects if the user is hovering over the dropdown menu and if they are not then it will close the dropdown menu after 0.5 seconds
-navDropdown.addEventListener("mouseenter", () => {
-  navDropdown.setAttribute("data-open", true);
-});
-
-navDropdown.addEventListener("mouseleave", () => {
-  if (navDropdownMenu.addEventListener("mouseenter", () => {})) {
-    navDropdown.setAttribute("data-open", true);
-  } else {
-    setTimeout(() => {
-      navDropdown.setAttribute("data-open", false);
-    }, 500);
-  }
-});
