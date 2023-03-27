@@ -7,11 +7,7 @@
     position: relative;
     margin-top: 4rem;
 
-    @include breakpoint(lg-tablet) {
-      flex-direction: column;
-    }
-
-    @include breakpoint(sm-tablet) {
+    @include breakpoint(md-tablet) {
       flex-direction: column;
     }
 
