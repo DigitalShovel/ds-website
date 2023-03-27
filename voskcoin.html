@@ -104,45 +104,50 @@
             </svg>
           </a>
         </li>
-        <li class="dropdown" data-open="false">
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
           <button class="dropdown__button">
             <span class="dropdown__title">Products</span>
-            <svg class="dropdown__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="dropdown__chevron dropdown__chevron--blue" width="13" height="12" viewBox="0 0 13 12"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.5 1L7.95455 6L2.5 11" />
             </svg>
           </button>
-          <div class="dropdown__menu">
-            <a class="dropdown__menu-item dropdown__link" href="m300" tabindex="-1" aria-role="menu-item">
-              <img class="icon--md" src="images/icons/icon_minipod.svg" alt="Minipod Icon" aria-hidden="true">
-              <div class="dropdown__text">
-                <h5>M300 Minipod
-                  <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </h5>
-                <small>Outdoor Solution</small>
-              </div>
-            </a>
-            <a class="dropdown__menu-item dropdown__link" href="i300" tabindex="-1" aria-role="menu-item">
-              <img class="icon--md" src="images/icons/icon_i300.svg" alt="Minipod Icon" aria-hidden="true">
-              <div class="dropdown__text">
-                <h5>i300 Minipod
-                  <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </h5>
-                <small>Indoor Solution</small>
-              </div>
-            </a>
+
+          <div class="dropdown__menu-container">
+            <div class="dropdown__menu" aria-role="menu" aria-hidden="true">
+              <a class="dropdown__menu-item dropdown__link" href="m300" tabindex="-1" aria-role="menu-item">
+                <img class="icon--md" src="images/icons/icon_minipod.svg" alt="Minipod Icon" aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    M300 Minipod
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Outdoor Solution</small>
+                </div>
+              </a>
+              <a class="dropdown__menu-item dropdown__link" href="i300" tabindex="-1" aria-role="menu-item">
+                <img class="icon--md" src="images/icons/icon_i300.svg" alt="Minipod Icon" aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    i300 Minipod
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Indoor Solution</small>
+                </div>
+              </a>
+            </div>
           </div>
         </li>
 
