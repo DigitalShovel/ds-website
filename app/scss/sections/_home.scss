@@ -1,51 +1,22 @@
 @use "../base/breakpoints" as *;
 
-/**
- *
- * The .btc class below adds styling to the currently hidden section
- * on the homepage about bitcoin and our relationship to it.
- *
- */
+.minipod {
+  display: flex;
+  flex-direction: column;
 
-.btc {
-  background-color: var(--blue-50);
-  background-image: url("../../../images/backgrounds/btc-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-blend-mode: screen;
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 7rem 2rem;
+  @include breakpoint(md-tablet) {
+    align-items: center;
   }
 
   &__heading {
-    font-size: 1.563rem;
-    font-weight: 600;
-    line-height: 1.2;
-    max-width: 17ch;
-  }
-
-  &__subheading {
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--blue-500);
+    font-size: 2.441rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
   }
 
   &__body {
-    padding: 1rem 0 1.5rem;
+    max-width: 45ch;
     color: var(--blue-gray-600);
-    column-count: 2;
-
-    @include breakpoint(sm-tablet) {
-      max-width: 45ch;
-      column-count: 1;
-    }
   }
 }
 

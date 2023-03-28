@@ -1,6 +1,13 @@
 @use "../base/breakpoints" as *;
 
 .bundle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include breakpoint(md-tablet) {
+    align-items: center;
+  }
 
   &__illustrations {
     display: flex;
@@ -15,7 +22,11 @@
       object-fit: contain;
 
       @include breakpoint(sm-desktop) {
-        width: 400px;
+        width: 450px;
+      }
+
+      @include breakpoint(lg-tablet) {
+        width: 350px;
       }
     }
 

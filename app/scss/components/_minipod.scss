@@ -2,19 +2,6 @@
 
 // the code below is responsible for the pseudo 3D minipod component seen on the home page and M300 product page
 
-.minipod {
-  &__heading {
-    font-size: 2.441rem;
-    line-height: 1.1;
-    letter-spacing: -1px;
-  }
-
-  &__body {
-    max-width: 45ch;
-    color: var(--blue-gray-600);
-  }
-}
-
 .tooltip {
   opacity: 0;
   visibility: hidden;
