@@ -71,7 +71,7 @@
       height: 32px;
       content: "";
       transform: translateY(50%);
-      background-image: url(../../../images/icons/icon_checkmark-small.svg);
+      background-image: url(../images/icons/icon_checkmark-small.svg);
     }
 
     &-item--new::before {
@@ -82,7 +82,7 @@
       height: 32px;
       content: "";
       transform: translateY(50%);
-      background-image: url(../../../images/icons/icon_new.svg);
+      background-image: url(../images/icons/icon_new.svg);
       background-repeat: no-repeat;
       background-position: center center;
     }
@@ -239,7 +239,7 @@
         min-height: 11px;
 
         content: "";
-        background-image: url("../../../images/icons/icon_redirect.svg");
+        background-image: url("../images/icons/icon_redirect.svg");
         background-repeat: no-repeat;
 
         @include breakpoint(md-mobile) {

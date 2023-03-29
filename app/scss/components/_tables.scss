@@ -101,7 +101,7 @@ table {
       left: 22px;
       top: 50%;
       transform: translateY(-50%);
-      background-image: url("../../../images/icons/icon_info.svg");
+      background-image: url("../images/icons/icon_info.svg");
       background-repeat: no-repeat;
     }
 
@@ -153,14 +153,14 @@ table {
   }
 
   &__checkmark {
-    background-image: url(../../../images/icons/icon_checkmark-regular.svg);
+    background-image: url(../images/icons/icon_checkmark-regular.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 22px 22px;
   }
 
   &__x-mark {
-    background-image: url(../../../images/icons/icon_close-filled.svg);
+    background-image: url(../images/icons/icon_close-filled.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 22px 22px;
