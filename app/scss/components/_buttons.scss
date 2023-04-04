@@ -17,7 +17,7 @@
   &:hover {
     .btn__chevron {
       path {
-        transition: all 150ms ease-out;
+        transition: transform 150ms ease-out, d 150ms ease-out;
       }
 
       path:nth-child(1) {
@@ -65,7 +65,7 @@
   }
 
   &__pause svg {
-    transition: all 150ms ease-in;
+    transition: transform 150ms ease-in;
   }
 
   &__gallery {

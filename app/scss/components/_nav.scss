@@ -206,7 +206,7 @@
 
     opacity: 0;
     transform: translate(-50%, 20%);
-    transition: all 300ms ease;
+    transition: opacity 300ms ease-out, visibility 300ms ease-out, transform 300ms ease-out;
     visibility: hidden;
   }
 
@@ -241,7 +241,7 @@
       opacity: 1;
 
       path {
-        transition: all 150ms ease-out;
+        transition: opacity 150ms ease-out, transform 150ms ease-out, d 150ms ease-out;
       }
 
       path:nth-child(1) {

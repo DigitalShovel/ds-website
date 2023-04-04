@@ -285,7 +285,7 @@
       border: 1px solid var(--blue-gray-100);
       background-color: var(--blue-gray-50);
       border-radius: 10px;
-      transition: all 150ms ease-out;
+      transition: transform 150ms ease-out, border 150ms ease-out, box-shadow 150ms ease-out;
 
       &:hover {
         transform: translateY(-5px);
@@ -316,7 +316,7 @@
     border: 1px solid var(--blue-gray-100);
     border-radius: 10px;
     background-color: var(--blue-gray-50);
-    transition: all 150ms ease-out;
+    transition: transform 150ms ease-out, border 150ms ease-out, box-shadow 150ms ease-out;
 
     &:hover {
       transform: translateY(-5px);

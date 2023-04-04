@@ -44,7 +44,7 @@
 
   &__list {
     padding: 20px;
-    transition: all 100ms ease-in;
+    transition: border 100ms ease-in, box-shadow 100ms ease-in;
     border: 1px solid var(--blue-200);
     border-radius: 10px;
     background-color: white;
@@ -91,7 +91,7 @@
   &__data {
     position: relative;
     padding: 10px 20px;
-    transition: all 100ms ease-in;
+    transition: border 100ms ease-in, box-shadow 100ms ease-in;
     border-radius: 7px;
     border: 1px solid var(--blue-200);
     background-color: var(--blue-gray-50);

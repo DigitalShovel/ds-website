@@ -228,18 +228,18 @@
   }
 
   &__chat-bubble {
-    transition: all 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
+    transition: transform 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19), visibility 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19), opacity 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
     transform: scale(0) rotate(-90deg);
     transform-origin: 50% 50%;
   }
 
   &__right-person {
-    transition: all 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
+    transition: transform 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19), visibility 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19), opacity 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
     transform: translateX(10px);
   }
 
   &__left-person {
-    transition: all 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
+    transition: transform 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19), visibility 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19), opacity 600ms cubic-bezier(0.17, 0.67, 0.75, 1.19);
     transform: translateX(-10px);
   }
 
@@ -398,7 +398,7 @@
   }
 
   &__plug {
-    transition: all 150ms ease-in;
+    transition: transform 150ms ease-in;
     transform: translate(2px);
   }
 
