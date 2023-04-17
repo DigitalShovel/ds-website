@@ -1,0 +1,41 @@
+@use "../base/breakpoints" as *;
+
+.recruitment {
+  &__hero {
+    p {
+      width: 55ch;
+    }
+  }
+
+  &__interviewers {
+    img {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-family: var(--medium-font);
+      font-weight: 800;
+    }
+
+    h4 {
+      color: var(--blue-500);
+      font-family: var(--medium-font);
+      font-weight: normal;
+    }
+
+    span {
+      background-color: var(--blue-50);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.3rem 0.8rem;
+      border-radius: 100vh;
+    }
+
+    p {
+      color: var(--blue-gray-500);
+      line-height: 1.6;
+    }
+  }
+}
