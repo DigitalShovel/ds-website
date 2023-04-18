@@ -10,26 +10,18 @@
 }
 
 h1 {
-  font-size: 4.052rem;
+  font-size: 4rem;
   font-weight: 900;
   letter-spacing: -0.5px;
   font-family: var(--heavy-wide-font);
 
   @include breakpoint(lg-tablet) {
-    font-size: 3.25rem;
-  }
-
-  @include breakpoint(sm-tablet) {
-    font-size: 3rem;
-  }
-
-  @include breakpoint(md-mobile) {
-    font-family: var(--medium-wide-font);
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 7vw, 4rem);
   }
 
   @include breakpoint(sm-mobile) {
-    font-size: 2rem;
+    font-family: var(--medium-wide-font);
+    font-size: 1.7rem;
   }
 }
 
@@ -40,9 +32,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.44rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -1px;
+
+  @include breakpoint(lg-tablet) {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
 
   @include breakpoint(md-mobile) {
     line-height: 1;

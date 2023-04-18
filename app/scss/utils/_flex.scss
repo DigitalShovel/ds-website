@@ -33,6 +33,12 @@
     }
   }
 
+  &--md-mobile {
+    @include breakpoint(md-mobile) {
+      flex-direction: column;
+    }
+  }
+
   &--sm-mobile {
     @include breakpoint(sm-mobile) {
       flex-direction: column;
