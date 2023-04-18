@@ -1,6 +1,8 @@
 @use "../base/breakpoints" as *;
 
 .turnkey {
+  overflow-x: hidden;
+
   @include breakpoint(lg-tablet) {
     background-position: center 15%;
     background-size: 900px;

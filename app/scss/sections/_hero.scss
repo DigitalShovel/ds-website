@@ -162,17 +162,60 @@
   }
 
   &__heading {
-    font-family: "Right Grotesk Wide Black", Inter, Roboto, sans-serif;
     line-height: .9;
-    max-width: 13ch;
+    text-align: center;
+
+    &--congrats {
+      @include breakpoint(sm-tablet) {
+        content: "Congrats!";
+      }
+    }
+
+    &--left {
+      text-align: left;
+
+      @include breakpoint(lg-tablet) {
+        text-align: center;
+      }
+    }
+
+    &--sm-width {
+      max-width: 13ch;
+    }
 
     emphasis {
       color: var(--blue-500);
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      left: 50%;
+      width: 400px;
+      height: 200px;
+
+      content: "";
+      transform: translateX(-50%);
+      background-color: var(--blue-100);
+      filter: blur(90px);
+    }
+  }
+
+  &__subheading {
+    @include breakpoint(md-tablet) {
+      text-align: center;
     }
   }
 
   &__body {
     color: var(--blue-gray-600);
+    font-size: clamp(0.8rem, 2vw, 1rem);
+
+    @include breakpoint(lg-tablet) {
+      text-align: center;
+      margin: 0 auto;
+    }
 
     &--home {
       max-width: 55ch;
@@ -188,29 +231,6 @@
 
     &--team {
       max-width: 45ch;
-    }
-  }
-
-  &__text {
-    position: relative;
-    text-align: center;
-
-    h1 {
-      line-height: 1;
-    }
-
-    &::after {
-      position: absolute;
-      z-index: -2;
-      top: 0;
-      left: 50%;
-      width: 400px;
-      height: 200px;
-
-      content: "";
-      transform: translateX(-50%);
-      background-color: var(--blue-100);
-      filter: blur(90px);
     }
   }
 
