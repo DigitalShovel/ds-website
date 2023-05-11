@@ -36,10 +36,15 @@
       rel="stylesheet">
   </noscript>
 
+  <!-- GSAP -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script defer src="/app/js/ScrollTrigger.min.js"></script>
+  <script defer src="/app/js/ScrollSmoother.min.js"></script>
+
   <!-- Javascript -->
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
-  <script defer src="/app/js/smooth-scroll.min.js"></script>
+  <script defer src="/app/js/smooth-scroll.js"></script>
 
   <title>Digital Shovel • Turn-Key Solutions</title>
 
@@ -208,182 +213,183 @@
     </div>
   </nav>
 
-  <main class="main turnkey container container--lg">
-
-    <div class="animation">
-      <div class="animation__container">
-        <div class="star star-1"></div>
-        <div class="star star-2"></div>
-        <div class="star star-3"></div>
-        <div class="star star-4"></div>
-        <div class="star star-5"></div>
-        <div class="star star-6"></div>
-
-        <svg version="1.1" width="800px" height="800px" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-          viewBox="0 0 800 800">
-          <defs>
-            <filter id="mask-filter" filterUnits="userSpaceOnUse" x="0" y="-.5" width="801" height="801">
-              <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
-            </filter>
-          </defs>
-          <mask maskUnits="userSpaceOnUse" x="0" y="-.5" width="801" height="801" id="radial-gradient-mask">
-            <g style="filter:url(#mask-filter)">
-              <radialGradient id="radial-gradient" cx="400" cy="400" r="400" gradientUnits="userSpaceOnUse">
-                <stop offset="0" style="stop-color:#fff" />
-                <stop offset=".9" style="stop-color:#000" />
-              </radialGradient>
-              <path style="fill:url(#radial-gradient)" d="M0 0h800v800H0z" />
-            </g>
-          </mask>
-          <g style="mask:url(#radial-gradient-mask)">
-            <g id="vertical">
-              <path class="grid-lines"
-                d="M.5 0v800M40.5 0v800M80.5 0v800M120.5 0v800M160.5 0v800M200.5 0v800M240.5 0v800M280.5 0v800M320.5 0v800M360.5 0v800M400.5 0v800M440.5 0v800M480.5 0v800M520.5 0v800M560.5 0v800M600.5 0v800M640.5 0v800M680.5 0v800M720.5 0v800M760.5 0v800M800.5 0v800" />
-            </g>
-            <g id="horizontal">
-              <path class="grid-lines"
-                d="M800.5 0H.5M800.5 40H.5M800.5 80H.5M800.5 120H.5M800.5 160H.5M800.5 200H.5M800.5 240H.5M800.5 280H.5M800.5 320H.5M800.5 360H.5M800.5 400H.5M800.5 440H.5M800.5 480H.5M800.5 520H.5M800.5 560H.5M800.5 600H.5M800.5 640H.5M800.5 680H.5M800.5 720H.5M800.5 760H.5M800.5 800H.5" />
-            </g>
-          </g>
-        </svg>
-      </div>
-    </div>
-
-    <section class="hero flex flex-col">
-      <div class="flex flex-col gap--sm">
-        <h1 class="hero__heading hero__heading--left">TURN-KEY SOLUTIONS</h1>
-        <p class="hero__body">Our turn-key solutions are designed to make your life easier by providing a comprehensive and efficient
-          solution to your business needs. From start to finish, we'll handle all the details, so you can focus on what
-          you do best.
-        </p>
-      </div>
-      <div class="flex flex-col--lg-tablet jc-sb gap--lg">
-        <div class="turnkey__mining">
-          <h2>Start mining in</h2>
-          <h3>45 days</h3>
-          <h2>fully turn-key and managed</h4>
-        </div>
-        <div class="turnkey__watt-price">
-          <img src="images/icons/icon_coin.svg" alt="Dollar Coin">
-          <div class="flex flex-col">
-            <h4>6¢ - 7¢ <small>/ kWh</small></h4>
-            <span>Pricing based on volume</span>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main class="main hero__turnkey container container--lg">
+        <div class="animation">
+          <div class="animation__container">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+            <div class="star star-6"></div>
+            <svg version="1.1" width="800px" height="800px" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+              viewBox="0 0 800 800">
+              <defs>
+                <filter id="mask-filter" filterUnits="userSpaceOnUse" x="0" y="-.5" width="801" height="801">
+                  <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+                </filter>
+              </defs>
+              <mask maskUnits="userSpaceOnUse" x="0" y="-.5" width="801" height="801" id="radial-gradient-mask">
+                <g style="filter:url(#mask-filter)">
+                  <radialGradient id="radial-gradient" cx="400" cy="400" r="400" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" style="stop-color:#fff" />
+                    <stop offset=".9" style="stop-color:#000" />
+                  </radialGradient>
+                  <path style="fill:url(#radial-gradient)" d="M0 0h800v800H0z" />
+                </g>
+              </mask>
+              <g style="mask:url(#radial-gradient-mask)">
+                <g id="vertical">
+                  <path class="grid-lines"
+                    d="M.5 0v800M40.5 0v800M80.5 0v800M120.5 0v800M160.5 0v800M200.5 0v800M240.5 0v800M280.5 0v800M320.5 0v800M360.5 0v800M400.5 0v800M440.5 0v800M480.5 0v800M520.5 0v800M560.5 0v800M600.5 0v800M640.5 0v800M680.5 0v800M720.5 0v800M760.5 0v800M800.5 0v800" />
+                </g>
+                <g id="horizontal">
+                  <path class="grid-lines"
+                    d="M800.5 0H.5M800.5 40H.5M800.5 80H.5M800.5 120H.5M800.5 160H.5M800.5 200H.5M800.5 240H.5M800.5 280H.5M800.5 320H.5M800.5 360H.5M800.5 400H.5M800.5 440H.5M800.5 480H.5M800.5 520H.5M800.5 560H.5M800.5 600H.5M800.5 640H.5M800.5 680H.5M800.5 720H.5M800.5 760H.5M800.5 800H.5" />
+                </g>
+              </g>
+            </svg>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="grid grid__col-6 mtop--xl">
-      <div class="grid-item grid-turnkey__item-1">
-        <img src="images/icons/icon_land-lease_v2.svg" alt="Land Lease Icon">
-        <h5>Land Lease</h5>
-        <p>2-year lease with flat take-or-pay power contract inclusive. Fully prepped site with pad or piles designed
-          specifically for the Digital Shovel Minipods.</p>
-      </div>
-      <div class="grid-item grid-turnkey__item-2">
-        <img src="images/icons/icon_transformer-hookup_v2.svg" alt="Transformer Hookup Icon">
-        <h5>Transformer Hookup</h5>
-        <p>Included in this offering is the hook-up of our medium voltage transformer to the low voltage switchgear
-          that
-          will feed the Minipods.</p>
-      </div>
-      <div class="grid-item grid-turnkey__item-3">
-        <img src="images/icons/icon_pod.svg" alt="Minipod Icon">
-        <h5>300kW Pod</h5>
-        <p>Contracts can be purchased in 300kW increments using our Minipod line. You must take an entire pod and will
-          have VPN access to both the pod's miners, as well as the SmartPDU. At the end of the contract, YOU own the
-          Minipod.</p>
-      </div>
-      <div class="grid-item grid-turnkey__item-4">
-        <img src="images/icons/icon_forklift.svg" alt="Forklift Icon">
-        <h5>Deployment</h5>
-        <p>Deployment, configuration, and setup of your miners is included in the cost of this contract.</p>
-      </div>
-      <div class="grid-item grid-turnkey__item-5">
-        <img src="images/icons/icon_truck.svg" alt="Truck Icon">
-        <h5>Delivery</h5>
-        <p>Transportation of the pod to the mining farm is included in the cost of this contract.</p>
-      </div>
-    </section>
-
-    <section class="turnkey__pricing flex flex-col--lg-tablet jc-sb ai-c gap--xlg">
-      <div class="flex flex-col">
-        <h5>Power Deposit</h5>
-        <h2 class="flex ai-end gap--sm">$42k
-          <small class="text--dark-blue">/pod</small>
-        </h2>
-      </div>
-      <h2>+</h2>
-      <div class="flex flex-col">
-        <h5>Pod Deposit</h5>
-        <h2 class="flex ai-end gap--sm">$15k
-          <span class="flex flex-col gap--sm">
-            <small class="text--emphasis text--blue">+$2300/m</small>
-            <small class="text--dark-blue">for 12 months</small>
-          </span>
-        </h2>
-      </div>
-    </section>
-
-    <section class="turnkey__cta flex flex-col ai-c">
-      <a class="btn btn--primary" href="contact">Get Started
-        <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.49 6L7.5 6" />
-          <path d="M2.5 1L7.95455 6L2.5 11" />
-        </svg>
-      </a>
-
-      <h3>You own the pods at the end</h3>
-      <h4>*2 Year Minimum Commitment & Only 6MW Available</h4>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
-        <div class="footer__column">
-          <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
-          <p class="footer__body">
-            Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy
-            cost, and high security, we help businesses with managed and unmanaged miner hosting.
-          </p>
+        <section class="hero flex flex-col">
+          <div class="flex flex-col gap--sm">
+            <h1 class="hero__heading hero__heading--left">TURN-KEY SOLUTIONS</h1>
+            <p class="hero__body">Our turn-key solutions are designed to make your life easier by providing a
+              comprehensive and efficient
+              solution to your business needs. From start to finish, we'll handle all the details, so you can focus on
+              what
+              you do best.
+            </p>
+          </div>
+          <div class="flex flex-col--lg-tablet jc-sb gap--lg w-100">
+            <div class="turnkey__mining">
+              <h2>Start mining in</h2>
+              <h3>45 days</h3>
+              <h2>fully turn-key and managed</h4>
+            </div>
+            <div class="turnkey__watt-price">
+              <img src="images/icons/icon_coin.svg" alt="Dollar Coin">
+              <div class="flex flex-col">
+                <h4>6¢ - 7¢ <small>/ kWh</small></h4>
+                <span>Pricing based on volume</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid grid__col-6 mtop--xl">
+          <div class="grid-item grid-turnkey__item-1">
+            <img src="images/icons/icon_land-lease_v2.svg" alt="Land Lease Icon">
+            <h5>Land Lease</h5>
+            <p>2-year lease with flat take-or-pay power contract inclusive. Fully prepped site with pad or piles
+              designed
+              specifically for the Digital Shovel Minipods.</p>
+          </div>
+          <div class="grid-item grid-turnkey__item-2">
+            <img src="images/icons/icon_transformer-hookup_v2.svg" alt="Transformer Hookup Icon">
+            <h5>Transformer Hookup</h5>
+            <p>Included in this offering is the hook-up of our medium voltage transformer to the low voltage switchgear
+              that
+              will feed the Minipods.</p>
+          </div>
+          <div class="grid-item grid-turnkey__item-3">
+            <img src="images/icons/icon_pod.svg" alt="Minipod Icon">
+            <h5>300kW Pod</h5>
+            <p>Contracts can be purchased in 300kW increments using our Minipod line. You must take an entire pod and
+              will
+              have VPN access to both the pod's miners, as well as the SmartPDU. At the end of the contract, YOU own the
+              Minipod.</p>
+          </div>
+          <div class="grid-item grid-turnkey__item-4">
+            <img src="images/icons/icon_forklift.svg" alt="Forklift Icon">
+            <h5>Deployment</h5>
+            <p>Deployment, configuration, and setup of your miners is included in the cost of this contract.</p>
+          </div>
+          <div class="grid-item grid-turnkey__item-5">
+            <img src="images/icons/icon_truck.svg" alt="Truck Icon">
+            <h5>Delivery</h5>
+            <p>Transportation of the pod to the mining farm is included in the cost of this contract.</p>
+          </div>
+        </section>
+        <section class="turnkey__pricing flex flex-col--lg-tablet jc-sb ai-c gap--xlg">
+          <div class="flex flex-col">
+            <h5>Power Deposit</h5>
+            <h2 class="flex ai-end gap--sm">$42k
+              <small class="text--dark-blue">/pod</small>
+            </h2>
+          </div>
+          <h2>+</h2>
+          <div class="flex flex-col">
+            <h5>Pod Deposit</h5>
+            <h2 class="flex ai-end gap--sm">$15k
+              <span class="flex flex-col gap--sm">
+                <small class="text--emphasis text--blue">+$2300/m</small>
+                <small class="text--dark-blue">for 12 months</small>
+              </span>
+            </h2>
+          </div>
+        </section>
+        <section class="turnkey__cta flex flex-col ai-c">
+          <a class="btn btn--primary" href="contact">Get Started
+            <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.49 6L7.5 6" />
+              <path d="M2.5 1L7.95455 6L2.5 11" />
+            </svg>
+          </a>
+          <h3>You own the pods at the end</h3>
+          <h4>*2 Year Minimum Commitment & Only 6MW Available</h4>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
+            <div class="footer__column">
+              <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg"
+                  alt="Digital Shovel Logo" /></a>
+              <p class="footer__body">
+                Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low
+                energy
+                cost, and high security, we help businesses with managed and unmanaged miner hosting.
+              </p>
+            </div>
+            <div class="footer__column">
+              <small class="footer__heading">Products</small>
+              <ul class="footer__list">
+                <li><a href="m300" class="footer__list-item">M300 Minipod</a></li>
+                <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
+                <li><a href="i300" class="footer__list-item">Air-Intake Awnings</a></li>
+                <li><a href="i300" class="footer__list-item">Cooling Fans</a></li>
+                <li><a href="i300" class="footer__list-item">SmartPDU</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <small class="footer__heading">Navigation</small>
+              <ul class="footer__list">
+                <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
+                <li><a href="contact" class="footer__list-item">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__divider"></div>
+          <div class="flex flex-col--lg-tablet jc-sb gap--sm">
+            <div class="flex flex-col--lg-tablet gap--sm">
+              <small class="footer__copyright">© 2023 Digital Shovel Holdings Inc.</small>
+            </div>
+            <div class="flex gap--sm ai-c">
+              <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
+                  src="images/icons/icon_instagram.svg" alt="Facebook Logo Icon"></a>
+              <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
+                  src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
+              <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"
+                  src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon"></a>
+            </div>
+          </div>
         </div>
-        <div class="footer__column">
-          <small class="footer__heading">Products</small>
-          <ul class="footer__list">
-            <li><a href="m300" class="footer__list-item">M300 Minipod</a></li>
-            <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
-            <li><a href="i300" class="footer__list-item">Air-Intake Awnings</a></li>
-            <li><a href="i300" class="footer__list-item">Cooling Fans</a></li>
-            <li><a href="i300" class="footer__list-item">SmartPDU</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <small class="footer__heading">Navigation</small>
-          <ul class="footer__list">
-            <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
-            <li><a href="contact" class="footer__list-item">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__divider"></div>
-      <div class="flex flex-col--lg-tablet jc-sb gap--sm">
-        <div class="flex flex-col--lg-tablet gap--sm">
-          <small class="footer__copyright">© 2023 Digital Shovel Holdings Inc.</small>
-        </div>
-        <div class="flex gap--sm ai-c">
-          <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
-              src="images/icons/icon_instagram.svg" alt="Facebook Logo Icon"></a>
-          <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
-              src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
-          <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"
-              src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon"></a>
-        </div>
-      </div>
+      </footer>
     </div>
-  </footer>
+  </div>
 
 </body>
 
