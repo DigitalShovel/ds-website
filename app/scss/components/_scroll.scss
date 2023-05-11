@@ -13,6 +13,7 @@
   width: fit-content;
   transform: translateX(-50%);
   color: var(--blue-gray-500);
+  cursor: pointer;
 
   &__home {
     @include breakpoint(sm-tablet) {
