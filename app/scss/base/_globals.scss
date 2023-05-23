@@ -8,6 +8,10 @@
   animation: none !important;
 }
 
+/* fixes the stutter bug caused by SmoothScroller (GSAP) on Microsoft Edge and Google Chrome */
+#smooth-content {
+  will-change: transform;
+}
 
 /* The code below disables the CSS minipod animation in Safari v11+ 
 because it causes the animation to appear janky. This is a known issue with Safari. */
