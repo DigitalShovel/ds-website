@@ -1,5 +1,9 @@
 @use "../base/breakpoints" as *;
 
+#product .text--blue  {
+  text-transform: none;
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -23,6 +27,14 @@
     @include breakpoint(md-mobile) {
       gap: 2rem;
       padding: 8rem 1rem 0rem;
+    }
+  }
+
+  &__contact {
+    flex-direction: row;
+
+    @include breakpoint(sm-desktop) {
+      flex-direction: column;
     }
   }
 
@@ -63,7 +75,7 @@
   }
 
   &__subheading {
-    @include breakpoint(md-tablet) {
+    @include breakpoint(sm-desktop) {
       text-align: center;
     }
   }
@@ -138,7 +150,7 @@
   }
 
   &__body {
-    @include breakpoint(lg-tablet) {
+    @include breakpoint(sm-desktop) {
       text-align: center;
       margin: 0 auto;
     }
