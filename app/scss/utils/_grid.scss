@@ -4,6 +4,10 @@
   display: grid;
   grid-gap: 1rem;
 
+  &__col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   &__col-6 {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -30,7 +34,7 @@
     }
   }
 
-  &-recruitment {
+  &-interview {
 
     &__item-1,
     &__item-2,
@@ -41,7 +45,6 @@
       grid-column: span 2;
     }
   }
-
 
   @include breakpoint(md-tablet) {
     grid-template-columns: repeat(1, 1fr);
@@ -64,15 +67,15 @@
       box-shadow: var(--shadow-elevation-high);
     }
 
+    &__icon {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+    }
+
     @include breakpoint(md-tablet) {
       grid-area: auto;
     }
-  }
-
-  img {
-    width: 48px;
-    height: 48px;
-    object-fit: cover;
   }
 
   h5 {

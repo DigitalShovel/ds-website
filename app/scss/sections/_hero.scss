@@ -138,9 +138,6 @@
   }
 
   &__body {
-    color: var(--blue-gray-500);
-    font-size: clamp(0.9rem, 2vw, 1rem);
-
     @include breakpoint(lg-tablet) {
       text-align: center;
       margin: 0 auto;

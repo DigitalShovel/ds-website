@@ -75,6 +75,32 @@
   }
 }
 
+.gap {
+  &--xsm {
+    gap: 0.25rem;
+  }
+
+  &--sm {
+    gap: 0.5rem;
+  }
+
+  &--md {
+    gap: 1rem;
+  }
+
+  &--lg {
+    gap: 1.5rem;
+  }
+
+  &--xlg {
+    gap: 2rem;
+  }
+
+  &--xxlg {
+    gap: 3rem;
+  }
+}
+
 .mtop {
   &--sm {
     margin-top: 0.5rem;

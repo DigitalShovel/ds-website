@@ -1,6 +1,6 @@
 @use "../base/breakpoints" as *;
 
-.recruitment {
+.interview {
   &__hero {
     align-items: flex-start;
 
@@ -40,14 +40,6 @@
       letter-spacing: -0.5px;
       font-family: var(--medium-font);
       font-weight: normal;
-    }
-
-    span {
-      background-color: var(--blue-gray-50);
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 0.2rem 0.7rem;
-      border-radius: 100vh;
     }
 
     p {
