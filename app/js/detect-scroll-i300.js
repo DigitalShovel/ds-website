@@ -41,7 +41,6 @@ window.addEventListener("scroll", () => {
       // set the active class to the product link
       productLinkI300.classList.add("subnav__link--active");
     } else if (scrollY <= 1800) {
-      console.log(scrollY);
       productLinkI300.classList.remove("subnav__link--active");
       bundleLinkI300.classList.remove("subnav__link--active");
 
