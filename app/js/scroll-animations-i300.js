@@ -17,7 +17,7 @@ const scrollerSmoother = ScrollSmoother.create({
   normalizeScroll: true // force the scroll target to always be a positive number
 });
 
-document.querySelector(".scroll__m300").addEventListener("click", () => {
+document.querySelector(".scroll__i300").addEventListener("click", () => {
   // scroll to the spot where the specifications section is in the viewport.
   // parameters: element, smooth, position
   scrollerSmoother.scrollTo("#specifications", true, "top 150px");

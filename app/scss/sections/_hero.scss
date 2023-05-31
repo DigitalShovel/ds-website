@@ -1,6 +1,6 @@
 @use "../base/breakpoints" as *;
 
-#product .text--blue  {
+#product .text--blue {
   text-transform: none;
 }
 
@@ -17,8 +17,8 @@
   }
 
   &__main {
-    // 106px is the rounded up height of the topbar and navbar combined
-    padding-top: calc(106px + 4rem);
+    // 106px is the rounded up height of the navbar
+    // padding-top: calc(73px + 4rem);
 
     @include breakpoint(md-tablet) {
       flex-direction: column;
@@ -27,6 +27,10 @@
     @include breakpoint(md-mobile) {
       gap: 2rem;
       padding: 8rem 1rem 0rem;
+    }
+
+    &--subnav {
+      padding-top: 128px;
     }
   }
 

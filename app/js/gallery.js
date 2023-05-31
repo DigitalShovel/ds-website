@@ -18,6 +18,8 @@
 
 // 1. get the photo from the gallery
 const photos = document.querySelectorAll(".photo");
+const navbar = document.querySelector(".navbar");
+const subnav = document.querySelector(".subnav");
 
 // 2. add an event listener to the photo
 photos.forEach((photo) => {
@@ -27,6 +29,8 @@ photos.forEach((photo) => {
     modal.classList.add("open");
 
     html.style.overflow = "hidden";
+    navbar.style.zIndex = "-1";
+    subnav.style.zIndex = "-1";
 
     // 4. the modal window should contain the photo that was clicked
     const modalImg = document.querySelector(".modal__photo");
@@ -90,11 +94,14 @@ rightArrow.addEventListener("click", () => {
 // 8. the modal window should have a close button
 // 9. when the close button is clicked, the modal window should close
 const closeBtn = document.querySelector(".close");
+
 closeBtn.addEventListener("click", () => {
   const modal = document.querySelector(".modal");
   modal.classList.remove("open");
 
   html.style.overflow = "auto";
+  navbar.style.zIndex = "999";
+  subnav.style.zIndex = "99";
 });
 
 // 10. when the modal window is open, the user should be able to use the left and right arrow keys to navigate through the photos
@@ -111,8 +118,11 @@ document.addEventListener("keydown", (e) => {
 
 // 11. the modal window should also close when the user clicks outside of the modal window
 const modal = document.querySelector(".modal");
+
 modal.addEventListener("click", (e) => {
   if (e.target.classList.contains("modal-container")) {
+    navbar.style.zIndex = "999";
+    subnav.style.zIndex = "99";
     closeBtn.click();
   }
 });
@@ -121,6 +131,9 @@ modal.addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     closeBtn.click();
+
+    navbar.style.zIndex = "999";
+    subnav.style.zIndex = "99";
   }
 });
 
