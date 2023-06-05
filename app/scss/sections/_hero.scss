@@ -95,14 +95,14 @@
 
     @include breakpoint(md-tablet) {
       flex-direction: column;
-      padding: 0rem 2rem 23rem;
+      padding: 0rem 2rem 18rem;
       gap: 0;
       align-items: center;
     }
 
     @include breakpoint(md-mobile) {
       gap: 2rem;
-      padding: 0rem 1rem 18rem;
+      padding: 0rem 1rem 15rem;
     }
   }
 
@@ -221,24 +221,17 @@
     --fan-tx: -175%;
 
     @include breakpoint(lg-tablet) {
-      top: 5rem;
+      top: 10rem;
       transform: scale(.45) translateX(-50%);
     }
 
-    @include breakpoint(md-tablet) {
-      top: 10rem;
-      transform: scale(.5) translateX(-50%);
-    }
-
     @include breakpoint(sm-tablet) {
-      transform: scale(.5) translateX(-50%);
-    }
-
-    @include breakpoint(sm-tablet) {
-      transform: scale(.5) translateX(-50%);
+      top: 7rem;
+      transform: scale(.4) translateX(-50%);
     }
 
     @include breakpoint(sm-mobile) {
+      top: 7rem;
       transform: scale(.4) translateX(-50%);
     }
 
