@@ -32,9 +32,8 @@ document.querySelector(".scroll__home").addEventListener("click", () => {
 gsap.fromTo(
   "#minipod-front",
   2,
-  { x: -200, opacity: 0 },
+  { opacity: 0 },
   {
-    x: 0,
     opacity: 1,
     ease: Power4.easeOut,
     scrollTrigger: {
@@ -48,9 +47,8 @@ gsap.fromTo(
 gsap.fromTo(
   "#minipod-back",
   2,
-  { x: 200, opacity: 0 },
+  { opacity: 0 },
   {
-    x: 0,
     opacity: 1,
     ease: Power4.easeOut,
     scrollTrigger: {
