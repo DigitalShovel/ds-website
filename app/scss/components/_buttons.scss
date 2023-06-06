@@ -1,5 +1,8 @@
 @use "../base/breakpoints" as *;
 
+$btn-padding: 7px 15px;
+$btn-border-radius: 100vh;
+
 .btn-group {
   display: flex;
   gap: 1rem;
@@ -8,27 +11,10 @@
 .btn {
   font-weight: 500;
   max-width: max-content;
-  padding: 7px 15px;
-
+  padding: $btn-padding;
   cursor: pointer;
   letter-spacing: -0.1px;
-  border-radius: 100vh;
-
-  &:hover {
-    .btn__chevron {
-      path {
-        transition: transform 150ms ease-out, d 150ms ease-out;
-      }
-
-      path:nth-child(1) {
-        d: path("M1.5 6L10.5 6");
-      }
-
-      path:nth-child(2) {
-        transform: translateX(4px);
-      }
-    }
-  }
+  border-radius: $btn-border-radius;
 
   &__chevron {
     margin-left: 0.3rem;
@@ -232,7 +218,7 @@
     padding: 1rem 0;
     border-radius: 5px;
     background-color: #ffc43a;
-    background-image: url(../images/icons/icon_paypal.svg);
+    background-image: url("../images/icons/icon_paypal.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
