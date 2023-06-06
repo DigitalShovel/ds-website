@@ -1,6 +1,5 @@
 if (window.matchMedia("(min-width: 769px)").matches) {
   // Execute code for non-mobile devices
-  console.log("This code will run on non-mobile devices.");
 
   /*------------------------------
   Register plugins

@@ -1,21 +1,25 @@
-/*------------------------------
-Register plugins
-------------------------------*/
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+if (window.matchMedia("(min-width: 769px)").matches) {
+  // Execute code for non-mobile devices
 
-/*------------------------------
-Init ScrollSmoother
-------------------------------*/
+  /*------------------------------
+  Register plugins
+  ------------------------------*/
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-ScrollTrigger.normalizeScroll(true);
+  /*------------------------------
+  Init ScrollSmoother
+  ------------------------------*/
 
-// create the scrollSmoother before your scrollTriggers
-const scrollerSmoother = ScrollSmoother.create({
-  smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
-  effects: true, // looks for data-speed and data-lag attributes on elements
-  smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-  normalizeScroll: true // force the scroll target to always be a positive number
-});
+  ScrollTrigger.normalizeScroll(true);
+
+  // create the scrollSmoother before your scrollTriggers
+  ScrollSmoother.create({
+    smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
+    effects: true, // looks for data-speed and data-lag attributes on elements
+    smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+    normalizeScroll: true, // force the scroll target to always be a positive number
+  });
+}
 
 document.querySelector(".scroll__i300").addEventListener("click", () => {
   // scroll to the spot where the specifications section is in the viewport.
