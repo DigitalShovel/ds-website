@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 2rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 1rem;
     cursor: pointer;
 
     @include breakpoint(sm-tablet) {
