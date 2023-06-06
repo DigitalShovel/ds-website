@@ -19,10 +19,6 @@
     transition: padding 150ms ease-in;
 
     @include breakpoint(sm-tablet) {
-      padding: 1rem 2rem;
-    }
-
-    @include breakpoint(sm-mobile) {
       padding: 1rem;
     }
   }
@@ -146,8 +142,6 @@
   }
 }
 
-
-
 .dropdown {
   position: relative;
   cursor: pointer;
@@ -157,16 +151,24 @@
       visibility: visible;
       opacity: 1;
     }
-  }
 
-  &:hover .dropdown__title {
-    color: var(--blue-500);
+    .dropdown__title {
+      color: var(--blue-500);
+    }
+
+    .dropdown__chevron {
+      transform: translateY(2px) rotate(-90deg);
+
+      &--blue {
+        stroke: var(--blue-500);
+      }
+    }
   }
 
   &__button {
     background: none;
     border: none;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: 600;
     color: var(--blue-900);
@@ -187,23 +189,12 @@
     stroke-linejoin: round;
   }
 
-  &:hover .dropdown__chevron {
-    transform: translateY(2px) rotate(-90deg);
-
-    &--blue {
-      stroke: var(--blue-500);
-    }
-  }
-
   &__menu-container {
-    // the padding-top allows the menu to remain open while the user moves the mouse from the dropdown item to the expanded menu
     padding-top: 2rem;
-
     position: absolute;
     z-index: 999;
     top: -70px;
     left: 50%;
-
     opacity: 0;
     transform: translate(-50%, 40%);
     transition: opacity 300ms ease-out, visibility 300ms ease-out, transform 300ms ease-out;
