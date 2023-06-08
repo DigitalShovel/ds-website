@@ -49,6 +49,7 @@
 // Enables the buttons to add a rotation
 
 .camera-rotate {
+  will-change: transform;
   transform-origin: left;
   animation: sceneRotateX 30s infinite linear reverse;
 
