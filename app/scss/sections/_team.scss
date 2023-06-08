@@ -12,7 +12,7 @@
     max-width: 300px;
   }
 
-  @media (max-width: 425px) {
+  @include breakpoint(md-mobile) {
     .icon--lg {
       width: 42px;
       height: 42px;

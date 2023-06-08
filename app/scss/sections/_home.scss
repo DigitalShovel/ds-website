@@ -190,6 +190,7 @@
   background-color: var(--blue-gray-50);
 
   @include breakpoint(lg-tablet) {
+    overflow: hidden;
     padding: 15rem 0;
   }
 

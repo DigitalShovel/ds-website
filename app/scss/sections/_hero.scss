@@ -75,6 +75,11 @@
       transform: translateX(-50%);
       background-color: var(--blue-100);
       filter: blur(90px);
+
+      @include breakpoint(lg-tablet) {
+        width: 250px;
+        height: 150px;
+      }
     }
   }
 
@@ -133,10 +138,12 @@
     width: 50%;
 
     @include breakpoint(lg-tablet) {
-      width: 400px;
+      width: 300px;
     }
 
     @include breakpoint(md-tablet) {
+      width: auto;
+
       align-items: center;
       flex-direction: column;
       text-align: center;
@@ -149,8 +156,8 @@
     width: 100%;
 
     @include breakpoint(lg-tablet) {
-      width: 370px;
-      height: 210px;
+      width: 300px;
+      height: 190px;
     }
   }
 
@@ -326,7 +333,7 @@
     border-radius: 100vh;
     background-color: var(--blue-50);
 
-    @media (max-width: 425px) {
+    @include breakpoint(md-mobile) {
       gap: .3rem;
     }
 
