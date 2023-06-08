@@ -101,7 +101,8 @@ small {
     color: var(--blue-gray-600);
 
     @include breakpoint(sm-tablet) {
-      max-width: 30ch;
+      max-width: 35ch;
+      text-align: center;
     }
   }
 
