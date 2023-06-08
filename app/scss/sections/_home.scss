@@ -65,10 +65,6 @@
     @include breakpoint(md-tablet) {
       height: 900px;
     }
-
-    @include breakpoint(sm-tablet) {
-      height: 1050px;
-    }
   }
 
   &__text {
@@ -190,8 +186,13 @@
    ============================================== */
 
 .testimonials {
+  overflow: hidden;
   padding: 20rem 0;
   background-color: var(--blue-gray-50);
+
+  @include breakpoint(lg-tablet) {
+    padding: 15rem 0;
+  }
 
   &__container {
     display: flex;
@@ -210,11 +211,7 @@
     letter-spacing: -1.5px;
 
     @include breakpoint(sm-tablet) {
-      font-size: 1.953rem;
-    }
-
-    @media (max-width: 425px) {
-      font-size: 1.953rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -256,7 +253,7 @@
 
     @include breakpoint(sm-mobile) {
       margin: 0 -1rem;
-      padding: 2rem 1rem;
+      padding: 2rem 3rem;
     }
   }
 
@@ -271,6 +268,12 @@
     border-radius: 10px;
     background-color: var(--blue-600);
     box-shadow: 0 6px 12px rgb(2 44 94 / 15%), 0 6px 32px -8px rgb(0 94 213 / 50%);
+
+    @include breakpoint(sm-tablet) {
+      width: 300px;
+      min-width: 300px;
+      padding: 1rem;
+    }
   }
 
   .list-item {

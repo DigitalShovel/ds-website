@@ -27,37 +27,7 @@ document.querySelector(".scroll__home").addEventListener("click", () => {
   scrollerSmoother.scrollTo("#bundle", true, "top 50px");
 });
 
-// creates a ScrollTrigger that will fade-in and out the minipod illustrations
-gsap.fromTo(
-  "#minipod-front",
-  2,
-  { opacity: 0 },
-  {
-    opacity: 1,
-    ease: Power4.easeOut,
-    scrollTrigger: {
-      trigger: ".scroll__home",
-      start: "top center",
-      scrub: 2,
-    },
-  }
-);
-
-gsap.fromTo(
-  "#minipod-back",
-  2,
-  { opacity: 0 },
-  {
-    opacity: 1,
-    ease: Power4.easeOut,
-    scrollTrigger: {
-      trigger: ".scroll__home",
-      start: "top center",
-      // markers: "true",
-      scrub: 2,
-    },
-  }
-);
+/* The following three functions are responsible for sliding up the app mockups as the user scrolls down the page */
 
 gsap.from(".app__mockup", 2, {
   y: 400,

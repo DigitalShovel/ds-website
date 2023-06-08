@@ -25,7 +25,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: -0.3px;
 
   @include breakpoint(lg-tablet) {
     font-size: clamp(1rem, 3vw, 1.5rem);
