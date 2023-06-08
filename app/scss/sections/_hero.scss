@@ -117,6 +117,7 @@
     @include breakpoint(md-tablet) {
       align-items: center;
       text-align: center;
+      width: auto;
     }
 
     &--product {

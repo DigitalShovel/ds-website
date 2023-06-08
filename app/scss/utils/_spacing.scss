@@ -83,7 +83,7 @@
     padding-top: calc(var(--_navbar) + 4rem); // 73px is the height of the navbar
 
     @include breakpoint(md-tablet) {
-      padding-top: calc(var(--_navbar) + 0rem);
+      padding-top: calc(var(--_navbar) - 2rem);
     }
   }
 
