@@ -118,9 +118,14 @@
     transform: translateX(-50%);
 
     @include breakpoint(lg-tablet) {
+      max-width: 500px;
       transform: translate(-50%, -50%);
       top: 50%;
       border-radius: 10px;
+    }
+
+    @include breakpoint(sm-tablet) {
+      max-width: 350px;
     }
 
     &-container {
