@@ -45,7 +45,6 @@
   &__heading {
     line-height: .9;
     text-align: center;
-    text-transform: uppercase;
 
     &--left {
       text-align: left;
@@ -53,6 +52,10 @@
       @include breakpoint(sm-desktop) {
         text-align: center;
       }
+    }
+
+    &--caps {
+      text-transform: uppercase;
     }
 
     &--sm-width {
@@ -269,8 +272,9 @@
     }
   }
 
-  &__2d-i300 {
+  &__product-illustration {
     width: 400px;
+    padding: 1rem;
 
     @include breakpoint(md-mobile) {
       width: 300px;
