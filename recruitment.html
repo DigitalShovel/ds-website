@@ -39,12 +39,10 @@
   <!-- GSAP -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script defer src="/app/js/ScrollTrigger.min.js"></script>
-  <script defer src="/app/js/ScrollSmoother.min.js"></script>
 
   <!-- Javascript -->
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
-  <script defer src="/app/js/smooth-scroll.js"></script>
 
   <title>Digital Shovel • Recruitment</title>
 
@@ -141,11 +139,11 @@
                   <small>Indoor Solution</small>
                 </div>
               </a>
-              <!-- <a class="dropdown__menu-item dropdown__link" href="awning" tabindex="-1" aria-role="menu-item">
+              <a class="dropdown__menu-item dropdown__link" href="awnings" tabindex="-1" aria-role="menu-item">
                 <img class="icon--md" src="images/icons/icon_navbar_awning.svg" alt="Awning Icon" aria-hidden="true" />
                 <div class="dropdown__text">
                   <h5>
-                    Awning
+                    Awnings
                     <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
@@ -157,11 +155,11 @@
                   <small>Air-Intake Solution</small>
                 </div>
               </a>
-              <a class="dropdown__menu-item dropdown__link" href="fan" tabindex="-1" aria-role="menu-item">
+              <a class="dropdown__menu-item dropdown__link" href="fans" tabindex="-1" aria-role="menu-item">
                 <img class="icon--md" src="images/icons/icon_navbar_fan.svg" alt="Fan Icon" aria-hidden="true" />
                 <div class="dropdown__text">
                   <h5>
-                    Fan
+                    Fans
                     <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
@@ -173,7 +171,7 @@
                   <small>Cooling Solution</small>
                 </div>
               </a>
-              <a class="dropdown__menu-item dropdown__link" href="spdu" tabindex="-1" aria-role="menu-item">
+              <!-- <a class="dropdown__menu-item dropdown__link" href="spdu" tabindex="-1" aria-role="menu-item">
                 <img class="icon--md" src="images/icons/icon_navbar_spdu.svg" alt="SPDU Icon" aria-hidden="true" />
                 <div class="dropdown__text">
                   <h5>
@@ -203,419 +201,414 @@
     </div>
   </nav>
 
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <main class="main recruitment container container--navbar">
-        <!-- About Us -->
-        <section class="about flex flex-col">
-          <div class="flex flex-col ai-c gap--md">
-            <h1 class="hero__heading">About Us</h1>
-            <p class="hero__body">Digital Shovel is a rapidly growing tech manufacturing start-up based in Scarborough.
-              Celebrating our 5th year in operation, we are proud to be one of the leaders in both scale and innovation
-              within the blockchain infrastructure space in Canada.
-            </p>
-            <img class="about__img" src="images/photos/team/team-picnic.png"
-              alt="Digital Shovel Team at the Picnic Party">
-            <p class="hero__body">Our 70,000 sq ft manufacturing facility enables us to build modular data centers and
-              develop new infrastructure related to the industry on site from the ground up. Our success stems from a
-              dedicated and talented team of individuals who are passionate about pushing the boundaries of technology.
-            </p>
+  <main class="main recruitment container">
+    <!-- About Us -->
+    <section class="about flex flex-col">
+      <div class="flex flex-col ai-c gap--md">
+        <h1 class="hero__heading">About Us</h1>
+        <p class="hero__body">Digital Shovel is a rapidly growing tech manufacturing start-up based in Scarborough.
+          Celebrating our 5th year in operation, we are proud to be one of the leaders in both scale and innovation
+          within the blockchain infrastructure space in Canada.
+        </p>
+        <img class="about__img" src="images/photos/team/team-picnic.png" alt="Digital Shovel Team at the Picnic Party">
+        <p class="hero__body">Our 70,000 sq ft manufacturing facility enables us to build modular data centers and
+          develop new infrastructure related to the industry on site from the ground up. Our success stems from a
+          dedicated and talented team of individuals who are passionate about pushing the boundaries of technology.
+        </p>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team flex gap--md">
+      <div class="flex gap--md">
+        <img class="team__img" src="images/photos/team/scot-headshot-2.png" alt="Scot Johnson Headshot Photo">
+        <div class="flex flex-col gap--sm">
+          <div class="flex flex-col jc-start ai-start gap--xsm">
+            <h3>Scot Johnson</h3>
+            <span class="label__pill">CEO & President</span>
           </div>
-        </section>
+          <p class="team__body">Scot Johnson is the CEO and President of Digital Shovel. He has over 10 years of
+            experience as a
+            business owner, over 5 years in the technology sector and is passionate about innovation and efficiency
+            in the crypto industry.</p>
+        </div>
+      </div>
 
-        <!-- Team -->
-        <section class="team flex gap--md">
-          <div class="flex gap--md">
-            <img class="team__img" src="images/photos/team/scot-headshot-2.png" alt="Scot Johnson Headshot Photo">
-            <div class="flex flex-col gap--sm">
-              <div class="flex flex-col jc-start ai-start gap--xsm">
-                <h3>Scot Johnson</h3>
-                <span class="label__pill">CEO & President</span>
-              </div>
-              <p class="team__body">Scot Johnson is the CEO and President of Digital Shovel. He has over 10 years of
-                experience as a
-                business owner, over 5 years in the technology sector and is passionate about innovation and efficiency
-                in the crypto industry.</p>
-            </div>
+      <div class="flex gap--md">
+        <img class="team__img" src="images/photos/team/persia.png" alt="Persia Khodarahmi Headshot Photo">
+        <div class="flex flex-col gap--sm">
+          <div class="flex flex-col jc-start ai-start gap--xsm">
+            <h3>Persia Khodarahmi</h3>
+            <span class="label__pill">Operations Manager</span>
           </div>
+          <p class="team__body">Persia Khodarahmi is the Operations Manager at Digital Shovel. She is responsible
+            for overseeing the day-to-day operations and is passionate about delivering high-quality products and
+            services to clients and fostering a culture of excellence and collaboration.</p>
+        </div>
+      </div>
 
-          <div class="flex gap--md">
-            <img class="team__img" src="images/photos/team/persia.png" alt="Persia Khodarahmi Headshot Photo">
-            <div class="flex flex-col gap--sm">
-              <div class="flex flex-col jc-start ai-start gap--xsm">
-                <h3>Persia Khodarahmi</h3>
-                <span class="label__pill">Operations Manager</span>
-              </div>
-              <p class="team__body">Persia Khodarahmi is the Operations Manager at Digital Shovel. She is responsible
-                for overseeing the day-to-day operations and is passionate about delivering high-quality products and
-                services to clients and fostering a culture of excellence and collaboration.</p>
-            </div>
+      <div class="flex gap--md">
+        <img class="team__img" src="images/photos/team/manesha.png" alt="Manesha Persaud Headshot Photo">
+        <div class="flex flex-col gap--sm">
+          <div class="flex flex-col jc-start ai-start gap--xsm">
+            <h3>Manesha Persaud</h3>
+            <span class="label__pill">Talent Acquisition Coordinator</span>
           </div>
+          <p class="team__body">Manesha Persaud has over 4 years of driving company results with talent. She is truly
+            passionate about attracting and retaining top talent to help the company thrive. She is dedicated to
+            ensuring that our company consistently acquires the best professionals in the industry.</p>
+        </div>
+      </div>
+    </section>
 
-          <div class="flex gap--md">
-            <img class="team__img" src="images/photos/team/manesha.png" alt="Manesha Persaud Headshot Photo">
-            <div class="flex flex-col gap--sm">
-              <div class="flex flex-col jc-start ai-start gap--xsm">
-                <h3>Manesha Persaud</h3>
-                <span class="label__pill">Talent Acquisition Coordinator</span>
-              </div>
-              <p class="team__body">Manesha Persaud has over 4 years of driving company results with talent. She is truly passionate about attracting and retaining top talent to help the company thrive. She is dedicated to ensuring that our company consistently acquires the best professionals in the industry.</p>
-            </div>
+    <!-- Mission Statement -->
+    <section class="mission">
+      <h3>Mission Statement</h3>
+      <h4>“Build cool stuff, and build even cooler people.”</h4>
+    </section>
+
+    <!-- Why Join Us -->
+    <section class="perks flex flex-col gap--xlg">
+      <h1 class="section__heading">Why Join Us</h1>
+
+      <div class="perks__icons flex flex-col ai-c jc-c gap--lg">
+        <div class="flex flex-col-mobile jc-c gap--md">
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_dog-paw.svg" alt="Dog Paw Icon">
+            <h5>Dog-Friendly<br><span class="text--blue">Office</span></h5>
           </div>
-        </section>
-
-        <!-- Mission Statement -->
-        <section class="mission">
-          <h3>Mission Statement</h3>
-          <h4>“Build cool stuff, and build even cooler people.”</h4>
-        </section>
-
-        <!-- Why Join Us -->
-        <section class="perks flex flex-col gap--xlg">
-          <h1 class="section__heading">Why Join Us</h1>
-
-          <div class="perks__icons flex flex-col ai-c jc-c gap--lg">
-            <div class="flex flex-col-mobile jc-c gap--md">
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_dog-paw.svg" alt="Dog Paw Icon">
-                <h5>Dog-Friendly<br><span class="text--blue">Office</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_gaming.svg" alt="Gaming Lunches Icon">
-                <h5>Gaming<br><span class="text--blue">Lunches</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_golf.svg" alt="Golf Icon">
-                <h5>Golf<br><span class="text--blue">Simulator</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_snacks.svg" alt="Healthy Snacks Icon">
-                <h5>Healthy<br><span class="text--blue">Snacks</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_merch.svg" alt="Digital Shovel Merchandise Icon">
-                <h5>Digital Shovel<br><span class="text--blue">Merch</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_gym.svg" alt="Gym Icon">
-                <h5>Gym<br><span class="text--blue">Facility</span></h5>
-              </div>
-            </div>
-
-            <div class="flex flex-col-mobile jc-c gap--md">
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_hybrid.svg" alt="Hybrid Schedule Icon">
-                <h5>Hybrid<br><span class="text--blue">Schedule</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_growth.svg" alt="Growth Opportunities Icon">
-                <h5>Growth<br><span class="text--blue">Opportunities</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_loan-assistance.svg" alt="Loan Assistance Icon">
-                <h5>Loan Assistance<br><span class="text--blue">Program</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_health.svg" alt="Health Benefits Icon">
-                <h5>Health<br><span class="text--blue">Benefits</span></h5>
-              </div>
-              <div class="flex flex-col flex-row-tablet ai-c gap--sm">
-                <img class="perks__icon" src="images/icons/icon_framed_team.svg" alt="Team Building Activities Icon">
-                <h5>Team Building<br><span class="text--blue">Activities</span></h5>
-              </div>
-            </div>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_gaming.svg" alt="Gaming Lunches Icon">
+            <h5>Gaming<br><span class="text--blue">Lunches</span></h5>
           </div>
-
-          <div class="flex flex-col gap--md">
-            <p>At Digital Shovel, we value the opportunity for personal and professional growth. We encourage our team
-              members to develop their skills and explore their strengths. We strongly believe that having a passion
-              for
-              various areas and the flexibility to take on different roles is essential for achieving success.
-            </p>
-            <p>Our work environment is challenging and rewarding, with projects that push boundaries and allow for
-              creative expression. We pride ourselves on fostering a warm and welcoming atmosphere, ensuring our team
-              has the tools to thrive. Cultural diversity plays a significant role in our hiring process, as we
-              introduce our team to various traditions, ethnicities, and events to enhance our shared experience.
-            </p>
-            <p>Company events, friendly competitions, and parties are frequently organized to connect departments and
-              create a unified atmosphere. Our focus on selecting the right people has led to strong professional
-              relationships and lasting friendships that extend beyond company gatherings.
-            </p>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_golf.svg" alt="Golf Icon">
+            <h5>Golf<br><span class="text--blue">Simulator</span></h5>
           </div>
-        </section>
-
-        <!-- Hybrid Schedule -->
-        <section class="flex flex-col gap--xlg">
-          <div class="flex flex-col gap--md">
-            <h1 class="section__heading">Hybrid Schedule</h1>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_snacks.svg" alt="Healthy Snacks Icon">
+            <h5>Healthy<br><span class="text--blue">Snacks</span></h5>
           </div>
-
-          <div class="hybrid flex flex-col ai-c jc-c gap--lg">
-            <div class="hybrid__row flex flex-col-mobile gap--sm w-100">
-              <div class="hybrid__title-container flex flex-col jc-sb gap--xsm">
-                <h2 class="hybrid__title">Production<br>Staff</h2>
-                <h3 class="hybrid__subtitle">4-day work week</h3>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Monday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">On Site</span>
-                  <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Tuesday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">On Site</span>
-                  <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Wednesday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">On Site</span>
-                  <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Thursday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">On Site</span>
-                  <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-
-              <div class="hybrid__day-container hybrid__day-container--off flex flex-col">
-                <span class="hybrid__day">Friday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">Day Off</span>
-                  <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-            </div>
-
-            <div class="hybrid__row flex flex-col-mobile gap--sm w-100">
-              <div class="hybrid__title-container flex jc-sb flex-col">
-                <h2 class="hybrid__title">Office<br>Staff</h2>
-                <h3 class="hybrid__subtitle">4.5-day work week</h3>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Monday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">In Office</span>
-                  <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Tuesday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">In Office</span>
-                  <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Wednesday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">In Office</span>
-                  <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Thursday</span>
-                <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">In Office</span>
-                  <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-
-              <div class="hybrid__day-container flex flex-col">
-                <span class="hybrid__day">Friday (half-day)</span>
-                <div
-                  class="hybrid__location-container hybrid__location-container--remote flex flex-col jc-c ai-c gap--xsm">
-                  <span class="hybrid__location">Remote</span>
-                  <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
-                </div>
-              </div>
-            </div>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_merch.svg" alt="Digital Shovel Merchandise Icon">
+            <h5>Digital Shovel<br><span class="text--blue">Merch</span></h5>
           </div>
-        </section>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_gym.svg" alt="Gym Icon">
+            <h5>Gym<br><span class="text--blue">Facility</span></h5>
+          </div>
+        </div>
 
-        <!-- Our Work Environment -->
-        <section class="environment flex flex-col gap--md">
-          <div class="flex flex-col gap--md">
-            <h1 class="section__heading">Our Work Environment</h1>
-            <p class="hero__body">We offer a dynamic and rewarding work environment where our team members can explore
-              their full potential. Regardless of your job title, you will be allowed to undertake multiple roles and
-              work on innovative technology that solves real-world problems. On top of that, we believe productivity is
-              better achieved through a united team, so be prepared for company parties, gaming lunches, and
-              out-of-office gatherings and night-outs. If you are looking for a challenging and fulfilling career in the
-              tech industry with a passionate team, this is the place for you.
-            </p>
+        <div class="flex flex-col-mobile jc-c gap--md">
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_hybrid.svg" alt="Hybrid Schedule Icon">
+            <h5>Hybrid<br><span class="text--blue">Schedule</span></h5>
+          </div>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_growth.svg" alt="Growth Opportunities Icon">
+            <h5>Growth<br><span class="text--blue">Opportunities</span></h5>
+          </div>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_loan-assistance.svg" alt="Loan Assistance Icon">
+            <h5>Loan Assistance<br><span class="text--blue">Program</span></h5>
+          </div>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_health.svg" alt="Health Benefits Icon">
+            <h5>Health<br><span class="text--blue">Benefits</span></h5>
+          </div>
+          <div class="flex flex-col flex-row-tablet ai-c gap--sm">
+            <img class="perks__icon" src="images/icons/icon_framed_team.svg" alt="Team Building Activities Icon">
+            <h5>Team Building<br><span class="text--blue">Activities</span></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap--md">
+        <p>At Digital Shovel, we value the opportunity for personal and professional growth. We encourage our team
+          members to develop their skills and explore their strengths. We strongly believe that having a passion
+          for
+          various areas and the flexibility to take on different roles is essential for achieving success.
+        </p>
+        <p>Our work environment is challenging and rewarding, with projects that push boundaries and allow for
+          creative expression. We pride ourselves on fostering a warm and welcoming atmosphere, ensuring our team
+          has the tools to thrive. Cultural diversity plays a significant role in our hiring process, as we
+          introduce our team to various traditions, ethnicities, and events to enhance our shared experience.
+        </p>
+        <p>Company events, friendly competitions, and parties are frequently organized to connect departments and
+          create a unified atmosphere. Our focus on selecting the right people has led to strong professional
+          relationships and lasting friendships that extend beyond company gatherings.
+        </p>
+      </div>
+    </section>
+
+    <!-- Hybrid Schedule -->
+    <section class="flex flex-col gap--xlg">
+      <div class="flex flex-col gap--md">
+        <h1 class="section__heading">Hybrid Schedule</h1>
+      </div>
+
+      <div class="hybrid flex flex-col ai-c jc-c gap--lg">
+        <div class="hybrid__row flex flex-col-mobile gap--sm w-100">
+          <div class="hybrid__title-container flex flex-col jc-sb gap--xsm">
+            <h2 class="hybrid__title">Production<br>Staff</h2>
+            <h3 class="hybrid__subtitle">4-day work week</h3>
           </div>
 
-          <div class="grid grid__col-2">
-            <div class="environment__gallery">
-              <img class="environment__gallery-img environment__gallery-img--full-width"
-                src="images/photos/events/scot-birthday.png" alt="Scot's Birthday">
-              <span class="environment__gallery-img-caption">Scot's Birthday</span>
-            </div>
-
-            <div class="environment__gallery">
-              <img class="environment__gallery-img environment__gallery-img--full-width" src="images/photos/events/ds5y.png"
-                alt="Digital Shovel 5-Year Anniversary">
-              <span class="environment__gallery-img-caption">Digital Shovel 5-Year Anniversary</span>
-            </div>
-
-            <div class="environment__gallery">
-              <img class="environment__gallery-img environment__gallery-img--full-width" src="images/photos/events/picnic.png"
-                alt="Spring Picnic Party">
-              <span class="environment__gallery-img-caption">Spring Picnic Party</span>
-            </div>
-
-            <div class="environment__gallery">
-              <img class="environment__gallery-img environment__gallery-img--full-width" src="images/photos/events/diwali.png"
-                alt="Diwali Celebration">
-              <span class="environment__gallery-img-caption">Diwali Celebration</span>
-            </div>
-
-            <div class="environment__gallery">
-              <img class="environment__gallery-img environment__gallery-img--full-width environment__gallery-img--halloween" src="images/photos/events/halloween.png"
-                alt="Halloween Party">
-              <span class="environment__gallery-img-caption">Halloween Party</span>
-            </div>
-
-            <div class="environment__gallery">
-              <img class="environment__gallery-img environment__gallery-img--full-width" src="images/photos/events/festivus.png"
-                alt="Winter Festivus Party">
-              <span class="environment__gallery-img-caption">Winter Festivus Party</span>
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Monday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">On Site</span>
+              <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
             </div>
           </div>
 
-        </section>
-
-        <!-- Diversity & Inclusion -->
-        <section class="diversity flex flex-col gap--md">
-          <h1 class="section__heading">Diversity & Inclusion</h1>
-
-          <div class="flex flex-col-mobile gap--md">
-            <img class="diversity__img" src="images/photos/team/admin.png"
-              alt="Operations, Human Resources, and Talent Acquisition">
-          </div>
-
-          <p>At Digital Shovel, our diverse and passionate team thrives in a warm and welcoming atmosphere, fostering
-            strong friendships and exploring different cultures together. We are committed to honouring the promotion
-            of diversity and inclusivity every day by valuing the differences among our employees, clients and peers.
-            We believe that diversity and inclusion are essential elements of our company culture which collectively
-            promotes an environment of creativity, innovation, collaboration and success.</p>
-        </section>
-
-        <!-- Innovative Tech -->
-        <section class="flex flex-col gap--md">
-          <div class="flex flex-col gap--sm">
-            <h1 class="section__heading">Innovative Tech</h1>
-            <p>We pride ourselves on using cutting-edge machinery and robotics. Our team of experts is constantly
-              researching and experimenting with the latest tools and techniques to ensure that we stay ahead of the
-              curve. In addition to utilizing existing technologies, we also invent our own, custom-built solutions to
-              meet the unique needs of our clients. Our innovative approach has earned us the reputation as one of the
-              leaders in the industry, and we are committed to continuing to push the boundaries of what is possible.
-            </p>
-            <iframe class="tech__video" width="1016" height="571.5" src="https://www.youtube.com/embed/nUOJtEkGXNc"
-              title="Digital Shovel&#39;s New Automatic Robotic Welders" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-
-          <div class="grid grid__col-2">
-            <div class="environment__gallery">
-              <img class="environment__gallery-img environment__gallery-img--full-width" src="images/photos/shop/assembly.png"
-                alt="Assembly of Minipods">
-              <span class="environment__gallery-img-caption">Assembly</span>
-            </div>
-
-            <div class="environment__gallery">
-              <img class="environment__gallery-img environment__gallery-img--full-width" src="images/photos/shop/metal-shop.png"
-                alt="Metal Shop">
-              <span class="environment__gallery-img-caption">Metal Shop</span>
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Tuesday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">On Site</span>
+              <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
             </div>
           </div>
-        </section>
 
-        <!-- Join us Today! -->
-        <section class="join-us flex flex-col gap--md">
-          <div class="flex flex-col ai-c gap--md">
-            <h1 class="section__heading">Join us Today!</h1>
-            <p class="text--center">Given our rapid growth over the years, we are always interested in hiring driven and
-              hard-working people that fit our environment.<br>Check out our job postings, we encourage you to apply to
-              any position that fits your skill-set!</p>
-            <a class="btn btn--primary" href="https://ca.indeed.com/cmp/Digital-Shovel/jobs">Job Postings
-              <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.49 6L7.5 6" />
-                <path d="M2.5 1L7.95455 6L2.5 11" />
-              </svg>
-            </a>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
-            <div class="footer__column">
-              <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg"
-                  alt="Digital Shovel Logo" /></a>
-              <p class="footer__body">
-                Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low
-                energy
-                cost, and high security, we help businesses with managed and unmanaged miner hosting.
-              </p>
-            </div>
-            <div class="footer__column">
-              <small class="footer__heading">Products</small>
-              <ul class="footer__list">
-                <li><a href="m300" class="footer__list-item">M300 Minipod</a></li>
-                <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
-                <!-- <li><a href="i300" class="footer__list-item">Air-Intake Awnings</a></li>
-                <li><a href="i300" class="footer__list-item">Cooling Fans</a></li>
-                <li><a href="i300" class="footer__list-item">SmartPDU</a></li> -->
-              </ul>
-            </div>
-            <div class="footer__column">
-              <small class="footer__heading">Navigation</small>
-              <ul class="footer__list">
-                <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
-                <li><a href="contact" class="footer__list-item">Contact</a></li>
-              </ul>
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Wednesday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">On Site</span>
+              <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
             </div>
           </div>
-          <div class="footer__divider"></div>
-          <div class="flex flex-col--lg-tablet jc-sb gap--sm">
-            <div class="flex flex-col--lg-tablet gap--sm">
-              <small class="footer__copyright">© 2023 Digital Shovel Holdings Inc.</small>
+
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Thursday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">On Site</span>
+              <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
             </div>
-            <div class="flex gap--sm ai-c">
-              <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
-                  src="images/icons/icon_instagram.svg" alt="Facebook Logo Icon"></a>
-              <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
-                  src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
-              <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"
-                  src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon"></a>
-              <a target="_blank" href="https://www.facebook.com/DigitalShovelInc/"><img class="footer__social"
-                  src="images/icons/icon_facebook.svg" alt="Facebook Logo Icon"></a>
+          </div>
+
+          <div class="hybrid__day-container hybrid__day-container--off flex flex-col">
+            <span class="hybrid__day">Friday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">Day Off</span>
+              <img class="hybrid__icon" src="images/icons/icon_hardhat.svg" alt="Hardhat Icon">
             </div>
           </div>
         </div>
-      </footer>
+
+        <div class="hybrid__row flex flex-col-mobile gap--sm w-100">
+          <div class="hybrid__title-container flex jc-sb flex-col">
+            <h2 class="hybrid__title">Office<br>Staff</h2>
+            <h3 class="hybrid__subtitle">4.5-day work week</h3>
+          </div>
+
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Monday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">In Office</span>
+              <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
+            </div>
+          </div>
+
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Tuesday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">In Office</span>
+              <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
+            </div>
+          </div>
+
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Wednesday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">In Office</span>
+              <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
+            </div>
+          </div>
+
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Thursday</span>
+            <div class="hybrid__location-container flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">In Office</span>
+              <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
+            </div>
+          </div>
+
+          <div class="hybrid__day-container flex flex-col">
+            <span class="hybrid__day">Friday (half-day)</span>
+            <div class="hybrid__location-container hybrid__location-container--remote flex flex-col jc-c ai-c gap--xsm">
+              <span class="hybrid__location">Remote</span>
+              <img class="hybrid__icon" src="images/icons/icon_suitcase.svg" alt="Hardhat Icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Work Environment -->
+    <section class="environment flex flex-col gap--md">
+      <div class="flex flex-col gap--md">
+        <h1 class="section__heading">Our Work Environment</h1>
+        <p class="hero__body">We offer a dynamic and rewarding work environment where our team members can explore
+          their full potential. Regardless of your job title, you will be allowed to undertake multiple roles and
+          work on innovative technology that solves real-world problems. On top of that, we believe productivity is
+          better achieved through a united team, so be prepared for company parties, gaming lunches, and
+          out-of-office gatherings and night-outs. If you are looking for a challenging and fulfilling career in the
+          tech industry with a passionate team, this is the place for you.
+        </p>
+      </div>
+
+      <div class="grid grid__col-2">
+        <div class="environment__gallery">
+          <img class="environment__gallery-img environment__gallery-img--full-width"
+            src="images/photos/events/scot-birthday.png" alt="Scot's Birthday">
+          <span class="environment__gallery-img-caption">Scot's Birthday</span>
+        </div>
+
+        <div class="environment__gallery">
+          <img class="environment__gallery-img environment__gallery-img--full-width" src="images/photos/events/ds5y.png"
+            alt="Digital Shovel 5-Year Anniversary">
+          <span class="environment__gallery-img-caption">Digital Shovel 5-Year Anniversary</span>
+        </div>
+
+        <div class="environment__gallery">
+          <img class="environment__gallery-img environment__gallery-img--full-width"
+            src="images/photos/events/picnic.png" alt="Spring Picnic Party">
+          <span class="environment__gallery-img-caption">Spring Picnic Party</span>
+        </div>
+
+        <div class="environment__gallery">
+          <img class="environment__gallery-img environment__gallery-img--full-width"
+            src="images/photos/events/diwali.png" alt="Diwali Celebration">
+          <span class="environment__gallery-img-caption">Diwali Celebration</span>
+        </div>
+
+        <div class="environment__gallery">
+          <img class="environment__gallery-img environment__gallery-img--full-width environment__gallery-img--halloween"
+            src="images/photos/events/halloween.png" alt="Halloween Party">
+          <span class="environment__gallery-img-caption">Halloween Party</span>
+        </div>
+
+        <div class="environment__gallery">
+          <img class="environment__gallery-img environment__gallery-img--full-width"
+            src="images/photos/events/festivus.png" alt="Winter Festivus Party">
+          <span class="environment__gallery-img-caption">Winter Festivus Party</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Diversity & Inclusion -->
+    <section class="diversity flex flex-col gap--md">
+      <h1 class="section__heading">Diversity & Inclusion</h1>
+
+      <div class="flex flex-col-mobile gap--md">
+        <img class="diversity__img" src="images/photos/team/admin.png"
+          alt="Operations, Human Resources, and Talent Acquisition">
+      </div>
+
+      <p>At Digital Shovel, our diverse and passionate team thrives in a warm and welcoming atmosphere, fostering
+        strong friendships and exploring different cultures together. We are committed to honouring the promotion
+        of diversity and inclusivity every day by valuing the differences among our employees, clients and peers.
+        We believe that diversity and inclusion are essential elements of our company culture which collectively
+        promotes an environment of creativity, innovation, collaboration and success.</p>
+    </section>
+
+    <!-- Innovative Tech -->
+    <section class="flex flex-col gap--md">
+      <div class="flex flex-col gap--sm">
+        <h1 class="section__heading">Innovative Tech</h1>
+        <p>We pride ourselves on using cutting-edge machinery and robotics. Our team of experts is constantly
+          researching and experimenting with the latest tools and techniques to ensure that we stay ahead of the
+          curve. In addition to utilizing existing technologies, we also invent our own, custom-built solutions to
+          meet the unique needs of our clients. Our innovative approach has earned us the reputation as one of the
+          leaders in the industry, and we are committed to continuing to push the boundaries of what is possible.
+        </p>
+        <iframe class="tech__video" width="1016" height="571.5" src="https://www.youtube.com/embed/nUOJtEkGXNc"
+          title="Digital Shovel&#39;s New Automatic Robotic Welders" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="grid grid__col-2">
+        <div class="environment__gallery">
+          <img class="environment__gallery-img environment__gallery-img--full-width"
+            src="images/photos/shop/assembly.png" alt="Assembly of Minipods">
+          <span class="environment__gallery-img-caption">Assembly</span>
+        </div>
+
+        <div class="environment__gallery">
+          <img class="environment__gallery-img environment__gallery-img--full-width"
+            src="images/photos/shop/metal-shop.png" alt="Metal Shop">
+          <span class="environment__gallery-img-caption">Metal Shop</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join us Today! -->
+    <section class="join-us flex flex-col gap--md">
+      <div class="flex flex-col ai-c gap--md">
+        <h1 class="section__heading">Join us Today!</h1>
+        <p class="text--center">Given our rapid growth over the years, we are always interested in hiring driven and
+          hard-working people that fit our environment.<br>Check out our job postings, we encourage you to apply to
+          any position that fits your skill-set!</p>
+        <a class="btn btn--primary" href="https://ca.indeed.com/cmp/Digital-Shovel/jobs">Job Postings
+          <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.49 6L7.5 6" />
+            <path d="M2.5 1L7.95455 6L2.5 11" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
+        <div class="footer__column">
+          <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
+          <p class="footer__body">
+            Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low
+            energy
+            cost, and high security, we help businesses with managed and unmanaged miner hosting.
+          </p>
+        </div>
+        <div class="footer__column">
+          <small class="footer__heading">Products</small>
+          <ul class="footer__list">
+            <li><a href="m300" class="footer__list-item">M300 Minipod</a></li>
+            <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
+            <!-- <li><a href="i300" class="footer__list-item">Air-Intake Awnings</a></li>
+                <li><a href="i300" class="footer__list-item">Cooling Fans</a></li>
+                <li><a href="i300" class="footer__list-item">SmartPDU</a></li> -->
+          </ul>
+        </div>
+        <div class="footer__column">
+          <small class="footer__heading">Navigation</small>
+          <ul class="footer__list">
+            <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
+            <li><a href="contact" class="footer__list-item">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="flex flex-col--lg-tablet jc-sb gap--sm">
+        <div class="flex flex-col--lg-tablet gap--sm">
+          <small class="footer__copyright">© 2023 Digital Shovel Holdings Inc.</small>
+        </div>
+        <div class="flex gap--sm ai-c">
+          <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
+              src="images/icons/icon_instagram.svg" alt="Facebook Logo Icon"></a>
+          <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
+              src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
+          <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"
+              src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon"></a>
+          <a target="_blank" href="https://www.facebook.com/DigitalShovelInc/"><img class="footer__social"
+              src="images/icons/icon_facebook.svg" alt="Facebook Logo Icon"></a>
+        </div>
+      </div>
     </div>
-  </div>
+  </footer>
 
 </body>
 

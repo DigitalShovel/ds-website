@@ -28,7 +28,7 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -42,6 +42,7 @@ body {
   line-height: 1.4;
   color: var(--blue-900);
   background-color: white;
+  scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }

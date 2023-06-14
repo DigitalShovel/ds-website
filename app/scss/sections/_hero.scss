@@ -50,7 +50,7 @@
     &--left {
       text-align: left;
 
-      @include breakpoint(lg-tablet) {
+      @include breakpoint(sm-desktop) {
         text-align: center;
       }
     }

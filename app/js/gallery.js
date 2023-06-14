@@ -16,16 +16,6 @@
 // 12. the modal window should also close when the user presses the escape key
 // 13. when the modal window is open, the user should not be able to tab through the rest of the page
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-// create the scrollSmoother before your scrollTriggers
-const smoother = ScrollSmoother.create({
-  smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
-  effects: true, // looks for data-speed and data-lag attributes on elements
-  smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-  normalizeScroll: true // force the scroll target to always be a positive number
-});
-
 // 1. get the photo from the gallery
 const photos = document.querySelectorAll(".photo");
 const navbar = document.querySelector(".navbar");
@@ -37,8 +27,6 @@ photos.forEach((photo) => {
     // 3. when the photo is clicked, the modal window should pop up
     const modal = document.querySelector(".modal");
     modal.classList.add("open");
-
-    smoother.paused(true);
 
     html.style.overflow = "hidden";
     navbar.style.zIndex = "-1";
@@ -110,8 +98,6 @@ const closeBtn = document.querySelector(".close");
 closeBtn.addEventListener("click", () => {
   const modal = document.querySelector(".modal");
   modal.classList.remove("open");
-
-  smoother.paused(false);
 
   html.style.overflow = "auto";
   navbar.style.zIndex = "999";

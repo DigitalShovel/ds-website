@@ -40,14 +40,12 @@
   <!-- GSAP -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script defer src="/app/js/ScrollTrigger.min.js"></script>
-  <script defer src="/app/js/ScrollSmoother.min.js"></script>
 
   <!-- Javascript -->
   <script defer src="/app/js/detect-scroll-i300.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
   <script defer src="/app/js/gallery.js?v=1.0"></script>
-  <script defer src="/app/js/scroll-animations-i300.js?v=1.0"></script>
 
   <title>Digital Shovel • i300 Minipod</title>
 
@@ -209,233 +207,229 @@
     <div class="subnav__container">
       <ul class="subnav__links">
         <li>
-          <a class="subnav__link subnav__link--product subnav__link--active">Product</a>
+          <a href="#product" class="subnav__link subnav__link--product subnav__link--active">Product</a>
         </li>
         <li>
-          <a class="subnav__link subnav__link--specs">Specifications</a>
+          <a href="#specifications" class="subnav__link subnav__link--specs">Specifications</a>
         </li>
         <li>
-          <a class="subnav__link subnav__link--bundle">Bundle</a>
+          <a href="#bundle" class="subnav__link subnav__link--bundle">Bundle</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <main class="main">
-        <section id="product" class="container container--subnav container--i300 flex flex-col ai-c">
-          <div class="flex flex-col ai-c gap--sm">
-            <div class="flex flex-col--sm-mobile ai-c gap--sm">
-              <h4>Cooling Solution</h4>
-            </div>
-            <h1 class="hero__heading">
-              <emphasis class="text--blue">FANS</emphasis>
-            </h1>
-          </div>
-          <div class="flex flex-col--sm-tablet ai-c gap--lg">
-            <img class="hero__2d-i300" src="images/illustrations/fan_front.svg" alt="Fan Front Illustration">
-            <div class="gallery-container">
-              <div class="gallery gallery__i300">
-                <img class="photo photo-1 photo__i300" src="images/photos/minipod/M300-back-1.jpg"
-                  alt="i300 Minipod Back View">
-                <img class="photo photo-2 photo__i300" src="images/photos/minipod/M300-back-2.jpg"
-                  alt="i300 Minipod Front View">
-                <div class="modal">
-                  <div class="modal-container">
-                    <span class="close">
-                      <div class="line line-1"></div>
-                      <div class="line line-2"></div>
-                    </span>
-                    <div class="modal__photo-container">
-                      <img src="" class="modal__photo">
-                      <button class="btn__gallery btn__gallery-left">
-                        <svg class="arrow arrow-left" width="23" height="23" viewBox="0 0 23 23" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
-                          <g clip-path="url(#a)">
-                            <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </g>
-                          <defs>
-                            <clipPath id="a">
-                              <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                      <button class="btn__gallery btn__gallery-right">
-                        <svg class="arrow arrow-right" width="23" height="23" viewBox="0 0 23 23" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
-                          <g clip-path="url(#a)">
-                            <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </g>
-                          <defs>
-                            <clipPath id="a">
-                              <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                      <div class="flex flex-col jc-c gap--md">
-                        <span class="modal__caption"></span>
-                      </div>
-                    </div>
+  <main class="main">
+    <section id="product" class="container container--i300 flex flex-col ai-c">
+      <div class="flex flex-col ai-c gap--sm">
+        <div class="flex flex-col--sm-mobile ai-c gap--sm">
+          <h4>Cooling Solution</h4>
+        </div>
+        <h1 class="hero__heading">
+          <emphasis class="text--blue">FANS</emphasis>
+        </h1>
+      </div>
+      <div class="flex flex-col--sm-tablet ai-c gap--lg">
+        <img class="hero__2d-i300" src="images/illustrations/fan_front.svg" alt="Fan Front Illustration">
+        <div class="gallery-container">
+          <div class="gallery gallery__i300">
+            <img class="photo photo-1 photo__i300" src="images/photos/minipod/M300-back-1.jpg"
+              alt="Fans On The Minipod M300 Back View">
+            <img class="photo photo-2 photo__i300" src="images/photos/minipod/M300-back-2.jpg"
+              alt="Fans On The Minipod M300 Front View">
+            <div class="modal">
+              <div class="modal-container">
+                <span class="close">
+                  <div class="line line-1"></div>
+                  <div class="line line-2"></div>
+                </span>
+                <div class="modal__photo-container">
+                  <img src="" class="modal__photo">
+                  <button class="btn__gallery btn__gallery-left">
+                    <svg class="arrow arrow-left" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
+                      <g clip-path="url(#a)">
+                        <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button class="btn__gallery btn__gallery-right">
+                    <svg class="arrow arrow-right" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
+                      <g clip-path="url(#a)">
+                        <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <div class="flex flex-col jc-c gap--md">
+                    <span class="modal__caption"></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <a href="#specifications" class="scroll scroll__i300">
-          <span class="scroll__text">scroll for more</span>
-          <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
+        </div>
+      </div>
+    </section>
+    <a href="#specifications" class="scroll scroll__i300">
+      <span class="scroll__text">scroll for more</span>
+      <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+    <section id="specifications" class="card__grid card__grid--i300">
+      <div class="card-1 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_power.svg" alt="Power Input Icon">
+          <h6>Power Input</h6>
+        </div>
+        <ul class="flex flex-col gap--md">
+          <li class="card__list-item flex">Input voltage provided at 415Y240</li>
+          <li class="card__list-item flex">380-415 Volts 5 Wire
+            (3 Poles, Neutral + Ground)</li>
+          <li class="card__list-item flex">220-240 Volts Primary to Neutral</li>
+          <li class="card__list-item card__list-item--new flex">208 Volt 3-Phase 3 Wire + Ground</li>
+        </ul>
+      </div>
+      <div class="card-2 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_spdu.svg" alt="Smart Power Distribution Icon">
+          <h6>Smart Power Distribution Unit (SPDU)</h6>
+        </div>
+        <ul class="flex flex-col gap--md">
+          <li class="card__list-item flex">Each MINIPOD is equipped with two SPDUs</li>
+          <li class="card__list-item flex">96 (42 outlets on 208 Volt PDU) - C19 outlets with a 20A
+            dedicated
+            breaker
+            per outlet</li>
+          <li class="card__list-item flex">Allows max wattage while providing max protection</li>
+          <li class="card__list-item flex">Individual port monitoring and switching</li>
+          <li class="card__list-item flex">Fitted with a UL 489 Listed 350A 3 phase main breaker, tied
+            to a common
+            overhead mounted busway</li>
+        </ul>
+      </div>
+      <div class="card-5 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_mining.svg" alt="Mining Capacity Icon">
+          <h6>Mining Capacity</h6>
+        </div>
+        <ul class="flex flex-col gap--md">
+          <li class="card__list-item flex">8 shelves 85” wide and 11.7” tall</li>
+          <li class="card__list-item flex">Quick change back-sheets on a per-row basis</li>
+          <li class="card__list-item flex">Supports 88 S19 miners and 40 4U GPUs</li>
+        </ul>
+      </div>
+      <div class="card-7 card__data card__secondary flex ai-c gap--md">
+        <img class="icon--md" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
+        <h6>Total Capacity</h6>
+        <h6 class="text--blue">300kW</h6>
+      </div>
+      <a href="contact" class="card-8 btn btn--primary btn--card flex ai-c jc-c gap--sm">Place Order
+        <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="card-9 card__data flex ai-c gap--md">
+        <img class="icon--md" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
+        <h6 class="text--dark-blue">Approx. Cost</h6>
+        <h6 class="text--blue">$19,999 - $25,500</h6>
+      </div>
+    </section>
+    <section id="bundle" class="bundle">
+      <div class="container container--full-width flex flex-col gap--md ai-c jc-c">
+        <h2 class="text__heading">
+          <span class="text--blue">Bundled</span> with your Fans
+        </h2>
+        <p class="text__body text--center">
+          Main container, racking, back-sheets, and Smart PDUs
+        </p>
+        <div class="bundle__illustrations bundle__illustrations--i300">
+          <img src="images/illustrations/fan-front_with-text.svg" alt="Fan Illustration Front Side">
+          <img src="images/illustrations/fan-back_with-text.svg" alt="Fan Illustration Back Side">
+          <div class="minipod__illustrations--shadow"></div>
+        </div>
+        <a href="contact" class="btn btn--primary mtop--xxl mbot--lg">Contact Sales
+          <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </a>
-        <section id="specifications" class="card__grid card__grid--i300">
-          <div class="card-1 card__list flex flex-col gap--md">
-            <div class="flex gap--sm ai-c">
-              <img class="icon--md" src="images/icons/icon_power.svg" alt="Power Input Icon">
-              <h6>Power Input</h6>
-            </div>
-            <ul class="flex flex-col gap--md">
-              <li class="card__list-item flex">Input voltage provided at 415Y240</li>
-              <li class="card__list-item flex">380-415 Volts 5 Wire
-                (3 Poles, Neutral + Ground)</li>
-              <li class="card__list-item flex">220-240 Volts Primary to Neutral</li>
-              <li class="card__list-item card__list-item--new flex">208 Volt 3-Phase 3 Wire + Ground</li>
-            </ul>
-          </div>
-          <div class="card-2 card__list flex flex-col gap--md">
-            <div class="flex gap--sm ai-c">
-              <img class="icon--md" src="images/icons/icon_spdu.svg" alt="Smart Power Distribution Icon">
-              <h6>Smart Power Distribution Unit (SPDU)</h6>
-            </div>
-            <ul class="flex flex-col gap--md">
-              <li class="card__list-item flex">Each MINIPOD is equipped with two SPDUs</li>
-              <li class="card__list-item flex">96 (42 outlets on 208 Volt PDU) - C19 outlets with a 20A
-                dedicated
-                breaker
-                per outlet</li>
-              <li class="card__list-item flex">Allows max wattage while providing max protection</li>
-              <li class="card__list-item flex">Individual port monitoring and switching</li>
-              <li class="card__list-item flex">Fitted with a UL 489 Listed 350A 3 phase main breaker, tied
-                to a common
-                overhead mounted busway</li>
-            </ul>
-          </div>
-          <div class="card-5 card__list flex flex-col gap--md">
-            <div class="flex gap--sm ai-c">
-              <img class="icon--md" src="images/icons/icon_mining.svg" alt="Mining Capacity Icon">
-              <h6>Mining Capacity</h6>
-            </div>
-            <ul class="flex flex-col gap--md">
-              <li class="card__list-item flex">8 shelves 85” wide and 11.7” tall</li>
-              <li class="card__list-item flex">Quick change back-sheets on a per-row basis</li>
-              <li class="card__list-item flex">Supports 88 S19 miners and 40 4U GPUs</li>
-            </ul>
-          </div>
-          <div class="card-7 card__data card__secondary flex ai-c gap--md">
-            <img class="icon--md" src="images/icons/icon_power-capacity.svg" alt="Total Power Capacity Icon">
-            <h6>Total Capacity</h6>
-            <h6 class="text--blue">300kW</h6>
-          </div>
-          <a href="contact" class="card-8 btn btn--primary btn--card flex ai-c jc-c gap--sm">Place Order
-            <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-          <div class="card-9 card__data flex ai-c gap--md">
-            <img class="icon--md" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
-            <h6 class="text--dark-blue">Approx. Cost</h6>
-            <h6 class="text--blue">$19,999 - $25,500</h6>
-          </div>
-        </section>
-        <section id="bundle" class="bundle">
-          <div class="container container--full-width flex flex-col gap--md ai-c jc-c">
-            <h2 class="text__heading">
-              <span class="text--blue">Bundled</span> with your Fans
-            </h2>
-            <p class="text__body text--center">
-              Main container, racking, back-sheets, and Smart PDUs
-            </p>
-            <div class="bundle__illustrations bundle__illustrations--i300">
-              <img src="images/illustrations/fan-front_with-text.svg" alt="Fan Illustration Front Side">
-              <img src="images/illustrations/fan-back_with-text.svg" alt="Fan Illustration Back Side">
-              <div class="minipod__illustrations--shadow"></div>
-            </div>
-            <a href="contact" class="btn btn--primary mtop--xxl mbot--lg">Contact Sales
-              <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-        </section>
-      </main>
+      </div>
+    </section>
+  </main>
 
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
-            <div class="footer__column">
-              <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg"
-                  alt="Digital Shovel Logo" /></a>
-              <p class="footer__body">
-                Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile
-                units. With low
-                energy
-                cost, and high security, we help businesses with managed and unmanaged miner hosting.
-              </p>
-            </div>
-            <div class="footer__column">
-              <small class="footer__heading">Products</small>
-              <ul class="footer__list">
-                <li><a href="m300" class="footer__list-item">M300 Minipod</a></li>
-                <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
-                <!-- <li><a href="i300" class="footer__list-item">Air-Intake Awnings</a></li>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
+        <div class="footer__column">
+          <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
+          <p class="footer__body">
+            Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile
+            units. With low
+            energy
+            cost, and high security, we help businesses with managed and unmanaged miner hosting.
+          </p>
+        </div>
+        <div class="footer__column">
+          <small class="footer__heading">Products</small>
+          <ul class="footer__list">
+            <li><a href="m300" class="footer__list-item">M300 Minipod</a></li>
+            <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
+            <!-- <li><a href="i300" class="footer__list-item">Air-Intake Awnings</a></li>
                 <li><a href="i300" class="footer__list-item">Cooling Fans</a></li>
                 <li><a href="i300" class="footer__list-item">SmartPDU</a></li> -->
-              </ul>
-            </div>
-            <div class="footer__column">
-              <small class="footer__heading">Navigation</small>
-              <ul class="footer__list">
-                <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
-                <li><a href="contact" class="footer__list-item">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__divider"></div>
-          <div class="flex flex-col--lg-tablet jc-sb gap--sm">
-            <div class="flex flex-col--lg-tablet gap--sm">
-              <small class="footer__copyright">© 2023 Digital Shovel Holdings Inc.</small>
-            </div>
-            <div class="flex gap--sm ai-c">
-              <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
-                  src="images/icons/icon_instagram.svg" alt="Facebook Logo Icon"></a>
-              <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
-                  src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
-              <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"
-                  src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon"></a>
-              <a target="_blank" href="https://www.facebook.com/DigitalShovelInc/"><img class="footer__social"
-                  src="images/icons/icon_facebook.svg" alt="Facebook Logo Icon"></a>
-            </div>
-          </div>
+          </ul>
         </div>
-      </footer>
+        <div class="footer__column">
+          <small class="footer__heading">Navigation</small>
+          <ul class="footer__list">
+            <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
+            <li><a href="contact" class="footer__list-item">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="flex flex-col--lg-tablet jc-sb gap--sm">
+        <div class="flex flex-col--lg-tablet gap--sm">
+          <small class="footer__copyright">© 2023 Digital Shovel Holdings Inc.</small>
+        </div>
+        <div class="flex gap--sm ai-c">
+          <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
+              src="images/icons/icon_instagram.svg" alt="Facebook Logo Icon"></a>
+          <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
+              src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
+          <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"
+              src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon"></a>
+          <a target="_blank" href="https://www.facebook.com/DigitalShovelInc/"><img class="footer__social"
+              src="images/icons/icon_facebook.svg" alt="Facebook Logo Icon"></a>
+        </div>
+      </div>
     </div>
-  </div>
+  </footer>
+
 
 </body>
 

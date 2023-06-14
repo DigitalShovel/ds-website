@@ -1,11 +1,11 @@
 @use "../base/breakpoints" as *;
 
+:root {
+  --navbar: 73px;
+  --subnav: 129px;
+}
+
 .container {
-  /* Using the underscore (_) in variables is a methodology utilized by Lea Verou that indicates a variable is local/scoped (versus global in :root) */
-
-  --_navbar: 73px;
-  --_subnav: 129px;
-
   max-width: 1080px;
   margin: 0 auto;
   padding: 4rem 2rem;
@@ -75,20 +75,22 @@
     }
   }
 
-  
-
   /* The reason for the following two classes is to push down the main content because GSAP SmoothScroller adds a position:fixed container around the main content with an inset:0px which forces the content to move all the way to the top of the page and gets overlapped by the navbar and subnav */
 
   &--navbar {
-    padding-top: calc(var(--_navbar) + 4rem); // 73px is the height of the navbar
+    padding-top: calc(var(--navbar) + 4rem); // 73px is the height of the navbar
 
-    @include breakpoint(md-tablet) {
-      padding-top: calc(var(--_navbar) + 0rem);
+    @include breakpoint(md-mobile) {
+      padding-top: calc(var(--navbar) - 2rem);
     }
   }
 
   &--subnav {
-    padding-top: calc(var(--_subnav) + 4rem); // 128px is the height of the navbar (73px) + subnav (~56px)
+    padding-top: calc(var(--subnav) + 4rem); // 128px is the height of the navbar (73px) + subnav (~56px)
+
+    @include breakpoint(md-mobile) {
+      padding-top: calc(var(--navbar) - 2rem);
+    }
   }
 }
 
