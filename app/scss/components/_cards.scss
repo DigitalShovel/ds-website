@@ -41,6 +41,13 @@
 }
 
 .card {
+  &__combined {
+    gap: 2rem;
+
+    @include breakpoint(lg-tablet) {
+      gap: 1rem;
+    }
+  }
 
   &__list {
     padding: 20px;
