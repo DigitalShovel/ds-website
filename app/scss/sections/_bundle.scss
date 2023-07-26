@@ -25,8 +25,12 @@
         width: 450px;
       }
 
-      @include breakpoint(lg-tablet) {
-        width: 300px;
+      @include breakpoint(sm-tablet) {
+        width: 400px;
+      }
+
+      @include breakpoint(md-mobile) {
+        width: 350px;
       }
     }
 
