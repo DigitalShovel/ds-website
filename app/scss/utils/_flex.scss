@@ -60,6 +60,12 @@
 
 .ai-c {
   align-items: center;
+
+  &--tablet {
+    @include breakpoint(lg-tablet) {
+      align-items: center;
+    }
+  }
 }
 
 .ai-b {

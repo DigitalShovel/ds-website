@@ -87,7 +87,7 @@
   }
 
   &__subheading {
-    @include breakpoint(sm-desktop) {
+    @include breakpoint(lg-tablet) {
       text-align: center;
     }
   }
@@ -166,7 +166,7 @@
   }
 
   &__body {
-    @include breakpoint(sm-desktop) {
+    @include breakpoint(lg-tablet) {
       text-align: center;
       margin: 0 auto;
     }
@@ -301,12 +301,6 @@
   &__img {
     width: 250px;
 
-    @include breakpoint(lg-tablet) {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
     &-anchor {
       position: relative;
 
@@ -349,7 +343,7 @@
   }
 
   &__company {
-    width: 400px;
+    max-width: 400px;
   }
 
   &__partnership {
