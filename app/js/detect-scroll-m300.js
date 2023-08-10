@@ -30,14 +30,14 @@ window.addEventListener("scroll", () => {
 
       // set the active class to the specs link
       specsLinkM300.classList.add("subnav__link--active");
-    } else if (scrollY <= 2400) {
+    } else if (scrollY <= 2350) {
       productLinkM300.classList.remove("subnav__link--active");
       specsLinkM300.classList.remove("subnav__link--active");
       pricingLinkM300.classList.remove("subnav__link--active");
 
       // set the active class to the bundle link
       bundleLinkM300.classList.add("subnav__link--active");
-    } else if (scrollY >= 2401) {
+    } else if (scrollY >= 2351) {
       productLinkM300.classList.remove("subnav__link--active");
       bundleLinkM300.classList.remove("subnav__link--active");
       specsLinkM300.classList.remove("subnav__link--active");
