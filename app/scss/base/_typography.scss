@@ -159,6 +159,7 @@ small {
     overflow: visible;
 
     &::before {
+      pointer-events: none;
       content: "";
       position: absolute;
       left: 5px;
@@ -168,6 +169,25 @@ small {
       height: 25px;
       background-repeat: no-repeat;
       background-image: url("../images/illustrations/strikethrough.svg");
+    }
+  }
+
+  &--strikethrough-small {
+    position: relative;
+    overflow: visible;
+
+    &::before {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: 3px;
+      z-index: 1;
+      width: 55px;
+      height: 15px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../images/illustrations/strikethrough-small.svg");
     }
   }
 }
