@@ -10,14 +10,14 @@
 }
 
 h1 {
-  font-size: clamp(1.7rem, 7vw, 4rem);
+  font-size: clamp(2.5rem, 7vw, 4rem);
   font-weight: 900;
   letter-spacing: -0.5px;
   font-family: var(--heavy-wide-font);
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 4vw, 1rem);
   font-weight: 600;
   letter-spacing: -0.1px;
 }
@@ -83,7 +83,7 @@ small {
 
 .text {
   &__heading {
-    font-size: 2.441rem;
+    font-size: clamp(1.75rem, 3vw, 2.441rem);
     line-height: 1.1;
     letter-spacing: -1px;
 
@@ -148,6 +148,10 @@ small {
 
   &--center {
     text-align: center;
+  }
+
+  &--left {
+    text-align: left;
   }
 
   &--discount {

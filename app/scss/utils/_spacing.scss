@@ -50,6 +50,10 @@
     }
   }
 
+  &--press {
+    padding: 3rem 2rem;
+  }
+
   &--full-width {
     max-width: 100%;
   }
@@ -73,6 +77,10 @@
     @include breakpoint(lg-tablet) {
       margin: auto;
     }
+  }
+  
+  &__text {
+    max-width: 55ch;
   }
 
   /* The reason for the following two classes is to push down the main content because GSAP SmoothScroller adds a position:fixed container around the main content with an inset:0px which forces the content to move all the way to the top of the page and gets overlapped by the navbar and subnav */
