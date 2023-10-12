@@ -95,7 +95,26 @@
   }
 
   &__divider {
-    height: 100px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 0;
+
+    @include breakpoint(md-tablet) {
+      gap: 1rem;
+    }
+
+    @include breakpoint(md-mobile) {
+      gap: 0.5rem;
+    }
+
+    &-shape {
+      min-height: 4px;
+      min-width: 9px;
+      border-radius: 1.3px;
+      background-color: var(--blue-gray-50);
+    }
   }
 
   &__release {
@@ -103,6 +122,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
+
+      @include breakpoint(md-tablet) {
+        grid-template-columns: 1fr;
+      }
     }
 
     &-link {
@@ -115,7 +138,7 @@
       border: 1px solid var(--blue-gray-100);
       border-radius: 10px;
       padding: 1rem;
-      transition: transform 150ms ease-out,border 150ms ease-out, box-shadow 150ms ease-out;
+      transition: transform 150ms ease-out, border 150ms ease-out, box-shadow 150ms ease-out;
 
       &:hover {
         transform: translateY(-5px);
