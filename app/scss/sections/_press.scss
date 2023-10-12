@@ -99,10 +99,18 @@
   }
 
   &__release {
-    &-post {
+    &-list {
       display: grid;
-      grid-template-columns: 3fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
+    }
+
+    &-link {
+      display: inline-flex;
+    }
+
+    &-post {
+      display: inline-grid;
       background-color: var(--blue-gray-50);
       border: 1px solid var(--blue-gray-100);
       border-radius: 10px;
@@ -136,11 +144,14 @@
     }
 
     &-img {
+      max-width: 250px;
       object-fit: contain;
     }
   }
 
   &__cta {
+    padding-bottom: 6rem;
+
     h3 {
       line-height: 1.3;
     }
