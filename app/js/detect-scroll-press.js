@@ -27,7 +27,6 @@ window.addEventListener("scroll", () => {
       podcastsLink.classList.add("subnav__link--active");
     }
   } else {
-    console.log(scrollY);
     if (scrollY <= 2300) {
       articlesLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
