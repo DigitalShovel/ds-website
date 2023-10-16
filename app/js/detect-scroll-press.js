@@ -27,19 +27,20 @@ window.addEventListener("scroll", () => {
       podcastsLink.classList.add("subnav__link--active");
     }
   } else {
-    if (scrollY <= 1400) {
+    console.log(scrollY);
+    if (scrollY <= 2300) {
       articlesLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
       // set the active class to the press link
       pressLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 1800) {
+    } else if (scrollY <= 4100) {
       pressLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
       // set the active class to the articles link
       articlesLink.classList.add("subnav__link--active");
-    } else if (scrollY > 2100) {
+    } else if (scrollY > 4100) {
       pressLink.classList.remove("subnav__link--active");
       articlesLink.classList.remove("subnav__link--active");
 
