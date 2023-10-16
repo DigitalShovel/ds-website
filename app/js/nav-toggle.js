@@ -10,9 +10,6 @@ const navDropdownMenu = document.querySelector(".dropdown__menu");
 const body = document.querySelector("body");
 const html = document.querySelector("html");
 
-let pricingClass = document.querySelector(".subnav__link--pricing");
-let specsClass = document.querySelector(".subnav__link--specs");
-
 // toggles the navbar on tablet/mobile
 navToggle.addEventListener("click", () => {
   const visibility = navLinks.getAttribute("data-visible");
@@ -34,12 +31,3 @@ navToggle.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   }
 });
-
-// changes the name of the subnav links on mobile
-window.matchMedia("(max-width: 450px)").onchange = (e) => {
-  if (e.matches) {
-    specsClass.innerHTML = "Specs";
-  } else {
-    specsClass.innerHTML = "Specifications";
-  }
-};
