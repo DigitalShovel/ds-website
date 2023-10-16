@@ -30,6 +30,7 @@
     justify-content: flex-end;
     gap: 2rem;
     padding: 0.25rem 1rem;
+    margin-right: -0.5rem;
     cursor: pointer;
 
     @include breakpoint(sm-tablet) {

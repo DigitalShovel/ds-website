@@ -43,6 +43,8 @@
   <!-- Javascript -->
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
+  <script defer src="/app/js/detect-scroll-press.js"></script>
+  <script defer src="/app/js/subnav-press.js"></script>
 
   <title>Digital Shovel • Press</title>
 
@@ -61,7 +63,7 @@
 
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar navbar--borderless">
     <div class="navbar__container">
       <a href="/" class="navbar__logo" aria-label="Digital Shovel Logo">
         <svg title="Digital Shovel Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.45 80.96">
@@ -220,6 +222,22 @@
     </div>
   </nav>
 
+  <nav class="subnav">
+    <div class="subnav__container">
+      <ul class="subnav__links">
+        <li>
+          <a class="subnav__link subnav__link--press subnav__link--active">Press Releases</a>
+        </li>
+        <li>
+          <a class="subnav__link subnav__link--articles">Original Articles</a>
+        </li>
+        <li>
+          <a class="subnav__link subnav__link--podcasts">Podcasts & Mentions</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <main class="main press container container--2xl">
 
     <section class="press__hero flex flex-col--lg-tablet ai-c--tablet jc-sb gap--md">
@@ -283,7 +301,7 @@
       </div>
     </section>
 
-    <section class="press__release mtop--4xl">
+    <section id="press" class="press__release mtop--4xl">
       <h2 class="text__heading text--center">
         <emphasis class="text--blue">Press Releases</emphasis> & Announcements
       </h2>
@@ -374,7 +392,7 @@
       <div class="press__divider-shape"></div>
     </section>
 
-    <section class="press__release">
+    <section id="articles" class="press__release">
       <h2 class="text__heading text--center">
         <emphasis class="text--blue">Original</emphasis> Articles
       </h2>
@@ -462,7 +480,7 @@
       <div class="press__divider-shape"></div>
     </section>
 
-    <section class="press__release">
+    <section id="podcasts" class="press__release">
       <h2 class="text__heading text--center">
         <emphasis class="text--blue">Podcasts</emphasis> & Influencer Mentions
       </h2>
@@ -482,7 +500,7 @@
               alt="Big Dawg Crypto Podcast Logo">
           </article>
         </a>
-        
+
         <a class="press__release-link" href="https://youtu.be/8gV6RMyqSkE?t=71" target="_blank">
           <article class="press__release-post flex flex-col gap--lg">
             <div class="flex flex-col gap--sm">
@@ -494,7 +512,7 @@
             <img class="press__release-img" src="images/press-logos/mining-king.png" alt="The Mining Kiing Logo">
           </article>
         </a>
-        </div>
+      </div>
     </section>
 
     <section class="press__divider">

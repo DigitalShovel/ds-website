@@ -1,5 +1,11 @@
 @use "../base/breakpoints" as *;
 
+#press,
+#articles,
+#podcasts {
+  scroll-margin-top: calc(72px + 57px + 2rem); // navbar + subnav + extra padding
+}
+
 .press {
   overflow: hidden;
 
