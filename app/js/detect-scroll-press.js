@@ -5,21 +5,20 @@
 let check = false;
 
 window.addEventListener("scroll", () => {
-  // console.log(scrollY);
   if (window.innerWidth >= 992) {
-    if (scrollY <= 1300) {
+    if (scrollY <= 1100) {
       articlesLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
       // set the active class to the press link
       pressLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 1800) {
+    } else if (scrollY <= 2000) {
       pressLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
       // set the active class to the articles link
       articlesLink.classList.add("subnav__link--active");
-    } else if (scrollY > 2300) {
+    } else if (scrollY > 2000) {
       pressLink.classList.remove("subnav__link--active");
       articlesLink.classList.remove("subnav__link--active");
 
@@ -27,19 +26,19 @@ window.addEventListener("scroll", () => {
       podcastsLink.classList.add("subnav__link--active");
     }
   } else {
-    if (scrollY <= 2300) {
+    if (scrollY <= 1600) {
       articlesLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
       // set the active class to the press link
       pressLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 4100) {
+    } else if (scrollY <= 3100) {
       pressLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
       // set the active class to the articles link
       articlesLink.classList.add("subnav__link--active");
-    } else if (scrollY > 4100) {
+    } else if (scrollY > 3100) {
       pressLink.classList.remove("subnav__link--active");
       articlesLink.classList.remove("subnav__link--active");
 
