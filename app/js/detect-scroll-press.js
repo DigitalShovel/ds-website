@@ -2,6 +2,8 @@
 
 // Description: The script below detects the scroll position and adds an active class to the corresponding link in the subnav by highlighting it. This file and its variables are slightly different from the M300 script because the M300 has a different scroll position for all three links.
 
+// TODO: Fix the position where the active class is enabled on each section. Currently, the active class is enabled a little too early on each section.
+
 let check = false;
 
 window.addEventListener("scroll", () => {
