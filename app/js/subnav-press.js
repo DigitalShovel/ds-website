@@ -1,5 +1,5 @@
-let pressLink = document.querySelector(".subnav__link--press");
-let press = document.querySelector("#press");
+let announcementsLink = document.querySelector(".subnav__link--announcements");
+let announcements = document.querySelector("#announcements");
 
 let articlesLink = document.querySelector(".subnav__link--articles");
 let articles = document.querySelector("#articles");
@@ -7,9 +7,9 @@ let articles = document.querySelector("#articles");
 let podcastsLink = document.querySelector(".subnav__link--podcasts");
 let podcasts = document.querySelector("#podcasts");
 
-pressLink.addEventListener("click", () => {
-  // scroll to the spot where the press releases section is in the viewport
-  press.scrollIntoView({
+announcementsLink.addEventListener("click", () => {
+  // scroll to the spot where the announcements section is in the viewport
+  announcements.scrollIntoView({
     behavior: "smooth",
     block: "start",
     inline: "nearest",

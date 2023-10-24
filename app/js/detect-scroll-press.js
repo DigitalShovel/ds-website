@@ -8,40 +8,42 @@ let check = false;
 
 window.addEventListener("scroll", () => {
   if (window.innerWidth >= 992) {
-    if (scrollY <= 1100) {
+    console.log("desktop: " + scrollY);
+    if (scrollY <= 1300) {
       articlesLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
-      // set the active class to the press link
-      pressLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 2000) {
-      pressLink.classList.remove("subnav__link--active");
+      // set the active class to the announcements link
+      announcementsLink.classList.add("subnav__link--active");
+    } else if (scrollY <= 2400) {
+      announcementsLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
       // set the active class to the articles link
       articlesLink.classList.add("subnav__link--active");
-    } else if (scrollY > 2000) {
-      pressLink.classList.remove("subnav__link--active");
+    } else if (scrollY > 2400) {
+      announcementsLink.classList.remove("subnav__link--active");
       articlesLink.classList.remove("subnav__link--active");
 
       // set the active class to the podcasts link
       podcastsLink.classList.add("subnav__link--active");
     }
   } else {
+    console.log("mobile: " + scrollY);
     if (scrollY <= 1600) {
       articlesLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
-      // set the active class to the press link
-      pressLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 3100) {
-      pressLink.classList.remove("subnav__link--active");
+      // set the active class to the announcements link
+      announcementsLink.classList.add("subnav__link--active");
+    } else if (scrollY <= 3600) {
+      announcementsLink.classList.remove("subnav__link--active");
       podcastsLink.classList.remove("subnav__link--active");
 
       // set the active class to the articles link
       articlesLink.classList.add("subnav__link--active");
-    } else if (scrollY > 3100) {
-      pressLink.classList.remove("subnav__link--active");
+    } else if (scrollY > 3600) {
+      announcementsLink.classList.remove("subnav__link--active");
       articlesLink.classList.remove("subnav__link--active");
 
       // set the active class to the podcasts link
