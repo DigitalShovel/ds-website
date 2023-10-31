@@ -1,53 +1,35 @@
-// Author: Nicholas Panayotakos
+// Get all the subnav links
+const subnavLinks = document.querySelectorAll('.subnav a');
 
-// Description: The script below detects the scroll position and adds an active class to the corresponding link in the subnav by highlighting it. This file and its variables are slightly different from the M300 script because the M300 has a different scroll position for all three links.
+// Get all the sections
+const sections = document.querySelectorAll('section');
 
-// TODO: Fix the position where the active class is enabled on each section. Currently, the active class is enabled a little too early on each section.
+// Create an array to store the positions of each section
+const sectionPositions = [];
 
-let check = false;
+// Loop through each section and store its position in the array
+sections.forEach(section => {
+  sectionPositions.push(section.offsetTop);
+});
 
-window.addEventListener("scroll", () => {
-  if (window.innerWidth >= 992) {
-    console.log("desktop: " + scrollY);
-    if (scrollY <= 1300) {
-      articlesLink.classList.remove("subnav__link--active");
-      podcastsLink.classList.remove("subnav__link--active");
+// Function to update the active subnav link
+function updateActiveLink() {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY;
 
-      // set the active class to the announcements link
-      announcementsLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 2400) {
-      announcementsLink.classList.remove("subnav__link--active");
-      podcastsLink.classList.remove("subnav__link--active");
+  // Loop through each section position and check if the scroll position is greater than or equal to it
+  for (let i = 0; i < sectionPositions.length; i++) {
+    if (scrollPosition >= sectionPositions[i]) {
+      // Remove the active class from all subnav links
+      subnavLinks.forEach(link => {
+        link.classList.remove('subnav__link--active');
+      });
 
-      // set the active class to the articles link
-      articlesLink.classList.add("subnav__link--active");
-    } else if (scrollY > 2400) {
-      announcementsLink.classList.remove("subnav__link--active");
-      articlesLink.classList.remove("subnav__link--active");
-
-      // set the active class to the podcasts link
-      podcastsLink.classList.add("subnav__link--active");
-    }
-  } else {
-    console.log("mobile: " + scrollY);
-    if (scrollY <= 1600) {
-      articlesLink.classList.remove("subnav__link--active");
-      podcastsLink.classList.remove("subnav__link--active");
-
-      // set the active class to the announcements link
-      announcementsLink.classList.add("subnav__link--active");
-    } else if (scrollY <= 3600) {
-      announcementsLink.classList.remove("subnav__link--active");
-      podcastsLink.classList.remove("subnav__link--active");
-
-      // set the active class to the articles link
-      articlesLink.classList.add("subnav__link--active");
-    } else if (scrollY > 3600) {
-      announcementsLink.classList.remove("subnav__link--active");
-      articlesLink.classList.remove("subnav__link--active");
-
-      // set the active class to the podcasts link
-      podcastsLink.classList.add("subnav__link--active");
+      // Add the active class to the corresponding subnav link
+      subnavLinks[i].classList.add('subnav__link--active');
     }
   }
-});
+}
+
+// Call the updateActiveLink function on scroll
+window.addEventListener('scroll', updateActiveLink);

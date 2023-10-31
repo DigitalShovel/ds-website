@@ -1,11 +1,5 @@
 @use "../base/breakpoints" as *;
 
-#announcements,
-#articles,
-#podcasts {
-  scroll-margin-top: calc(72px + 57px + 2rem); // navbar + subnav + extra padding
-}
-
 .press {
   overflow: hidden;
 
@@ -109,11 +103,12 @@
   }
 
   #announcements {
-    margin-top: 0;
+    margin-top: calc(-129px - 6rem);
+    padding-top: calc(129px + 6rem);
   }
 
   &__release {
-    margin-top: 8rem;
+    padding-top: calc(129px + 2rem);
 
     &-list {
       display: grid;
@@ -132,13 +127,6 @@
 
     &-link {
       display: inline-flex;
-    }
-
-    &-post {
-      display: inline-grid;
-      flex-direction: column;
-      gap: 1rem;
-      justify-content: space-between;
       background-color: var(--blue-gray-50);
       border: 1px solid var(--blue-gray-100);
       border-radius: 10px;
@@ -150,6 +138,13 @@
         border: 1px solid var(--blue-500);
         box-shadow: var(--shadow-elevation-high);
       }
+    }
+
+    &-post {
+      display: inline-grid;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: space-between;
 
       @include breakpoint(sm-tablet) {
         grid-template-columns: 1fr;

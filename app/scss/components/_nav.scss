@@ -98,6 +98,10 @@
     &:hover {
       color: var(--blue-500);
     }
+
+    &[data-current-page="true"] {
+      color: var(--blue-500);
+    }
   }
 
   &__hamburger {
@@ -261,4 +265,8 @@
 
 .no-padding {
   padding: 1rem 2rem;
+}
+
+[data-current-page="true"] {
+  color: var(--blue-500);
 }
