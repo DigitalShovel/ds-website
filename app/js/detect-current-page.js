@@ -1,8 +1,8 @@
-const currentPage = window.location.pathname.split("/").pop().split(".html")[0]; // get the name of the current webpage
+const currentPage = window.location.pathname.split("/").pop(); // get the name of the current webpage
 const navbarLinks = document.querySelectorAll(".navbar__link"); // get all elements with class "navbar__link"
 const dropdownButton = document.querySelector(".dropdown__button"); // get the element with class "dropdown__button"
 
-if (currentPage === "M300" || "i300" || "nanopod" || "fans" || "awnings") {
+if (currentPage === "m300" || "i300" || "nanopod" || "fans" || "awnings") {
   // check if the current page is one of the product pages
   dropdownButton.dataset.currentPage = true; // set the data attribute "data-current-page" to true
 } else {
