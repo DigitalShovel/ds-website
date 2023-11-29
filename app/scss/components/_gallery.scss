@@ -99,10 +99,12 @@
     object-fit: cover;
     border-radius: 20px;
     box-shadow: var(--shadow-elevation-high);
-    width: fit-content;
+    max-width: 800px;
+    max-height: 500px;
     left: 50%;
+    top: 50%;
     position: relative;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 
     @include breakpoint(lg-tablet) {
       max-width: 500px;
@@ -280,6 +282,19 @@
 
     @include breakpoint(lg-tablet) {
       height: 50px;
+    }
+  }
+
+  &__pdu {
+    height: 70px;
+    max-width: 80px;
+
+    @include breakpoint(lg-tablet) {
+      height: 50px;
+    }
+
+    &--contain {
+      object-fit: contain;
     }
   }
 }

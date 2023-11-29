@@ -283,6 +283,18 @@
     }
   }
 
+  &__product-photo {
+    max-width: 800px;
+
+    @include breakpoint(md-mobile) {
+      max-width: 350px;
+    }
+
+    &--pdu {
+      transform: translateX(-50px);
+    }
+  }
+
   &__black-friday {
     position: absolute;
     transform: scale(1.5) translate(28px, -190px);
