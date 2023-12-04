@@ -292,6 +292,10 @@
 
     &--pdu {
       transform: translateX(-50px);
+
+      @include breakpoint(md-mobile) {
+        transform: translateX(-25px);
+      }
     }
   }
 

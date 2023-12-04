@@ -34,6 +34,14 @@
       }
     }
 
+    &--spdu {
+      max-width: 400px;
+
+      @include breakpoint(sm-desktop) {
+        max-width: 400px;
+      }
+    }
+
     &--i300 {
       @include breakpoint(sm-desktop) {
         flex-direction: column;
