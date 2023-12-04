@@ -1,0 +1,23 @@
+@use "../base/breakpoints" as *;
+
+// an infinite seamless animation that moves the logos from right to left and pauses on hover and focus. 
+// the animation is paused by setting the animation-play-state to paused on hover and focus.
+// the logos are grayscale but it's removed on hover and focus.
+
+@keyframes moveRightToLeft {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.companies {
+  &__logos {
+    animation: moveRightToLeft 20s linear infinite;
+    filter: grayscale(100%);
+    width: 150px;
+  
+    &:hover, &:focus {
+      animation-play-state: paused;
+      filter: grayscale(0%);
+    }
+  }
+}
