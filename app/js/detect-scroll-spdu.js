@@ -14,7 +14,6 @@ let check = false;
 
 window.addEventListener("scroll", () => {
   if (window.innerWidth >= 992) {
-    console.log("desktop:" + scrollY);
     if (scrollY <= 400) {
       specsLinkSPDU.classList.remove("subnav__link--active");
       bundleLinkSPDU.classList.remove("subnav__link--active");
@@ -35,7 +34,6 @@ window.addEventListener("scroll", () => {
       bundleLinkSPDU.classList.add("subnav__link--active");
     }
   } else {
-    console.log("mobile:" + scrollY);
     if (scrollY <= 400) {
       specsLinkSPDU.classList.remove("subnav__link--active");
       bundleLinkSPDU.classList.remove("subnav__link--active");
