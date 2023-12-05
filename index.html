@@ -48,6 +48,7 @@
   <script defer src="/app/js/dropdown.js"></script>
   <script defer src="/app/js/scroll-animations-home.js?v=1.0"></script>
   <script defer src="/app/js/copyright.js"></script>
+  <script defer src="/app/js/logo-scroller.js"></script>
 
   <title>Digital Shovel</title>
 
@@ -419,28 +420,32 @@
       </div>
     </section>
 
-    <a href="#bundle" class="scroll scroll__home">
+    <a href="#scroller" class="scroll scroll__home">
       <span class="scroll__text">scroll for more</span>
       <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </a>
-
-    <section class="companies container">
-      <div class="flex gap--lg">
-        <img class="companies__logos" src="images/press-logos/benzinga.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/big-dawg-crypto-podcast.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/bitcoin-magazine.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/bitscoins.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/blockchain-bytes-daily.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/blockster.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/cision-prn.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/Coinscreed.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/cryptonews.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/easydailycrypto.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/ico-holder.png" alt="Benzinga Logo">
-        <img class="companies__logos" src="images/press-logos/investors-observer.png" alt="Benzinga Logo">
+    
+    <section id="scroller" class="container scroller-container">
+      <div class="flex flex-col ai-c">
+        <h2 class="testimonials__subheading">As Seen On</h2>
+        <h3 class="testimonials__heading">Media Outlets</h3>
+      </div>
+      <div class="scroller" data-direction="left" data-speed="slow">
+        <div class="scroller__inner">
+          <img class="scroller__inner-item" src="images/press-logos/benzinga.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/bitcoin-magazine.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/blockchain-bytes-daily.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/blockster.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/cision-prn.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/Coinscreed.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/cryptonews.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/easydailycrypto.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/ico-holder.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/investors-observer.png" alt="Benzinga Logo">
+        </div>
       </div>
     </section>
 
