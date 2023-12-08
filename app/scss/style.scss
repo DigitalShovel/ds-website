@@ -1,4 +1,5 @@
 @use "base/colors";
+@use "base/shadows";
 @use "base/globals";
 @use "base/typography";
 @use "base/fonts";
@@ -23,10 +24,11 @@
 @use "sections/pricing";
 @use "sections/bundle";
 @use "sections/turnkey";
-@use "sections/voskcoin";
 @use "sections/interview";
 @use "sections/recruitment";
 @use "sections/contact";
+@use "sections/press";
+@use "sections/scroller";
 @use "utils/flex";
 @use "utils/grid";
 @use "utils/utilities";

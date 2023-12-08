@@ -14,7 +14,7 @@
   <!-- Social media tags -->
   <meta property="og:title" content="Digital Shovel • NanoPOD">
   <meta property="og:description"
-    content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
+    content="Digital Shovel, the industry leading manufacturer of turnkey, mobile crypto mining containers, has announced the launch of their latest innovation, the NanoPOD. Designed specifically for small to medium mining operations, the NanoPOD stands out as the company's most compact and efficient offering to date, setting a new standard in size and convenience.">
   <meta property="og:image" content="/images/backgrounds/meta-image.jpg">
   <meta property="og:url" content="/nanopod.html">
   <meta property="og:site_name" content="Digital Shovel">
@@ -46,7 +46,10 @@
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
   <script defer src="/app/js/gallery.js?v=1.0"></script>
-  <script defer src="/app/js/subnav"></script>
+  <script defer src="/app/js/subnav.js"></script>
+  <script defer src="/app/js/detect-current-page.js"></script>
+  <script defer src="/app/js/subnav-title-change.js"></script>
+  <script defer src="/app/js/copyright.js"></script>
 
   <title>Digital Shovel • NanoPOD</title>
 
@@ -204,26 +207,29 @@
                 </div>
               </a> -->
               <!-- <a class="dropdown__menu-item dropdown__link" href="spdu" tabindex="-1" aria-role="menu-item">
-                    <img class="icon--md" src="images/icons/icon_navbar_spdu.svg" alt="SPDU Icon" aria-hidden="true" />
-                    <div class="dropdown__text">
-                      <h5>
-                        SmartPDU
-                        <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </h5>
-                      <small>Automation & Monitor</small>
-                    </div>
-                  </a> -->
+                <img class="icon--md" src="images/icons/icon_navbar_spdu.svg" alt="SPDU Icon" aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    SmartPDU
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Automation & Monitoring</small>
+                </div>
+              </a> -->
             </div>
           </div>
         </li>
         <li>
           <a class="navbar__link" href="turnkey-solutions">Turn-Key Solutions</a>
+        </li>
+        <li>
+          <a class="navbar__link" href="press">Press</a>
         </li>
         <li>
           <a class="navbar__link" href="contact">Contact Us</a>
@@ -262,7 +268,7 @@
         <img class="hero__product-illustration" src="images/illustrations/nanopod_back.svg"
           alt="NanoPOD Back View Illustration">
         <div class="gallery-container">
-          <div class="gallery gallery__i300">
+          <div class="gallery gallery__col-1">
             <img class="photo photo-1 photo__i300" src="images/photos/nanopod/nano_back.png" alt="NanoPOD Back View">
             <img class="photo photo-1 photo__i300" src="images/photos/nanopod/nano_side.png" alt="NanoPOD Side View">
             <img class="photo photo-1 photo__i300" src="images/photos/nanopod/nano_open-door.png"
@@ -407,7 +413,7 @@
           <img src="images/illustrations/nanopod-back_with-text.svg" alt="NanoPOD Illustration Back Side">
           <div class="minipod__illustrations--shadow"></div>
         </div>
-        <a href="contact" class="btn btn--primary mtop--xxl mbot--lg">Contact Sales
+        <a href="contact" class="btn btn--primary mtop--2xl mbot--lg">Contact Sales
           <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
@@ -422,7 +428,7 @@
 
   <footer class="footer">
     <div class="container footer__container">
-      <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
+      <div class="flex flex-col--lg-tablet jc-sb gap--xl">
         <div class="footer__column">
           <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
           <p class="footer__body">
@@ -438,14 +444,15 @@
             <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
             <li><a href="nanopod" class="footer__list-item">NanoPOD</a></li>
             <li><a href="awnings" class="footer__list-item">Air-Intake Awnings</a></li>
-            <li><a href="fans" class="footer__list-item">Cooling Fans</a></li>
-            <!-- <li><a href="i300" class="footer__list-item">SmartPDU</a></li> -->
+            <!-- <li><a href="fans" class="footer__list-item">Cooling Fans</a></li> -->
+            <!-- <li><a href="spdu" class="footer__list-item">SmartPDU</a></li> -->
           </ul>
         </div>
         <div class="footer__column">
           <small class="footer__heading">Navigation</small>
           <ul class="footer__list">
             <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
+            <li><a href="press" class="footer__list-item">Press</a></li>
             <li><a href="contact" class="footer__list-item">Contact</a></li>
           </ul>
         </div>
@@ -453,11 +460,13 @@
       <div class="footer__divider"></div>
       <div class="flex flex-col--lg-tablet jc-sb gap--sm">
         <div class="flex flex-col--lg-tablet gap--sm">
-          <small class="footer__copyright">© 2023 Digital Shovel Holdings Inc.</small>
+          <small class="footer__copyright">© <span class="footer__copyright-year">2023</span> Digital Shovel Holdings Inc.</small>
         </div>
         <div class="flex gap--sm ai-c">
+          <a target="_blank" href="https://www.youtube.com/@digital_shovel"><img class="footer__social"
+            src="images/icons/icon_youtube.svg" alt="YouTube Logo Icon"></a>
           <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
-              src="images/icons/icon_instagram.svg" alt="Facebook Logo Icon"></a>
+              src="images/icons/icon_instagram.svg" alt="Instagram Logo Icon"></a>
           <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
               src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
           <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"

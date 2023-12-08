@@ -49,7 +49,7 @@
     &--left {
       text-align: left;
 
-      @include breakpoint(sm-desktop) {
+      @include breakpoint(lg-tablet) {
         text-align: center;
       }
     }
@@ -66,22 +66,24 @@
       color: var(--blue-500);
     }
 
-    &::after {
-      position: absolute;
-      z-index: -2;
-      top: 2rem;
-      left: 50%;
-      width: 400px;
-      height: 200px;
+    &--bg-blur {
+      &::after {
+        position: absolute;
+        z-index: -2;
+        top: 2rem;
+        left: 50%;
+        width: 400px;
+        height: 200px;
 
-      content: "";
-      transform: translateX(-50%);
-      background-color: var(--blue-100);
-      filter: blur(90px);
+        content: "";
+        transform: translateX(-50%);
+        background-color: var(--blue-100);
+        filter: blur(90px);
 
-      @include breakpoint(lg-tablet) {
-        width: 250px;
-        height: 150px;
+        @include breakpoint(lg-tablet) {
+          width: 250px;
+          height: 150px;
+        }
       }
     }
   }
@@ -281,6 +283,22 @@
     }
   }
 
+  &__product-photo {
+    max-width: 800px;
+
+    @include breakpoint(md-mobile) {
+      max-width: 350px;
+    }
+
+    &--pdu {
+      transform: translateX(-50px);
+
+      @include breakpoint(md-mobile) {
+        transform: translateX(-25px);
+      }
+    }
+  }
+
   &__black-friday {
     position: absolute;
     transform: scale(1.5) translate(28px, -190px);
@@ -299,8 +317,6 @@
   }
 
   &__img {
-    width: 250px;
-
     &-anchor {
       position: relative;
 
@@ -315,6 +331,30 @@
         background-image: url(../images/illustrations/question-marks.svg);
         background-repeat: no-repeat;
         background-position: center;
+      }
+    }
+
+    &--contact {
+      width: 250px;
+    }
+
+    &--press {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      transform-origin: right top;
+
+      @include breakpoint(sm-desktop) {
+        opacity: 0.7;
+      }
+
+      @include breakpoint(md-tablet) {
+        transform: scale(1.3);
+      }
+
+      @include breakpoint(md-mobile) {
+        transform: scale(1.8);
       }
     }
   }

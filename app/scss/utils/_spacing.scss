@@ -54,16 +54,24 @@
     max-width: 100%;
   }
 
-  &--lg {
-    padding: 4rem 2rem;
+  &--sm {
+    padding: 0 2rem;
   }
 
   &--md {
     padding: 2rem;
   }
 
-  &--sm {
-    padding: 0 2rem;
+  &--lg {
+    padding: 4rem 2rem;
+  }
+
+  &--xl {
+    padding: 6rem 2rem;
+  }
+
+  &--2xl {
+    padding: 8rem 2rem;
   }
 
   &__promotion {
@@ -74,23 +82,9 @@
       margin: auto;
     }
   }
-
-  /* The reason for the following two classes is to push down the main content because GSAP SmoothScroller adds a position:fixed container around the main content with an inset:0px which forces the content to move all the way to the top of the page and gets overlapped by the navbar and subnav */
-
-  &--navbar {
-    padding-top: calc(var(--navbar) + 4rem); // 73px is the height of the navbar
-
-    @include breakpoint(md-mobile) {
-      padding-top: calc(var(--navbar) - 2rem);
-    }
-  }
-
-  &--subnav {
-    padding-top: calc(var(--subnav) + 4rem); // 128px is the height of the navbar (73px) + subnav (~56px)
-
-    @include breakpoint(md-mobile) {
-      padding-top: calc(var(--navbar) - 2rem);
-    }
+  
+  &__text {
+    max-width: 55ch;
   }
 }
 
@@ -111,11 +105,11 @@
     gap: 1.5rem;
   }
 
-  &--xlg {
+  &--xl {
     gap: 2rem;
   }
 
-  &--xxlg {
+  &--2xl {
     gap: 3rem;
   }
 }
@@ -137,8 +131,16 @@
     margin-top: 3rem;
   }
 
-  &--xxl {
+  &--2xl {
     margin-top: 4rem;
+  }
+
+  &--3xl {
+    margin-top: 6rem;
+  }
+
+  &--4xl {
+    margin-top: 8rem;
   }
 }
 
@@ -159,8 +161,16 @@
     margin-bottom: 3rem;
   }
 
-  &--xxl {
-    margin-bottom: 4rem;
+  &--2xl {
+    margin-top: 4rem;
+  }
+
+  &--3xl {
+    margin-top: 6rem;
+  }
+
+  &--4xl {
+    margin-top: 8rem;
   }
 }
 

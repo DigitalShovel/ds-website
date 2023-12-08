@@ -12,14 +12,15 @@
     content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
 
   <!-- Social media tags -->
-  <meta property="og:title" content="Digital Shovel • PDU Giveaway">
+  <meta property="og:title" content="Digital Shovel • Fans">
   <meta property="og:description"
     content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
   <meta property="og:image" content="/images/backgrounds/meta-image.jpg">
-  <meta property="og:url" content="/contact.html">
+  <meta property="og:url" content="/fans.html">
   <meta property="og:site_name" content="Digital Shovel">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:alt" content="Digital Shovel Logo">
+
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../dist/style.min.css?v=2.1">
@@ -41,12 +42,12 @@
   <script defer src="/app/js/ScrollTrigger.min.js"></script>
 
   <!-- Javascript -->
+  <script defer src="/app/js/detect-scroll-i300.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
-  <script defer src="/app/js/contact.js"></script>
-  <script defer src="/app/js/detect-location.js"></script>
+  <script defer src="/app/js/gallery.js?v=1.0"></script>
 
-  <title>Digital Shovel • SmartPDU Giveaway</title>
+  <title>Digital Shovel • Fans</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-810441893"></script>
@@ -74,7 +75,7 @@
 
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar navbar--borderless">
     <div class="navbar__container">
       <a href="/" class="navbar__logo" aria-label="Digital Shovel Logo">
         <svg title="Digital Shovel Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.45 80.96">
@@ -224,64 +225,190 @@
           <a class="navbar__link" href="turnkey-solutions">Turn-Key Solutions</a>
         </li>
         <li>
+          <a class="navbar__link" href="press">Press</a>
+        </li>
+        <li>
           <a class="navbar__link" href="contact">Contact Us</a>
         </li>
       </ul>
     </div>
   </nav>
 
+  <nav class="subnav">
+    <div class="subnav__container">
+      <ul class="subnav__links">
+        <li>
+          <a href="#product" class="subnav__link subnav__link--product subnav__link--active">Product</a>
+        </li>
+        <li>
+          <a href="#specifications" class="subnav__link subnav__link--specs">Specifications</a>
+        </li>
+        <li>
+          <a href="#bundle" class="subnav__link subnav__link--bundle">Bundle</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <main class="main">
-    <section class="container flex flex-col--lg-tablet jc-sb gap--md ai-c--tablet">
-      <div class="flex flex-col gap--lg ai-c--tablet">
-        <h1 class="hero__heading">Blockchain <emphasis class="text--blue">Futurist</emphasis>
+    <section id="product" class="container container--i300 flex flex-col ai-c">
+      <div class="flex flex-col ai-c gap--sm">
+        <div class="flex flex-col--sm-mobile ai-c gap--sm">
+          <h4>Cooling Solution</h4>
+        </div>
+        <h1 class="hero__heading">
+          15,000 CFM <emphasis class="text--blue">Fans</emphasis>
         </h1>
-        <img class="hero__company" src="images/illustrations/ds-x-bfc.png"
-          alt="Digital Shovel X Blockchain Futurist Conference">
-        <div class="flex flex-col gap--sm">
-          <h2 class="hero__subheading">Fill the form below to enter the SmartPDU giveaway</h2>
-          <p class="hero__body hero__body--team">
-            Show us the "Thank you!" page after you submit your details and you will receive <strong>FREE</strong>
-            Digital Shovel swag and a chance to win a <strong>FREE</strong> SmartPDU valued at $2500!
-          </p>
-        </div>
       </div>
-      <img class="hero__img" src="images/illustrations/spdu-giftbox_v2.png" alt="SmartPDU Giftbox Illustration">
-    </section>
-    <section class="form container">
-      <form action="https://formspree.io/f/myyqewnw" method="POST" autocomplete="on" enctype="multipart/form-data">
-        <div class="fieldset fieldset__3-col flex flex-col">
-          <label class="fieldset__label" for="Full-Name">Full Name</label>
-          <input class="fieldset__text" aria-label="Enter your full name" type="text" id="input-full-name"
-            name="Full-Name" placeholder="John Doe" autocomplete="on" required="required">
-        </div>
-        <div class="fieldset fieldset__3-col flex flex-col">
-          <label class="fieldset__label" for="Email">Email</label>
-          <input class="fieldset__text" aria-label="Enter your email" type="email" id="input-email" name="Email"
-            placeholder="johndoe@example.com" autocomplete="on" required="required">
-        </div>
-        <div class="fieldset fieldset__6-col flex flex-col">
-          <label class="fieldset__label" for="Phone">Phone</label>
-          <input class="fieldset__text" aria-label="Enter your phone number" type="tel" id="input-phone" name="Phone"
-            placeholder="+5 (555) 555 5555" autocomplete="on" required="required">
-        </div>
-        <div class="fieldset fieldset__6-col flex flex-col">
-          <label class="fieldset__label">Purpose of Contact</label>
-          <div class="flex">
-            <input type="radio" aria-label="SmartPDU Giveaway" name="Purpose-of-Contact" id="SmartPDU Giveaway"
-              value="SmartPDU Giveaway" required="required">
-            <label class="fieldset__radio fieldset__radio--add-bl-radius fieldset__radio--add-bottom-radius"
-              for="SmartPDU Giveaway">SmartPDU Giveaway</label>
+      <div class="flex flex-col--sm-tablet ai-c gap--lg">
+        <img class="hero__product-illustration" src="images/illustrations/fan_front.svg" alt="Fan Front Illustration">
+        <div class="gallery-container">
+          <div class="gallery gallery__col-1">
+            <img class="photo photo-1 photo__i300" src="images/photos/minipod/M300-back-1.jpg"
+              alt="Fans on the Minipod M300 Back View">
+            <img class="photo photo-2 photo__i300" src="images/photos/fans/fans-inside.png"
+              alt="Inside View of the Fans">
+            <img class="photo photo-3 photo__i300" src="images/photos/fans/fans-closed.png"
+              alt="Fan with Closed Louvers">
+            <img class="photo photo-4 photo__i300" src="images/photos/fans/fans-open.png" alt="Fans with Open Louvers">
+            <div class="modal">
+              <div class="modal-container">
+                <span class="close">
+                  <div class="line line-1"></div>
+                  <div class="line line-2"></div>
+                </span>
+                <div class="modal__photo-container">
+                  <img src="" class="modal__photo">
+                  <button class="btn__gallery btn__gallery-left">
+                    <svg class="arrow arrow-left" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
+                      <g clip-path="url(#a)">
+                        <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button class="btn__gallery btn__gallery-right">
+                    <svg class="arrow arrow-right" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
+                      <g clip-path="url(#a)">
+                        <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <div class="flex flex-col jc-c gap--md">
+                    <span class="modal__caption"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <input type="hidden" name="_next" value="https://digitalshovel.com/thanks">
-        <input aria-label="Submit Button" class="btn btn--primary btn--form" type="submit">
-      </form>
+      </div>
+    </section>
+    <a href="#specifications" class="scroll scroll__i300">
+      <span class="scroll__text">scroll for more</span>
+      <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+    <section id="specifications" class="card__grid card__grid--i300">
+      <div class="card-1 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_power.svg" alt="Power Input Icon">
+          <h6>Feature Title</h6>
+        </div>
+        <ul class="flex flex-col gap--md">
+          <li class="card__list-item flex">Feature description goes here</li>
+          <li class="card__list-item flex">Feature description goes here</li>
+          <li class="card__list-item flex">Feature description goes here</li>
+        </ul>
+      </div>
+      <div class="card-2 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_assemble.svg" alt="Assemble Icon">
+          <h6>Easy-to-Assemble</h6>
+        </div>
+        <ul class="flex flex-col gap--md">
+          <li class="card__list-item flex">Using our C19 outlet, power up your fan(s) quickly and easily</li>
+          <li class="card__list-item flex">Feature description goes here</li>
+          <li class="card__list-item flex">Feature description goes here</li>
+        </ul>
+      </div>
+      <div class="card-5 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c">
+          <img class="icon--md" src="images/icons/icon_mining.svg" alt="Mining Capacity Icon">
+          <h6>Feature Title</h6>
+        </div>
+        <ul class="flex flex-col gap--md">
+          <li class="card__list-item flex">Feature description goes here</li>
+          <li class="card__list-item flex">Feature description goes here</li>
+          <li class="card__list-item flex">Feature description goes here</li>
+        </ul>
+      </div>
+      <div class="card-7 card__data card__secondary flex ai-c gap--md">
+        <img class="icon--md" src="images/icons/icon_fan.svg" alt="Fan Icon">
+        <h6>Cubic Feet per Meter</h6>
+        <h6 class="text--blue">15,000</h6>
+      </div>
+      <a href="contact" class="card-8 btn btn--primary btn--card flex ai-c jc-c gap--sm">Place Order
+        <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="card-9 card__data flex ai-c gap--md">
+        <img class="icon--md" src="images/icons/icon_coin.svg" alt="Dollar Coin Icon">
+        <h6 class="text--dark-blue">Approx. Cost</h6>
+        <h6 class="text--blue">$479</h6>
+      </div>
+    </section>
+    <section id="bundle" class="bundle">
+      <div class="container container--full-width flex flex-col gap--md ai-c jc-c">
+        <h2 class="text__heading">
+          <span class="text--blue">Bundled</span> with your Fans
+        </h2>
+        <p class="text__body text--center">
+          Main container, racking, back-sheets, and Smart PDUs
+        </p>
+        <div class="bundle__illustrations bundle__illustrations--i300">
+          <img src="images/illustrations/fan-front_with-text.svg" alt="Fan Illustration Front Side">
+          <img src="images/illustrations/fan-back_with-text.svg" alt="Fan Illustration Back Side">
+          <div class="minipod__illustrations--shadow"></div>
+        </div>
+        <a href="contact" class="btn btn--primary mtop--2xl mbot--lg">Contact Sales
+          <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__container">
-      <div class="flex flex-col--lg-tablet jc-sb gap--xlg">
+      <div class="flex flex-col--lg-tablet jc-sb gap--xl">
         <div class="footer__column">
           <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
           <p class="footer__body">
@@ -297,7 +424,7 @@
             <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
             <li><a href="nanopod" class="footer__list-item">NanoPOD</a></li>
             <li><a href="awnings" class="footer__list-item">Air-Intake Awnings</a></li>
-            <li><a href="fans" class="footer__list-item">Cooling Fans</a></li>
+            <!-- <li><a href="fans" class="footer__list-item">Cooling Fans</a></li> -->
             <!-- <li><a href="i300" class="footer__list-item">SmartPDU</a></li> -->
           </ul>
         </div>
@@ -305,6 +432,7 @@
           <small class="footer__heading">Navigation</small>
           <ul class="footer__list">
             <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
+            <li><a href="press" class="footer__list-item">Press</a></li>
             <li><a href="contact" class="footer__list-item">Contact</a></li>
           </ul>
         </div>
@@ -327,6 +455,7 @@
       </div>
     </div>
   </footer>
+
 
 </body>
 
