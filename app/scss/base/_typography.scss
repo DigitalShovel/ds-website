@@ -59,6 +59,13 @@ h6 {
   letter-spacing: -0.2px;
 }
 
+.card__grid--bluax {
+  h6 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
 p {
   font-size: clamp(0.8rem, 2vw, 0.9rem);
   line-height: 1.5;
@@ -156,6 +163,20 @@ small {
 
   &--discount {
     text-decoration: line-through;
+  }
+
+  &--disclaimer {
+    font-weight: 400;
+    color: var(--blue-gray-500);
+  }
+
+  &--keybind {
+    font-size: 0.8rem;
+    color: var(--blue-gray-600);
+    border: 1px solid var(--blue-gray-100);
+    background-color: var(--blue-gray-50);
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
   }
 
   &--strikethrough {
