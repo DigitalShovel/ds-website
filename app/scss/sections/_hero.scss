@@ -1,9 +1,5 @@
 @use "../base/breakpoints" as *;
 
-#product .text--blue {
-  text-transform: none;
-}
-
 .hero {
   position: relative;
   display: flex;
@@ -17,9 +13,6 @@
   }
 
   &__main {
-    // 106px is the rounded up height of the navbar
-    // padding-top: calc(73px + 4rem);
-
     @include breakpoint(md-tablet) {
       flex-direction: column;
     }
@@ -45,6 +38,7 @@
   &__heading {
     line-height: .9;
     text-align: center;
+    text-transform: uppercase;
 
     &--left {
       text-align: left;
